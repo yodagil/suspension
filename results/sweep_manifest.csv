@@ -1,0 +1,5 @@
+filename,speed_kmh,mu_road,front_steer_deg,completed,stable_wear1,stable_wear2,stable_wear3,stable_wear4,stable_wear5,elapsed_s
+stable_point_50kph_0.9mu_0deg.mat,50,0.9,0,1,21076,22099,24127,21835,20909,537.016327
+stable_point_50kph_0.9mu_0.5deg.mat,50,0.9,0.5,1,21248,22060,24473,21901,20977,899.871704
+stable_point_50kph_0.9mu_1deg.mat,50,0.9,1,1,21897,22337,24730,21947,21079,973.673958
+stable_point_50kph_0.9mu_1.5deg.mat,50,0.9,1.5,1,22247,22662,24854,22100,21208,919.547019
