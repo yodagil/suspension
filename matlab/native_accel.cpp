@@ -113,13 +113,7 @@ uint8_t observe(const State&x,const Params&p){
  if(fabs(x[3])>40*pi/180||fabs(x[0])>30||fabs(x[1])>2)r|=16;return r;
 }
 State initial(const Params&p,double vc,double r,double phi){State x{};x[0]=vc;x[1]=r;x[3]=phi;
- // Match calculate_internal_slips: initial relaxed slips use wheel kinematics.
- for(int i=0;i<4;i++){
-  double ub=p.ux-r*yw[i],vb=vc+r*xw[i];
-  double uw=p.cs[i]*ub+p.sn[i]*vb,vw=-p.sn[i]*ub+p.cs[i]*vb;
-  double us=uw;if(us>=0&&us<.1)us=.1;if(us<0&&us>-.1)us=-.1;
-  x[16+i]=0.;x[20+i]=atan2(vw,us);x[24+i]=std::max(0.,uw)/Rw;
- }return x;}
+ for(int i=0;i<4;i++){x[20+i]=-p.delta[i];x[24+i]=std::max(0.,p.ux*p.cs[i])/Rw;}return x;}
 uint8_t trajectory(State&x,const Params&p,int&samples){
  int N=std::lround(p.time/p.Ts)+1;uint8_t r=0;samples=0;
  for(int k=0;k<N;k++){r|=observe(x,p);samples++;if(p.early&&r)break;if(k<N-1&&!step(x,p)){r|=8;break;}}return r;

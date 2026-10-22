@@ -4,23 +4,11 @@ function manifest = run_stability_sweep(options)
 %   Ts=0.01 s, Nsub=20, and 5 s observation horizon. Front wheel steer is
 %   [angle angle 0 0] degrees, NOT the steering-wheel angle.
 %   Files are MATLAB-compatible v7 MAT files containing STABILITY3D.
-%   Optional options fields: speeds, mus, steers, output_dir, engine, wear_cases.
-%   wear_cases=[0 0 0 0] computes only the healthy tire case.
+%   Optional options fields: speeds, mus, steers, output_dir, engine.
 if nargin < 1, options = struct(); end
 root = fileparts(mfilename('fullpath'));
 addpath(root);
-[cfg0,G,default_wear_cases,P0,GF] = fullcar_model('defaults');
-wear_cases = get_option(options,'wear_cases',default_wear_cases);
-assert(isnumeric(wear_cases) && ismatrix(wear_cases) && ~isempty(wear_cases) && ...
- size(wear_cases,2)==4 && all(isfinite(wear_cases(:))), ...
- 'wear_cases must be a finite nonempty N-by-4 numeric array.');
-assert(all(ismember(wear_cases,default_wear_cases,'rows')), ...
- 'wear_cases must select rows from the original five wear combinations.');
-assert(size(unique(wear_cases,'rows'),1)==size(wear_cases,1), ...
- 'Duplicate wear cases are not permitted.');
-healthy_case_idx=find(all(wear_cases==0,2),1);
-if isempty(healthy_case_idx), healthy_case_idx=NaN; end
-healthy_only=size(wear_cases,1)==1 && all(wear_cases(1,:)==0);
+[cfg0,G,wear_cases,P0,GF] = fullcar_model('defaults');
 speeds = get_option(options,'speeds',[50 60 70 80 90 100]);
 mus = get_option(options,'mus',[0.9 0.8 0.7 0.6 0.5]);
 steers = get_option(options,'steers',[0 0.5 1 1.5 2 2.5 3]);
@@ -68,7 +56,7 @@ for speed=speeds
     loaded=load(target,'STABILITY3D');
     if isfield(loaded,'STABILITY3D') && isfield(loaded.STABILITY3D,'meta') && ...
        isfield(loaded.STABILITY3D.meta,'run_version') && ...
-       strcmp(loaded.STABILITY3D.meta.run_version,'mu-sweep-v4-kinematic-initialization')
+       strcmp(loaded.STABILITY3D.meta.run_version,'mu-sweep-v3-reference09-matlabgrid')
       S=loaded.STABILITY3D;
       validate_saved_scenario(S,cfg,G,wear_cases,scenario_signature);
       manifest(idx).completed=true;
@@ -105,8 +93,8 @@ for speed=speeds
     CHECKPOINT=struct('cfg',cfg,'grid_coarse',G,'wear_cases',wear_cases, ...
        'last_completed_case',iw,'CASE',CASE);
     atomic_mat_save(cfg.checkpoint_mat,'CHECKPOINT',CHECKPOINT);
-    fprintf('Wear %d/%d: stable %d/%d; inner volume %.8g; valid %d\n', ...
-      iw,size(wear_cases,1),C.stable_count,C.total_count,C.region.inner_volume,C.region.is_valid_inner);
+    fprintf('Wear %d/5: stable %d/%d; inner volume %.8g; valid %d\n', ...
+      iw,C.stable_count,C.total_count,C.region.inner_volume,C.region.is_valid_inner);
    end
    RAW=struct('cfg',cfg,'grid_coarse',G,'wear_cases',wear_cases,'CASE',CASE);
    atomic_mat_save(cfg.raw_mat,'RAW',RAW);
@@ -121,13 +109,11 @@ for speed=speeds
     [~,worst]=min([CASE.stable_fraction]);
    end
    STABILITY3D=struct();
-   STABILITY3D.meta=struct('run_version','mu-sweep-v4-kinematic-initialization','speed_kmh',speed, ...
+   STABILITY3D.meta=struct('run_version','mu-sweep-v3-reference09-matlabgrid','speed_kmh',speed, ...
      'speed_m_s',cfg.ux,'wheel_steer_deg',cfg.steer_deg,'mu_road',mu, ...
      'mu_scale_x',cfg.mu_scale_x,'mu_scale_y',cfg.mu_scale_y, ...
      'mu_reference',cfg.mu_reference,'friction_scaling_mode',cfg.friction_scaling_mode, ...
-     'grid_generation',cfg.grid_generation,'initialization_mode',cfg.initialization_mode, ...
-     'case_count',size(wear_cases,1),'healthy_only',healthy_only, ...
-     'postprocessing_version','stable-grid-box-fallback-v1', ...
+     'grid_generation',cfg.grid_generation, ...
      'r_limit_rad_s',cfg.r_limit,'ay_limit_m_s2',cfg.ay_limit, ...
      'LTR_limit',cfg.LTR_limit,'limit_factor',cfg.limit_factor, ...
      'k_spring_N_m',cfg.k_spring_N_m,'I_mA',cfg.I_mA, ...
@@ -136,14 +122,13 @@ for speed=speeds
      'reason_mask_semantics','5-second accumulated causes; numerical failures stop', ...
      'definition','Finite-horizon constraint satisfaction, not asymptotic stability', ...
      'friction_note','Relative road scaling mu/0.9; mu=0.9 reproduces original first-code MF calibration, not an absolute force-peak normalization', ...
-     'initialization','Kinematic initial slip angles from vc0/r0/wheel steer; per-wheel free rolling speeds; zero relaxed longitudinal slips', ...
+     'initialization','Original direct-start relaxed slips and free rolling wheel speeds', ...
      'has_valid_inner_region',any(valid),'completed_utc',datestr(now,30));
    STABILITY3D.meta.signature=scenario_signature;
-   STABILITY3D.meta.inner_region_methods=arrayfun(@(c)inner_region_method(c.region),CASE,'UniformOutput',false);
    STABILITY3D.meta.postprocessing_complete=all(arrayfun(@(c) ...
      isempty(c.postprocess.stable_hull_error) && isempty(c.postprocess.region_error),CASE));
    STABILITY3D.cfg=cfg; STABILITY3D.grid_coarse=G; STABILITY3D.grid_fine=GF;
-   STABILITY3D.wear_cases=wear_cases; STABILITY3D.healthy_case_idx=healthy_case_idx;
+   STABILITY3D.wear_cases=wear_cases; STABILITY3D.healthy_case_idx=1;
    STABILITY3D.smallest_region_case_idx=worst;
    STABILITY3D.smallest_region_wear=wear_cases(worst,:);
    STABILITY3D.CASE=CASE; STABILITY3D.CASE_FINE=struct();
@@ -237,15 +222,6 @@ end
 function validate_saved_scenario(S,cfg,G,wear_cases,signature)
 assert(isfield(S.meta,'signature') && strcmp(S.meta.signature,signature), ...
  'Cached scenario provenance mismatch; preserve it elsewhere before rerunning.');
-assert(strcmp(S.meta.run_version,'mu-sweep-v4-kinematic-initialization') && ...
- strcmp(S.cfg.initialization_mode,'kinematic_slip_free_roll') && ...
- strcmp(S.meta.initialization_mode,S.cfg.initialization_mode),'Cached initialization mismatch');
-assert(S.meta.case_count==size(wear_cases,1) && ...
- S.meta.healthy_only==(size(wear_cases,1)==1 && all(wear_cases(1,:)==0)), ...
- 'Cached selected-wear metadata mismatch');
-expected_healthy=find(all(wear_cases==0,2),1);
-if isempty(expected_healthy), expected_healthy=NaN; end
-assert(isequaln(S.healthy_case_idx,expected_healthy),'Cached healthy case index mismatch');
 assert(S.meta.speed_kmh==cfg.speed_kmh && S.meta.mu_road==cfg.mu_road && ...
  isequal(S.meta.wheel_steer_deg,cfg.steer_deg),'Cached metadata mismatch');
 assert(isequal(S.grid_coarse,G) && isequal(S.wear_cases,wear_cases),'Cached grid/wear mismatch');
@@ -272,13 +248,6 @@ assert(numel(S.CaseSummary)==size(wear_cases,1) && numel(S.CaseRanking)==size(we
  'Incomplete cached summary/ranking');
 end
 
-function method=inner_region_method(region)
-method='paper';
-if isfield(region,'inner_method') && ~isempty(region.inner_method)
- method=region.inner_method;
-end
-end
-
 function value=get_option(options,name,default)
 if isfield(options,name), value=options.(name); else, value=default; end
 end
@@ -292,15 +261,11 @@ end
 function write_manifest(outdir,manifest)
 atomic_mat_save(fullfile(outdir,'sweep_manifest.mat'),'manifest',manifest);
 fid=fopen(fullfile(outdir,'sweep_manifest.csv.tmp'),'w'); assert(fid>=0);
-fprintf(fid,'filename,speed_kmh,mu_road,front_steer_deg,completed');
-nwear=numel(manifest(1).stable_counts);
-for iw=1:nwear, fprintf(fid,',stable_wear%d',iw); end
-fprintf(fid,',elapsed_s\n');
+fprintf(fid,'filename,speed_kmh,mu_road,front_steer_deg,completed,stable_wear1,stable_wear2,stable_wear3,stable_wear4,stable_wear5,elapsed_s\n');
 for i=1:numel(manifest)
  m=manifest(i); if isempty(m.filename),continue; end
- fprintf(fid,'%s,%g,%.1f,%g,%d',m.filename,m.speed_kmh,m.mu_road,m.steer_deg,m.completed);
- fprintf(fid,',%d',m.stable_counts);
- fprintf(fid,',%.6f\n',m.elapsed_s);
+ fprintf(fid,'%s,%g,%.1f,%g,%d,%d,%d,%d,%d,%d,%.6f\n', ...
+ m.filename,m.speed_kmh,m.mu_road,m.steer_deg,m.completed,m.stable_counts,m.elapsed_s);
 end
 fclose(fid); movefile(fullfile(outdir,'sweep_manifest.csv.tmp'),fullfile(outdir,'sweep_manifest.csv'),'f');
 end
