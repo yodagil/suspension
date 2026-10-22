@@ -1,0 +1,1303 @@
+{
+  "run_version": "mu-sweep-v4-kinematic-initialization",
+  "initialization_mode": "kinematic_slip_free_roll",
+  "postprocessing_version": "stable-grid-box-fallback-v1",
+  "healthy_only": true,
+  "completed_count": 3,
+  "validated_count": 3,
+  "total": 3,
+  "total_scenarios": 3,
+  "finished": true,
+  "all_validated_completed": true,
+  "all_passed": true,
+  "global_checks": [
+    {
+      "check": "new postprocessing snapshot matches job and fingerprint",
+      "passed": true
+    },
+    {
+      "check": "original simulation snapshot remains unchanged",
+      "passed": true
+    },
+    {
+      "check": "four native classification source hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "postprocessing job selects the same three healthy conditions",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "missing_filenames": [],
+  "source_sha256": {
+    "fullcar_model.m": "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+    "stability_run_signature.m": "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+    "native_accel.cpp": "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+    "native_accel": "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f",
+    "stability_region.m": "ca26225366cb9b4e463517078f70052cc683a9e113016139d747f4737d3e7d09",
+    "run_stability_sweep.m": "eab097fbbdd3433109c67bd11d04ccb9d6f3b303fd9fca44e4a057b3fd113935",
+    "native_stability_masks.m": "4bc72c05d08e0b7429d8ecbecc00b4ba38344cc7ac786111e3b01612c22e4558"
+  },
+  "original_source_sha256": {
+    "fullcar_model.m": "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+    "stability_run_signature.m": "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+    "native_accel.cpp": "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+    "native_accel": "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f",
+    "stability_region.m": "f87d9cc2d9cc9a894b08cd5accc86f99721b9f90e97cb344230bdbdb9fcd3eec",
+    "run_stability_sweep.m": "6589882d345a698e72e918d3d8791475fa1d57a45f6cca3cd633ceb852e45def",
+    "native_stability_masks.m": "4bc72c05d08e0b7429d8ecbecc00b4ba38344cc7ac786111e3b01612c22e4558"
+  },
+  "scenarios": [
+    {
+      "filename": "stable_point_80kph_0.9mu_2deg.mat",
+      "speed_kmh": 80,
+      "mu_road": 0.9,
+      "front_steer_deg": 2,
+      "sha256": "765c0c1b2d3f700cecf79375f8ed698c939141a37f20e26a98e9a37be0231b55",
+      "checks": [
+        {
+          "check": "v4 kinematic initialization metadata",
+          "passed": true
+        },
+        {
+          "check": "exact requested operating condition",
+          "passed": true
+        },
+        {
+          "check": "original full five-second integration",
+          "passed": true
+        },
+        {
+          "check": "reference-relative friction calibration",
+          "passed": true
+        },
+        {
+          "check": "original constraint settings",
+          "passed": true
+        },
+        {
+          "check": "one healthy-only case and indices",
+          "passed": true
+        },
+        {
+          "check": "exact coarse and fine symmetric grids",
+          "passed": true
+        },
+        {
+          "check": "case inputs and grid",
+          "passed": true
+        },
+        {
+          "check": "mask shape and valid reason bits",
+          "passed": true
+        },
+        {
+          "check": "counts and stable fraction",
+          "passed": true
+        },
+        {
+          "check": "ordered finite point partitions",
+          "passed": true
+        },
+        {
+          "check": "exact frozen seven-source fingerprint",
+          "passed": true
+        },
+        {
+          "check": "all signature parameters match saved configuration",
+          "passed": true
+        },
+        {
+          "check": "independent raw cache agrees",
+          "passed": true
+        },
+        {
+          "check": "native cache provenance and full-horizon mode",
+          "passed": true
+        },
+        {
+          "check": "full-horizon classification diagnostics",
+          "passed": true
+        },
+        {
+          "check": "no hidden postprocessing errors",
+          "passed": true
+        },
+        {
+          "check": "claimed valid inner region",
+          "passed": true
+        },
+        {
+          "check": "single-case summary and ranking",
+          "passed": true
+        },
+        {
+          "check": "original MAT provenance is the immutable original seven-source pipeline",
+          "passed": true
+        },
+        {
+          "check": "native classification signature is byte-for-byte unchanged",
+          "passed": true
+        },
+        {
+          "check": "stable_mask is byte-for-byte identical to original full simulation",
+          "passed": true
+        },
+        {
+          "check": "reason_mask is byte-for-byte identical to original full simulation",
+          "passed": true
+        },
+        {
+          "check": "stable_points is byte-for-byte identical to original full simulation",
+          "passed": true
+        },
+        {
+          "check": "unstable_points is byte-for-byte identical to original full simulation",
+          "passed": true
+        },
+        {
+          "check": "classification counts and fraction unchanged",
+          "passed": true
+        },
+        {
+          "check": "raw classification cache bytes unchanged",
+          "passed": true
+        },
+        {
+          "check": "explicit postprocessing version and region method",
+          "passed": true
+        },
+        {
+          "check": "postprocessed inner region valid with positive volume",
+          "passed": true
+        },
+        {
+          "check": "eight finite distinct actual stable grid vertices",
+          "passed": true
+        },
+        {
+          "check": "independent convex hull has positive matching volume and zero sampled unstable points",
+          "passed": true
+        },
+        {
+          "check": "box index bounds are valid one-based original-grid intervals",
+          "passed": true
+        },
+        {
+          "check": "vertices are precisely all eight Cartesian box corners",
+          "passed": true
+        },
+        {
+          "check": "every original lattice node inside the box is stable",
+          "passed": true
+        },
+        {
+          "check": "box volume is product of three physical edge lengths",
+          "passed": true
+        },
+        {
+          "check": "box-only diagnostic fields are explicit",
+          "passed": true
+        },
+        {
+          "check": "independent axis-box test excludes every sampled unstable point",
+          "passed": true
+        }
+      ],
+      "stable_count": 3062,
+      "unstable_count": 36339,
+      "total_count": 39401,
+      "stable_fraction": 0.07771376361006066,
+      "numerical_failure_count": 0,
+      "hard_state_guard_count": 2308,
+      "reason_bit_counts": {
+        "1": 12153,
+        "2": 31332,
+        "4": 15195,
+        "8": 0,
+        "16": 2308
+      },
+      "inner_valid": true,
+      "inner_volume": 0.5461333333333334,
+      "outer_volume": 1.6056888888888892,
+      "unstable_inside_inner": 0.0,
+      "source_sha256": {
+        "fullcar_model.m": "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+        "stability_run_signature.m": "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+        "native_accel.cpp": "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+        "native_accel": "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f",
+        "stability_region.m": "ca26225366cb9b4e463517078f70052cc683a9e113016139d747f4737d3e7d09",
+        "run_stability_sweep.m": "eab097fbbdd3433109c67bd11d04ccb9d6f3b303fd9fca44e4a057b3fd113935",
+        "native_stability_masks.m": "4bc72c05d08e0b7429d8ecbecc00b4ba38344cc7ac786111e3b01612c22e4558"
+      },
+      "previous_direct_start_comparison": {
+        "filename": "stable_point_80kph_0.9mu_2deg.mat",
+        "sha256": "983a38ac3653c98a405bfad6a379f290be7adbff964966372e0f17546c5f5246",
+        "run_version": "mu-sweep-v3-reference09-matlabgrid",
+        "healthy_stable_count": 4022,
+        "kinematic_minus_previous_count": -960,
+        "stable_mask_mismatches": 1570,
+        "note": "Initialization changed intentionally; previous result is not an equivalence target."
+      },
+      "passed": true,
+      "original_mat_sha256": "31bcef0e91088d9845032abe5eced17655bf2446c29388a15fe10ae370801a39",
+      "original_pipeline_source_sha256": {
+        "fullcar_model.m": "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+        "stability_run_signature.m": "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+        "native_accel.cpp": "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+        "native_accel": "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f",
+        "stability_region.m": "f87d9cc2d9cc9a894b08cd5accc86f99721b9f90e97cb344230bdbdb9fcd3eec",
+        "run_stability_sweep.m": "6589882d345a698e72e918d3d8791475fa1d57a45f6cca3cd633ceb852e45def",
+        "native_stability_masks.m": "4bc72c05d08e0b7429d8ecbecc00b4ba38344cc7ac786111e3b01612c22e4558"
+      },
+      "classification_source_sha256": {
+        "fullcar_model.m": "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+        "stability_run_signature.m": "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+        "native_accel.cpp": "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+        "native_accel": "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f"
+      },
+      "original_classification_signature": {
+        "schema": "mu-sweep-cache-v2",
+        "stage": "native",
+        "source_files": [
+          "fullcar_model.m",
+          "stability_run_signature.m",
+          "native_accel.cpp",
+          "native_accel"
+        ],
+        "sha256": [
+          "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+          "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+          "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+          "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f"
+        ],
+        "parameters": {
+          "speed_kmh": 80,
+          "ux": 22.22222222222222,
+          "mu_road": 0.9,
+          "mu_reference": 0.9,
+          "friction_scaling_mode": "relative_to_original_mu0p9",
+          "grid_generation": "symmetric_matlab_compatible",
+          "mu_scale_x": 1,
+          "mu_scale_y": 1,
+          "steer_deg": [
+            2,
+            2,
+            0,
+            0
+          ],
+          "Ts": 0.01,
+          "sim_time": 5,
+          "Nsub": 20,
+          "k_spring_N_m": [
+            30790,
+            30790,
+            30790,
+            30790
+          ],
+          "I_mA": [
+            950,
+            950,
+            950,
+            950
+          ],
+          "g": 9.81,
+          "limit_factor": 0.85,
+          "r_limit": 0.33770925,
+          "ay_limit": 8.829,
+          "LTR_limit": 1,
+          "phi_hard_limit_rad": 0.6981317007977318,
+          "vc_hard_limit_m_s": 30,
+          "r_hard_limit_rad_s": 2,
+          "ignore_initial_s": 0,
+          "early_exit_on_unstable": false,
+          "initialization_mode": "kinematic_slip_free_roll",
+          "grid": {
+            "vc": [
+              -10,
+              -9.5,
+              -9,
+              -8.5,
+              -8,
+              -7.5,
+              -7,
+              -6.5,
+              -6,
+              -5.5,
+              -5,
+              -4.5,
+              -4,
+              -3.5,
+              -3,
+              -2.5,
+              -2,
+              -1.5,
+              -1,
+              -0.5,
+              0,
+              0.5,
+              1,
+              1.5,
+              2,
+              2.5,
+              3,
+              3.5,
+              4,
+              4.5,
+              5,
+              5.5,
+              6,
+              6.5,
+              7,
+              7.5,
+              8,
+              8.5,
+              9,
+              9.5,
+              10
+            ],
+            "r": [
+              -0.4,
+              -0.37333333333333335,
+              -0.3466666666666667,
+              -0.32,
+              -0.29333333333333333,
+              -0.26666666666666666,
+              -0.24000000000000002,
+              -0.21333333333333335,
+              -0.18666666666666668,
+              -0.16,
+              -0.13333333333333333,
+              -0.10666666666666667,
+              -0.08,
+              -0.05333333333333334,
+              -0.02666666666666667,
+              0,
+              0.02666666666666667,
+              0.05333333333333334,
+              0.08,
+              0.10666666666666667,
+              0.13333333333333333,
+              0.16,
+              0.18666666666666668,
+              0.21333333333333335,
+              0.24000000000000002,
+              0.26666666666666666,
+              0.29333333333333333,
+              0.32,
+              0.3466666666666667,
+              0.37333333333333335,
+              0.4
+            ],
+            "phi": [
+              -0.4,
+              -0.37333333333333335,
+              -0.3466666666666667,
+              -0.32,
+              -0.29333333333333333,
+              -0.26666666666666666,
+              -0.24000000000000002,
+              -0.21333333333333335,
+              -0.18666666666666668,
+              -0.16,
+              -0.13333333333333333,
+              -0.10666666666666667,
+              -0.08,
+              -0.05333333333333334,
+              -0.02666666666666667,
+              0,
+              0.02666666666666667,
+              0.05333333333333334,
+              0.08,
+              0.10666666666666667,
+              0.13333333333333333,
+              0.16,
+              0.18666666666666668,
+              0.21333333333333335,
+              0.24000000000000002,
+              0.26666666666666666,
+              0.29333333333333333,
+              0.32,
+              0.3466666666666667,
+              0.37333333333333335,
+              0.4
+            ]
+          },
+          "wear": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "original_classification_signature_sha256": "94d3b3b6b8036dfb9378de472361076170b9c887e7e288d7585e89ceb1f04d49",
+      "unchanged_arrays": {
+        "stable_mask": true,
+        "reason_mask": true,
+        "stable_points": true,
+        "unstable_points": true
+      },
+      "original_inner_volume": null,
+      "inner_method": "largest_all_stable_grid_box",
+      "independent_inner_volume": 0.5461333333333335,
+      "independent_unstable_inside": 0,
+      "grid_box": {
+        "index_bounds_one_based": [
+          [
+            20,
+            24
+          ],
+          [
+            4,
+            28
+          ],
+          [
+            8,
+            24
+          ]
+        ],
+        "node_count": 2125,
+        "all_nodes_stable": true,
+        "volume_product": 0.5461333333333334,
+        "unstable_inside_independent": 0
+      },
+      "classification_note": "No ODE simulation repeated; native cache and classification arrays are byte-identical."
+    },
+    {
+      "filename": "stable_point_50kph_0.9mu_0deg.mat",
+      "speed_kmh": 50,
+      "mu_road": 0.9,
+      "front_steer_deg": 0,
+      "sha256": "ffc08a3c0b28bcdc2baaf1951ee438023d3cbe34a3e887fe803a30c54cc39172",
+      "checks": [
+        {
+          "check": "v4 kinematic initialization metadata",
+          "passed": true
+        },
+        {
+          "check": "exact requested operating condition",
+          "passed": true
+        },
+        {
+          "check": "original full five-second integration",
+          "passed": true
+        },
+        {
+          "check": "reference-relative friction calibration",
+          "passed": true
+        },
+        {
+          "check": "original constraint settings",
+          "passed": true
+        },
+        {
+          "check": "one healthy-only case and indices",
+          "passed": true
+        },
+        {
+          "check": "exact coarse and fine symmetric grids",
+          "passed": true
+        },
+        {
+          "check": "case inputs and grid",
+          "passed": true
+        },
+        {
+          "check": "mask shape and valid reason bits",
+          "passed": true
+        },
+        {
+          "check": "counts and stable fraction",
+          "passed": true
+        },
+        {
+          "check": "ordered finite point partitions",
+          "passed": true
+        },
+        {
+          "check": "exact frozen seven-source fingerprint",
+          "passed": true
+        },
+        {
+          "check": "all signature parameters match saved configuration",
+          "passed": true
+        },
+        {
+          "check": "independent raw cache agrees",
+          "passed": true
+        },
+        {
+          "check": "native cache provenance and full-horizon mode",
+          "passed": true
+        },
+        {
+          "check": "full-horizon classification diagnostics",
+          "passed": true
+        },
+        {
+          "check": "no hidden postprocessing errors",
+          "passed": true
+        },
+        {
+          "check": "claimed valid inner region",
+          "passed": true
+        },
+        {
+          "check": "single-case summary and ranking",
+          "passed": true
+        },
+        {
+          "check": "original MAT provenance is the immutable original seven-source pipeline",
+          "passed": true
+        },
+        {
+          "check": "native classification signature is byte-for-byte unchanged",
+          "passed": true
+        },
+        {
+          "check": "stable_mask is byte-for-byte identical to original full simulation",
+          "passed": true
+        },
+        {
+          "check": "reason_mask is byte-for-byte identical to original full simulation",
+          "passed": true
+        },
+        {
+          "check": "stable_points is byte-for-byte identical to original full simulation",
+          "passed": true
+        },
+        {
+          "check": "unstable_points is byte-for-byte identical to original full simulation",
+          "passed": true
+        },
+        {
+          "check": "classification counts and fraction unchanged",
+          "passed": true
+        },
+        {
+          "check": "raw classification cache bytes unchanged",
+          "passed": true
+        },
+        {
+          "check": "explicit postprocessing version and region method",
+          "passed": true
+        },
+        {
+          "check": "postprocessed inner region valid with positive volume",
+          "passed": true
+        },
+        {
+          "check": "eight finite distinct actual stable grid vertices",
+          "passed": true
+        },
+        {
+          "check": "independent convex hull has positive matching volume and zero sampled unstable points",
+          "passed": true
+        },
+        {
+          "check": "box index bounds are valid one-based original-grid intervals",
+          "passed": true
+        },
+        {
+          "check": "vertices are precisely all eight Cartesian box corners",
+          "passed": true
+        },
+        {
+          "check": "every original lattice node inside the box is stable",
+          "passed": true
+        },
+        {
+          "check": "box volume is product of three physical edge lengths",
+          "passed": true
+        },
+        {
+          "check": "box-only diagnostic fields are explicit",
+          "passed": true
+        },
+        {
+          "check": "independent axis-box test excludes every sampled unstable point",
+          "passed": true
+        }
+      ],
+      "stable_count": 2847,
+      "unstable_count": 36554,
+      "total_count": 39401,
+      "stable_fraction": 0.0722570493134692,
+      "numerical_failure_count": 0,
+      "hard_state_guard_count": 216,
+      "reason_bit_counts": {
+        "1": 3016,
+        "2": 33028,
+        "4": 14743,
+        "8": 0,
+        "16": 216
+      },
+      "inner_valid": true,
+      "inner_volume": 0.3413333333333334,
+      "outer_volume": 3.676444444444445,
+      "unstable_inside_inner": 0.0,
+      "source_sha256": {
+        "fullcar_model.m": "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+        "stability_run_signature.m": "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+        "native_accel.cpp": "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+        "native_accel": "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f",
+        "stability_region.m": "ca26225366cb9b4e463517078f70052cc683a9e113016139d747f4737d3e7d09",
+        "run_stability_sweep.m": "eab097fbbdd3433109c67bd11d04ccb9d6f3b303fd9fca44e4a057b3fd113935",
+        "native_stability_masks.m": "4bc72c05d08e0b7429d8ecbecc00b4ba38344cc7ac786111e3b01612c22e4558"
+      },
+      "previous_direct_start_comparison": {
+        "filename": "stable_point_50kph_0.9mu_0deg.mat",
+        "sha256": "4e0b7185d8cf3edeaaf0e04374eb46d9056c69f7765401ac989cc7f538a543cc",
+        "run_version": "mu-sweep-v3-reference09-matlabgrid",
+        "healthy_stable_count": 3822,
+        "kinematic_minus_previous_count": -975,
+        "stable_mask_mismatches": 2159,
+        "note": "Initialization changed intentionally; previous result is not an equivalence target."
+      },
+      "passed": true,
+      "original_mat_sha256": "3b466d3210390f06179a994cb56a22bb3295a3d4b5e38e340095b0859a620dc2",
+      "original_pipeline_source_sha256": {
+        "fullcar_model.m": "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+        "stability_run_signature.m": "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+        "native_accel.cpp": "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+        "native_accel": "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f",
+        "stability_region.m": "f87d9cc2d9cc9a894b08cd5accc86f99721b9f90e97cb344230bdbdb9fcd3eec",
+        "run_stability_sweep.m": "6589882d345a698e72e918d3d8791475fa1d57a45f6cca3cd633ceb852e45def",
+        "native_stability_masks.m": "4bc72c05d08e0b7429d8ecbecc00b4ba38344cc7ac786111e3b01612c22e4558"
+      },
+      "classification_source_sha256": {
+        "fullcar_model.m": "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+        "stability_run_signature.m": "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+        "native_accel.cpp": "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+        "native_accel": "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f"
+      },
+      "original_classification_signature": {
+        "schema": "mu-sweep-cache-v2",
+        "stage": "native",
+        "source_files": [
+          "fullcar_model.m",
+          "stability_run_signature.m",
+          "native_accel.cpp",
+          "native_accel"
+        ],
+        "sha256": [
+          "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+          "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+          "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+          "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f"
+        ],
+        "parameters": {
+          "speed_kmh": 50,
+          "ux": 13.88888888888889,
+          "mu_road": 0.9,
+          "mu_reference": 0.9,
+          "friction_scaling_mode": "relative_to_original_mu0p9",
+          "grid_generation": "symmetric_matlab_compatible",
+          "mu_scale_x": 1,
+          "mu_scale_y": 1,
+          "steer_deg": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "Ts": 0.01,
+          "sim_time": 5,
+          "Nsub": 20,
+          "k_spring_N_m": [
+            30790,
+            30790,
+            30790,
+            30790
+          ],
+          "I_mA": [
+            950,
+            950,
+            950,
+            950
+          ],
+          "g": 9.81,
+          "limit_factor": 0.85,
+          "r_limit": 0.5403348,
+          "ay_limit": 8.829,
+          "LTR_limit": 1,
+          "phi_hard_limit_rad": 0.6981317007977318,
+          "vc_hard_limit_m_s": 30,
+          "r_hard_limit_rad_s": 2,
+          "ignore_initial_s": 0,
+          "early_exit_on_unstable": false,
+          "initialization_mode": "kinematic_slip_free_roll",
+          "grid": {
+            "vc": [
+              -10,
+              -9.5,
+              -9,
+              -8.5,
+              -8,
+              -7.5,
+              -7,
+              -6.5,
+              -6,
+              -5.5,
+              -5,
+              -4.5,
+              -4,
+              -3.5,
+              -3,
+              -2.5,
+              -2,
+              -1.5,
+              -1,
+              -0.5,
+              0,
+              0.5,
+              1,
+              1.5,
+              2,
+              2.5,
+              3,
+              3.5,
+              4,
+              4.5,
+              5,
+              5.5,
+              6,
+              6.5,
+              7,
+              7.5,
+              8,
+              8.5,
+              9,
+              9.5,
+              10
+            ],
+            "r": [
+              -0.4,
+              -0.37333333333333335,
+              -0.3466666666666667,
+              -0.32,
+              -0.29333333333333333,
+              -0.26666666666666666,
+              -0.24000000000000002,
+              -0.21333333333333335,
+              -0.18666666666666668,
+              -0.16,
+              -0.13333333333333333,
+              -0.10666666666666667,
+              -0.08,
+              -0.05333333333333334,
+              -0.02666666666666667,
+              0,
+              0.02666666666666667,
+              0.05333333333333334,
+              0.08,
+              0.10666666666666667,
+              0.13333333333333333,
+              0.16,
+              0.18666666666666668,
+              0.21333333333333335,
+              0.24000000000000002,
+              0.26666666666666666,
+              0.29333333333333333,
+              0.32,
+              0.3466666666666667,
+              0.37333333333333335,
+              0.4
+            ],
+            "phi": [
+              -0.4,
+              -0.37333333333333335,
+              -0.3466666666666667,
+              -0.32,
+              -0.29333333333333333,
+              -0.26666666666666666,
+              -0.24000000000000002,
+              -0.21333333333333335,
+              -0.18666666666666668,
+              -0.16,
+              -0.13333333333333333,
+              -0.10666666666666667,
+              -0.08,
+              -0.05333333333333334,
+              -0.02666666666666667,
+              0,
+              0.02666666666666667,
+              0.05333333333333334,
+              0.08,
+              0.10666666666666667,
+              0.13333333333333333,
+              0.16,
+              0.18666666666666668,
+              0.21333333333333335,
+              0.24000000000000002,
+              0.26666666666666666,
+              0.29333333333333333,
+              0.32,
+              0.3466666666666667,
+              0.37333333333333335,
+              0.4
+            ]
+          },
+          "wear": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "original_classification_signature_sha256": "84c601431a2123ae0b3d8b1f82dd51dae226c6d275217176177a6033d1f6415a",
+      "unchanged_arrays": {
+        "stable_mask": true,
+        "reason_mask": true,
+        "stable_points": true,
+        "unstable_points": true
+      },
+      "original_inner_volume": null,
+      "inner_method": "largest_all_stable_grid_box",
+      "independent_inner_volume": 0.3413333333333334,
+      "independent_unstable_inside": 0,
+      "grid_box": {
+        "index_bounds_one_based": [
+          [
+            20,
+            22
+          ],
+          [
+            1,
+            31
+          ],
+          [
+            8,
+            24
+          ]
+        ],
+        "node_count": 1581,
+        "all_nodes_stable": true,
+        "volume_product": 0.3413333333333334,
+        "unstable_inside_independent": 0
+      },
+      "classification_note": "No ODE simulation repeated; native cache and classification arrays are byte-identical."
+    },
+    {
+      "filename": "stable_point_50kph_0.9mu_2deg.mat",
+      "speed_kmh": 50,
+      "mu_road": 0.9,
+      "front_steer_deg": 2,
+      "sha256": "8fb29c4b46b6dcbf6fb2db0ce59d8dd39577a669be3ae912ef8ca93bcdb0f005",
+      "checks": [
+        {
+          "check": "v4 kinematic initialization metadata",
+          "passed": true
+        },
+        {
+          "check": "exact requested operating condition",
+          "passed": true
+        },
+        {
+          "check": "original full five-second integration",
+          "passed": true
+        },
+        {
+          "check": "reference-relative friction calibration",
+          "passed": true
+        },
+        {
+          "check": "original constraint settings",
+          "passed": true
+        },
+        {
+          "check": "one healthy-only case and indices",
+          "passed": true
+        },
+        {
+          "check": "exact coarse and fine symmetric grids",
+          "passed": true
+        },
+        {
+          "check": "case inputs and grid",
+          "passed": true
+        },
+        {
+          "check": "mask shape and valid reason bits",
+          "passed": true
+        },
+        {
+          "check": "counts and stable fraction",
+          "passed": true
+        },
+        {
+          "check": "ordered finite point partitions",
+          "passed": true
+        },
+        {
+          "check": "exact frozen seven-source fingerprint",
+          "passed": true
+        },
+        {
+          "check": "all signature parameters match saved configuration",
+          "passed": true
+        },
+        {
+          "check": "independent raw cache agrees",
+          "passed": true
+        },
+        {
+          "check": "native cache provenance and full-horizon mode",
+          "passed": true
+        },
+        {
+          "check": "full-horizon classification diagnostics",
+          "passed": true
+        },
+        {
+          "check": "no hidden postprocessing errors",
+          "passed": true
+        },
+        {
+          "check": "claimed valid inner region",
+          "passed": true
+        },
+        {
+          "check": "single-case summary and ranking",
+          "passed": true
+        },
+        {
+          "check": "original MAT provenance is the immutable original seven-source pipeline",
+          "passed": true
+        },
+        {
+          "check": "native classification signature is byte-for-byte unchanged",
+          "passed": true
+        },
+        {
+          "check": "stable_mask is byte-for-byte identical to original full simulation",
+          "passed": true
+        },
+        {
+          "check": "reason_mask is byte-for-byte identical to original full simulation",
+          "passed": true
+        },
+        {
+          "check": "stable_points is byte-for-byte identical to original full simulation",
+          "passed": true
+        },
+        {
+          "check": "unstable_points is byte-for-byte identical to original full simulation",
+          "passed": true
+        },
+        {
+          "check": "classification counts and fraction unchanged",
+          "passed": true
+        },
+        {
+          "check": "raw classification cache bytes unchanged",
+          "passed": true
+        },
+        {
+          "check": "explicit postprocessing version and region method",
+          "passed": true
+        },
+        {
+          "check": "postprocessed inner region valid with positive volume",
+          "passed": true
+        },
+        {
+          "check": "eight finite distinct actual stable grid vertices",
+          "passed": true
+        },
+        {
+          "check": "independent convex hull has positive matching volume and zero sampled unstable points",
+          "passed": true
+        },
+        {
+          "check": "box index bounds are valid one-based original-grid intervals",
+          "passed": true
+        },
+        {
+          "check": "vertices are precisely all eight Cartesian box corners",
+          "passed": true
+        },
+        {
+          "check": "every original lattice node inside the box is stable",
+          "passed": true
+        },
+        {
+          "check": "box volume is product of three physical edge lengths",
+          "passed": true
+        },
+        {
+          "check": "box-only diagnostic fields are explicit",
+          "passed": true
+        },
+        {
+          "check": "independent axis-box test excludes every sampled unstable point",
+          "passed": true
+        }
+      ],
+      "stable_count": 4197,
+      "unstable_count": 35204,
+      "total_count": 39401,
+      "stable_fraction": 0.10652013908276439,
+      "numerical_failure_count": 0,
+      "hard_state_guard_count": 639,
+      "reason_bit_counts": {
+        "1": 2815,
+        "2": 31159,
+        "4": 14777,
+        "8": 0,
+        "16": 639
+      },
+      "inner_valid": true,
+      "inner_volume": 0.44800000000000006,
+      "outer_volume": 3.1161481481481483,
+      "unstable_inside_inner": 0.0,
+      "source_sha256": {
+        "fullcar_model.m": "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+        "stability_run_signature.m": "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+        "native_accel.cpp": "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+        "native_accel": "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f",
+        "stability_region.m": "ca26225366cb9b4e463517078f70052cc683a9e113016139d747f4737d3e7d09",
+        "run_stability_sweep.m": "eab097fbbdd3433109c67bd11d04ccb9d6f3b303fd9fca44e4a057b3fd113935",
+        "native_stability_masks.m": "4bc72c05d08e0b7429d8ecbecc00b4ba38344cc7ac786111e3b01612c22e4558"
+      },
+      "previous_direct_start_comparison": {
+        "filename": "stable_point_50kph_0.9mu_2deg.mat",
+        "sha256": "a40549c66923276b411acd2598de1e88fffc88ec36935cfc6055a27a4f536310",
+        "run_version": "mu-sweep-v3-reference09-matlabgrid",
+        "healthy_stable_count": 4003,
+        "kinematic_minus_previous_count": 194,
+        "stable_mask_mismatches": 2874,
+        "note": "Initialization changed intentionally; previous result is not an equivalence target."
+      },
+      "passed": true,
+      "original_mat_sha256": "f29610b9168afd2d2d3c541f800330ef65af9692fa846bb7e419e7216c277427",
+      "original_pipeline_source_sha256": {
+        "fullcar_model.m": "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+        "stability_run_signature.m": "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+        "native_accel.cpp": "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+        "native_accel": "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f",
+        "stability_region.m": "f87d9cc2d9cc9a894b08cd5accc86f99721b9f90e97cb344230bdbdb9fcd3eec",
+        "run_stability_sweep.m": "6589882d345a698e72e918d3d8791475fa1d57a45f6cca3cd633ceb852e45def",
+        "native_stability_masks.m": "4bc72c05d08e0b7429d8ecbecc00b4ba38344cc7ac786111e3b01612c22e4558"
+      },
+      "classification_source_sha256": {
+        "fullcar_model.m": "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+        "stability_run_signature.m": "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+        "native_accel.cpp": "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+        "native_accel": "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f"
+      },
+      "original_classification_signature": {
+        "schema": "mu-sweep-cache-v2",
+        "stage": "native",
+        "source_files": [
+          "fullcar_model.m",
+          "stability_run_signature.m",
+          "native_accel.cpp",
+          "native_accel"
+        ],
+        "sha256": [
+          "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+          "58e7354d85ec6acdc083fc8829ffdf85b46bb3f5acab6c80dff28797ab2ef4ba",
+          "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+          "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f"
+        ],
+        "parameters": {
+          "speed_kmh": 50,
+          "ux": 13.88888888888889,
+          "mu_road": 0.9,
+          "mu_reference": 0.9,
+          "friction_scaling_mode": "relative_to_original_mu0p9",
+          "grid_generation": "symmetric_matlab_compatible",
+          "mu_scale_x": 1,
+          "mu_scale_y": 1,
+          "steer_deg": [
+            2,
+            2,
+            0,
+            0
+          ],
+          "Ts": 0.01,
+          "sim_time": 5,
+          "Nsub": 20,
+          "k_spring_N_m": [
+            30790,
+            30790,
+            30790,
+            30790
+          ],
+          "I_mA": [
+            950,
+            950,
+            950,
+            950
+          ],
+          "g": 9.81,
+          "limit_factor": 0.85,
+          "r_limit": 0.5403348,
+          "ay_limit": 8.829,
+          "LTR_limit": 1,
+          "phi_hard_limit_rad": 0.6981317007977318,
+          "vc_hard_limit_m_s": 30,
+          "r_hard_limit_rad_s": 2,
+          "ignore_initial_s": 0,
+          "early_exit_on_unstable": false,
+          "initialization_mode": "kinematic_slip_free_roll",
+          "grid": {
+            "vc": [
+              -10,
+              -9.5,
+              -9,
+              -8.5,
+              -8,
+              -7.5,
+              -7,
+              -6.5,
+              -6,
+              -5.5,
+              -5,
+              -4.5,
+              -4,
+              -3.5,
+              -3,
+              -2.5,
+              -2,
+              -1.5,
+              -1,
+              -0.5,
+              0,
+              0.5,
+              1,
+              1.5,
+              2,
+              2.5,
+              3,
+              3.5,
+              4,
+              4.5,
+              5,
+              5.5,
+              6,
+              6.5,
+              7,
+              7.5,
+              8,
+              8.5,
+              9,
+              9.5,
+              10
+            ],
+            "r": [
+              -0.4,
+              -0.37333333333333335,
+              -0.3466666666666667,
+              -0.32,
+              -0.29333333333333333,
+              -0.26666666666666666,
+              -0.24000000000000002,
+              -0.21333333333333335,
+              -0.18666666666666668,
+              -0.16,
+              -0.13333333333333333,
+              -0.10666666666666667,
+              -0.08,
+              -0.05333333333333334,
+              -0.02666666666666667,
+              0,
+              0.02666666666666667,
+              0.05333333333333334,
+              0.08,
+              0.10666666666666667,
+              0.13333333333333333,
+              0.16,
+              0.18666666666666668,
+              0.21333333333333335,
+              0.24000000000000002,
+              0.26666666666666666,
+              0.29333333333333333,
+              0.32,
+              0.3466666666666667,
+              0.37333333333333335,
+              0.4
+            ],
+            "phi": [
+              -0.4,
+              -0.37333333333333335,
+              -0.3466666666666667,
+              -0.32,
+              -0.29333333333333333,
+              -0.26666666666666666,
+              -0.24000000000000002,
+              -0.21333333333333335,
+              -0.18666666666666668,
+              -0.16,
+              -0.13333333333333333,
+              -0.10666666666666667,
+              -0.08,
+              -0.05333333333333334,
+              -0.02666666666666667,
+              0,
+              0.02666666666666667,
+              0.05333333333333334,
+              0.08,
+              0.10666666666666667,
+              0.13333333333333333,
+              0.16,
+              0.18666666666666668,
+              0.21333333333333335,
+              0.24000000000000002,
+              0.26666666666666666,
+              0.29333333333333333,
+              0.32,
+              0.3466666666666667,
+              0.37333333333333335,
+              0.4
+            ]
+          },
+          "wear": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "original_classification_signature_sha256": "3d32f29e628e7e5c664f2b2d57c09cb7850e71f1c26825f24720d5b1f44985d0",
+      "unchanged_arrays": {
+        "stable_mask": true,
+        "reason_mask": true,
+        "stable_points": true,
+        "unstable_points": true
+      },
+      "original_inner_volume": null,
+      "inner_method": "largest_all_stable_grid_box",
+      "independent_inner_volume": 0.448,
+      "independent_unstable_inside": 0,
+      "grid_box": {
+        "index_bounds_one_based": [
+          [
+            20,
+            23
+          ],
+          [
+            1,
+            31
+          ],
+          [
+            9,
+            23
+          ]
+        ],
+        "node_count": 1860,
+        "all_nodes_stable": true,
+        "volume_product": 0.44800000000000006,
+        "unstable_inside_independent": 0
+      },
+      "classification_note": "No ODE simulation repeated; native cache and classification arrays are byte-identical."
+    }
+  ],
+  "definition": "Region-only reprocessing; original initial-state simulations and sampled classifications unchanged.",
+  "updated_utc": "2026-10-22T18:57:57.985034+00:00"
+}

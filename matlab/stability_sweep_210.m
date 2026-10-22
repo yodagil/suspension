@@ -5,12 +5,14 @@ function manifest = stability_sweep_210(options)
 % 속도 [50 60 70 80 90 100] km/h, mu [0.9 0.8 0.7 0.6 0.5],
 % 앞 휠 조향각 [0 0.5 1 1.5 2 2.5 3] deg, 마모 5종을 계산합니다.
 % 41x31x31 초기조건, 5초, Ts=0.01초, RK4 하위 적분 20회를 유지합니다.
-% 결과는 이 파일 옆 results_single_mfile 폴더에 시나리오별 MAT로 저장합니다.
+% 결과는 이 파일 옆 results_single_mfile_gridbox 폴더에 시나리오별 MAT로 저장합니다.
 % 종/횡 타이어 진폭 배율 mu/0.9, 요율 한계 0.85*mu*g/ux,
 % 횡가속도 한계 mu*g입니다. mu=0.9에서 원본 타이어 계수 보정을 유지합니다.
 % v4 초기화: vc0/r0/조향각으로 계산한 운동학적 alpha를 완화 상태에 넣습니다.
 % 초기 휠 속도는 max(u_wheel,0)/Rw, 완화 종슬립 kappa 초기값은 0입니다.
 % 초기화가 변경되었으므로 과거 direct-start MAT와 같다고 가정하지 마세요.
+% 기존 영역 추출이 실패하면 모든 내부 격자점이 안정인 최대 격자 박스를 찾습니다.
+% 이 보수적 대체 영역은 sampled-grid-only이며 연속 영역/점근 안정성 증명이 아닙니다.
 % 다른 M 파일, 외부 데이터, C++ 실행 파일은 필요하지 않습니다.
 % MATLAB JVM은 이 파일의 SHA-256 재현성 검증에 사용합니다.
 % 클라우드 계산은 같은 방정식을 C++로 가속하며 이 M-code는 더 느립니다.
@@ -44,7 +46,7 @@ healthy_only=size(wear_cases,1)==1 && all(wear_cases(1,:)==0);
 speeds = sweep_get_option(options,'speeds',[50 60 70 80 90 100]);
 mus = sweep_get_option(options,'mus',[0.9 0.8 0.7 0.6 0.5]);
 steers = sweep_get_option(options,'steers',[0 0.5 1 1.5 2 2.5 3]);
-outdir = sweep_get_option(options,'output_dir',fullfile(root,'results_single_mfile'));
+outdir = sweep_get_option(options,'output_dir',fullfile(root,'results_single_mfile_gridbox'));
 engine = sweep_get_option(options,'engine','mcode');
 assert(isnumeric(speeds) && isnumeric(mus) && isnumeric(steers),'Scenario options must be numeric vectors.');
 assert(isvector(speeds) && isvector(mus) && isvector(steers),'Scenario options must be nonempty vectors.');
@@ -145,6 +147,7 @@ for speed=speeds
      'mu_reference',cfg.mu_reference,'friction_scaling_mode',cfg.friction_scaling_mode, ...
      'grid_generation',cfg.grid_generation,'initialization_mode',cfg.initialization_mode, ...
      'case_count',size(wear_cases,1),'healthy_only',healthy_only, ...
+     'postprocessing_version','stable-grid-box-fallback-v1', ...
      'r_limit_rad_s',cfg.r_limit,'ay_limit_m_s2',cfg.ay_limit, ...
      'LTR_limit',cfg.LTR_limit,'limit_factor',cfg.limit_factor, ...
      'k_spring_N_m',cfg.k_spring_N_m,'I_mA',cfg.I_mA, ...
@@ -156,6 +159,7 @@ for speed=speeds
      'initialization','Kinematic initial slip angles from vc0/r0/wheel steer; per-wheel free rolling speeds; zero relaxed longitudinal slips', ...
      'has_valid_inner_region',any(valid),'completed_utc',datestr(now,30));
    STABILITY3D.meta.signature=scenario_signature;
+   STABILITY3D.meta.inner_region_methods=arrayfun(@(c)sweep_inner_region_method(c.region),CASE,'UniformOutput',false);
    STABILITY3D.meta.postprocessing_complete=all(arrayfun(@(c) ...
      isempty(c.postprocess.stable_hull_error) && isempty(c.postprocess.region_error),CASE));
    STABILITY3D.cfg=cfg; STABILITY3D.grid_coarse=G; STABILITY3D.grid_fine=GF;
@@ -288,6 +292,13 @@ assert(numel(S.CaseSummary)==size(wear_cases,1) && numel(S.CaseRanking)==size(we
  'Incomplete cached summary/ranking');
 end
 
+function method=sweep_inner_region_method(region)
+method='paper';
+if isfield(region,'inner_method') && ~isempty(region.inner_method)
+ method=region.inner_method;
+end
+end
+
 function value=sweep_get_option(options,name,default)
 if isfield(options,name), value=options.(name); else, value=default; end
 end
@@ -351,7 +362,7 @@ cfg.mu_scale_x = cfg.mu_road/cfg.mu_reference;
 cfg.mu_scale_y = cfg.mu_road/cfg.mu_reference;
 
 % Keep output for each mu separate to prevent overwriting existing MAT data.
-cfg.save_dir = fullfile(fileparts(mfilename('fullpath')),'results_single_mfile');
+cfg.save_dir = fullfile(fileparts(mfilename('fullpath')),'results_single_mfile_gridbox');
 
 if ~exist(cfg.save_dir,'dir')
 
@@ -3031,6 +3042,28 @@ function region = region_stability_region(G,stable_mask,stable_points,unstable_p
         end
     end
 
+    % Conservative sampled-grid fallback. Keep the original paper/support
+    % candidates above whenever one succeeds; this is used only otherwise.
+    if isempty(best.V)
+        [Vbox,vbox,boxBounds,boxNodes] = region_largest_stable_grid_box(G,stable_mask);
+        if size(Vbox,1)==8 && isfinite(vbox) && vbox>0
+            badBox = nnz(region_points_inside_convex_hull(unstable_points,Vbox,cfg.hull_inside_tol));
+            if badBox==0
+                bestVol = vbox;
+                best.V = Vbox;
+                best.bad = 0;
+                best.depth = NaN; % Grid box has no paper-layer depth.
+                best.limit = Vbox;
+                best.fallback = true;
+                region.inner_method = 'largest_all_stable_grid_box';
+                region.used_grid_box_fallback = true;
+                region.grid_box_node_count = boxNodes;
+                region.grid_box_index_bounds = boxBounds;
+                fprintf('  Stable-grid box fallback | volume=%10.6g | sampled nodes=%d | bad=0\n',vbox,boxNodes);
+            end
+        end
+    end
+
     if isempty(best.V)
 
         % Important: do not throw an error here.
@@ -3283,7 +3316,7 @@ end
 
 function R = region_empty_region()
 
-    R = struct( 'limit_roll_points',zeros(0,3), 'outer_limit_points',zeros(0,3), 'inner_limit_points',zeros(0,3), 'outer_vertices',zeros(0,3), 'inner_vertices',zeros(0,3), 'outer_volume',NaN, 'inner_volume',NaN, 'unstable_inside_outer',NaN, 'unstable_inside_inner',NaN, 'inner_depth',NaN, 'is_valid_inner',false, 'vc_split_center',NaN, 'used_stable_mask_fallback',false, 'used_support_fallback',false);
+    R = struct( 'limit_roll_points',zeros(0,3), 'outer_limit_points',zeros(0,3), 'inner_limit_points',zeros(0,3), 'outer_vertices',zeros(0,3), 'inner_vertices',zeros(0,3), 'outer_volume',NaN, 'inner_volume',NaN, 'unstable_inside_outer',NaN, 'unstable_inside_inner',NaN, 'inner_depth',NaN, 'is_valid_inner',false, 'vc_split_center',NaN, 'used_stable_mask_fallback',false, 'used_support_fallback',false, 'inner_method','paper_support_points', 'used_grid_box_fallback',false, 'sampled_grid_only',true, 'grid_box_node_count',0, 'grid_box_index_bounds',zeros(0,2));
 
 end
 
@@ -3347,6 +3380,56 @@ function [vol,ok] = region_convex_volume(V)
 
     end
 
+end
+
+function [V,volume,bounds,node_count] = region_largest_stable_grid_box(G,stable_mask)
+% Largest axis-aligned box whose every sampled grid node is stable.
+% Enumerate all vc slabs, then all maximal stable r/phi rectangles via a stack.
+% This is a sampled-data conservative fallback, not a continuous stability proof.
+nx=numel(G.vc); ny=numel(G.r); nz=numel(G.phi);
+assert(isequal(size(stable_mask),[nx ny nz]));
+V=zeros(0,3); volume=0; bounds=zeros(0,2); node_count=0;
+for lo=1:nx-1
+    plane=true(ny,nz);
+    for hi=lo:nx
+        plane=plane & reshape(stable_mask(hi,:,:),ny,nz);
+        if hi==lo, continue; end
+        if ~any(plane(:)), break; end
+        height=zeros(1,nz);
+        for bottom=1:ny
+            height=(height+1).*double(plane(bottom,:));
+            starts=zeros(1,nz); heights=zeros(1,nz); top=0;
+            for right=1:nz+1
+                if right<=nz, h=height(right); else, h=0; end
+                left=right;
+                while top>0 && heights(top)>h
+                    left0=starts(top); h0=heights(top); top=top-1; left=left0;
+                    if h0>=2 && right-left0>=2
+                        lowrow=bottom-h0+1;
+                        v=(G.vc(hi)-G.vc(lo))*(G.r(bottom)-G.r(lowrow))*(G.phi(right-1)-G.phi(left0));
+                        if v>volume
+                            volume=v;
+                            bounds=[lo hi;lowrow bottom;left0 right-1];
+                        end
+                    end
+                end
+                if h>0 && (top==0 || heights(top)<h)
+                    top=top+1; starts(top)=left; heights(top)=h;
+                end
+            end
+        end
+    end
+end
+if isempty(bounds), return; end
+lo=bounds(1,1);hi=bounds(1,2);j0=bounds(2,1);j1=bounds(2,2);k0=bounds(3,1);k1=bounds(3,2);
+% Preserve the existing eight-corner order: vc, then r, then phi.
+V=[G.vc(lo) G.r(j0) G.phi(k0);G.vc(lo) G.r(j0) G.phi(k1);...
+   G.vc(lo) G.r(j1) G.phi(k0);G.vc(lo) G.r(j1) G.phi(k1);...
+   G.vc(hi) G.r(j0) G.phi(k0);G.vc(hi) G.r(j0) G.phi(k1);...
+   G.vc(hi) G.r(j1) G.phi(k0);G.vc(hi) G.r(j1) G.phi(k1)];
+block=stable_mask(lo:hi,j0:j1,k0:k1);
+assert(all(block(:)),'Stable box contains an unstable sampled node.');
+node_count=numel(block);
 end
 
 function signature = single_stability_run_signature(cfg,G,wear,stage)

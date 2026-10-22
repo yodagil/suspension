@@ -191,6 +191,28 @@ function region = stability_region(G,stable_mask,stable_points,unstable_points,c
         end
     end
 
+    % Conservative sampled-grid fallback. Keep the original paper/support
+    % candidates above whenever one succeeds; this is used only otherwise.
+    if isempty(best.V)
+        [Vbox,vbox,boxBounds,boxNodes] = largest_stable_grid_box(G,stable_mask);
+        if size(Vbox,1)==8 && isfinite(vbox) && vbox>0
+            badBox = nnz(points_inside_convex_hull(unstable_points,Vbox,cfg.hull_inside_tol));
+            if badBox==0
+                bestVol = vbox;
+                best.V = Vbox;
+                best.bad = 0;
+                best.depth = NaN; % Grid box has no paper-layer depth.
+                best.limit = Vbox;
+                best.fallback = true;
+                region.inner_method = 'largest_all_stable_grid_box';
+                region.used_grid_box_fallback = true;
+                region.grid_box_node_count = boxNodes;
+                region.grid_box_index_bounds = boxBounds;
+                fprintf('  Stable-grid box fallback | volume=%10.6g | sampled nodes=%d | bad=0\n',vbox,boxNodes);
+            end
+        end
+    end
+
     if isempty(best.V)
 
         % Important: do not throw an error here.
@@ -443,7 +465,7 @@ end
 
 function R = empty_region()
 
-    R = struct( 'limit_roll_points',zeros(0,3), 'outer_limit_points',zeros(0,3), 'inner_limit_points',zeros(0,3), 'outer_vertices',zeros(0,3), 'inner_vertices',zeros(0,3), 'outer_volume',NaN, 'inner_volume',NaN, 'unstable_inside_outer',NaN, 'unstable_inside_inner',NaN, 'inner_depth',NaN, 'is_valid_inner',false, 'vc_split_center',NaN, 'used_stable_mask_fallback',false, 'used_support_fallback',false);
+    R = struct( 'limit_roll_points',zeros(0,3), 'outer_limit_points',zeros(0,3), 'inner_limit_points',zeros(0,3), 'outer_vertices',zeros(0,3), 'inner_vertices',zeros(0,3), 'outer_volume',NaN, 'inner_volume',NaN, 'unstable_inside_outer',NaN, 'unstable_inside_inner',NaN, 'inner_depth',NaN, 'is_valid_inner',false, 'vc_split_center',NaN, 'used_stable_mask_fallback',false, 'used_support_fallback',false, 'inner_method','paper_support_points', 'used_grid_box_fallback',false, 'sampled_grid_only',true, 'grid_box_node_count',0, 'grid_box_index_bounds',zeros(0,2));
 
 end
 
@@ -509,3 +531,52 @@ function [vol,ok] = convex_volume(V)
 
 end
 
+function [V,volume,bounds,node_count] = largest_stable_grid_box(G,stable_mask)
+% Largest axis-aligned box whose every sampled grid node is stable.
+% Enumerate all vc slabs, then all maximal stable r/phi rectangles via a stack.
+% This is a sampled-data conservative fallback, not a continuous stability proof.
+nx=numel(G.vc); ny=numel(G.r); nz=numel(G.phi);
+assert(isequal(size(stable_mask),[nx ny nz]));
+V=zeros(0,3); volume=0; bounds=zeros(0,2); node_count=0;
+for lo=1:nx-1
+    plane=true(ny,nz);
+    for hi=lo:nx
+        plane=plane & reshape(stable_mask(hi,:,:),ny,nz);
+        if hi==lo, continue; end
+        if ~any(plane(:)), break; end
+        height=zeros(1,nz);
+        for bottom=1:ny
+            height=(height+1).*double(plane(bottom,:));
+            starts=zeros(1,nz); heights=zeros(1,nz); top=0;
+            for right=1:nz+1
+                if right<=nz, h=height(right); else, h=0; end
+                left=right;
+                while top>0 && heights(top)>h
+                    left0=starts(top); h0=heights(top); top=top-1; left=left0;
+                    if h0>=2 && right-left0>=2
+                        lowrow=bottom-h0+1;
+                        v=(G.vc(hi)-G.vc(lo))*(G.r(bottom)-G.r(lowrow))*(G.phi(right-1)-G.phi(left0));
+                        if v>volume
+                            volume=v;
+                            bounds=[lo hi;lowrow bottom;left0 right-1];
+                        end
+                    end
+                end
+                if h>0 && (top==0 || heights(top)<h)
+                    top=top+1; starts(top)=left; heights(top)=h;
+                end
+            end
+        end
+    end
+end
+if isempty(bounds), return; end
+lo=bounds(1,1);hi=bounds(1,2);j0=bounds(2,1);j1=bounds(2,2);k0=bounds(3,1);k1=bounds(3,2);
+% Preserve the existing eight-corner order: vc, then r, then phi.
+V=[G.vc(lo) G.r(j0) G.phi(k0);G.vc(lo) G.r(j0) G.phi(k1);...
+   G.vc(lo) G.r(j1) G.phi(k0);G.vc(lo) G.r(j1) G.phi(k1);...
+   G.vc(hi) G.r(j0) G.phi(k0);G.vc(hi) G.r(j0) G.phi(k1);...
+   G.vc(hi) G.r(j1) G.phi(k0);G.vc(hi) G.r(j1) G.phi(k1)];
+block=stable_mask(lo:hi,j0:j1,k0:k1);
+assert(all(block(:)),'Stable box contains an unstable sampled node.');
+node_count=numel(block);
+end
