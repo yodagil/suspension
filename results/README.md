@@ -1,6 +1,6 @@
 # 수정된 안정영역 MAT 결과
 
-**수정 코드 완료·검증 결과: 21/210개. 계산 진행 중.** 완료된 MAT를 검증한 뒤 순서대로 자동 업로드합니다.
+**수정 코드 완료·검증 결과: 22/210개. 계산 진행 중.** 완료된 MAT를 검증한 뒤 순서대로 자동 업로드합니다.
 
 실험 조건: 속도 50·60·70·80·90·100 km/h, 노면 마찰계수 0.9·0.8·0.7·0.6·0.5, 앞 휠 조향각 0·0.5·1·1.5·2·2.5·3°. 바퀴 조향각은 [angle, angle, 0, 0]입니다.
 
@@ -34,4 +34,5 @@
 | 50 | 0.7 | 1.5 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_50kph_0.7mu_1.5deg.mat) | 5/5 |
 | 50 | 0.7 | 2 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_50kph_0.7mu_2deg.mat) | 5/5 |
 | 50 | 0.7 | 2.5 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_50kph_0.7mu_2.5deg.mat) | 4/5 |
+| 50 | 0.7 | 3 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_50kph_0.7mu_3deg.mat) | 3/5 |
 | 80 | 0.9 | 2 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_80kph_0.9mu_2deg.mat) | 5/5 |
