@@ -1,6 +1,6 @@
 # 운동학적 초기화 · 정상 타이어 우선 계산
 
-**완료·검증: 1/3개.** 기존 210조건 일괄 계산은 초기화 변경으로 중단한 상태입니다.
+**완료·검증: 2/3개.** 기존 210조건 일괄 계산은 초기화 변경으로 중단한 상태입니다.
 
 각 MAT는 정상 타이어 [0 0 0 0]만 포함합니다. `STABILITY3D.CASE`는 하나이며 `meta.healthy_only=true`, `meta.case_count=1`입니다. 마모 5종 결과와 구분해 사용하세요. 초기조건 39,401개, 5초, Ts=0.01초, RK4 하위 적분 20회를 유지했습니다.
 
@@ -9,7 +9,7 @@
 | 조건 | MAT | 안정점 개수 |
 |---|---|---|
 | 80 km/h · μ=0.9 · 2° | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/kinematic_initialization_healthy/stable_point_80kph_0.9mu_2deg.mat) | 3062 |
-| 50 km/h · μ=0.9 · 0° | 대기 또는 계산 중 | - |
+| 50 km/h · μ=0.9 · 0° | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/kinematic_initialization_healthy/stable_point_50kph_0.9mu_0deg.mat) | 2847 |
 | 50 km/h · μ=0.9 · 2° | 대기 또는 계산 중 | - |
 
 [저장 데이터 검증](validation_summary.json) · [MATLAB/C++ 초기화 47개 검사](initialization_verification.json) · [단일 MATLAB 코드](../../matlab/stability_sweep_210.m)
