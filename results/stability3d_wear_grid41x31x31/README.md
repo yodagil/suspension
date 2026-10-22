@@ -1,6 +1,6 @@
 # stability3d_wear: 4조건 MAT 결과
 
-완료 및 업로드: 3/4개. 각 파일에 마모 5종을 포함합니다.
+완료 및 업로드: 4/4개. 각 파일에 마모 5종을 포함합니다.
 
 첨부된 `stability3d_wear.m`의 revised 모델로 계산했습니다. 기존 공개 MAT와 다른 모델이며 결과를 혼합하지 않습니다.
 
@@ -22,5 +22,6 @@ MATLAB에서 `D=load(filename); S=D.STABILITY3D;`로 읽습니다. `S.CASE{1}`~`
 | 조건 | MAT | 안정점 수 (마모 1~5) | 검증된 내부 영역 |
 |---|---|---|---|
 | 50 km/h · 0° | [stability3d_wear_50kph_0deg.mat](stability3d_wear_50kph_0deg.mat) | 2791, 3053, 6609, 2750, 4674 | 5/5 |
+| 50 km/h · 2° | [stability3d_wear_50kph_2deg.mat](stability3d_wear_50kph_2deg.mat) | 4411, 4657, 8130, 4096, 5963 | 5/5 |
 | 80 km/h · 0° | [stability3d_wear_80kph_0deg.mat](stability3d_wear_80kph_0deg.mat) | 2568, 2462, 2853, 2461, 2458 | 5/5 |
 | 80 km/h · 2° | [stability3d_wear_80kph_2deg.mat](stability3d_wear_80kph_2deg.mat) | 3011, 3031, 3435, 2865, 3334 | 5/5 |
