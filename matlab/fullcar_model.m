@@ -4,6 +4,8 @@ function varargout = fullcar_model(action,varargin)
 switch action
  case 'defaults'
   [varargout{1:nargout}] = model_defaults();
+ case 'initial'
+  varargout{1} = initialize_fullcar_state(varargin{:});
  case 'classify'
   [varargout{1:nargout}] = simulate_and_classify_mcode(varargin{:});
  case 'params'
@@ -25,6 +27,7 @@ end
 
 function [cfg,gridC,wear_cases,P,gridF] = model_defaults()
 cfg.mu_road = 0.9;
+cfg.initialization_mode = 'kinematic_slip_free_roll';
 cfg.grid_generation = 'symmetric_matlab_compatible';
 cfg.mu_reference = 0.9; % Original first-code tire calibration is the baseline.
 cfg.friction_scaling_mode = 'relative_to_original_mu0p9';
@@ -408,6 +411,20 @@ function C = evaluate_wear_case_mcode(cfg,G,wear,P)
 
 end
 
+function x = initialize_fullcar_state(cfg,P,vc0,r0,phi0)
+% Initialize relaxed slips consistently with the initial wheel-frame velocity.
+x = zeros(32,1);
+x(1) = vc0;
+x(2) = r0;
+x(4) = phi0;
+delta_w = deg2rad(cfg.steer_deg(:));
+[~,alpha0,u_wheel0] = calculate_internal_slips( ...
+    x,delta_w,cfg.ux,P.lf,P.lr,P.tf,P.tr,P.Rw);
+x(21:24) = alpha0;
+x(25:28) = max(u_wheel0,0.0)/P.Rw;
+x(17:20) = 0;
+end
+
 function [isStable,reason] = simulate_and_classify_mcode(cfg,wear,P,vc0,r0,phi0)
 
     delta_w = deg2rad(cfg.steer_deg(:));
@@ -418,37 +435,7 @@ function [isStable,reason] = simulate_and_classify_mcode(cfg,wear,P,vc0,r0,phi0)
 
     kw = spring_to_wheel_rate(cfg.k_spring_N_m,P);
 
-    % Same state layout as the supplied 32-state Full-car model.
-
-    x = zeros(32,1);
-
-    x(1) = vc0;
-
-    x(2) = r0;
-
-    x(4) = phi0;
-
-    % Match the supplied model's direct-start initialization at nonzero ux.
-
-    % NOTE: this intentionally preserves the current Simulink-model behavior:
-
-    % alpha relaxed states start at -delta_w and wheel speeds are free rolling.
-
-    x(21:24) = -delta_w;
-
-    for i=1:4
-
-        u0 = cfg.ux*cos(delta_w(i));
-
-        if u0<0.0
-
-            u0=0.0;
-
-        end
-
-        x(24+i) = u0/P.Rw;  % x(25:28)
-
-    end
+    x = initialize_fullcar_state(cfg,P,vc0,r0,phi0);
 
     reason = uint8(0);
 

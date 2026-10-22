@@ -2,6 +2,7 @@ function [stable_mask,reason_mask,info] = native_stability_masks(cfg,G,wear,cach
 % Run the compiled reference equations; refuse unsupported parameter changes.
 root=fileparts(mfilename('fullpath')); exe=fullfile(root,'native_accel');
 assert(exist(exe,'file')==2,'Compile native_accel first with build_native.sh');
+assert(strcmp(cfg.initialization_mode,'kinematic_slip_free_roll'),'Unsupported native initialization mode');
 assert(cfg.g==9.81 && cfg.ux==cfg.speed_kmh/3.6,'Native gravity/speed mismatch');
 assert(cfg.mu_reference==0.9 && strcmp(cfg.friction_scaling_mode,'relative_to_original_mu0p9'),'Unsupported native friction reference');
 assert(cfg.mu_scale_x==cfg.mu_road/cfg.mu_reference && cfg.mu_scale_y==cfg.mu_road/cfg.mu_reference,'Native friction scaling mismatch');

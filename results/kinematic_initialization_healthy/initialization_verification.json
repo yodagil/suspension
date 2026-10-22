@@ -1,0 +1,331 @@
+{
+  "all_passed": true,
+  "initialization_mode": "kinematic_slip_free_roll",
+  "initial_state_cases": 18,
+  "checks_count": 47,
+  "maximum_initial_kinematic_slip_ratio_abs": 1.2876717216410863e-16,
+  "requested_example": [
+    {
+      "speed_kmh": 50,
+      "steer_deg": 0.0,
+      "initial_vc_m_s": 1.025,
+      "initial_r_rad_s": -0.115,
+      "front_alpha_deg": [
+        3.502025429487042,
+        3.5495783877478044
+      ],
+      "wheel_omega_rad_s": [
+        38.84107330246914,
+        38.31942052469136,
+        38.84075385802469,
+        38.3197399691358
+      ]
+    },
+    {
+      "speed_kmh": 50,
+      "steer_deg": 2.0,
+      "initial_vc_m_s": 1.025,
+      "initial_r_rad_s": -0.115,
+      "front_alpha_deg": [
+        1.5020254294870423,
+        1.5495783877478042
+      ],
+      "wheel_omega_rad_s": [
+        38.900368473725806,
+        38.37903347272565,
+        38.84075385802469,
+        38.3197399691358
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "check": "initial_state_1_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_1_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "RHS_1",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "RK4_20_substeps_1",
+      "passed": true,
+      "max_absolute_error": 6.5052130349130266e-18,
+      "max_scaled_error": 6.486274114162025e-18
+    },
+    {
+      "check": "initial_state_2_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_2_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "RHS_2",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "RK4_20_substeps_2",
+      "passed": true,
+      "max_absolute_error": 6.938893903907228e-18,
+      "max_scaled_error": 6.8977571993058885e-18
+    },
+    {
+      "check": "initial_state_3_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_3_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "RHS_3",
+      "passed": true,
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_scaled_error": 2.36474819818142e-16
+    },
+    {
+      "check": "RK4_20_substeps_3",
+      "passed": true,
+      "max_absolute_error": 2.220446049250313e-16,
+      "max_scaled_error": 1.3709729706514912e-16
+    },
+    {
+      "check": "initial_state_4_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_4_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "RHS_4",
+      "passed": true,
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_scaled_error": 2.36474819818142e-16
+    },
+    {
+      "check": "RK4_20_substeps_4",
+      "passed": true,
+      "max_absolute_error": 4.440892098500626e-16,
+      "max_scaled_error": 2.4789773994321336e-16
+    },
+    {
+      "check": "initial_state_5_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_5_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_6_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_6_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 5.551115123125783e-17,
+      "max_scaled_error": 3.881093232895332e-17
+    },
+    {
+      "check": "initial_state_7_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_7_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_8_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_8_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_9_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_9_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_10_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_10_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_11_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_11_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_12_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_12_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_13_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_13_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_14_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_14_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_15_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_15_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_16_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_16_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_17_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_17_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 1.1102230246251565e-16,
+      "max_scaled_error": 7.063700718988806e-17
+    },
+    {
+      "check": "initial_state_18_native_matlab",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "initial_state_18_independent_kinematics",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    },
+    {
+      "check": "classification_0p02s_80kph_2deg",
+      "passed": true,
+      "native_reason": 0,
+      "matlab_reason": 0
+    },
+    {
+      "check": "classification_0p02s_50kph_0deg",
+      "passed": true,
+      "native_reason": 2,
+      "matlab_reason": 2
+    },
+    {
+      "check": "classification_0p02s_50kph_2deg",
+      "passed": true,
+      "native_reason": 0,
+      "matlab_reason": 0
+    }
+  ],
+  "source_sha256": {
+    "fullcar_model.m": "fd9ce9ac10aea36472d83fbfe9bb0dda06700a0122c3f39d1b64c5d7464f52d5",
+    "native_accel.cpp": "7732d356e8f8fb125fad5c084c8b9d1101baa87ce76168d9a803e01780a589ba",
+    "native_accel": "d654d48b5bc447546ae5655d6a17efbb860f9034efd0a397edac9aa1adc1965f"
+  },
+  "note": "All integrations preserve the existing dynamics; initialization uses the same wheel-frame velocity and atan2 safety floor as the runtime slip calculation."
+}
