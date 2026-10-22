@@ -1,0 +1,409 @@
+{
+  "finished": true,
+  "all_passed": true,
+  "computed_file": "stable_point_50kph_0.9mu_0deg.mat",
+  "computed_sha256": "4e0b7185d8cf3edeaaf0e04374eb46d9056c69f7765401ac989cc7f538a543cc",
+  "reference_80_all_matched_required": true,
+  "golden_reference_50_supplied": false,
+  "reference_50_note": "Internal consistency and provenance validation only. The legacy 50 result used a different friction normalization and is not a golden reference.",
+  "checks": [
+    {
+      "check": "exact target operating condition",
+      "passed": true
+    },
+    {
+      "check": "reference friction scaling and full horizon",
+      "passed": true
+    },
+    {
+      "check": "full horizon metadata",
+      "passed": true
+    },
+    {
+      "check": "v3 symmetric MATLAB grids",
+      "passed": true
+    },
+    {
+      "check": "all five original wear cases",
+      "passed": true
+    },
+    {
+      "check": "metadata source fingerprints",
+      "passed": true
+    },
+    {
+      "check": "case summary and ranking complete",
+      "passed": true
+    },
+    {
+      "check": "wear 1: exact case inputs",
+      "passed": true
+    },
+    {
+      "check": "wear 1: mask shape and reason agreement",
+      "passed": true
+    },
+    {
+      "check": "wear 1: counts and fraction",
+      "passed": true
+    },
+    {
+      "check": "wear 1: exact ordered stable and unstable coordinates",
+      "passed": true
+    },
+    {
+      "check": "wear 1: finite complete point partitions",
+      "passed": true
+    },
+    {
+      "check": "wear 1: independent raw cache agrees",
+      "passed": true
+    },
+    {
+      "check": "wear 1: full horizon diagnostics",
+      "passed": true
+    },
+    {
+      "check": "wear 1: valid inner region excludes unstable samples",
+      "passed": true
+    },
+    {
+      "check": "wear 2: exact case inputs",
+      "passed": true
+    },
+    {
+      "check": "wear 2: mask shape and reason agreement",
+      "passed": true
+    },
+    {
+      "check": "wear 2: counts and fraction",
+      "passed": true
+    },
+    {
+      "check": "wear 2: exact ordered stable and unstable coordinates",
+      "passed": true
+    },
+    {
+      "check": "wear 2: finite complete point partitions",
+      "passed": true
+    },
+    {
+      "check": "wear 2: independent raw cache agrees",
+      "passed": true
+    },
+    {
+      "check": "wear 2: full horizon diagnostics",
+      "passed": true
+    },
+    {
+      "check": "wear 2: valid inner region excludes unstable samples",
+      "passed": true
+    },
+    {
+      "check": "wear 3: exact case inputs",
+      "passed": true
+    },
+    {
+      "check": "wear 3: mask shape and reason agreement",
+      "passed": true
+    },
+    {
+      "check": "wear 3: counts and fraction",
+      "passed": true
+    },
+    {
+      "check": "wear 3: exact ordered stable and unstable coordinates",
+      "passed": true
+    },
+    {
+      "check": "wear 3: finite complete point partitions",
+      "passed": true
+    },
+    {
+      "check": "wear 3: independent raw cache agrees",
+      "passed": true
+    },
+    {
+      "check": "wear 3: full horizon diagnostics",
+      "passed": true
+    },
+    {
+      "check": "wear 3: valid inner region excludes unstable samples",
+      "passed": true
+    },
+    {
+      "check": "wear 4: exact case inputs",
+      "passed": true
+    },
+    {
+      "check": "wear 4: mask shape and reason agreement",
+      "passed": true
+    },
+    {
+      "check": "wear 4: counts and fraction",
+      "passed": true
+    },
+    {
+      "check": "wear 4: exact ordered stable and unstable coordinates",
+      "passed": true
+    },
+    {
+      "check": "wear 4: finite complete point partitions",
+      "passed": true
+    },
+    {
+      "check": "wear 4: independent raw cache agrees",
+      "passed": true
+    },
+    {
+      "check": "wear 4: full horizon diagnostics",
+      "passed": true
+    },
+    {
+      "check": "wear 4: valid inner region excludes unstable samples",
+      "passed": true
+    },
+    {
+      "check": "wear 5: exact case inputs",
+      "passed": true
+    },
+    {
+      "check": "wear 5: mask shape and reason agreement",
+      "passed": true
+    },
+    {
+      "check": "wear 5: counts and fraction",
+      "passed": true
+    },
+    {
+      "check": "wear 5: exact ordered stable and unstable coordinates",
+      "passed": true
+    },
+    {
+      "check": "wear 5: finite complete point partitions",
+      "passed": true
+    },
+    {
+      "check": "wear 5: independent raw cache agrees",
+      "passed": true
+    },
+    {
+      "check": "wear 5: full horizon diagnostics",
+      "passed": true
+    },
+    {
+      "check": "wear 5: valid inner region excludes unstable samples",
+      "passed": true
+    }
+  ],
+  "cases": [
+    {
+      "wear_case": 1,
+      "stable_count": 3822,
+      "unstable_count": 35579,
+      "passed": true,
+      "reason_bit_counts": {
+        "1": 2743,
+        "2": 33552,
+        "4": 15170,
+        "8": 0,
+        "16": 178
+      },
+      "reason_bit_names": {
+        "1": "yaw_limit",
+        "2": "lateral_acceleration_limit",
+        "4": "LTR_limit",
+        "8": "nonfinite_numerical_failure",
+        "16": "hard_state_guard"
+      },
+      "numerical_failure_count": 0,
+      "hard_state_guard_count": 178,
+      "inner_volume": 0.5902222222222223,
+      "outer_volume": 1.1697777777777778,
+      "inner_volume_is_nan": false,
+      "inner_is_valid": true,
+      "unstable_inside_inner": 0.0,
+      "postprocess": {
+        "stable_hull_error": "",
+        "region_error": ""
+      }
+    },
+    {
+      "wear_case": 2,
+      "stable_count": 3702,
+      "unstable_count": 35699,
+      "passed": true,
+      "reason_bit_counts": {
+        "1": 2237,
+        "2": 33707,
+        "4": 15163,
+        "8": 0,
+        "16": 93
+      },
+      "reason_bit_names": {
+        "1": "yaw_limit",
+        "2": "lateral_acceleration_limit",
+        "4": "LTR_limit",
+        "8": "nonfinite_numerical_failure",
+        "16": "hard_state_guard"
+      },
+      "numerical_failure_count": 0,
+      "hard_state_guard_count": 93,
+      "inner_volume": 0.4835555555555556,
+      "outer_volume": 1.1697777777777778,
+      "inner_volume_is_nan": false,
+      "inner_is_valid": true,
+      "unstable_inside_inner": 0.0,
+      "postprocess": {
+        "stable_hull_error": "",
+        "region_error": ""
+      }
+    },
+    {
+      "wear_case": 3,
+      "stable_count": 3675,
+      "unstable_count": 35726,
+      "passed": true,
+      "reason_bit_counts": {
+        "1": 628,
+        "2": 33746,
+        "4": 15085,
+        "8": 0,
+        "16": 0
+      },
+      "reason_bit_names": {
+        "1": "yaw_limit",
+        "2": "lateral_acceleration_limit",
+        "4": "LTR_limit",
+        "8": "nonfinite_numerical_failure",
+        "16": "hard_state_guard"
+      },
+      "numerical_failure_count": 0,
+      "hard_state_guard_count": 0,
+      "inner_volume": 0.5137777777777779,
+      "outer_volume": 1.2320000000000002,
+      "inner_volume_is_nan": false,
+      "inner_is_valid": true,
+      "unstable_inside_inner": 0.0,
+      "postprocess": {
+        "stable_hull_error": "",
+        "region_error": ""
+      }
+    },
+    {
+      "wear_case": 4,
+      "stable_count": 3719,
+      "unstable_count": 35682,
+      "passed": true,
+      "reason_bit_counts": {
+        "1": 3024,
+        "2": 33680,
+        "4": 15171,
+        "8": 0,
+        "16": 200
+      },
+      "reason_bit_names": {
+        "1": "yaw_limit",
+        "2": "lateral_acceleration_limit",
+        "4": "LTR_limit",
+        "8": "nonfinite_numerical_failure",
+        "16": "hard_state_guard"
+      },
+      "numerical_failure_count": 0,
+      "hard_state_guard_count": 200,
+      "inner_volume": 0.6826666666666669,
+      "outer_volume": 1.0968888888888888,
+      "inner_volume_is_nan": false,
+      "inner_is_valid": true,
+      "unstable_inside_inner": 0.0,
+      "postprocess": {
+        "stable_hull_error": "",
+        "region_error": ""
+      }
+    },
+    {
+      "wear_case": 5,
+      "stable_count": 3624,
+      "unstable_count": 35777,
+      "passed": true,
+      "reason_bit_counts": {
+        "1": 5561,
+        "2": 33834,
+        "4": 15088,
+        "8": 0,
+        "16": 894
+      },
+      "reason_bit_names": {
+        "1": "yaw_limit",
+        "2": "lateral_acceleration_limit",
+        "4": "LTR_limit",
+        "8": "nonfinite_numerical_failure",
+        "16": "hard_state_guard"
+      },
+      "numerical_failure_count": 0,
+      "hard_state_guard_count": 894,
+      "inner_volume": 0.7964444444444445,
+      "outer_volume": 1.169777777777778,
+      "inner_volume_is_nan": false,
+      "inner_is_valid": true,
+      "unstable_inside_inner": 0.0,
+      "postprocess": {
+        "stable_hull_error": "",
+        "region_error": ""
+      }
+    }
+  ],
+  "legacy_comparison": {
+    "file": "Previous local result retained outside the public MAT list",
+    "stable_counts": [
+      21076,
+      22099,
+      24127,
+      21835,
+      20909
+    ],
+    "corrected_stable_counts": [
+      3822,
+      3702,
+      3675,
+      3719,
+      3624
+    ],
+    "corrected_minus_legacy_counts": [
+      -17254,
+      -18397,
+      -20452,
+      -18116,
+      -17285
+    ],
+    "legacy_inner_volumes": [
+      null,
+      null,
+      null,
+      null,
+      0.21120000000000005
+    ],
+    "legacy_inner_volume_nan": [
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "corrected_inner_volume_nan": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "legacy_mu_scale_x": 0.7860262008733625,
+    "legacy_mu_scale_y": 0.8756567425569177,
+    "legacy_sha256": "eea43c14adaded7a456c56f82597e344f68e08fa2456c10e21a23343933214c9",
+    "legacy_run_version": "mu-sweep-v1"
+  },
+  "utc": "2026-10-22T14:09:51.240521+00:00",
+  "generated_mat_sha256": "4e0b7185d8cf3edeaaf0e04374eb46d9056c69f7765401ac989cc7f538a543cc",
+  "serialization_note": "Scientific data validated; MAT version/platform metadata and summary struct format may differ from the uploaded MATLAB reference.",
+  "reference_note": "No independent 50-kph reference MAT was provided. This checks the regenerated data and comparison with the previous normalization, not equivalence to an independent 50-kph reference."
+}
