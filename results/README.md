@@ -1,6 +1,6 @@
 # Stability sweep MAT results
 
-Completed scenarios: **20/210**.
+Completed scenarios: **21/210**.
 
 Each MAT file contains `STABILITY3D` with all five tire-wear cases, the original 41 x 31 x 31 initial-condition grid, and the 5-second classification horizon (Ts=0.01 s, 20 RK4 substeps). Front wheel steering is [angle, angle, 0, 0] degrees.
 
@@ -30,3 +30,4 @@ Open a MAT file and use GitHub’s raw-file download button, or use its **Downlo
 | 50 | 0.7 | 1.5 | [Download](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_50kph_0.7mu_1.5deg.mat) |
 | 50 | 0.7 | 2 | [Download](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_50kph_0.7mu_2deg.mat) |
 | 50 | 0.7 | 2.5 | [Download](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_50kph_0.7mu_2.5deg.mat) |
+| 50 | 0.7 | 3 | [Download](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_50kph_0.7mu_3deg.mat) |
