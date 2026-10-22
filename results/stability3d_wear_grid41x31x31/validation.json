@@ -14,6 +14,117 @@
   },
   "files": [
     {
+      "filename": "stability3d_wear_50kph_0deg.mat",
+      "sha256": "0e99eabe5dc20719d3c5ae66a869c97f9d6be0bca8dd583d35f7b577d12df047",
+      "bytes": 7709360,
+      "scenario_index": 1,
+      "scenario": [
+        50.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "grid_shape": [
+        41,
+        31,
+        31
+      ],
+      "wear_cases": [
+        {
+          "wear_case": 1,
+          "stable_count": 2791,
+          "total_count": 39401,
+          "numerical_failure_count": 0,
+          "hard_guard_count": 0,
+          "inner_valid": true,
+          "inner_volume": 0.3413333333333333,
+          "region_message": "Passed finite sampled tests only; NOT a continuous or invariant-set certificate.",
+          "boundary_touch": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "wear_case": 2,
+          "stable_count": 3053,
+          "total_count": 39401,
+          "numerical_failure_count": 0,
+          "hard_guard_count": 0,
+          "inner_valid": true,
+          "inner_volume": 0.3413333333333333,
+          "region_message": "Passed finite sampled tests only; NOT a continuous or invariant-set certificate.",
+          "boundary_touch": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "wear_case": 3,
+          "stable_count": 6609,
+          "total_count": 39401,
+          "numerical_failure_count": 0,
+          "hard_guard_count": 0,
+          "inner_valid": true,
+          "inner_volume": 0.3413333333333333,
+          "region_message": "Passed finite sampled tests only; NOT a continuous or invariant-set certificate.",
+          "boundary_touch": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "wear_case": 4,
+          "stable_count": 2750,
+          "total_count": 39401,
+          "numerical_failure_count": 0,
+          "hard_guard_count": 0,
+          "inner_valid": true,
+          "inner_volume": 0.3413333333333333,
+          "region_message": "Passed finite sampled tests only; NOT a continuous or invariant-set certificate.",
+          "boundary_touch": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "wear_case": 5,
+          "stable_count": 4674,
+          "total_count": 39401,
+          "numerical_failure_count": 0,
+          "hard_guard_count": 0,
+          "inner_valid": true,
+          "inner_volume": 0.3413333333333333,
+          "region_message": "Passed finite sampled tests only; NOT a continuous or invariant-set certificate.",
+          "boundary_touch": [
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+          ]
+        }
+      ],
+      "validation_passed": true
+    },
+    {
       "filename": "stability3d_wear_80kph_0deg.mat",
       "sha256": "c7f137f532100749589d2f34a319ba814910cc2e4c5b9f7eaff5a52dfff48cc5",
       "bytes": 5437539,
