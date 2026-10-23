@@ -1,6 +1,6 @@
 {
   "run_version": "mu-sweep-v3-reference09-matlabgrid",
-  "completed_scenarios": 55,
+  "completed_scenarios": 56,
   "total_scenarios": 210,
   "producer_phase": "running",
   "source_sha256": {
@@ -12,7 +12,7 @@
     "run_stability_sweep.m": "fbeb6fcf6719021846668f2a2e242be5a3b74f20d724f9a96dfe7cf0e96ec640",
     "native_stability_masks.m": "189a6bd3dd6f1417a4c6208d731b9bef1033ec5b87da2561e8e77187066effab"
   },
-  "updated_utc": "2026-10-23T14:18:10+00:00",
+  "updated_utc": "2026-10-23T14:44:52+00:00",
   "scenarios": [
     {
       "filename": "stable_point_50kph_0.9mu_0deg.mat",
@@ -2927,6 +2927,60 @@
           "outer_volume": 0.7586370370370373,
           "numerical_failure_count": 0,
           "hard_state_guard_count": 1458
+        }
+      ]
+    },
+    {
+      "filename": "stable_point_60kph_0.7mu_2.5deg.mat",
+      "speed_kmh": 60,
+      "mu_road": 0.7,
+      "front_steer_deg": 2.5,
+      "sha256": "1115a19fb0f6343dc10aab62c96dc4d998b9c5d54df2ff79ca37f7350d2e71f0",
+      "cases": [
+        {
+          "wear_case": 1,
+          "stable_count": 2865,
+          "inner_valid": true,
+          "inner_volume": 0.6741333333333333,
+          "outer_volume": 0.756562962962963,
+          "numerical_failure_count": 0,
+          "hard_state_guard_count": 643
+        },
+        {
+          "wear_case": 2,
+          "stable_count": 2844,
+          "inner_valid": true,
+          "inner_volume": 0.6992,
+          "outer_volume": 0.8086518518518518,
+          "numerical_failure_count": 0,
+          "hard_state_guard_count": 361
+        },
+        {
+          "wear_case": 3,
+          "stable_count": 2719,
+          "inner_valid": true,
+          "inner_volume": 0.41179259259259254,
+          "outer_volume": 0.7509925925925927,
+          "numerical_failure_count": 0,
+          "hard_state_guard_count": 0
+        },
+        {
+          "wear_case": 4,
+          "stable_count": 2796,
+          "inner_valid": true,
+          "inner_volume": 0.6662518518518518,
+          "outer_volume": 0.7323851851851851,
+          "numerical_failure_count": 0,
+          "hard_state_guard_count": 869
+        },
+        {
+          "wear_case": 5,
+          "stable_count": 2837,
+          "inner_valid": true,
+          "inner_volume": 0.6924444444444446,
+          "outer_volume": 0.8292148148148151,
+          "numerical_failure_count": 0,
+          "hard_state_guard_count": 1600
         }
       ]
     },
