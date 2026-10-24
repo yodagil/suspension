@@ -1,0 +1,51 @@
+{
+  "trial": 1,
+  "model": "Independent paper-based fixed-speed calibration trial",
+  "speed_kmh": 40,
+  "mu": 0.85,
+  "angles_deg": [
+    0,
+    3.5,
+    7
+  ],
+  "physical_parameters_published": false,
+  "estimated_parameters": {
+    "ms": 1300,
+    "hphi": 0.6,
+    "Ks": 1,
+    "burckhardt": [
+      1.28,
+      23.99,
+      0.8
+    ]
+  },
+  "grid": "Coarse screening 21 x 19 x 11; not final 69905-state results",
+  "simulations_not_manually_scaled": true,
+  "projection": "One common orthographic camera (elevation 11 deg, azimuth -72 deg), approximate paper axis-unit ratios; yaw axis reversed to match reference; full extended ranges, no data clipping",
+  "cases": [
+    {
+      "angle": 0,
+      "volume": 6.7200000000000015,
+      "stable_count": 2459,
+      "tested_initial_conditions": 4389,
+      "unstable_samples_inside": 0,
+      "source_mat_sha256": "0975c15383dac75e7e0ab4cd52b1160905a93a386755801400885b5eb83aca3c"
+    },
+    {
+      "angle": 3.5,
+      "volume": 3.4560000000000004,
+      "stable_count": 2556,
+      "tested_initial_conditions": 4389,
+      "unstable_samples_inside": 0,
+      "source_mat_sha256": "7b8dc23bc0b4be0721c748958ee4d0b8de201a585a8056b5140b696b50a14e15"
+    },
+    {
+      "angle": 7,
+      "volume": 1.5360000000000003,
+      "stable_count": 2574,
+      "tested_initial_conditions": 4389,
+      "unstable_samples_inside": 0,
+      "source_mat_sha256": "d26d523c15bf03bdcd7405942955e5f6c07d13ba964e8cd97736bae73d26cb12"
+    }
+  ]
+}
