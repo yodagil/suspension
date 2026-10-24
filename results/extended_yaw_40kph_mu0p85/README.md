@@ -1,6 +1,6 @@
 # 40 km/h · mu=0.85 · yaw rate 확장 비교
 
-**완료·검증: 1/3개. 진행 중.** 완료된 MAT를 검증 후 순서대로 업로드합니다.
+**완료·검증: 2/3개. 진행 중.** 완료된 MAT를 검증 후 순서대로 업로드합니다.
 
 조향각은 앞 휠 0°, 3.5°, 7°이며 바퀴별 설정은 [angle, angle, 0, 0]입니다. 각 MAT에는 기존 마모 5종이 모두 들어 있습니다.
 
@@ -13,7 +13,7 @@
 | 차속 | mu | 앞 휠 조향각 | MAT 다운로드 | 유효 내부 영역 (5종) |
 |---|---|---|---|---|
 | 40 km/h | 0.85 | 0° | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/extended_yaw_40kph_mu0p85/stable_point_40kph_0.85mu_0deg.mat) | 3/5 |
-| 40 km/h | 0.85 | 3.5° | 계산 또는 대기 중 | - |
+| 40 km/h | 0.85 | 3.5° | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/extended_yaw_40kph_mu0p85/stable_point_40kph_0.85mu_3.5deg.mat) | 1/5 |
 | 40 km/h | 0.85 | 7° | 계산 또는 대기 중 | - |
 
 [공개 파일 검증 요약](validation_summary.json)
