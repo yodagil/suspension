@@ -1,0 +1,793 @@
+{
+  "all_passed": true,
+  "mathematical_checks_passed_for_completed": true,
+  "finished": true,
+  "completed_count": 3,
+  "total_scenarios": 3,
+  "global_checks": [
+    {
+      "check": "audited Eq11 solver tests match current source",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "missing_filenames": [],
+  "source_sha256": {
+    "paper_config.m": "93aa845d918c8e76d0ec1c82be75e508869cc129e46ad1da1fe27b16b75bd7f3",
+    "paper_rhs.m": "12de7fe34ea26024ef6f33538e41e896572b98e13d90c2fe2bb1c3b051d38496",
+    "paper_simulate_grid.m": "c176cb4bed042eeaf0cac5a0738062b7f521fc4de02079443c3ec499bbb47cfb",
+    "paper_build_region.m": "6038199e91d24f51da1d029edbed1a67970706f437d6b40e971a05a9d688daa5",
+    "run_requested_40kph.m": "834c2d4341295fe5c1cd22bdb3270ed15eb4be34a031657c4c51ea756b6b01e4"
+  },
+  "scenarios": [
+    {
+      "filename": "paper_stable_point_40kph_0.85mu_0deg.mat",
+      "sha256": "44342c12039dd524345c510300c8cabf08b36b626b3e31edc572738681ec1752",
+      "angle_deg": 0,
+      "dt_s": 0.01,
+      "passed": true,
+      "checks": [
+        {
+          "check": "exact five independent source files and current SHA256",
+          "passed": true
+        },
+        {
+          "check": "audited independent five-state paper model provenance",
+          "passed": true
+        },
+        {
+          "check": "requested speed friction steering",
+          "passed": true
+        },
+        {
+          "check": "published Table 1 values unchanged",
+          "passed": true
+        },
+        {
+          "check": "explicit baseline reconstruction assumptions unchanged",
+          "passed": true
+        },
+        {
+          "check": "full horizon RK4 and declared observation step",
+          "passed": true
+        },
+        {
+          "check": "exact inherited 41x31x31 grid",
+          "passed": true
+        },
+        {
+          "check": "complete Boolean mask and integer reason codes",
+          "passed": true
+        },
+        {
+          "check": "zero reason exactly means stable",
+          "passed": true
+        },
+        {
+          "check": "all 39401 initial states in exact ndgrid order",
+          "passed": true
+        },
+        {
+          "check": "exact stable count fraction and ordered stable points",
+          "passed": true
+        },
+        {
+          "check": "stored diagnostic arrays are complete finite observations",
+          "passed": true
+        },
+        {
+          "check": "cause counts and early-exit diagnostic semantics explicit",
+          "passed": true
+        },
+        {
+          "check": "no unreported nonfinite failure and speed guard distinct",
+          "passed": true
+        },
+        {
+          "check": "Eq11 load equilibrium residual below 1e-7 N",
+          "passed": true
+        },
+        {
+          "check": "paper boundary-derived method identified",
+          "passed": true
+        },
+        {
+          "check": "eight finite distinct vertices and triangular faces",
+          "passed": true
+        },
+        {
+          "check": "all eight are actual stable grid hull vertices",
+          "passed": true
+        },
+        {
+          "check": "vertices taken from inner lateral-limit stable samples",
+          "passed": true
+        },
+        {
+          "check": "positive volume within tested grid and independently reproduced",
+          "passed": true
+        },
+        {
+          "check": "no sampled unstable point inside independent hull",
+          "passed": true
+        },
+        {
+          "check": "raw stable hull spans and boundary contacts independently match",
+          "passed": true
+        }
+      ],
+      "stable_count": 36983,
+      "stable_fraction": 0.9386309992132179,
+      "inner_volume": 10.560000000000002,
+      "independent_inner_volume": 10.560000000000002,
+      "inner_unstable_grid_count": 0,
+      "inner_stable_sample_count": 31775,
+      "raw_stable_hull_volume": 12.128,
+      "raw_axis_spans": [
+        20.0,
+        0.8,
+        0.8
+      ],
+      "raw_stable_mean_yaw_rate": 2.3055222207828467e-18,
+      "region_vertex_mean_yaw_rate": 0.0,
+      "boundary_contact_counts": [
+        [
+          682,
+          682
+        ],
+        [
+          1054,
+          1054
+        ],
+        [
+          1193,
+          1193
+        ]
+      ],
+      "boundary_contact": true,
+      "reason_counts": [
+        0,
+        0,
+        0,
+        2418
+      ],
+      "physical_failure_count": 0,
+      "speed_domain_exclusion_count": 2418,
+      "nonfinite_failure_count": 0,
+      "pure_speed_domain_guard_count": 2418,
+      "physical_and_speed_domain_count": 0,
+      "maximum_load_equilibrium_residual_N": 1.8189894035458565e-12
+    },
+    {
+      "filename": "paper_stable_point_40kph_0.85mu_3deg.mat",
+      "sha256": "97c8f8ed9c3eea98755476c2b4df31cfcd2a61d85357fb56b829a4364500d034",
+      "angle_deg": 3,
+      "dt_s": 0.01,
+      "passed": true,
+      "checks": [
+        {
+          "check": "exact five independent source files and current SHA256",
+          "passed": true
+        },
+        {
+          "check": "audited independent five-state paper model provenance",
+          "passed": true
+        },
+        {
+          "check": "requested speed friction steering",
+          "passed": true
+        },
+        {
+          "check": "published Table 1 values unchanged",
+          "passed": true
+        },
+        {
+          "check": "explicit baseline reconstruction assumptions unchanged",
+          "passed": true
+        },
+        {
+          "check": "full horizon RK4 and declared observation step",
+          "passed": true
+        },
+        {
+          "check": "exact inherited 41x31x31 grid",
+          "passed": true
+        },
+        {
+          "check": "complete Boolean mask and integer reason codes",
+          "passed": true
+        },
+        {
+          "check": "zero reason exactly means stable",
+          "passed": true
+        },
+        {
+          "check": "all 39401 initial states in exact ndgrid order",
+          "passed": true
+        },
+        {
+          "check": "exact stable count fraction and ordered stable points",
+          "passed": true
+        },
+        {
+          "check": "stored diagnostic arrays are complete finite observations",
+          "passed": true
+        },
+        {
+          "check": "cause counts and early-exit diagnostic semantics explicit",
+          "passed": true
+        },
+        {
+          "check": "no unreported nonfinite failure and speed guard distinct",
+          "passed": true
+        },
+        {
+          "check": "Eq11 load equilibrium residual below 1e-7 N",
+          "passed": true
+        },
+        {
+          "check": "paper boundary-derived method identified",
+          "passed": true
+        },
+        {
+          "check": "eight finite distinct vertices and triangular faces",
+          "passed": true
+        },
+        {
+          "check": "all eight are actual stable grid hull vertices",
+          "passed": true
+        },
+        {
+          "check": "vertices taken from inner lateral-limit stable samples",
+          "passed": true
+        },
+        {
+          "check": "positive volume within tested grid and independently reproduced",
+          "passed": true
+        },
+        {
+          "check": "no sampled unstable point inside independent hull",
+          "passed": true
+        },
+        {
+          "check": "raw stable hull spans and boundary contacts independently match",
+          "passed": true
+        }
+      ],
+      "stable_count": 36731,
+      "stable_fraction": 0.9322352224562829,
+      "inner_volume": 9.765333333333334,
+      "independent_inner_volume": 9.765333333333334,
+      "inner_unstable_grid_count": 0,
+      "inner_stable_sample_count": 28923,
+      "raw_stable_hull_volume": 12.074666666666666,
+      "raw_axis_spans": [
+        20.0,
+        0.8,
+        0.8
+      ],
+      "raw_stable_mean_yaw_rate": 0.010770920112892836,
+      "region_vertex_mean_yaw_rate": 0.006666666666666682,
+      "boundary_contact_counts": [
+        [
+          775,
+          589
+        ],
+        [
+          930,
+          1085
+        ],
+        [
+          1184,
+          1185
+        ]
+      ],
+      "boundary_contact": true,
+      "reason_counts": [
+        168,
+        0,
+        0,
+        2502
+      ],
+      "physical_failure_count": 168,
+      "speed_domain_exclusion_count": 2502,
+      "nonfinite_failure_count": 0,
+      "pure_speed_domain_guard_count": 2502,
+      "physical_and_speed_domain_count": 0,
+      "maximum_load_equilibrium_residual_N": 1.8189894035458565e-12
+    },
+    {
+      "filename": "paper_stable_point_40kph_0.85mu_7deg.mat",
+      "sha256": "39c5b2985c27afc659d1b0285b34307da42606000397385a615a1a0be6196348",
+      "angle_deg": 7,
+      "dt_s": 0.01,
+      "passed": true,
+      "checks": [
+        {
+          "check": "exact five independent source files and current SHA256",
+          "passed": true
+        },
+        {
+          "check": "audited independent five-state paper model provenance",
+          "passed": true
+        },
+        {
+          "check": "requested speed friction steering",
+          "passed": true
+        },
+        {
+          "check": "published Table 1 values unchanged",
+          "passed": true
+        },
+        {
+          "check": "explicit baseline reconstruction assumptions unchanged",
+          "passed": true
+        },
+        {
+          "check": "full horizon RK4 and declared observation step",
+          "passed": true
+        },
+        {
+          "check": "exact inherited 41x31x31 grid",
+          "passed": true
+        },
+        {
+          "check": "complete Boolean mask and integer reason codes",
+          "passed": true
+        },
+        {
+          "check": "zero reason exactly means stable",
+          "passed": true
+        },
+        {
+          "check": "all 39401 initial states in exact ndgrid order",
+          "passed": true
+        },
+        {
+          "check": "exact stable count fraction and ordered stable points",
+          "passed": true
+        },
+        {
+          "check": "stored diagnostic arrays are complete finite observations",
+          "passed": true
+        },
+        {
+          "check": "cause counts and early-exit diagnostic semantics explicit",
+          "passed": true
+        },
+        {
+          "check": "no unreported nonfinite failure and speed guard distinct",
+          "passed": true
+        },
+        {
+          "check": "Eq11 load equilibrium residual below 1e-7 N",
+          "passed": true
+        },
+        {
+          "check": "paper boundary-derived method identified",
+          "passed": true
+        },
+        {
+          "check": "eight finite distinct vertices and triangular faces",
+          "passed": true
+        },
+        {
+          "check": "all eight are actual stable grid hull vertices",
+          "passed": true
+        },
+        {
+          "check": "vertices taken from inner lateral-limit stable samples",
+          "passed": true
+        },
+        {
+          "check": "positive volume within tested grid and independently reproduced",
+          "passed": true
+        },
+        {
+          "check": "no sampled unstable point inside independent hull",
+          "passed": true
+        },
+        {
+          "check": "raw stable hull spans and boundary contacts independently match",
+          "passed": true
+        }
+      ],
+      "stable_count": 34405,
+      "stable_fraction": 0.873201187787112,
+      "inner_volume": 9.013333333333334,
+      "independent_inner_volume": 9.013333333333334,
+      "inner_unstable_grid_count": 0,
+      "inner_stable_sample_count": 27142,
+      "raw_stable_hull_volume": 11.43342222222222,
+      "raw_axis_spans": [
+        20.0,
+        0.8,
+        0.8
+      ],
+      "raw_stable_mean_yaw_rate": 0.018107445623213685,
+      "region_vertex_mean_yaw_rate": 0.0,
+      "boundary_contact_counts": [
+        [
+          647,
+          190
+        ],
+        [
+          757,
+          1033
+        ],
+        [
+          1111,
+          1110
+        ]
+      ],
+      "boundary_contact": true,
+      "reason_counts": [
+        3932,
+        0,
+        0,
+        1064
+      ],
+      "physical_failure_count": 3932,
+      "speed_domain_exclusion_count": 1064,
+      "nonfinite_failure_count": 0,
+      "pure_speed_domain_guard_count": 1064,
+      "physical_and_speed_domain_count": 0,
+      "maximum_load_equilibrium_residual_N": 1.8189894035458565e-12
+    }
+  ],
+  "trend_observed": {
+    "strict_stable_count_decrease": true,
+    "strict_raw_hull_volume_decrease": true,
+    "strict_inner_volume_decrease": true,
+    "raw_mean_yaw_shifts_positive": true,
+    "region_vertex_mean_yaw_shifts_positive": false,
+    "criterion": "Observed diagnostic results only; no trend is used as a validation pass filter."
+  },
+  "convergence": {
+    "all_three_available": true,
+    "coarse_missing_filenames": [],
+    "mask_fraction_threshold": 0.005,
+    "maximum_mask_mismatch_fraction": 0.0006091215958985813,
+    "classification_within_half_percent": true,
+    "needs_finer_step": false,
+    "scenarios": [
+      {
+        "angle_deg": 0,
+        "coarse_step_s": 0.02,
+        "fine_step_s": 0.01,
+        "stable_mask_mismatch_count": 0,
+        "stable_mask_mismatch_fraction": 0.0,
+        "fine_stable_count": 36983,
+        "coarse_stable_count": 36983,
+        "stable_count_change": 0,
+        "fine_inner_volume": 10.560000000000002,
+        "coarse_inner_volume": 10.560000000000002,
+        "inner_volume_absolute_error": 0.0,
+        "inner_volume_relative_error": 0.0,
+        "coarse_nonfinite_failures": 0
+      },
+      {
+        "angle_deg": 3,
+        "coarse_step_s": 0.02,
+        "fine_step_s": 0.01,
+        "stable_mask_mismatch_count": 8,
+        "stable_mask_mismatch_fraction": 0.00020304053196619376,
+        "fine_stable_count": 36731,
+        "coarse_stable_count": 36723,
+        "stable_count_change": 8,
+        "fine_inner_volume": 9.765333333333334,
+        "coarse_inner_volume": 9.765333333333334,
+        "inner_volume_absolute_error": 0.0,
+        "inner_volume_relative_error": 0.0,
+        "coarse_nonfinite_failures": 0
+      },
+      {
+        "angle_deg": 7,
+        "coarse_step_s": 0.02,
+        "fine_step_s": 0.01,
+        "stable_mask_mismatch_count": 24,
+        "stable_mask_mismatch_fraction": 0.0006091215958985813,
+        "fine_stable_count": 34405,
+        "coarse_stable_count": 34381,
+        "stable_count_change": 24,
+        "fine_inner_volume": 9.013333333333334,
+        "coarse_inner_volume": 9.013333333333334,
+        "inner_volume_absolute_error": 0.0,
+        "inner_volume_relative_error": 0.0,
+        "coarse_nonfinite_failures": 0
+      }
+    ],
+    "coarse_mathematical_checks": [
+      {
+        "filename": "paper_stable_point_40kph_0.85mu_0deg.mat",
+        "passed": true,
+        "checks": [
+          {
+            "check": "exact five independent source files and current SHA256",
+            "passed": true
+          },
+          {
+            "check": "audited independent five-state paper model provenance",
+            "passed": true
+          },
+          {
+            "check": "requested speed friction steering",
+            "passed": true
+          },
+          {
+            "check": "published Table 1 values unchanged",
+            "passed": true
+          },
+          {
+            "check": "explicit baseline reconstruction assumptions unchanged",
+            "passed": true
+          },
+          {
+            "check": "full horizon RK4 and declared observation step",
+            "passed": true
+          },
+          {
+            "check": "exact inherited 41x31x31 grid",
+            "passed": true
+          },
+          {
+            "check": "complete Boolean mask and integer reason codes",
+            "passed": true
+          },
+          {
+            "check": "zero reason exactly means stable",
+            "passed": true
+          },
+          {
+            "check": "all 39401 initial states in exact ndgrid order",
+            "passed": true
+          },
+          {
+            "check": "exact stable count fraction and ordered stable points",
+            "passed": true
+          },
+          {
+            "check": "stored diagnostic arrays are complete finite observations",
+            "passed": true
+          },
+          {
+            "check": "cause counts and early-exit diagnostic semantics explicit",
+            "passed": true
+          },
+          {
+            "check": "no unreported nonfinite failure and speed guard distinct",
+            "passed": true
+          },
+          {
+            "check": "Eq11 load equilibrium residual below 1e-7 N",
+            "passed": true
+          },
+          {
+            "check": "paper boundary-derived method identified",
+            "passed": true
+          },
+          {
+            "check": "eight finite distinct vertices and triangular faces",
+            "passed": true
+          },
+          {
+            "check": "all eight are actual stable grid hull vertices",
+            "passed": true
+          },
+          {
+            "check": "vertices taken from inner lateral-limit stable samples",
+            "passed": true
+          },
+          {
+            "check": "positive volume within tested grid and independently reproduced",
+            "passed": true
+          },
+          {
+            "check": "no sampled unstable point inside independent hull",
+            "passed": true
+          },
+          {
+            "check": "raw stable hull spans and boundary contacts independently match",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "filename": "paper_stable_point_40kph_0.85mu_3deg.mat",
+        "passed": true,
+        "checks": [
+          {
+            "check": "exact five independent source files and current SHA256",
+            "passed": true
+          },
+          {
+            "check": "audited independent five-state paper model provenance",
+            "passed": true
+          },
+          {
+            "check": "requested speed friction steering",
+            "passed": true
+          },
+          {
+            "check": "published Table 1 values unchanged",
+            "passed": true
+          },
+          {
+            "check": "explicit baseline reconstruction assumptions unchanged",
+            "passed": true
+          },
+          {
+            "check": "full horizon RK4 and declared observation step",
+            "passed": true
+          },
+          {
+            "check": "exact inherited 41x31x31 grid",
+            "passed": true
+          },
+          {
+            "check": "complete Boolean mask and integer reason codes",
+            "passed": true
+          },
+          {
+            "check": "zero reason exactly means stable",
+            "passed": true
+          },
+          {
+            "check": "all 39401 initial states in exact ndgrid order",
+            "passed": true
+          },
+          {
+            "check": "exact stable count fraction and ordered stable points",
+            "passed": true
+          },
+          {
+            "check": "stored diagnostic arrays are complete finite observations",
+            "passed": true
+          },
+          {
+            "check": "cause counts and early-exit diagnostic semantics explicit",
+            "passed": true
+          },
+          {
+            "check": "no unreported nonfinite failure and speed guard distinct",
+            "passed": true
+          },
+          {
+            "check": "Eq11 load equilibrium residual below 1e-7 N",
+            "passed": true
+          },
+          {
+            "check": "paper boundary-derived method identified",
+            "passed": true
+          },
+          {
+            "check": "eight finite distinct vertices and triangular faces",
+            "passed": true
+          },
+          {
+            "check": "all eight are actual stable grid hull vertices",
+            "passed": true
+          },
+          {
+            "check": "vertices taken from inner lateral-limit stable samples",
+            "passed": true
+          },
+          {
+            "check": "positive volume within tested grid and independently reproduced",
+            "passed": true
+          },
+          {
+            "check": "no sampled unstable point inside independent hull",
+            "passed": true
+          },
+          {
+            "check": "raw stable hull spans and boundary contacts independently match",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "filename": "paper_stable_point_40kph_0.85mu_7deg.mat",
+        "passed": true,
+        "checks": [
+          {
+            "check": "exact five independent source files and current SHA256",
+            "passed": true
+          },
+          {
+            "check": "audited independent five-state paper model provenance",
+            "passed": true
+          },
+          {
+            "check": "requested speed friction steering",
+            "passed": true
+          },
+          {
+            "check": "published Table 1 values unchanged",
+            "passed": true
+          },
+          {
+            "check": "explicit baseline reconstruction assumptions unchanged",
+            "passed": true
+          },
+          {
+            "check": "full horizon RK4 and declared observation step",
+            "passed": true
+          },
+          {
+            "check": "exact inherited 41x31x31 grid",
+            "passed": true
+          },
+          {
+            "check": "complete Boolean mask and integer reason codes",
+            "passed": true
+          },
+          {
+            "check": "zero reason exactly means stable",
+            "passed": true
+          },
+          {
+            "check": "all 39401 initial states in exact ndgrid order",
+            "passed": true
+          },
+          {
+            "check": "exact stable count fraction and ordered stable points",
+            "passed": true
+          },
+          {
+            "check": "stored diagnostic arrays are complete finite observations",
+            "passed": true
+          },
+          {
+            "check": "cause counts and early-exit diagnostic semantics explicit",
+            "passed": true
+          },
+          {
+            "check": "no unreported nonfinite failure and speed guard distinct",
+            "passed": true
+          },
+          {
+            "check": "Eq11 load equilibrium residual below 1e-7 N",
+            "passed": true
+          },
+          {
+            "check": "paper boundary-derived method identified",
+            "passed": true
+          },
+          {
+            "check": "eight finite distinct vertices and triangular faces",
+            "passed": true
+          },
+          {
+            "check": "all eight are actual stable grid hull vertices",
+            "passed": true
+          },
+          {
+            "check": "vertices taken from inner lateral-limit stable samples",
+            "passed": true
+          },
+          {
+            "check": "positive volume within tested grid and independently reproduced",
+            "passed": true
+          },
+          {
+            "check": "no sampled unstable point inside independent hull",
+            "passed": true
+          },
+          {
+            "check": "raw stable hull spans and boundary contacts independently match",
+            "passed": true
+          }
+        ]
+      }
+    ]
+  },
+  "interpretation_notes": [
+    "The supplied original yaw grid +/-0.4 can clip the paper Figure 6 region; boundary contacts are reported.",
+    "Requested middle steering angle is 3 degrees; published Figure 6 uses 3.5 degrees.",
+    "Speed-domain exclusions u<0.5 m/s are not nonfinite numerical failures and are not automatically published oversteer/sideslip/rollover failures.",
+    "Dynamic longitudinal speed, tire coefficients, sprung mass, roll-arm parameters, finite horizon, and discrete vertex selection contain stated reconstruction assumptions.",
+    "Zero sampled unstable points inside the polytope does not prove continuous or asymptotic stability."
+  ],
+  "updated_utc": "2026-10-24T15:46:50.099320+00:00"
+}

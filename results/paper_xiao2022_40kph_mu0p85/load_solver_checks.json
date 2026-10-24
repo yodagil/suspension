@@ -1,0 +1,23 @@
+{
+  "all_passed": true,
+  "state_cases": 771.0,
+  "lifted_contact_cases": 43.0,
+  "angles": [
+    0.0,
+    3.0,
+    7.0
+  ],
+  "maximum_force_balance_residual_m_s2": 0.0,
+  "maximum_eq11_load_error_N": 0.0,
+  "maximum_force_load_roundoff_N": 1.8189894035458565e-12,
+  "maximum_ode_identity_error": 0.0,
+  "restoring_lateral_derivative_per_s": -19.342814673751096,
+  "edge_cases_passed": 7.0,
+  "table1_parameters_unchanged": 1,
+  "assumptions_unchanged": 1,
+  "straight_driving_rhs_exact_zero": 1,
+  "no_equilibrium_rhs_explicit_nan": 1,
+  "rhs_sha256": "12de7fe34ea26024ef6f33538e41e896572b98e13d90c2fe2bb1c3b051d38496",
+  "method": "Analytic active-contact equilibrium, no forced trend fitting",
+  "note": "No/ambiguous or continuum equilibria are explicitly invalid; requested configuration uses unchanged Table 1 values and ZIP assumptions."
+}

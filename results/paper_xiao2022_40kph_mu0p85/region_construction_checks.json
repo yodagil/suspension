@@ -1,0 +1,51 @@
+{
+  "all_passed": true,
+  "method": "paper_roll_limits_inward_vc_ranks_eight_actual_extrema",
+  "source_sha256": "6038199e91d24f51da1d029edbed1a67970706f437d6b40e971a05a9d688daa5",
+  "actual_baseline_checks": [
+    {
+      "angle": 0.0,
+      "valid": true,
+      "volume": 10.560000000000002,
+      "independent_volume": 10.560000000000002,
+      "outside_grid_vertices": 0,
+      "all_vertices_actual_stable": true,
+      "inside_unstable": 0,
+      "hull_vertex_count": 8,
+      "inside_stable": 31775,
+      "runtime_s": 0.7474210262298584
+    },
+    {
+      "angle": 3.0,
+      "valid": true,
+      "volume": 9.788444444444444,
+      "independent_volume": 9.788444444444444,
+      "outside_grid_vertices": 0,
+      "all_vertices_actual_stable": true,
+      "inside_unstable": 0,
+      "hull_vertex_count": 8,
+      "inside_stable": 29147,
+      "runtime_s": 0.7311270236968994
+    },
+    {
+      "angle": 7.0,
+      "valid": true,
+      "volume": 9.013333333333334,
+      "independent_volume": 9.013333333333337,
+      "outside_grid_vertices": 0,
+      "all_vertices_actual_stable": true,
+      "inside_unstable": 0,
+      "hull_vertex_count": 8,
+      "inside_stable": 27164,
+      "runtime_s": 0.7263751029968262
+    }
+  ],
+  "synthetic_checks": [
+    "all stable exact bounding volume",
+    "deterministic vertex selection",
+    "gap excludes all unstable samples or invalid",
+    "isolated corners rejected",
+    "degenerate plane rejected"
+  ],
+  "note": "These reuse baseline masks and verify geometry only; no new dynamics or calibrated-paper-equivalence claim."
+}

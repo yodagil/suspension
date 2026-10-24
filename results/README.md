@@ -1,5 +1,9 @@
 # 수정된 안정영역 MAT 결과
 
+<!-- PAPER-ACTIVE-BEGIN -->
+현재 요청한 [Xiao 2022 독립 논문 모델 3조건](paper_xiao2022_40kph_mu0p85/README.md)은 계산·검증을 완료했습니다. 기존 Full-Car 계산과 자동 재개는 사용자 요청으로 중지되어 있습니다. 아래는 과거 Full-Car 결과입니다.
+<!-- PAPER-ACTIVE-END -->
+
 현재 [40 km/h · μ=0.85 · 확장 yaw rate 세 조건](extended_yaw_40kph_mu0p85/README.md)을 우선 계산 중입니다. 세 MAT 업로드 후 기존 210조건 계산을 자동 재개합니다.
 
 **수정 코드 완료·검증 결과: 106/210개. 우선 계산으로 일시 정지.** 완료된 MAT를 검증한 뒤 순서대로 자동 업로드합니다.
