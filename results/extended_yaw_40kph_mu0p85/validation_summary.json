@@ -1,0 +1,66 @@
+{
+  "run_version": "mu-sweep-v3-extended-yaw-40kph-mu085",
+  "completed_scenarios": 0,
+  "total_scenarios": 3,
+  "producer_phase": "running",
+  "yaw_spacing_rad_s": 0.02666666666666667,
+  "yaw_requested_range_rad_s": [
+    -0.7,
+    0.7
+  ],
+  "yaw_actual_range_rad_s": [
+    -0.7200000000000001,
+    0.7200000000000001
+  ],
+  "yaw_count": 55,
+  "grid_shape": [
+    41,
+    55,
+    31
+  ],
+  "initial_conditions_per_wear": 69905,
+  "wear_cases": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      25,
+      25,
+      0,
+      0
+    ],
+    [
+      50,
+      50,
+      25,
+      25
+    ],
+    [
+      0,
+      0,
+      25,
+      25
+    ],
+    [
+      25,
+      25,
+      50,
+      50
+    ]
+  ],
+  "initialization": "original_direct_start_alpha_minus_delta",
+  "source_sha256": {
+    "fullcar_model.m": "e27ce7c6f9f57efe2213ada1e94648a0e275e9c6d5ba745eb6be129ed95f3957",
+    "stability_run_signature.m": "b25a90374e626f5a89e6cdb6139f3c73855ccdbe6d8e19f93942f2eeb9e73a4e",
+    "native_accel.cpp": "337b81aecfe46c154430555b151e42605b92ffae27828ed66350f9e48a7c42f2",
+    "native_accel": "28e734042f5537beef46c09a5b926e4ee9dfa8268283db024bbacfb0dcc9a617",
+    "stability_region.m": "f87d9cc2d9cc9a894b08cd5accc86f99721b9f90e97cb344230bdbdb9fcd3eec",
+    "run_stability_sweep.m": "d3692da4f405fcd8b78c43e510a5c8101177a1415de17aee9e61816b4d4dd8e3",
+    "native_stability_masks.m": "53808784100b2470f6826933bd16f1f84a46ea0dc790d3471f75e83f6d1fa8af"
+  },
+  "updated_utc": "2026-10-24T12:57:49+00:00",
+  "scenarios": []
+}
