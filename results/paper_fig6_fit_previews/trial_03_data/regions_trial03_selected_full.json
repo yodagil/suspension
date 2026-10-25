@@ -1,0 +1,566 @@
+{
+  "cases": [
+    {
+      "valid": true,
+      "volume": 8.87466666666669,
+      "selection_score": 8.87466666666669,
+      "roll_span_power": 0,
+      "vertices": [
+        [
+          -7.5,
+          -0.56,
+          -0.3466666666666667
+        ],
+        [
+          7.5,
+          -0.29333333333333333,
+          -0.4
+        ],
+        [
+          7.5,
+          0.56,
+          -0.3466666666666667
+        ],
+        [
+          -7.5,
+          0.29333333333333333,
+          -0.29333333333333333
+        ],
+        [
+          -7.5,
+          -0.56,
+          0.3466666666666667
+        ],
+        [
+          7.5,
+          -0.29333333333333333,
+          0.29333333333333333
+        ],
+        [
+          7.5,
+          0.56,
+          0.3466666666666667
+        ],
+        [
+          -7.5,
+          0.29333333333333333,
+          0.4
+        ]
+      ],
+      "faces": [
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          4,
+          7,
+          3
+        ],
+        [
+          6,
+          7,
+          3
+        ],
+        [
+          6,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          8
+        ],
+        [
+          5,
+          4,
+          1
+        ],
+        [
+          5,
+          2,
+          1
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          5,
+          6,
+          7
+        ]
+      ],
+      "vertex_grid_indices_1based": [
+        4762,
+        692,
+        6514,
+        10584,
+        63392,
+        59322,
+        65144,
+        69214
+      ],
+      "grid_unstable_inside": 0,
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "equilibrium": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "center_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_spans": [
+        15.0,
+        1.12,
+        0.8
+      ],
+      "vertex_min": [
+        -7.5,
+        -0.56,
+        -0.4
+      ],
+      "vertex_max": [
+        7.5,
+        0.56,
+        0.4
+      ],
+      "edge_vectors": [
+        [
+          7.5,
+          0.13333333333333364,
+          -0.026666666666666672
+        ],
+        [
+          0.0,
+          0.42666666666666764,
+          0.026666666666666672
+        ],
+        [
+          0.0,
+          0.0,
+          0.34666666666666673
+        ]
+      ],
+      "index_half_edges": [
+        [
+          15,
+          5,
+          -1
+        ],
+        [
+          0,
+          16,
+          1
+        ],
+        [
+          0,
+          0,
+          13
+        ]
+      ],
+      "method": "maximum-volume equilibrium-centered sheared grid parallelepiped",
+      "exact_equilibrium_strictly_inside": true,
+      "center_tolerance_in_grid_steps": 0.5,
+      "objective": "physical volume times normalized roll span to a common power, within the same candidate family",
+      "angle_dependent_shrink_factors": false,
+      "sampled_grid_only": true,
+      "paper_exact_vertex_rule": false,
+      "continuous_stability_proof": false,
+      "candidate_checks": 324,
+      "sheared_improvements": 11,
+      "max_normalized_vc_to_r": 1.0,
+      "roll_shear_allowed": true,
+      "aspect_constraint_is_reconstruction_assumption": true,
+      "reconstruction_assumption": "Conservative neighborhood of steady state; not entire initial-condition basin",
+      "angle_deg": 0,
+      "source_mat_filename": "classification_0deg.mat",
+      "source_mat_sha256": "836bdffd4979ec2c84b24fd207ec862c6cbf2e8ff6e03fe06d77ef38cf3ce3aa",
+      "stable_count": 48573,
+      "total_count": 69905,
+      "raw_stable_roll_bounds": [
+        -0.4,
+        0.4
+      ]
+    },
+    {
+      "valid": true,
+      "volume": 3.6145777777777774,
+      "selection_score": 3.6145777777777774,
+      "roll_span_power": 0,
+      "vertices": [
+        [
+          -4.0,
+          -0.02666666666666667,
+          -0.29333333333333333
+        ],
+        [
+          4.5,
+          -0.02666666666666667,
+          -0.29333333333333333
+        ],
+        [
+          4.5,
+          0.5866666666666667,
+          -0.29333333333333333
+        ],
+        [
+          -4.0,
+          0.5866666666666667,
+          -0.29333333333333333
+        ],
+        [
+          -4.0,
+          -0.02666666666666667,
+          0.4
+        ],
+        [
+          4.5,
+          -0.02666666666666667,
+          0.4
+        ],
+        [
+          4.5,
+          0.5866666666666667,
+          0.4
+        ],
+        [
+          -4.0,
+          0.5866666666666667,
+          0.4
+        ]
+      ],
+      "faces": [
+        [
+          6,
+          5,
+          1
+        ],
+        [
+          6,
+          2,
+          1
+        ],
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          7,
+          6,
+          2
+        ],
+        [
+          7,
+          3,
+          2
+        ],
+        [
+          8,
+          5,
+          1
+        ],
+        [
+          8,
+          4,
+          1
+        ],
+        [
+          8,
+          6,
+          5
+        ],
+        [
+          8,
+          7,
+          6
+        ],
+        [
+          8,
+          4,
+          3
+        ],
+        [
+          8,
+          7,
+          3
+        ]
+      ],
+      "vertex_grid_indices_1based": [
+        10099,
+        10116,
+        11059,
+        11042,
+        68729,
+        68746,
+        69689,
+        69672
+      ],
+      "grid_unstable_inside": 0,
+      "sampled_nodes_inside": 11664,
+      "center": [
+        0.25,
+        0.28,
+        0.053333333333333344
+      ],
+      "equilibrium": [
+        0.13905634345619236,
+        0.282749744674705,
+        0.060901468144169336
+      ],
+      "center_error": [
+        0.11094365654380764,
+        -0.002749744674704957,
+        -0.007568134810835993
+      ],
+      "axis_spans": [
+        8.5,
+        0.6133333333333333,
+        0.6933333333333334
+      ],
+      "vertex_min": [
+        -4.0,
+        -0.02666666666666667,
+        -0.29333333333333333
+      ],
+      "vertex_max": [
+        4.5,
+        0.5866666666666667,
+        0.4
+      ],
+      "method": "maximum-volume all-stable grid box centered within half a grid step of the verified steady state",
+      "exact_equilibrium_strictly_inside": true,
+      "center_tolerance_in_grid_steps": 0.5,
+      "objective": "physical volume times normalized roll span to a common power, within the same candidate family",
+      "angle_dependent_shrink_factors": false,
+      "sampled_grid_only": true,
+      "paper_exact_vertex_rule": false,
+      "max_normalized_vc_to_r": 1.0,
+      "continuous_stability_proof": false,
+      "valid_volume_improvements": 2,
+      "candidate_checks": 0,
+      "sheared_improvements": 0,
+      "roll_shear_allowed": true,
+      "aspect_constraint_is_reconstruction_assumption": true,
+      "reconstruction_assumption": "Conservative neighborhood of steady state; not entire initial-condition basin",
+      "angle_deg": 3.5,
+      "source_mat_filename": "classification_3.5deg.mat",
+      "source_mat_sha256": "f74bbdd15d645a1fe5dc474ac55991637189e25acba08954ba9783e597f26e5e",
+      "stable_count": 49517,
+      "total_count": 69905,
+      "raw_stable_roll_bounds": [
+        -0.4,
+        0.4
+      ]
+    },
+    {
+      "valid": true,
+      "volume": 0.11733333333333336,
+      "selection_score": 0.11733333333333336,
+      "roll_span_power": 0,
+      "vertices": [
+        [
+          -0.5,
+          0.48000000000000004,
+          -0.18666666666666668
+        ],
+        [
+          1.0,
+          0.48000000000000004,
+          -0.18666666666666668
+        ],
+        [
+          1.0,
+          0.6133333333333334,
+          -0.18666666666666668
+        ],
+        [
+          -0.5,
+          0.6133333333333334,
+          -0.18666666666666668
+        ],
+        [
+          -0.5,
+          0.48000000000000004,
+          0.4
+        ],
+        [
+          1.0,
+          0.48000000000000004,
+          0.4
+        ],
+        [
+          1.0,
+          0.6133333333333334,
+          0.4
+        ],
+        [
+          -0.5,
+          0.6133333333333334,
+          0.4
+        ]
+      ],
+      "faces": [
+        [
+          6,
+          5,
+          1
+        ],
+        [
+          6,
+          2,
+          1
+        ],
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          7,
+          6,
+          2
+        ],
+        [
+          7,
+          3,
+          2
+        ],
+        [
+          8,
+          5,
+          1
+        ],
+        [
+          8,
+          4,
+          1
+        ],
+        [
+          8,
+          6,
+          5
+        ],
+        [
+          8,
+          7,
+          6
+        ],
+        [
+          8,
+          4,
+          3
+        ],
+        [
+          8,
+          7,
+          3
+        ]
+      ],
+      "vertex_grid_indices_1based": [
+        19905,
+        19908,
+        20113,
+        20110,
+        69515,
+        69518,
+        69723,
+        69720
+      ],
+      "grid_unstable_inside": 0,
+      "sampled_nodes_inside": 552,
+      "center": [
+        0.25,
+        0.5466666666666667,
+        0.10666666666666667
+      ],
+      "equilibrium": [
+        0.12868675665570264,
+        0.5528606763975444,
+        0.1190806623380874
+      ],
+      "center_error": [
+        0.12131324334429736,
+        -0.006194009730877692,
+        -0.012413995671420722
+      ],
+      "axis_spans": [
+        1.5,
+        0.13333333333333336,
+        0.5866666666666667
+      ],
+      "vertex_min": [
+        -0.5,
+        0.48000000000000004,
+        -0.18666666666666668
+      ],
+      "vertex_max": [
+        1.0,
+        0.6133333333333334,
+        0.4
+      ],
+      "method": "maximum-volume all-stable grid box centered within half a grid step of the verified steady state",
+      "exact_equilibrium_strictly_inside": true,
+      "center_tolerance_in_grid_steps": 0.5,
+      "objective": "physical volume times normalized roll span to a common power, within the same candidate family",
+      "angle_dependent_shrink_factors": false,
+      "sampled_grid_only": true,
+      "paper_exact_vertex_rule": false,
+      "max_normalized_vc_to_r": 1.0,
+      "continuous_stability_proof": false,
+      "valid_volume_improvements": 2,
+      "candidate_checks": 0,
+      "sheared_improvements": 0,
+      "roll_shear_allowed": true,
+      "aspect_constraint_is_reconstruction_assumption": true,
+      "reconstruction_assumption": "Conservative neighborhood of steady state; not entire initial-condition basin",
+      "angle_deg": 7,
+      "source_mat_filename": "classification_7deg.mat",
+      "source_mat_sha256": "3438e05bd78b217103a1e7d8f8a0412556f1d9690a04e3b1b53fd351b77faceb",
+      "stable_count": 50164,
+      "total_count": 69905,
+      "raw_stable_roll_bounds": [
+        -0.4,
+        0.4
+      ]
+    }
+  ],
+  "complete": true,
+  "reconstruction": "Explicit equilibrium-centered sampled inner approximation; not author vertex rule"
+}

@@ -1,0 +1,19 @@
+{
+  "paper_quasistatic_40kph_0.85mu_3.5deg.mat": "9b227461f2aaa86f375c0f6e702ba949461ed6fde8af336deb1c144150b6961a",
+  "equilibria_hphi054.mat": "f12959c696762130f35437c7828356633a93ba43787ee0d496c4e11d1177338c",
+  "regions_trial03_selected_full.json": "01bb1c981bc2dd390ee5499a3aaa9409c1912bb7306f5782a6e3a64f14efb246",
+  "README_KO.md": "bcca6a6a0a79d6595fba2ae2900b8a569dff070c9210e6d363f7b2ca85ca1254",
+  "paper_quasistatic_40kph_0.85mu_0deg.mat": "fde518300a5edd3c1a0f83bb2656e9e8066363be553e0e27d78a2a3d76cc82a7",
+  "trial03_vertex_half_dt_checks.json": "221fa3d54481e763e30ff9f1c1137d9901301e17217f9fa19e424a6832467af9",
+  "paper_quasistatic_40kph_0.85mu_7deg.mat": "361a501d26d4928142007a7ee86e957f60787e36ef1c9d78cc0347c8e26477e4",
+  "source/paper_config.m": "6d55bcfba80ab8f5940fba92a32c72df85ef2bf9b8b094957fb41a29173d8b9b",
+  "source/export_trial03.py": "be923fd70d347049693ce44b0392a5e9b4707b2a8f4c26e30e4818876503b032",
+  "source/find_quasistatic_equilibria.m": "a2733e087eeb233ad9d24e03a07e8f682d797c032b3f7487c6173c0e194127a7",
+  "source/build_equilibrium_sheared.py": "08bda92b1127893fdb70e19217b9ffa2ccdda1c5f64498bab59f900910254065",
+  "source/build_equilibrium_inner.py": "84e975ff27761b4086629dd4480c7246317ab712f521180dafda482c1c3b6aa5",
+  "source/paper_simulate_grid.m": "c176cb4bed042eeaf0cac5a0738062b7f521fc4de02079443c3ec499bbb47cfb",
+  "source/render_regions.py": "4ba7c0fbe60545b593c9edeafdd088afc4833d6f3efd41fd5386cccd9961b551",
+  "source/verify_trial03_vertices.m": "e78b6516ff6576125fc6a0c7bc96945f14bac249008c987c43f29bbbe0040e71",
+  "source/run_full_grid.py": "725aa575d3ea0c4500ac2e294a5364707223fb9c33a97ddcc2a46e41e566d7b0",
+  "source/paper_rhs.m": "12de7fe34ea26024ef6f33538e41e896572b98e13d90c2fe2bb1c3b051d38496"
+}

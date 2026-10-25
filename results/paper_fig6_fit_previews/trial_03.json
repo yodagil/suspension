@@ -1,0 +1,146 @@
+{
+  "trial": 3,
+  "speed_kmh": 40,
+  "mu": 0.85,
+  "angles_deg": [
+    0,
+    3.5,
+    7
+  ],
+  "speed_mode": "fixed",
+  "grid_shape": [
+    41,
+    55,
+    31
+  ],
+  "horizon_s": 5,
+  "dt": 0.01,
+  "engine": "GNU Octave MATLAB-compatible M-code",
+  "model": "Original roll dynamics and quasistatic Eq.11, no added angular-inertia load term",
+  "missing_parameter_closure": {
+    "ms": 1300,
+    "hphi": 0.54,
+    "Ks": 1,
+    "burckhardt_shape": [
+      1.28,
+      23.99,
+      0.52
+    ]
+  },
+  "common_geometry": {
+    "center": "within half a grid step of a verified steady state",
+    "maximum_normalized_vc_to_r_span": 1,
+    "normalization_widths": [
+      20,
+      1.44,
+      0.8
+    ],
+    "objective": "maximum volume within the common constrained candidate family",
+    "roll_shear_allowed": true,
+    "roll_span_power": 0,
+    "geometric_prior_not_physical_instability_criterion": true,
+    "rule_not_reported_by_paper": true
+  },
+  "actual_coordinates_manually_scaled": false,
+  "paper_exact_reproduction": false,
+  "raw_stable_set_does_not_contract_in_count": true,
+  "raw_stable_roll_span_is_0p8_for_all_angles": true,
+  "selected_inner_roll_span_strictly_decreases": true,
+  "continuous_stability_proof": false,
+  "cases": [
+    {
+      "angle_deg": 0,
+      "initial_states": 69905,
+      "raw_stable_count": 48573,
+      "raw_stable_roll_bounds": [
+        -0.4,
+        0.4
+      ],
+      "selected_inner_roll_bounds": [
+        -0.4,
+        0.4
+      ],
+      "selected_inner_axis_spans": [
+        15.0,
+        1.12,
+        0.8
+      ],
+      "selected_inner_volume": 8.87466666666669,
+      "sampled_nodes_inside": 26095,
+      "unstable_sampled_nodes_inside": 0,
+      "mat_filename": "paper_quasistatic_40kph_0.85mu_0deg.mat",
+      "mat_sha256": "fde518300a5edd3c1a0f83bb2656e9e8066363be553e0e27d78a2a3d76cc82a7"
+    },
+    {
+      "angle_deg": 3.5,
+      "initial_states": 69905,
+      "raw_stable_count": 49517,
+      "raw_stable_roll_bounds": [
+        -0.4,
+        0.4
+      ],
+      "selected_inner_roll_bounds": [
+        -0.29333333333333333,
+        0.4
+      ],
+      "selected_inner_axis_spans": [
+        8.5,
+        0.6133333333333333,
+        0.6933333333333334
+      ],
+      "selected_inner_volume": 3.6145777777777774,
+      "sampled_nodes_inside": 11664,
+      "unstable_sampled_nodes_inside": 0,
+      "mat_filename": "paper_quasistatic_40kph_0.85mu_3.5deg.mat",
+      "mat_sha256": "9b227461f2aaa86f375c0f6e702ba949461ed6fde8af336deb1c144150b6961a"
+    },
+    {
+      "angle_deg": 7,
+      "initial_states": 69905,
+      "raw_stable_count": 50164,
+      "raw_stable_roll_bounds": [
+        -0.4,
+        0.4
+      ],
+      "selected_inner_roll_bounds": [
+        -0.18666666666666668,
+        0.4
+      ],
+      "selected_inner_axis_spans": [
+        1.5,
+        0.13333333333333336,
+        0.5866666666666667
+      ],
+      "selected_inner_volume": 0.11733333333333336,
+      "sampled_nodes_inside": 552,
+      "unstable_sampled_nodes_inside": 0,
+      "mat_filename": "paper_quasistatic_40kph_0.85mu_7deg.mat",
+      "mat_sha256": "361a501d26d4928142007a7ee86e957f60787e36ef1c9d78cc0347c8e26477e4"
+    }
+  ],
+  "validation": {
+    "all_24_vertices_actual_stable_grid_nodes": true,
+    "unstable_original_grid_nodes_in_each_inner_region": 0,
+    "all_24_vertices_and_3_equilibria_stable_at_dt_0p005": true,
+    "nonfinite_failure_count": 0
+  },
+  "projection": {
+    "camera": "same common orthographic view for all scenarios",
+    "elevation_deg": 11,
+    "azimuth_deg": -72,
+    "r_limits": [
+      0.72,
+      -0.72
+    ],
+    "vc_limits": [
+      -10,
+      10
+    ],
+    "phi_limits": [
+      -0.45,
+      0.45
+    ],
+    "no_per_angle_coordinate_scaling": true,
+    "inset": "actual min/max phi of selected inner regions, not raw stable set"
+  }
+}
