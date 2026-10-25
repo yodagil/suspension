@@ -1,0 +1,143 @@
+{
+  "trial": 2,
+  "speed_kmh": 40,
+  "mu": 0.85,
+  "angles_deg": [
+    0,
+    3.5,
+    7
+  ],
+  "speed_mode": "fixed",
+  "initial_grid_shape": [
+    41,
+    55,
+    31
+  ],
+  "initial_conditions_per_scenario": 69905,
+  "horizon_s": 5,
+  "dt": 0.01,
+  "simulation_engine": "GNU Octave, MATLAB-compatible simulation M-code",
+  "model": "Explicit dynamic roll-reaction load extension, not literal Eq.11",
+  "estimated_parameters": {
+    "ms": 1300,
+    "hphi": 0.35,
+    "Ks": 1,
+    "burckhardt_shape": [
+      1.28,
+      23.99,
+      0.52
+    ]
+  },
+  "published_table1_constants_unchanged": true,
+  "model_extension": "D=m*h*ay + ms*g*hphi*sin(phi) - Ixx*pdot; zero active suspension",
+  "inertia_reference_is_assumed": true,
+  "geometry": "Common maximum-volume equilibrium-centered grid parallelepiped candidate family",
+  "continuous_stability_proof": false,
+  "paper_exact_reproduction": false,
+  "raw_stable_set_distinct_from_conservative_inner_approximation": true,
+  "plotted_coordinates_manually_scaled": false,
+  "cases": [
+    {
+      "angle_deg": 0,
+      "initial_states": 69905,
+      "stable_count": 15445,
+      "inner_volume": 1.3653333333333366,
+      "inner_roll_bounds": [
+        -0.16,
+        0.16
+      ],
+      "inner_axis_spans": [
+        15.0,
+        1.12,
+        0.32
+      ],
+      "raw_stable_roll_bounds": [
+        -0.24000000000000002,
+        0.24000000000000002
+      ],
+      "unstable_original_grid_samples_in_or_on_region": 0,
+      "all_eight_vertices_actual_stable_grid_nodes": true,
+      "exact_equilibrium_strictly_inside": true,
+      "nonfinite_failure_count": 0,
+      "mat_file": "paper_dynamic_roll_40kph_0.85mu_0deg.mat",
+      "exported_mat_sha256": "ff8718b7240caac35c27a86324d207dd0639f3a1b34801dccaf0d8da05e7518b"
+    },
+    {
+      "angle_deg": 3.5,
+      "initial_states": 69905,
+      "stable_count": 15537,
+      "inner_volume": 0.6257777777777793,
+      "inner_roll_bounds": [
+        -0.10666666666666667,
+        0.16
+      ],
+      "inner_axis_spans": [
+        10.0,
+        0.64,
+        0.26666666666666666
+      ],
+      "raw_stable_roll_bounds": [
+        -0.21333333333333335,
+        0.24000000000000002
+      ],
+      "unstable_original_grid_samples_in_or_on_region": 0,
+      "all_eight_vertices_actual_stable_grid_nodes": true,
+      "exact_equilibrium_strictly_inside": true,
+      "nonfinite_failure_count": 0,
+      "mat_file": "paper_dynamic_roll_40kph_0.85mu_3.5deg.mat",
+      "exported_mat_sha256": "65e65ddc9a6641ae438714151fbeb748014f741a53d38d40d3f3aecccf6378e8"
+    },
+    {
+      "angle_deg": 7,
+      "initial_states": 69905,
+      "stable_count": 13990,
+      "inner_volume": 0.0568888888888889,
+      "inner_roll_bounds": [
+        0.02666666666666667,
+        0.13333333333333333
+      ],
+      "inner_axis_spans": [
+        4.0,
+        0.13333333333333336,
+        0.10666666666666666
+      ],
+      "raw_stable_roll_bounds": [
+        -0.18666666666666668,
+        0.21333333333333335
+      ],
+      "unstable_original_grid_samples_in_or_on_region": 0,
+      "all_eight_vertices_actual_stable_grid_nodes": true,
+      "exact_equilibrium_strictly_inside": true,
+      "nonfinite_failure_count": 0,
+      "mat_file": "paper_dynamic_roll_40kph_0.85mu_7deg.mat",
+      "exported_mat_sha256": "1e81e8f259bfe752685a76015e3dc4ed363b3307c4acf69b1fa389710c8512ac"
+    }
+  ],
+  "projection": {
+    "kind": "common orthographic camera for all three angles",
+    "elevation_deg": 11,
+    "azimuth_deg": -72,
+    "r_limits": [
+      0.72,
+      -0.72
+    ],
+    "vc_limits": [
+      -10,
+      10
+    ],
+    "phi_limits": [
+      -0.3,
+      0.3
+    ],
+    "paper_axis_unit_ratios_approximately_preserved": true,
+    "all_vertices_visible": true,
+    "per_angle_coordinate_scaling_or_translation": false
+  },
+  "validation": {
+    "dynamic_model_algebra_checks_passed": 26,
+    "all_24_vertices_actual_stable_grid_nodes": true,
+    "zero_unstable_original_grid_nodes_in_each_inner_region": true,
+    "all_24_vertices_and_3_equilibria_stable_at_dt_0p005": true,
+    "independent_geometry_audit_passed": true
+  }
+}

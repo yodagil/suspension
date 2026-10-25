@@ -1,0 +1,20 @@
+{
+  "trial02_vertex_half_dt_checks.json": "dc4e93066309bf82ae46d07ed8e5ff219dbb107983456ab3d79d5a06318b6da8",
+  "checks.json": "9c553e602bbc6ea1ee5f9fc260da7684b6899c4ed28b04eb593e745733458599",
+  "README_KO.md": "fe07a94bcd070262122cb8d2dcd8fc8e272c2202e6910a42c34ee98fe1cdaaac",
+  "equilibria.mat": "5dfb7d379af051512bddc082298225e876eb68536fdc5cc92979f87c8c450e55",
+  "paper_dynamic_roll_40kph_0.85mu_0deg.mat": "ff8718b7240caac35c27a86324d207dd0639f3a1b34801dccaf0d8da05e7518b",
+  "paper_dynamic_roll_40kph_0.85mu_7deg.mat": "1e81e8f259bfe752685a76015e3dc4ed363b3307c4acf69b1fa389710c8512ac",
+  "equilibrium_sheared_full.json": "d8f2bf388f5a3c60c721db5f38f278ba0ffa8163c8cef2e9e79603ab7dd310a1",
+  "paper_dynamic_roll_40kph_0.85mu_3.5deg.mat": "65e65ddc9a6641ae438714151fbeb748014f741a53d38d40d3f3aecccf6378e8",
+  "source/find_fixed_equilibria.m": "4f0e6284f69768ccd16aed9c5f871da0d04d04f9458cef8cf0160bfb1c716ba2",
+  "source/paper_config.m": "e6f1d3070bae654e6dcf15f65abe587b8c274b93a57d906eaa758cbf153c2af6",
+  "source/build_equilibrium_sheared.py": "19eef0ebd169c84055cc28ac1afa2df18c7d708cbb315baf7a8a7993283c7c0f",
+  "source/build_equilibrium_inner.py": "d5811679e1c2ebc4ff1cd9f36e3e9c6f82fa2129f732c55439cf6c376345ac7c",
+  "source/paper_simulate_grid.m": "c176cb4bed042eeaf0cac5a0738062b7f521fc4de02079443c3ec499bbb47cfb",
+  "source/render_trial02.py": "c5a677daf5524fd98bf51e237e9b95f3ba3556c9b3056c6fab18b1397733f04e",
+  "source/export_trial02.py": "ebf008b72577d7abdcff88ac9433560d4ee0784718f033bbeb28ccbea49e298f",
+  "source/run_full_grid.py": "b0da1ec39f64627ad829a89f255382098fc54057d6a0be75d3f8b529f2cba735",
+  "source/verify_trial02_vertices.m": "2d78f1e176ed982037f0ff8b813effe2cd7adfb386628514597d5e264a181e61",
+  "source/paper_rhs.m": "88e175537661874cba204050d141159804d8d9a7cda4d82de6fc26a7a046ef1d"
+}
