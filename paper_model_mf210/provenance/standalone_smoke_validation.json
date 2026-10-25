@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "test": "Isolated generated standalone M-code small-run and MAT roundtrip",
+  "standalone_source_sha256": "add55ae886180cc15e3d5bfa67cce7a2e062cd086ee1a7ea513f23a81cb37b48",
+  "tested_modified_copy_sha256": "f94c1086d5f2a4a9dd216e134384b04890ea2d3312e1b9ee9e0a8af5ccd6cd0d",
+  "runtime": "GNU Octave, version 9.4.0",
+  "actual_matlab_executable_available": false,
+  "test_configuration_changes_only": {
+    "horizon_s": 0.02,
+    "grid_shape": [
+      3,
+      3,
+      3
+    ],
+    "vc": [
+      -0.25,
+      0,
+      0.25
+    ],
+    "r": [
+      -0.02666666666666667,
+      0,
+      0.02666666666666667
+    ],
+    "phi": [
+      -0.02666666666666667,
+      0,
+      0.02666666666666667
+    ]
+  },
+  "unchanged_dynamics_helpers": true,
+  "external_runtime_files_present_in_isolated_directory": [],
+  "production_configuration_unchanged": {
+    "horizon_s": 5,
+    "grid_shape": [
+      81,
+      55,
+      31
+    ],
+    "initial_states_per_angle": 138105
+  },
+  "checks": [
+    "single-file functions parse and execute",
+    "all 3 independent angle cases run",
+    "MATLAB-v7 classification and REGION210 saves load correctly",
+    "18-state hybrid metadata present",
+    "independent original210 geometry extraction without nesting constraints"
+  ],
+  "cases": [
+    {
+      "angle_deg": 0.0,
+      "stable_count": 27,
+      "region_valid": true,
+      "combined_mat_roundtrip_passed": true
+    },
+    {
+      "angle_deg": 3.5,
+      "stable_count": 27,
+      "region_valid": true,
+      "combined_mat_roundtrip_passed": true
+    },
+    {
+      "angle_deg": 7.0,
+      "stable_count": 27,
+      "region_valid": true,
+      "combined_mat_roundtrip_passed": true
+    }
+  ],
+  "stdout_log": "/tmp/mf210_final_single_g4w7h5ex/run.log",
+  "limits": [
+    "Small-run test does not validate full-grid long-horizon results",
+    "Actual MATLAB execution unavailable",
+    "Octave gnuplot transparency and legends differ from MATLAB; final figure uses separate renderer"
+  ]
+}

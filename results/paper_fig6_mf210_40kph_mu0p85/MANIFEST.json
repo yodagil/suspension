@@ -1,0 +1,135 @@
+{
+  "model": "Paper body + original MF210 transient tire hybrid",
+  "speed_kmh": 40,
+  "mu": 0.85,
+  "steer_deg": [
+    0,
+    3.5,
+    7
+  ],
+  "healthy_tires_only": true,
+  "initial_states_per_angle": 138105,
+  "grid_shape": [
+    81,
+    55,
+    31
+  ],
+  "horizon_s": 5,
+  "observation_dt_s": 0.01,
+  "integration_dt_s": 0.0005,
+  "paper_exact_reproduction": false,
+  "nesting_constraints_used": false,
+  "naturally_nested": false,
+  "raw_masks_naturally_nested": false,
+  "mf_source": {
+    "original_source": "/workspace/.matlab-env/reference09_full210_code/fullcar_model.m",
+    "source_sha256": "29c4062948d71dd794d042233025718097ad9654526f64fd7699f63321cd0e7c",
+    "extracted_functions": [
+      "calc_combined_tire_force_scalar",
+      "calc_longitudinal_peak_mu",
+      "calc_mf_longitudinal_scalar",
+      "calc_mf_lateral_scalar",
+      "normalize_wear_case"
+    ],
+    "verbatim_block_sha256": "a26aaa7cc85deb673dbb7c78d0ae0fb307a4aa472d64aec546804a3f90348783",
+    "Fz0_N": 5425,
+    "force_min_N": 100,
+    "force_max_N": 16000,
+    "mu_reference": 0.9,
+    "mu_scaling": "mu_road / 0.9; no peak renormalization",
+    "wear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "MF_combined_slip": "original longitudinal-priority friction ellipse; no complete MF6.2 R-coefficients available",
+    "native_source_sha256": "c97e917b136bb373fb5d7e0ea6c7e0af7dc0bfe9c79420700b9a4fdf9e275170",
+    "verbatim_native_tire_block_sha256": "3da8fa58eb872f00dd502e3dd3c2de3a38b1e310577b8b5b87d64aa1dc4e229a",
+    "dynamics_source_parameters": {
+      "Rw_m": 0.36,
+      "Iw_kgm2": 1.8,
+      "sigma_kappa_m": 0.35,
+      "sigma_alpha_m": 0.75,
+      "tau_load_s": 0.03,
+      "observation_dt_s": 0.01,
+      "RK4_substeps": 20,
+      "kappa_effective_clip": [
+        -0.5,
+        0.5
+      ],
+      "alpha_effective_clip_rad": [
+        -1.2,
+        1.2
+      ],
+      "omega_clip_rad_s": [
+        0,
+        300
+      ]
+    },
+    "normal_load_equation": "PaperEq11 evaluated with source210 ay_load filter",
+    "original_tire_initialization_preserved": true,
+    "historical_quasi_steady_native_source_sha256": "bf9877ca3ff0a0a83ea0b09bfe2805694e80bea35c21d9f9730cd07752705be2",
+    "native_source_metadata_note": "Native source hash corrected after completed transient run. Historical hash belonged to preliminary force-only hybrid. Actual run plan source_sha256.native_mf.cpp and parity report already held the correct transient hash; equations and results were not changed."
+  },
+  "cases": [
+    {
+      "angle_deg": 0,
+      "file": "stable_point_40kph_0.85mu_0deg.mat",
+      "sha256": "d270c7b9b553a16608094e066746d48896b33a065ac01e90afb0a6ae00bfc0d0",
+      "source_classification_sha256": "39b0f6632f4b6cd9686dc72a0e468e454c83b7d846e279406937f1dfeac7f0ea",
+      "source_region_sha256": "6ff01e5bbdd62e67295e81085ac393ca9d152e2c3852e76e04416648e5c3313c",
+      "stable_count": 14416,
+      "selected_volume": 1.7991111111111122,
+      "unchanged_classifications_and_vertices_verified": true,
+      "nonfinite_failures": 0,
+      "extreme_vertices": 8,
+      "planar_faces": 7,
+      "sampled_unstable_inside": 0
+    },
+    {
+      "angle_deg": 3.5,
+      "file": "stable_point_40kph_0.85mu_3.5deg.mat",
+      "sha256": "facc60e4822aea8d2e0b8df869b28729c3e0ecfd3df4cd2a0c3e3b825a2a3fc8",
+      "source_classification_sha256": "cb5ad4f6fece38688ff8637bef7d5569a2c653d20933a9b3e693a9d601a51521",
+      "source_region_sha256": "ec8d3f3d39c4c07a67b80ae2deb603aff86c8b23512128b10d445210f52b8c57",
+      "stable_count": 14685,
+      "selected_volume": 1.201777777777778,
+      "unchanged_classifications_and_vertices_verified": true,
+      "nonfinite_failures": 0,
+      "extreme_vertices": 8,
+      "planar_faces": 8,
+      "sampled_unstable_inside": 0
+    },
+    {
+      "angle_deg": 7,
+      "file": "stable_point_40kph_0.85mu_7deg.mat",
+      "sha256": "dd7f8016802268d87cfa3bd0d937435a8e70296d107f308f44c75cd4c92936e9",
+      "source_classification_sha256": "21e53ba7e8281028f7dcb3b66e99e28076e25561b148469ea923cf44766ca6eb",
+      "source_region_sha256": "b2b50c3d5ec1a40ac21cedd4b8a71d307d0830e885eab151a3b5238a4031d959",
+      "stable_count": 3069,
+      "selected_volume": 0.22755555555555554,
+      "unchanged_classifications_and_vertices_verified": true,
+      "nonfinite_failures": 0,
+      "extreme_vertices": 8,
+      "planar_faces": 8,
+      "sampled_unstable_inside": 0
+    }
+  ],
+  "files_sha256": {
+    "README_KO.md": "47198920182198fd6912d2cec10fa7014f2e9c01320c1161d833f5877704a023",
+    "counterexample_half_dt_checks.json": "f0ecac32d5767c097b78c6cb2e25c6d1cb6e9dd083d7fc8be66bdcfed99a891f",
+    "delivery_validation.json": "fc4392d459b3f1b8a5c59e5380916b65fec210e7bb3f2d48bc89f05aa171b92f",
+    "mf210_comparison.png": "f09bcf1d612bc0a64165b50d0fa73e1a8b526a4d0448997b246e5fd255e84748",
+    "mf_source_manifest.json": "f4eff9b336092ffc1f86b54054ce8b3005d6fd5dcc5e777d0fcc762147dde281",
+    "native_mcode_parity.json": "db6dc71bd848ca328c1afa9bfac24d653c42b6ea453159147f659297a0ef2d3d",
+    "region_audit.json": "15f2237f72090917bf37c26fbbd1376c53873f54fc9c6cfd87cae8c368df92bb",
+    "region_summary.json": "5c277f903cf953d779ba76eca29d7ded94b3bf6c45e5e39d78356c5a5b137506",
+    "source/render_mf_regions.py": "acb0f3a8b50910e4d693586827709c97ab8cae8226509e8579d38cd84d0cc186",
+    "source/validate_delivered_results.py": "6ff0b56b849cee50ef49c0890db3c90afe16df8ee74be76f7d48a9b7517bea19",
+    "stable_point_40kph_0.85mu_0deg.mat": "d270c7b9b553a16608094e066746d48896b33a065ac01e90afb0a6ae00bfc0d0",
+    "stable_point_40kph_0.85mu_3.5deg.mat": "facc60e4822aea8d2e0b8df869b28729c3e0ecfd3df4cd2a0c3e3b825a2a3fc8",
+    "stable_point_40kph_0.85mu_7deg.mat": "dd7f8016802268d87cfa3bd0d937435a8e70296d107f308f44c75cd4c92936e9",
+    "vertex_half_dt_checks.json": "b69c5d99b4e54ada5d2d2eeea82abcb3315279b613c72819b75df30c4363968b"
+  }
+}

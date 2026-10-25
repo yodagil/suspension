@@ -1,0 +1,80 @@
+{
+  "model": "Paper body + original MF210 transient hybrid",
+  "standalone_matlab_entry": "run_mf210_hybrid.m",
+  "external_runtime_files_required_by_entry": [],
+  "angles_deg": [
+    0,
+    3.5,
+    7
+  ],
+  "grid_shape": [
+    81,
+    55,
+    31
+  ],
+  "initial_states_per_angle": 138105,
+  "horizon_s": 5,
+  "speed_kmh": 40,
+  "mu": 0.85,
+  "classification_observation_dt_s": 0.01,
+  "integration_dt_s": 0.0005,
+  "model_dimension": 18,
+  "nesting_constraints_applied": false,
+  "completed_results_included": false,
+  "matching_standalone_smoke_validation_included": true,
+  "provenance": {
+    "model": "Paper body + original MF210 transient hybrid",
+    "original_MF_source_sha256": "29c4062948d71dd794d042233025718097ad9654526f64fd7699f63321cd0e7c",
+    "original_MF_verbatim_block_sha256": "a26aaa7cc85deb673dbb7c78d0ae0fb307a4aa472d64aec546804a3f90348783",
+    "original_region210_source_sha256": "29c4062948d71dd794d042233025718097ad9654526f64fd7699f63321cd0e7c",
+    "source_files": [
+      "matlab/paper_simulate_grid.m",
+      "matlab/paper_initial.m",
+      "matlab/paper_step.m",
+      "matlab/paper_rhs.m",
+      "matlab/mf210_forces.m",
+      "matlab/mf210_force_scalar.m",
+      "region210/build_paper_region.m",
+      "region210/empty_region.m",
+      "native_mf.cpp"
+    ],
+    "source_sha256": [
+      "afd504d724fe6f22c826d26b47a697c4cd0d398c44d5137cfe02a25bf67f6094",
+      "a863a998966f41f5abc968c600253a6e126e556043336ac5e363bab13d7c2a47",
+      "4cae3ebc73116508d1b439374ac7f78ecba223fc23db40820455118a3de0b298",
+      "2b1a6d7ba74a1d010a79e2fb0899bbd8933ef2c1fc9beeab55da740db9af2970",
+      "b61291c65052ef153d81f91bb2dcb272d0e496602245a763f2eab417ee221b65",
+      "6357f53b09a143f185d6f4b90f457bf833dc26d09a023dd95400729b46b5678f",
+      "2c9b395dd14e12988c637a9353f8c92bb10b698c291e64b16ef4866b524f7751",
+      "df191ab4f4e741be23ecd7d919440f653a633c88416a1d826b7b06d4bbd8f0cd",
+      "c97e917b136bb373fb5d7e0ea6c7e0af7dc0bfe9c79420700b9a4fdf9e275170"
+    ],
+    "native_reference_report_passed": true,
+    "native_reference_source_sha256": "c97e917b136bb373fb5d7e0ea6c7e0af7dc0bfe9c79420700b9a4fdf9e275170",
+    "native_reference_executable_sha256": "96924934473dacc1ca8515f2fcb925ad709cfe63bcfece29aac1395bdc71aad3",
+    "selection_independent_of_other_angles": true,
+    "nesting_constraints_applied": false,
+    "configuration_source": "vc_refined_config_0deg.mat",
+    "configuration_source_sha256": "c1e6efdc8a859cbe9be87c0d3e56504442223c6446dd001ed9a9bdab7823b36b"
+  },
+  "files_sha256": {
+    "source/matlab/paper_simulate_grid.m": "afd504d724fe6f22c826d26b47a697c4cd0d398c44d5137cfe02a25bf67f6094",
+    "source/matlab/paper_initial.m": "a863a998966f41f5abc968c600253a6e126e556043336ac5e363bab13d7c2a47",
+    "source/matlab/paper_step.m": "4cae3ebc73116508d1b439374ac7f78ecba223fc23db40820455118a3de0b298",
+    "source/matlab/paper_rhs.m": "2b1a6d7ba74a1d010a79e2fb0899bbd8933ef2c1fc9beeab55da740db9af2970",
+    "source/matlab/mf210_forces.m": "b61291c65052ef153d81f91bb2dcb272d0e496602245a763f2eab417ee221b65",
+    "source/matlab/mf210_force_scalar.m": "6357f53b09a143f185d6f4b90f457bf833dc26d09a023dd95400729b46b5678f",
+    "source/region210/build_paper_region.m": "2c9b395dd14e12988c637a9353f8c92bb10b698c291e64b16ef4866b524f7751",
+    "source/region210/empty_region.m": "df191ab4f4e741be23ecd7d919440f653a633c88416a1d826b7b06d4bbd8f0cd",
+    "run_mf210_hybrid.m": "add55ae886180cc15e3d5bfa67cce7a2e062cd086ee1a7ea513f23a81cb37b48",
+    "source/native_mf.cpp": "c97e917b136bb373fb5d7e0ea6c7e0af7dc0bfe9c79420700b9a4fdf9e275170",
+    "plot_mf210_hybrid.m": "bfb6b5688f62ea746bf5c159ffafcbab4a8f91c7501326f58565a503df1f9629",
+    "README_ko.md": "c4fdc0c8ff6f86c495879618fbc318285a8a2ebb7db0dec05257441f05e2414e",
+    "provenance/mf_source_manifest.json": "f4eff9b336092ffc1f86b54054ce8b3005d6fd5dcc5e777d0fcc762147dde281",
+    "provenance/native_parity.json": "db6dc71bd848ca328c1afa9bfac24d653c42b6ea453159147f659297a0ef2d3d",
+    "provenance/extraction_manifest.json": "e922a46dfc0a9e8558aca4256d53e8c7e90d56da9a37871f08e6d32556e052a0",
+    "provenance/standalone_smoke_validation.json": "2347569e477f00dfdec675ff1fe49ee3c49148d69e6de7e11222e5af71eabf87",
+    "mf210_hybrid_regions.png": "f09bcf1d612bc0a64165b50d0fa73e1a8b526a4d0448997b246e5fd255e84748"
+  },
+  "excluded_material": "Private paper PDF, original upload ZIP, and unrelated repository files are outside the allowlist"
+}

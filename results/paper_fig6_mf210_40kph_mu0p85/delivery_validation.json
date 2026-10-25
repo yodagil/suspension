@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "nesting_constraints_used": false,
+  "cases": [
+    {
+      "angle_deg": 0,
+      "sha256": "d270c7b9b553a16608094e066746d48896b33a065ac01e90afb0a6ae00bfc0d0",
+      "stable_count": 14416,
+      "zero_unstable_grid_nodes_inside": true,
+      "all_vertices_actual_stable_grid_points": true,
+      "volume": 1.7991111111111122,
+      "valid": true,
+      "numerical_failures": 0
+    },
+    {
+      "angle_deg": 3.5,
+      "sha256": "facc60e4822aea8d2e0b8df869b28729c3e0ecfd3df4cd2a0c3e3b825a2a3fc8",
+      "stable_count": 14685,
+      "zero_unstable_grid_nodes_inside": true,
+      "all_vertices_actual_stable_grid_points": true,
+      "volume": 1.201777777777778,
+      "valid": true,
+      "numerical_failures": 0
+    },
+    {
+      "angle_deg": 7,
+      "sha256": "dd7f8016802268d87cfa3bd0d937435a8e70296d107f308f44c75cd4c92936e9",
+      "stable_count": 3069,
+      "zero_unstable_grid_nodes_inside": true,
+      "all_vertices_actual_stable_grid_points": true,
+      "volume": 0.22755555555555554,
+      "valid": true,
+      "numerical_failures": 0
+    }
+  ],
+  "containment": {
+    "3.5deg_in_0deg": {
+      "contained": false,
+      "max_halfspace_residual": 0.4641026473296117
+    },
+    "7deg_in_3.5deg": {
+      "contained": false,
+      "max_halfspace_residual": 0.47723998901751485
+    },
+    "7deg_in_0deg": {
+      "contained": true,
+      "max_halfspace_residual": 0.0
+    }
+  },
+  "raw_mask_inclusion": {
+    "3.5deg_in_0deg": {
+      "included": false,
+      "nonincluded_stable_states": 2551
+    },
+    "7deg_in_3.5deg": {
+      "included": false,
+      "nonincluded_stable_states": 171
+    },
+    "7deg_in_0deg": {
+      "included": false,
+      "nonincluded_stable_states": 40
+    }
+  },
+  "naturally_nested": false,
+  "raw_masks_nested": false
+}

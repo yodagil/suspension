@@ -1,0 +1,302 @@
+{
+  "method": "Original reference09 210-code build_paper_region, verbatim extraction",
+  "coordinate_order": [
+    "vc",
+    "r",
+    "phi"
+  ],
+  "coordinate_units": [
+    "m/s",
+    "rad/s",
+    "rad"
+  ],
+  "nesting_constraints_applied": false,
+  "all_original_unstable_grid_nodes_audited": true,
+  "naturally_nested": false,
+  "raw_masks_naturally_nested": false,
+  "containment": {
+    "3.5deg_in_0deg": {
+      "tested": true,
+      "contained": false,
+      "maximum_signed_halfspace_residual": 0.4641026473296117,
+      "maximum_residual_for_each_child_vertex": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.4641026473296115,
+        0.4641026473296117
+      ],
+      "child_vertices_outside_parent": [
+        [
+          1.75,
+          0.56,
+          -0.4
+        ],
+        [
+          1.5,
+          0.56,
+          0.4
+        ]
+      ]
+    },
+    "7deg_in_3.5deg": {
+      "tested": true,
+      "contained": false,
+      "maximum_signed_halfspace_residual": 0.47723998901751485,
+      "maximum_residual_for_each_child_vertex": [
+        0.47723998901751485,
+        0.23861999450875737,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "child_vertices_outside_parent": [
+        [
+          -0.75,
+          -0.26666666666666666,
+          -0.4
+        ],
+        [
+          -0.75,
+          -0.24000000000000002,
+          0.4
+        ]
+      ]
+    },
+    "7deg_in_0deg": {
+      "tested": true,
+      "contained": true,
+      "maximum_signed_halfspace_residual": 0.0,
+      "maximum_residual_for_each_child_vertex": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "child_vertices_outside_parent": []
+    }
+  },
+  "raw_stable_mask_inclusion": {
+    "3.5deg_in_0deg": {
+      "included": false,
+      "child_stable_parent_unstable_count": 2551
+    },
+    "7deg_in_3.5deg": {
+      "included": false,
+      "child_stable_parent_unstable_count": 171
+    },
+    "7deg_in_0deg": {
+      "included": false,
+      "child_stable_parent_unstable_count": 40
+    }
+  },
+  "cases": [
+    {
+      "angle_deg": 0.0,
+      "vertices": [
+        [
+          -1.25,
+          -0.6133333333333334,
+          -0.4
+        ],
+        [
+          -1.25,
+          -0.6133333333333334,
+          0.4
+        ],
+        [
+          -0.5,
+          0.6133333333333334,
+          -0.4
+        ],
+        [
+          -0.75,
+          0.6133333333333334,
+          0.4
+        ],
+        [
+          0.75,
+          -0.6133333333333334,
+          -0.4
+        ],
+        [
+          0.5,
+          -0.6133333333333334,
+          0.4
+        ],
+        [
+          1.25,
+          0.6133333333333334,
+          -0.4
+        ],
+        [
+          1.0,
+          0.6133333333333334,
+          0.4
+        ]
+      ],
+      "volume": 1.7991111111111122,
+      "valid": true,
+      "stable_count": 14416,
+      "selected_depth": 3.0,
+      "extreme_vertex_count": 8,
+      "planar_face_count": 7,
+      "unstable_grid_nodes_inside_or_on_boundary": 0,
+      "broad_phase": {
+        "enabled": true,
+        "stable_bbox_lower": [
+          -1.75,
+          -0.6133333333333334,
+          -0.4
+        ],
+        "stable_bbox_upper": [
+          1.75,
+          0.6133333333333334,
+          0.4
+        ],
+        "margin": 1e-08,
+        "original_unstable_count": 123689,
+        "retained_unstable_count": 7439,
+        "omitted_unstable_count": 116250,
+        "proof": "Every candidate vertex is an original stable grid node. Every convex combination of those nodes lies within the coordinatewise global stable-node bounds. Nodes strictly beyond those bounds plus the 1e-8 margin cannot belong to any candidate convex hull. Final selected hull is additionally audited against every raw unstable node.",
+        "geometry_changed": false
+      }
+    },
+    {
+      "angle_deg": 3.5,
+      "vertices": [
+        [
+          -0.25,
+          -0.6133333333333334,
+          -0.4
+        ],
+        [
+          -0.5,
+          -0.6133333333333334,
+          0.4
+        ],
+        [
+          -0.25,
+          0.56,
+          -0.4
+        ],
+        [
+          -0.5,
+          0.56,
+          0.4
+        ],
+        [
+          0.25,
+          -0.6133333333333334,
+          -0.4
+        ],
+        [
+          0.25,
+          -0.5066666666666667,
+          0.4
+        ],
+        [
+          1.75,
+          0.56,
+          -0.4
+        ],
+        [
+          1.5,
+          0.56,
+          0.4
+        ]
+      ],
+      "volume": 1.201777777777778,
+      "valid": true,
+      "stable_count": 14685,
+      "selected_depth": 9.0,
+      "extreme_vertex_count": 8,
+      "planar_face_count": 8,
+      "unstable_grid_nodes_inside_or_on_boundary": 0,
+      "broad_phase": {
+        "enabled": true,
+        "stable_bbox_lower": [
+          -2.0,
+          -0.6133333333333334,
+          -0.4
+        ],
+        "stable_bbox_upper": [
+          1.75,
+          0.5866666666666667,
+          0.4
+        ],
+        "margin": 1e-08,
+        "original_unstable_count": 123420,
+        "retained_unstable_count": 8131,
+        "omitted_unstable_count": 115289,
+        "proof": "Every candidate vertex is an original stable grid node. Every convex combination of those nodes lies within the coordinatewise global stable-node bounds. Nodes strictly beyond those bounds plus the 1e-8 margin cannot belong to any candidate convex hull. Final selected hull is additionally audited against every raw unstable node.",
+        "geometry_changed": false
+      }
+    },
+    {
+      "angle_deg": 7.0,
+      "vertices": [
+        [
+          -0.75,
+          -0.26666666666666666,
+          -0.4
+        ],
+        [
+          -0.75,
+          -0.24000000000000002,
+          0.4
+        ],
+        [
+          -0.25,
+          0.26666666666666666,
+          -0.4
+        ],
+        [
+          -0.25,
+          0.3466666666666667,
+          0.4
+        ],
+        [
+          -0.25,
+          -0.26666666666666666,
+          -0.4
+        ],
+        [
+          -0.25,
+          -0.24000000000000002,
+          0.4
+        ],
+        [
+          0.25,
+          0.26666666666666666,
+          -0.4
+        ],
+        [
+          0.25,
+          0.3466666666666667,
+          0.4
+        ]
+      ],
+      "volume": 0.22755555555555554,
+      "valid": true,
+      "stable_count": 3069,
+      "selected_depth": 3.0,
+      "extreme_vertex_count": 8,
+      "planar_face_count": 8,
+      "unstable_grid_nodes_inside_or_on_boundary": 0,
+      "broad_phase": {
+        "enabled": false
+      }
+    }
+  ]
+}

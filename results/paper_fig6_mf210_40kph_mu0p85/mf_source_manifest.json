@@ -1,0 +1,51 @@
+{
+  "original_source": "/workspace/.matlab-env/reference09_full210_code/fullcar_model.m",
+  "source_sha256": "29c4062948d71dd794d042233025718097ad9654526f64fd7699f63321cd0e7c",
+  "extracted_functions": [
+    "calc_combined_tire_force_scalar",
+    "calc_longitudinal_peak_mu",
+    "calc_mf_longitudinal_scalar",
+    "calc_mf_lateral_scalar",
+    "normalize_wear_case"
+  ],
+  "verbatim_block_sha256": "a26aaa7cc85deb673dbb7c78d0ae0fb307a4aa472d64aec546804a3f90348783",
+  "Fz0_N": 5425,
+  "force_min_N": 100,
+  "force_max_N": 16000,
+  "mu_reference": 0.9,
+  "mu_scaling": "mu_road / 0.9; no peak renormalization",
+  "wear": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "MF_combined_slip": "original longitudinal-priority friction ellipse; no complete MF6.2 R-coefficients available",
+  "native_source_sha256": "c97e917b136bb373fb5d7e0ea6c7e0af7dc0bfe9c79420700b9a4fdf9e275170",
+  "verbatim_native_tire_block_sha256": "3da8fa58eb872f00dd502e3dd3c2de3a38b1e310577b8b5b87d64aa1dc4e229a",
+  "dynamics_source_parameters": {
+    "Rw_m": 0.36,
+    "Iw_kgm2": 1.8,
+    "sigma_kappa_m": 0.35,
+    "sigma_alpha_m": 0.75,
+    "tau_load_s": 0.03,
+    "observation_dt_s": 0.01,
+    "RK4_substeps": 20,
+    "kappa_effective_clip": [
+      -0.5,
+      0.5
+    ],
+    "alpha_effective_clip_rad": [
+      -1.2,
+      1.2
+    ],
+    "omega_clip_rad_s": [
+      0,
+      300
+    ]
+  },
+  "normal_load_equation": "PaperEq11 evaluated with source210 ay_load filter",
+  "original_tire_initialization_preserved": true,
+  "historical_quasi_steady_native_source_sha256": "bf9877ca3ff0a0a83ea0b09bfe2805694e80bea35c21d9f9730cd07752705be2",
+  "native_source_metadata_note": "Native source hash corrected after completed transient run. Historical hash belonged to preliminary force-only hybrid. Actual run plan source_sha256.native_mf.cpp and parity report already held the correct transient hash; equations and results were not changed."
+}

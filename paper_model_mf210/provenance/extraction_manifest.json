@@ -1,0 +1,27 @@
+{
+  "original_source": "/workspace/.matlab-env/reference09_full210_code/fullcar_model.m",
+  "original_source_sha256": "29c4062948d71dd794d042233025718097ad9654526f64fd7699f63321cd0e7c",
+  "extraction": "Verbatim bytes from original function declarations through next function boundary. No algorithm edits.",
+  "build_paper_region": {
+    "path": "/workspace/suspension/validation/fig6_mf_transient/region210/build_paper_region.m",
+    "source_start_line": 737,
+    "sha256": "2c9b395dd14e12988c637a9353f8c92bb10b698c291e64b16ef4866b524f7751",
+    "verbatim": true
+  },
+  "empty_region": {
+    "path": "/workspace/suspension/validation/fig6_mf_transient/region210/empty_region.m",
+    "source_start_line": 190,
+    "sha256": "df191ab4f4e741be23ecd7d919440f653a633c88416a1d826b7b06d4bbd8f0cd",
+    "verbatim": true
+  },
+  "defaults": {
+    "hull_inside_tol": 1e-10,
+    "paper_vc_split_tol": 1e-12,
+    "require_inner_no_unstable": true,
+    "inner_depth_start": 2,
+    "allow_stable_mask_fallback": true,
+    "min_limit_points": 8,
+    "max_support_depth": 12
+  },
+  "selection_independence": "Each angle processed independently with identical original defaults; no geometric intersection, scale, clipping, or nesting constraint."
+}

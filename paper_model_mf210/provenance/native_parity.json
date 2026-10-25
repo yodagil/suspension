@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "rhs_states_per_angle": 160,
+  "rhs": [
+    {
+      "angle_deg": 0.0,
+      "valid_states": 160,
+      "rhs_max_error": 4.547473508864641e-13,
+      "force_max_error_N": 2.5011104298755527e-12,
+      "load_max_error_N": 0.0,
+      "step_max_error": 2.842170943040401e-14
+    },
+    {
+      "angle_deg": 3.5,
+      "valid_states": 160,
+      "rhs_max_error": 4.547473508864641e-13,
+      "force_max_error_N": 2.5011104298755527e-12,
+      "load_max_error_N": 0.0,
+      "step_max_error": 5.684341886080802e-14
+    },
+    {
+      "angle_deg": 7.0,
+      "valid_states": 160,
+      "rhs_max_error": 4.547473508864641e-13,
+      "force_max_error_N": 2.5011104298755527e-12,
+      "load_max_error_N": 0.0,
+      "step_max_error": 5.684341886080802e-14
+    }
+  ],
+  "classification": [
+    {
+      "angle_deg": 0,
+      "initial_states": 75,
+      "reason_differences": 0,
+      "stable_count": 44,
+      "runtime_s": 0.6990496439975686,
+      "max_abs_yaw_max_error": 2.3093506273941244e-17,
+      "max_abs_ay_max_error": 1.7763568394002505e-15,
+      "min_wheel_load_max_error": 9.094947017729282e-13
+    },
+    {
+      "angle_deg": 3.5,
+      "initial_states": 75,
+      "reason_differences": 0,
+      "stable_count": 31,
+      "runtime_s": 0.4906929249991663,
+      "max_abs_yaw_max_error": 1.6653345369377348e-16,
+      "max_abs_ay_max_error": 3.552713678800501e-15,
+      "min_wheel_load_max_error": 6.821210263296962e-13
+    },
+    {
+      "angle_deg": 7,
+      "initial_states": 75,
+      "reason_differences": 0,
+      "stable_count": 7,
+      "runtime_s": 0.17105748399626464,
+      "max_abs_yaw_max_error": 4.440892098500626e-16,
+      "max_abs_ay_max_error": 3.552713678800501e-15,
+      "min_wheel_load_max_error": 9.094947017729282e-13
+    }
+  ],
+  "native_source_sha256": "c97e917b136bb373fb5d7e0ea6c7e0af7dc0bfe9c79420700b9a4fdf9e275170",
+  "native_executable_sha256": "96924934473dacc1ca8515f2fcb925ad709cfe63bcfece29aac1395bdc71aad3",
+  "fast_math": false,
+  "nesting_constraints_used": false
+}
