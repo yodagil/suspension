@@ -1,0 +1,45 @@
+{
+  "model": "quasisteady MF free-rolling model; dynamic normal reaction extension; not original full tire transient and not paper exact",
+  "states_per_angle": 40,
+  "rhs_max_abs_error": 2.7284841053187847e-12,
+  "step_max_abs_error": 2.220446049250313e-16,
+  "original_slip_max_abs_error": 0,
+  "free_rolling_Fx_max_abs_N": 0,
+  "mini_points_per_angle": 75,
+  "mini_reason_mismatches": 0,
+  "angles": [
+    {
+      "steer_deg": 0,
+      "rhs_max_abs_error": 1.8189894035458565e-12,
+      "step_max_abs_error": 2.220446049250313e-16,
+      "mini_total": 75,
+      "mini_stable_matlab": 9,
+      "mini_stable_native": 9,
+      "mini_reason_mismatches": 0
+    },
+    {
+      "steer_deg": 3.5,
+      "rhs_max_abs_error": 2.7284841053187847e-12,
+      "step_max_abs_error": 0,
+      "mini_total": 75,
+      "mini_stable_matlab": 10,
+      "mini_stable_native": 10,
+      "mini_reason_mismatches": 0
+    },
+    {
+      "steer_deg": 7,
+      "rhs_max_abs_error": 4.547473508864641e-13,
+      "step_max_abs_error": 2.220446049250313e-16,
+      "mini_total": 75,
+      "mini_stable_matlab": 9,
+      "mini_stable_native": 9,
+      "mini_reason_mismatches": 0
+    }
+  ],
+  "reference_engine": "GNU Octave 9.4.0",
+  "passed": true,
+  "native_source_sha256": "16af6956d881dc9b726bc34b06412d25e4f5fd00fff2ae02dbdab535b53941f9",
+  "native_executable_sha256": "c213dede1f0a91faf6bb599f69a69848bcd615700f56a63d87f81d94a26a7fad",
+  "fast_math": false,
+  "nesting_constraints_used": false
+}

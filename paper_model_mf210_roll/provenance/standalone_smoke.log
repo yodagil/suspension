@@ -1,0 +1,17 @@
+VALIDATION SMOKE TEST: each own equilibrium +/- small fixed spacings; 3x3x3 grid, 0.02 s.
+
+Quasisteady MF, dynamic roll reaction: 40 km/h, mu=0.85, delta=0 deg
+Own equilibrium [vc r phi]=[-0.0128781147848 0 5.86715298258e-29], max real eigenvalue=-1
+   states     27 /     27, stable so far     27, elapsed 0.1 s
+Saved: stable=27/27; local cuboid volume=8e-07; ties=1
+
+Quasisteady MF, dynamic roll reaction: 40 km/h, mu=0.85, delta=3.5 deg
+Own equilibrium [vc r phi]=[0.162288447214 0.283270322727 0.061013595452], max real eigenvalue=-1.04399824
+   states     27 /     27, stable so far     27, elapsed 0.1 s
+Saved: stable=27/27; local cuboid volume=8e-07; ties=1
+
+Quasisteady MF, dynamic roll reaction: 40 km/h, mu=0.85, delta=7 deg
+Own equilibrium [vc r phi]=[0.294118042454 0.567075892042 0.122142477668], max real eigenvalue=-1.18024734
+   states     27 /     27, stable so far     27, elapsed 0.1 s
+Saved: stable=27/27; local cuboid volume=8e-07; ties=1
+error: ignoring const execution_exception& while preparing to exit

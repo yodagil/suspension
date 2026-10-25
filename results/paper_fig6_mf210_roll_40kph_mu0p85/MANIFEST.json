@@ -1,0 +1,161 @@
+{
+  "model": "Five-state paper body with original MF210 algebraic free-rolling forces and dynamic roll-reaction extension",
+  "speed_kmh": 40,
+  "mu": 0.85,
+  "angles_deg": [
+    0,
+    3.5,
+    7
+  ],
+  "healthy_tires_only": true,
+  "initial_states_per_angle": 138105,
+  "grid_shape": [
+    81,
+    55,
+    31
+  ],
+  "horizon_s": 5,
+  "observation_dt_s": 0.01,
+  "integration_dt_s": 0.0005,
+  "paper_exact_reproduction": false,
+  "original_full_tire_transient_model": false,
+  "tire_force_coefficients_changed": false,
+  "region": "Independent maximum-volume all-stable grid cuboid containing its own stable equilibrium",
+  "selection_independent_of_other_angles": true,
+  "nesting_constraints_used": false,
+  "angle_specific_parameter_changes": false,
+  "roll_scaling_or_caps_applied": false,
+  "roll_span_scope": "Selected conservative inner hexahedra; raw roll envelopes do not narrow across all three angles",
+  "cases": [
+    {
+      "angle_deg": 0.0,
+      "file": "stable_point_40kph_0.85mu_0deg.mat",
+      "sha256": "a58d8847e57e943af422b963528466d55f157d366acc7885ead3c711b57ec644",
+      "source_classification_sha256": "a6665a2ada0d2180d3a234533b55d7e13569f18c02465c71839a6d4ab642faa9",
+      "stable_count": 4554,
+      "numerical_failures": 0,
+      "selected_roll_bounds": [
+        -0.18666666666666668,
+        0.16
+      ],
+      "selected_roll_span": 0.3466666666666667,
+      "selected_volume": 0.3605333333333334,
+      "raw_stable_bounds": [
+        [
+          -7.75,
+          1.25
+        ],
+        [
+          -0.6133333333333334,
+          0.6133333333333334
+        ],
+        [
+          -0.18666666666666668,
+          0.18666666666666668
+        ]
+      ],
+      "extreme_vertices": 8,
+      "planar_faces": 6,
+      "unstable_grid_nodes_inside": 0,
+      "unchanged_masks_vertices_and_equilibrium_verified": true
+    },
+    {
+      "angle_deg": 3.5,
+      "file": "stable_point_40kph_0.85mu_3.5deg.mat",
+      "sha256": "b6556c1393b278e2d2a6714800df3a563489010132dffbbfd74a9abeb7391f7c",
+      "source_classification_sha256": "ac444c486a3d608eee30d2bee6eeb9a5328adac874ea16c68fbb32a347faa807",
+      "stable_count": 4811,
+      "numerical_failures": 0,
+      "selected_roll_bounds": [
+        -0.10666666666666667,
+        0.18666666666666668
+      ],
+      "selected_roll_span": 0.29333333333333333,
+      "selected_volume": 0.2522666666666667,
+      "raw_stable_bounds": [
+        [
+          -10.0,
+          2.0
+        ],
+        [
+          -0.6133333333333334,
+          0.6133333333333334
+        ],
+        [
+          -0.18666666666666668,
+          0.18666666666666668
+        ]
+      ],
+      "extreme_vertices": 8,
+      "planar_faces": 6,
+      "unstable_grid_nodes_inside": 0,
+      "unchanged_masks_vertices_and_equilibrium_verified": true
+    },
+    {
+      "angle_deg": 7.0,
+      "file": "stable_point_40kph_0.85mu_7deg.mat",
+      "sha256": "9f6a26d62c31315e518cc80ea600bd5be7a4cc0834b2e4dce49d73aefed7edd6",
+      "source_classification_sha256": "4c94752fc5ceddd9a1009bfd9bc65029f209fd5e28d2cb4af3f30e35ab1d03c9",
+      "stable_count": 3247,
+      "numerical_failures": 0,
+      "selected_roll_bounds": [
+        0.0,
+        0.16
+      ],
+      "selected_roll_span": 0.16,
+      "selected_volume": 0.08,
+      "raw_stable_bounds": [
+        [
+          -8.5,
+          1.75
+        ],
+        [
+          -0.6133333333333334,
+          0.6133333333333334
+        ],
+        [
+          -0.18666666666666668,
+          0.18666666666666668
+        ]
+      ],
+      "extreme_vertices": 8,
+      "planar_faces": 6,
+      "unstable_grid_nodes_inside": 0,
+      "unchanged_masks_vertices_and_equilibrium_verified": true
+    }
+  ],
+  "pairwise_containment": {
+    "3.5deg_in_0deg": {
+      "contained": false,
+      "max_halfspace_residual": 0.25
+    },
+    "7deg_in_3.5deg": {
+      "contained": false,
+      "max_halfspace_residual": 0.25
+    },
+    "7deg_in_0deg": {
+      "contained": false,
+      "max_halfspace_residual": 0.5
+    }
+  },
+  "naturally_nested": false,
+  "files_sha256": {
+    "README_KO.md": "0e6cf1c5f2626bdbf2a91c65ce07fdced0e4ce67d13fafb1ef6502a93ba0a171",
+    "paper_roll_comparison.png": "1860626c6940204a44d3aaff331da64efbf0ac6d4dad69109a4cf4810af53688",
+    "region_summary.json": "93a567ff9b3dc6eb85a3f1f787eefaa77fecbeb1066536d329b9016167ef2f3f",
+    "render_summary.json": "ecbeb576282f400193eaa91e7b2e2ee771058cca9fd0a07656bca48badad8317",
+    "source/render_local_comparison.py": "06db27a485ddb2897a5325b8183f59e986abc702f9243fd2de690c07ae73c909",
+    "stable_point_40kph_0.85mu_0deg.mat": "a58d8847e57e943af422b963528466d55f157d366acc7885ead3c711b57ec644",
+    "stable_point_40kph_0.85mu_3.5deg.mat": "b6556c1393b278e2d2a6714800df3a563489010132dffbbfd74a9abeb7391f7c",
+    "stable_point_40kph_0.85mu_7deg.mat": "9f6a26d62c31315e518cc80ea600bd5be7a4cc0834b2e4dce49d73aefed7edd6",
+    "validation/computation_plan.json": "b76e50d0469f6ae2f7a334cd53935f9f986673fd4012a632c84c6b29eb9dc335",
+    "validation/corners_interior_and_time_refinement.json": "0b53a11fbaf0385df836702bf2b322300105b298153b82f49a4cdbc75722755c",
+    "validation/equilibrium_audit.json": "1a65853a071dcb98f42032692006cfac9839e370bf3b4b3ca58468714d5266db",
+    "validation/local_cuboid_bruteforce.json": "071fb59fc005f2a6fad21f5fe9aabaa3e098cb9881f57b285ba6db91fdec04e0",
+    "validation/mf_source_manifest.json": "a68e2720e77dd449c1876778248fed7f0bef1fd5ddc23e806566a598f58a519e",
+    "validation/native_mcode_parity.json": "37ad30f3aa5cc502cb4bb9fa11b1df339732a7b85b50c0069826c64b6791b8e8",
+    "validation/physics_parity_audit.json": "1850eaceeb19fd9c7df13b21218d392c5bc830e7d112507040501f967ec7d849"
+  },
+  "source_code_package": "downloads/MF210_PaperRoll_40kph_Code.zip",
+  "standalone_m_sha256": "a098bdfe035f6bd114bd1d68f7acc273c48e2f7fab005f1c6dc5a907de4bb43c"
+}

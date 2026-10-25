@@ -1,0 +1,198 @@
+{
+  "geometry_dir": "/workspace/suspension/validation/fig6_mf_roll_algebraic/geometry_equilibrium_local",
+  "cases": [
+    {
+      "angle_deg": 0,
+      "region_available": true,
+      "checks": [
+        {
+          "name": "vertices_center_100_uniform_interior",
+          "observation_dt_s": 0.01,
+          "RK4_substeps": 20,
+          "integration_dt_s": 0.0005,
+          "trajectories": 109,
+          "stable_count": 109,
+          "failed_count": 0,
+          "max_abs_yaw": 0.56,
+          "max_abs_ay": 8.077557429680894,
+          "min_wheel_load": 21.400239362169486,
+          "all_stable": true,
+          "csv": "/workspace/suspension/validation/fig6_mf_roll_algebraic/geometry_equilibrium_local/trajectory_validation/0deg_vertices_center_100_uniform_interior.csv"
+        },
+        {
+          "name": "vertices_center_100_uniform_interior_half_step",
+          "observation_dt_s": 0.005,
+          "RK4_substeps": 20,
+          "integration_dt_s": 0.00025,
+          "trajectories": 109,
+          "stable_count": 109,
+          "failed_count": 0,
+          "max_abs_yaw": 0.56,
+          "max_abs_ay": 8.077557429680894,
+          "min_wheel_load": 21.401164927256104,
+          "all_stable": true,
+          "csv": "/workspace/suspension/validation/fig6_mf_roll_algebraic/geometry_equilibrium_local/trajectory_validation/0deg_vertices_center_100_uniform_interior_half_step.csv"
+        },
+        {
+          "name": "corners_half_observation_step",
+          "observation_dt_s": 0.005,
+          "RK4_substeps": 20,
+          "integration_dt_s": 0.00025,
+          "trajectories": 8,
+          "stable_count": 8,
+          "failed_count": 0,
+          "max_abs_yaw": 0.56,
+          "max_abs_ay": 5.985879576233116,
+          "min_wheel_load": 21.401164927256104,
+          "all_stable": true,
+          "csv": "/workspace/suspension/validation/fig6_mf_roll_algebraic/geometry_equilibrium_local/trajectory_validation/0deg_corners_half_observation_step.csv"
+        },
+        {
+          "name": "corners_tenth_observation_step",
+          "observation_dt_s": 0.001,
+          "RK4_substeps": 20,
+          "integration_dt_s": 5e-05,
+          "trajectories": 8,
+          "stable_count": 8,
+          "failed_count": 0,
+          "max_abs_yaw": 0.56,
+          "max_abs_ay": 5.9866588037274076,
+          "min_wheel_load": 21.03400336578443,
+          "all_stable": true,
+          "csv": "/workspace/suspension/validation/fig6_mf_roll_algebraic/geometry_equilibrium_local/trajectory_validation/0deg_corners_tenth_observation_step.csv"
+        }
+      ],
+      "all_checked_trajectories_stable": true
+    },
+    {
+      "angle_deg": 3.5,
+      "region_available": true,
+      "checks": [
+        {
+          "name": "vertices_center_100_uniform_interior",
+          "observation_dt_s": 0.01,
+          "RK4_substeps": 20,
+          "integration_dt_s": 0.0005,
+          "trajectories": 109,
+          "stable_count": 109,
+          "failed_count": 0,
+          "max_abs_yaw": 0.6133333333333334,
+          "max_abs_ay": 6.615592831811018,
+          "min_wheel_load": 2.9478209020576287,
+          "all_stable": true,
+          "csv": "/workspace/suspension/validation/fig6_mf_roll_algebraic/geometry_equilibrium_local/trajectory_validation/3.5deg_vertices_center_100_uniform_interior.csv"
+        },
+        {
+          "name": "vertices_center_100_uniform_interior_half_step",
+          "observation_dt_s": 0.005,
+          "RK4_substeps": 20,
+          "integration_dt_s": 0.00025,
+          "trajectories": 109,
+          "stable_count": 109,
+          "failed_count": 0,
+          "max_abs_yaw": 0.6133333333333334,
+          "max_abs_ay": 6.615592831811018,
+          "min_wheel_load": 1.951657546171191,
+          "all_stable": true,
+          "csv": "/workspace/suspension/validation/fig6_mf_roll_algebraic/geometry_equilibrium_local/trajectory_validation/3.5deg_vertices_center_100_uniform_interior_half_step.csv"
+        },
+        {
+          "name": "corners_half_observation_step",
+          "observation_dt_s": 0.005,
+          "RK4_substeps": 20,
+          "integration_dt_s": 0.00025,
+          "trajectories": 8,
+          "stable_count": 8,
+          "failed_count": 0,
+          "max_abs_yaw": 0.6133333333333334,
+          "max_abs_ay": 5.845003684613131,
+          "min_wheel_load": 1.951657546171191,
+          "all_stable": true,
+          "csv": "/workspace/suspension/validation/fig6_mf_roll_algebraic/geometry_equilibrium_local/trajectory_validation/3.5deg_corners_half_observation_step.csv"
+        },
+        {
+          "name": "corners_tenth_observation_step",
+          "observation_dt_s": 0.001,
+          "RK4_substeps": 20,
+          "integration_dt_s": 5e-05,
+          "trajectories": 8,
+          "stable_count": 8,
+          "failed_count": 0,
+          "max_abs_yaw": 0.6133333333333334,
+          "max_abs_ay": 5.846103074373277,
+          "min_wheel_load": 1.9194469113313062,
+          "all_stable": true,
+          "csv": "/workspace/suspension/validation/fig6_mf_roll_algebraic/geometry_equilibrium_local/trajectory_validation/3.5deg_corners_tenth_observation_step.csv"
+        }
+      ],
+      "all_checked_trajectories_stable": true
+    },
+    {
+      "angle_deg": 7,
+      "region_available": true,
+      "checks": [
+        {
+          "name": "vertices_center_100_uniform_interior",
+          "observation_dt_s": 0.01,
+          "RK4_substeps": 20,
+          "integration_dt_s": 0.0005,
+          "trajectories": 109,
+          "stable_count": 109,
+          "failed_count": 0,
+          "max_abs_yaw": 0.6133333333333334,
+          "max_abs_ay": 7.074430199449854,
+          "min_wheel_load": 11.037058713450733,
+          "all_stable": true,
+          "csv": "/workspace/suspension/validation/fig6_mf_roll_algebraic/geometry_equilibrium_local/trajectory_validation/7deg_vertices_center_100_uniform_interior.csv"
+        },
+        {
+          "name": "vertices_center_100_uniform_interior_half_step",
+          "observation_dt_s": 0.005,
+          "RK4_substeps": 20,
+          "integration_dt_s": 0.00025,
+          "trajectories": 109,
+          "stable_count": 109,
+          "failed_count": 0,
+          "max_abs_yaw": 0.6133333333333334,
+          "max_abs_ay": 7.074430199449854,
+          "min_wheel_load": 11.047784744617275,
+          "all_stable": true,
+          "csv": "/workspace/suspension/validation/fig6_mf_roll_algebraic/geometry_equilibrium_local/trajectory_validation/7deg_vertices_center_100_uniform_interior_half_step.csv"
+        },
+        {
+          "name": "corners_half_observation_step",
+          "observation_dt_s": 0.005,
+          "RK4_substeps": 20,
+          "integration_dt_s": 0.00025,
+          "trajectories": 8,
+          "stable_count": 8,
+          "failed_count": 0,
+          "max_abs_yaw": 0.6133333333333334,
+          "max_abs_ay": 7.074430199449854,
+          "min_wheel_load": 11.047784744617275,
+          "all_stable": true,
+          "csv": "/workspace/suspension/validation/fig6_mf_roll_algebraic/geometry_equilibrium_local/trajectory_validation/7deg_corners_half_observation_step.csv"
+        },
+        {
+          "name": "corners_tenth_observation_step",
+          "observation_dt_s": 0.001,
+          "RK4_substeps": 20,
+          "integration_dt_s": 5e-05,
+          "trajectories": 8,
+          "stable_count": 8,
+          "failed_count": 0,
+          "max_abs_yaw": 0.6133333333333334,
+          "max_abs_ay": 7.074430199449854,
+          "min_wheel_load": 11.021901042103309,
+          "all_stable": true,
+          "csv": "/workspace/suspension/validation/fig6_mf_roll_algebraic/geometry_equilibrium_local/trajectory_validation/7deg_corners_tenth_observation_step.csv"
+        }
+      ],
+      "all_checked_trajectories_stable": true
+    }
+  ],
+  "all_available_regions_checks_passed": true,
+  "sample_seed": 20261025,
+  "continuous_stability_certificate": false,
+  "geometry_adjusted_after_checks": false
+}

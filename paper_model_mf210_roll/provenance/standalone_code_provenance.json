@@ -1,0 +1,30 @@
+{
+  "model": "Five-state paper body, original210 quasisteady MF force kernel, dynamic normal-reaction extension",
+  "original_MF_source_sha256": "29c4062948d71dd794d042233025718097ad9654526f64fd7699f63321cd0e7c",
+  "original_MF_verbatim_block_sha256": "a26aaa7cc85deb673dbb7c78d0ae0fb307a4aa472d64aec546804a3f90348783",
+  "configuration_source": "vc_refined_5s/classification_0deg.mat",
+  "configuration_source_sha256": "a6665a2ada0d2180d3a234533b55d7e13569f18c02465c71839a6d4ab642faa9",
+  "frozen_dynamic_source_files": [
+    "matlab/paper_simulate_grid.m",
+    "matlab/paper_initial.m",
+    "matlab/paper_step.m",
+    "matlab/paper_rhs.m",
+    "matlab/mf210_forces.m"
+  ],
+  "frozen_dynamic_source_sha256": [
+    "afd504d724fe6f22c826d26b47a697c4cd0d398c44d5137cfe02a25bf67f6094",
+    "4af0ce55d09284549e411e6e2dc8c9b5731ee362545a909748955894a8cdb2bd",
+    "aa9422ea10f514b1ee6a9652bb1ffe0944ae3f5a394bca8c33072e6cb83049fe",
+    "0cdca91157f4a62164d657770aa7b5abb38f2d9bc088ab9cc84f3628ea5bf692",
+    "b61291c65052ef153d81f91bb2dcb272d0e496602245a763f2eab417ee221b65"
+  ],
+  "native_cpp_source_sha256": "16af6956d881dc9b726bc34b06412d25e4f5fd00fff2ae02dbdab535b53941f9",
+  "equilibrium_newton_source_sha256": "26d3fe364d0c94efc293be4638395b83143b5574b246e2b0edf6d5505d259a2d",
+  "geometry_helper_source_sha256": "20fb5ced7290c3e23e022908692630aee60cc7621abf27b83067884e0c05b6b8",
+  "paper_exact_reproduction": false,
+  "original_full_tire_transient_model": false,
+  "tire_force_coefficients_changed": false,
+  "selection_independent_of_other_angles": true,
+  "equilibrium_centering_required": false,
+  "nesting_constraints_applied": false
+}

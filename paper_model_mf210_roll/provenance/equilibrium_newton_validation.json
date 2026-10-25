@@ -1,0 +1,57 @@
+{
+  "independent_base_matlab_solver": "3x3 central-difference damped Newton, p=0, steering continuation from zero at 0.1-degree increments",
+  "continuation_steps": 71,
+  "all_continuation_roots_locally_stable_and_physically_admissible": true,
+  "maximum_continuation_RHS_residual": 6.602590474358324e-13,
+  "cases": [
+    {
+      "angle_deg": 0.0,
+      "state": [
+        11.11111111111111,
+        -0.012878114784838085,
+        0.0,
+        5.867152982581275e-29,
+        0.0
+      ],
+      "maximum_abs_state_difference_vs_python_native": 3.31644434137246e-14,
+      "maximum_abs_dynamic_jacobian_difference_vs_python_native": 2.1884716261411086e-12,
+      "maximum_abs_body_RHS_residual": 6.602590474358324e-13,
+      "maximum_dynamic_eigenvalue_real_part": -0.9999999999999998,
+      "locally_asymptotically_stable_at_fixed_u": true,
+      "instantaneous_physical_constraints_satisfied": true
+    },
+    {
+      "angle_deg": 3.5,
+      "state": [
+        11.11111111111111,
+        0.16228844721374136,
+        0.28327032272678754,
+        0.061013595451983295,
+        0.0
+      ],
+      "maximum_abs_state_difference_vs_python_native": 5.551115123125783e-17,
+      "maximum_abs_dynamic_jacobian_difference_vs_python_native": 9.744383078214014e-11,
+      "maximum_abs_body_RHS_residual": 1.8189894035458566e-16,
+      "maximum_dynamic_eigenvalue_real_part": -1.04399823577436,
+      "locally_asymptotically_stable_at_fixed_u": true,
+      "instantaneous_physical_constraints_satisfied": true
+    },
+    {
+      "angle_deg": 7.0,
+      "state": [
+        11.11111111111111,
+        0.2941180424539372,
+        0.5670758920419263,
+        0.12214247766784062,
+        0.0
+      ],
+      "maximum_abs_state_difference_vs_python_native": 1.1102230246251565e-16,
+      "maximum_abs_dynamic_jacobian_difference_vs_python_native": 1.3322676295501878e-10,
+      "maximum_abs_body_RHS_residual": 1.7763568394002505e-15,
+      "maximum_dynamic_eigenvalue_real_part": -1.1802473372599922,
+      "locally_asymptotically_stable_at_fixed_u": true,
+      "instantaneous_physical_constraints_satisfied": true
+    }
+  ],
+  "global_uniqueness_claimed": false
+}

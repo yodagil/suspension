@@ -1,0 +1,212 @@
+{
+  "passed": true,
+  "runtime": "GNU Octave 9.4.0, MATLAB-compatible base M-code",
+  "standalone_source_sha256": "a098bdfe035f6bd114bd1d68f7acc273c48e2f7fab005f1c6dc5a907de4bb43c",
+  "public_local_cuboid_helper_sha256": "20fb5ced7290c3e23e022908692630aee60cc7621abf27b83067884e0c05b6b8",
+  "equilibrium_newton_source_sha256": "26d3fe364d0c94efc293be4638395b83143b5574b246e2b0edf6d5505d259a2d",
+  "single_m_file_executed_in_fresh_isolated_directory": true,
+  "external_helpers_available_to_isolated_driver": false,
+  "full_production_matlab_sweep_recomputed": false,
+  "embedded_production_configuration_source": "vc_refined_5s/classification_0deg.mat",
+  "embedded_production_grid_shape": [
+    81,
+    55,
+    31
+  ],
+  "production_horizon_s": 5,
+  "all_completed_run_source_hashes_preserved": true,
+  "dynamics_helpers_embedded_verbatim": true,
+  "classification_and_equilibrium_saved_before_geometry": true,
+  "smoke_horizon_s": 0.02,
+  "smoke_grid_shape_per_own_equilibrium": [
+    3,
+    3,
+    3
+  ],
+  "smoke_cases": [
+    {
+      "angle_deg": 0.0,
+      "stable_count": 27,
+      "total_count": 27,
+      "contains_own_equilibrium": true,
+      "required_saved_mat_structures_present": true,
+      "classification_checkpoint_present": true
+    },
+    {
+      "angle_deg": 3.5,
+      "stable_count": 27,
+      "total_count": 27,
+      "contains_own_equilibrium": true,
+      "required_saved_mat_structures_present": true,
+      "classification_checkpoint_present": true
+    },
+    {
+      "angle_deg": 7.0,
+      "stable_count": 27,
+      "total_count": 27,
+      "contains_own_equilibrium": true,
+      "required_saved_mat_structures_present": true,
+      "classification_checkpoint_present": true
+    }
+  ],
+  "equilibrium_validation": {
+    "independent_base_matlab_solver": "3x3 central-difference damped Newton, p=0, steering continuation from zero at 0.1-degree increments",
+    "continuation_steps": 71,
+    "all_continuation_roots_locally_stable_and_physically_admissible": true,
+    "maximum_continuation_RHS_residual": 6.602590474358324e-13,
+    "cases": [
+      {
+        "angle_deg": 0.0,
+        "state": [
+          11.11111111111111,
+          -0.012878114784838085,
+          0.0,
+          5.867152982581275e-29,
+          0.0
+        ],
+        "maximum_abs_state_difference_vs_python_native": 3.31644434137246e-14,
+        "maximum_abs_dynamic_jacobian_difference_vs_python_native": 2.1884716261411086e-12,
+        "maximum_abs_body_RHS_residual": 6.602590474358324e-13,
+        "maximum_dynamic_eigenvalue_real_part": -0.9999999999999998,
+        "locally_asymptotically_stable_at_fixed_u": true,
+        "instantaneous_physical_constraints_satisfied": true
+      },
+      {
+        "angle_deg": 3.5,
+        "state": [
+          11.11111111111111,
+          0.16228844721374136,
+          0.28327032272678754,
+          0.061013595451983295,
+          0.0
+        ],
+        "maximum_abs_state_difference_vs_python_native": 5.551115123125783e-17,
+        "maximum_abs_dynamic_jacobian_difference_vs_python_native": 9.744383078214014e-11,
+        "maximum_abs_body_RHS_residual": 1.8189894035458566e-16,
+        "maximum_dynamic_eigenvalue_real_part": -1.04399823577436,
+        "locally_asymptotically_stable_at_fixed_u": true,
+        "instantaneous_physical_constraints_satisfied": true
+      },
+      {
+        "angle_deg": 7.0,
+        "state": [
+          11.11111111111111,
+          0.2941180424539372,
+          0.5670758920419263,
+          0.12214247766784062,
+          0.0
+        ],
+        "maximum_abs_state_difference_vs_python_native": 1.1102230246251565e-16,
+        "maximum_abs_dynamic_jacobian_difference_vs_python_native": 1.3322676295501878e-10,
+        "maximum_abs_body_RHS_residual": 1.7763568394002505e-15,
+        "maximum_dynamic_eigenvalue_real_part": -1.1802473372599922,
+        "locally_asymptotically_stable_at_fixed_u": true,
+        "instantaneous_physical_constraints_satisfied": true
+      }
+    ],
+    "global_uniqueness_claimed": false
+  },
+  "public_helper_full_saved_mask_cases": [
+    {
+      "angle_deg": 0.0,
+      "grid_indices_1based": [
+        39,
+        43,
+        7,
+        46,
+        9,
+        22
+      ],
+      "volume": 0.3605333333333334,
+      "roll_span": 0.3466666666666667,
+      "maximum_volume_tie_count": 2,
+      "exact_bounds_vertices_all_ties_match_python_with_independently_newton_computed_anchor": true
+    },
+    {
+      "angle_deg": 3.5,
+      "grid_indices_1based": [
+        41,
+        44,
+        8,
+        51,
+        12,
+        23
+      ],
+      "volume": 0.2522666666666667,
+      "roll_span": 0.29333333333333333,
+      "maximum_volume_tie_count": 1,
+      "exact_bounds_vertices_all_ties_match_python_with_independently_newton_computed_anchor": true
+    },
+    {
+      "angle_deg": 7.0,
+      "grid_indices_1based": [
+        42,
+        45,
+        26,
+        51,
+        16,
+        22
+      ],
+      "volume": 0.08,
+      "roll_span": 0.16,
+      "maximum_volume_tie_count": 1,
+      "exact_bounds_vertices_all_ties_match_python_with_independently_newton_computed_anchor": true
+    }
+  ],
+  "filtered_bruteforce_cases": 122,
+  "filtered_bruteforce_report": "local_cuboid_small_grid_audit.json",
+  "filtered_bruteforce_report_sha256": "109fa176df1b60849c8bd767566c5f9870fac8a729501503ecc1154153e520f0",
+  "frozen_source_smoke_parity_error_columns_yaw_ay_minload_and_mask_mismatches": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "plot_validation": {
+    "passed": true,
+    "png_and_fig_saved": true,
+    "actual_display_coordinates_match_saved_vertices_exactly": true,
+    "display_order": [
+      "r",
+      "vc",
+      "phi"
+    ],
+    "x_direction": "reverse",
+    "camera_azimuth_elevation_deg": [
+      -72,
+      11
+    ],
+    "projection": "orthographic",
+    "roll_limits_rad": [
+      -0.3,
+      0.3
+    ],
+    "vc_limits_m_s": [
+      -2,
+      2
+    ],
+    "r_limits_rad_s": [
+      -0.72,
+      0.72
+    ],
+    "matlab_quadrilateral_faces_per_cuboid": 6,
+    "actual_edges_per_cuboid": 12,
+    "matlab_native_runtime_executed": false,
+    "octave_renderer_note": "Headless gnuplot internally triangulates six faces and emits overlay-legend warnings; six-face geometry and twelve true edges are preserved"
+  },
+  "model_scope": "Five-state quasisteady MF forces with original coefficients and shifts; not original210 tire transients; unchanged paper body plus explicit physical dynamic normal-reaction extension of Eq11; local cuboid must contain its own stable equilibrium, need not be centered; no nesting, angle-specific shrink, or continuous-state certification"
+}

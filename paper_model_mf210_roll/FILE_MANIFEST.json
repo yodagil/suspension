@@ -1,0 +1,30 @@
+{
+  "model": "MF210 quasisteady free-rolling tires + paper body + dynamic roll-reaction extension",
+  "standalone_entry": "run_mf210_paper_roll.m",
+  "external_runtime_helpers_required": false,
+  "files_sha256": {
+    "README_ko.md": "860f9c031f10d23f4a6db9785e397f4b2a75c842665fb83bd0a0c2cd803be691",
+    "audit_local_equilibrium_cuboid.m": "a67fb8193c5d7e26034af0f7b1eed5e8d0182222df2ab6737bde73c9957a973c",
+    "audit_local_equilibrium_cuboid_small.m": "0f4ab2cf74f6a41137a8648abbcac43ea7b1aef9807ef58c65cdcc59ea474a44",
+    "build_local_equilibrium_cuboid.m": "20fb5ced7290c3e23e022908692630aee60cc7621abf27b83067884e0c05b6b8",
+    "local_cuboid_matlab_audit.json": "8507b7c8567e4bd685659ad95a52a4b695bebf950db2a87f527cc42a23385fb1",
+    "local_cuboid_small_grid_audit.json": "109fa176df1b60849c8bd767566c5f9870fac8a729501503ecc1154153e520f0",
+    "plot_mf210_paper_roll.m": "a3470d210c3e17f316763733ebf4f4094018003f6730bd2da65b50004e3244f8",
+    "provenance/equilibrium_newton_validation.json": "c569fe7d976fb70c3ceb71f84980b14779e8d81480e27008bdea335e59cf2d47",
+    "provenance/local_cuboid_matlab_audit.json": "8507b7c8567e4bd685659ad95a52a4b695bebf950db2a87f527cc42a23385fb1",
+    "provenance/local_cuboid_small_grid_audit.json": "109fa176df1b60849c8bd767566c5f9870fac8a729501503ecc1154153e520f0",
+    "provenance/standalone_code_provenance.json": "a2ed6a3380fbd10cce67083c60a369b1276cbcde075aa4c2c31925a4f00731ad",
+    "provenance/standalone_smoke.log": "4abe0f0bb44404cc5cc439be7becd984f61021a8fa5010c119245321d261b638",
+    "provenance/standalone_smoke_validation.json": "6dd16320b17849dd70991734e558c499b792af086758e5615fd6a538bb31c9bf",
+    "run_mf210_paper_roll.m": "a098bdfe035f6bd114bd1d68f7acc273c48e2f7fab005f1c6dc5a907de4bb43c",
+    "source/compute_mf210_body_equilibria.m": "26d3fe364d0c94efc293be4638395b83143b5574b246e2b0edf6d5505d259a2d",
+    "source/matlab/mf210_force_scalar.m": "6357f53b09a143f185d6f4b90f457bf833dc26d09a023dd95400729b46b5678f",
+    "source/matlab/mf210_forces.m": "b61291c65052ef153d81f91bb2dcb272d0e496602245a763f2eab417ee221b65",
+    "source/matlab/paper_config.m": "fa9dce0baba738255cda04996bc4b6bd463b8d573a37f942037a7349d5e6bde5",
+    "source/matlab/paper_initial.m": "4af0ce55d09284549e411e6e2dc8c9b5731ee362545a909748955894a8cdb2bd",
+    "source/matlab/paper_rhs.m": "0cdca91157f4a62164d657770aa7b5abb38f2d9bc088ab9cc84f3628ea5bf692",
+    "source/matlab/paper_simulate_grid.m": "afd504d724fe6f22c826d26b47a697c4cd0d398c44d5137cfe02a25bf67f6094",
+    "source/matlab/paper_step.m": "aa9422ea10f514b1ee6a9652bb1ffe0944ae3f5a394bca8c33072e6cb83049fe",
+    "source/native_mf.cpp": "16af6956d881dc9b726bc34b06412d25e4f5fd00fff2ae02dbdab535b53941f9"
+  }
+}

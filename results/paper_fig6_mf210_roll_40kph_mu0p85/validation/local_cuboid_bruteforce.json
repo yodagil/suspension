@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "random_4x4x4_cases": 80,
+  "unequal_and_equal_spacing": true,
+  "all_grid_bounded_cuboids_enumerated_independently": true,
+  "volume_lexicographic_selection_and_all_maximum_ties_match": true,
+  "seed": 12366
+}

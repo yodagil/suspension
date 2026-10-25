@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "private_experiment": true,
+  "paper_exact_reproduction": false,
+  "original_full_tire_transient_model": false,
+  "model": "quasisteady MF free-rolling model with dynamic normal-reaction extension",
+  "source_MF_sha256": "29c4062948d71dd794d042233025718097ad9654526f64fd7699f63321cd0e7c",
+  "native_tire_block_sha256": "3fa69ba204f787d640eba4d783f7594e0b9644b0bae122c0d448637ecde0da12",
+  "native_tire_block_bytes": 1255,
+  "tire_force_kernel_and_coefficients_unchanged": true,
+  "unchanged_matlab_helpers_sha256": {
+    "mf210_forces.m": "b61291c65052ef153d81f91bb2dcb272d0e496602245a763f2eab417ee221b65",
+    "mf210_force_scalar.m": "6357f53b09a143f185d6f4b90f457bf833dc26d09a023dd95400729b46b5678f"
+  },
+  "all_force_shifts_retained": true,
+  "road_mu_scaling": ".85/.9 with no peak renormalization",
+  "shifted_kappa_root": "kappa=-Shx=0.001635-0.0025297*((clippedFz-5425)/5425)",
+  "hidden_tire_states_replaced_explicitly": true,
+  "baseline_only": true,
+  "baseline_ay_coefficient_kg_m": 0,
+  "nesting_constraints_used": false,
+  "roll_scaling_or_caps_applied": false,
+  "angle_specific_body_parameters": false,
+  "checks": [
+    {
+      "angle_deg": 0,
+      "states": 201,
+      "dynamic_roll_reaction_identity_max_error_Nm": 3.637978807091713e-12,
+      "wheel_load_identity_max_error_N": 3.637978807091713e-12,
+      "total_weight_identity_max_error_N": 1.8189894035458565e-12,
+      "shifted_free_rolling_root_max_abs_Fx_N": 2.062354445279413e-14,
+      "zero_body_state_Fy_tires_N": [
+        -83.08545238239807,
+        -83.08545238239807,
+        -83.08545238239807,
+        -83.08545238239807
+      ],
+      "zero_body_state_ay_mps2": -0.25564754579199406
+    },
+    {
+      "angle_deg": 3.5,
+      "states": 201,
+      "dynamic_roll_reaction_identity_max_error_Nm": 3.637978807091713e-12,
+      "wheel_load_identity_max_error_N": 3.637978807091713e-12,
+      "total_weight_identity_max_error_N": 1.8189894035458565e-12,
+      "shifted_free_rolling_root_max_abs_Fx_N": 2.062354445279413e-14,
+      "zero_body_state_Fy_tires_N": [
+        3027.752542837712,
+        3027.752542837712,
+        -83.08545238239807,
+        -83.08545238239807
+      ],
+      "zero_body_state_ay_mps2": 4.52156880251418
+    },
+    {
+      "angle_deg": 7,
+      "states": 201,
+      "dynamic_roll_reaction_identity_max_error_Nm": 7.275957614183426e-12,
+      "wheel_load_identity_max_error_N": 3.637978807091713e-12,
+      "total_weight_identity_max_error_N": 1.8189894035458565e-12,
+      "shifted_free_rolling_root_max_abs_Fx_N": 2.062354445279413e-14,
+      "zero_body_state_Fy_tires_N": [
+        3216.949652991466,
+        3216.949652991466,
+        -83.08545238239807,
+        -83.08545238239807
+      ],
+      "zero_body_state_ay_mps2": 4.784439301104873
+    }
+  ]
+}
