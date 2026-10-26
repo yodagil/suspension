@@ -1,17 +1,17 @@
 {
-  "completed": 125,
+  "completed": 126,
   "total": 210,
   "run_version": "mu-sweep-v3-reference09-matlabgrid",
   "producer_phase": "running",
   "current": {
-    "filename": "stable_point_80kph_0.7mu_3deg.mat",
+    "filename": "stable_point_80kph_0.6mu_0deg.mat",
     "speed_kmh": 80,
-    "mu_road": 0.7,
-    "front_steer_deg": 3,
-    "completed_wear_cases": 4,
-    "current_wear_case": 5,
+    "mu_road": 0.6,
+    "front_steer_deg": 0,
+    "completed_wear_cases": 0,
+    "current_wear_case": 1,
     "wear_total": 5,
     "phase": "simulating"
   },
-  "observed_utc": "2026-10-26T17:51:09+00:00"
+  "observed_utc": "2026-10-26T17:56:50+00:00"
 }
