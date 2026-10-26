@@ -9,10 +9,10 @@
       "speed_kmh": 80,
       "mu_road": 0.5,
       "front_steer_deg": 1.5,
-      "completed_wear_cases": 4,
+      "completed_wear_cases": 5,
       "current_wear_case": 5,
       "wear_total": 5,
-      "phase": "simulating"
+      "phase": "postprocessing"
     }
   },
   "run_version": "mu-sweep-v3-reference09-matlabgrid",
@@ -28,7 +28,7 @@
     "run_stability_sweep.m": "fbeb6fcf6719021846668f2a2e242be5a3b74f20d724f9a96dfe7cf0e96ec640",
     "native_stability_masks.m": "189a6bd3dd6f1417a4c6208d731b9bef1033ec5b87da2561e8e77187066effab"
   },
-  "updated_utc": "2026-10-26T22:42:02+00:00",
+  "updated_utc": "2026-10-26T22:46:40+00:00",
   "scenarios": [
     {
       "filename": "stable_point_50kph_0.9mu_0deg.mat",
