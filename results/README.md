@@ -1,8 +1,8 @@
 # 수정된 안정영역 MAT 결과
 
-**수정 코드 완료·검증 결과: 106/210개. 계산 진행 중.** 완료된 MAT를 검증한 뒤 순서대로 자동 업로드합니다.
+**수정 코드 완료·검증 결과: 115/210개. 계산 진행 중.** 완료된 MAT를 검증한 뒤 순서대로 자동 업로드합니다.
 
-현재: 80 km/h · mu=0.9 · 0° · 마모 1/5 (0/5 완료).
+현재: 80 km/h · mu=0.8 · 1.5° · 마모 1/5 (0/5 완료).
 [진행 상태 JSON](reference09_progress.json)
 
 실험 조건: 속도 50·60·70·80·90·100 km/h, 노면 마찰계수 0.9·0.8·0.7·0.6·0.5, 앞 휠 조향각 0·0.5·1·1.5·2·2.5·3°. 바퀴 조향각은 [angle, angle, 0, 0]입니다.
@@ -122,4 +122,13 @@
 | 70 | 0.5 | 2 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_70kph_0.5mu_2deg.mat) | 4/5 |
 | 70 | 0.5 | 2.5 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_70kph_0.5mu_2.5deg.mat) | 2/5 |
 | 70 | 0.5 | 3 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_70kph_0.5mu_3deg.mat) | 1/5 |
+| 80 | 0.9 | 0 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_80kph_0.9mu_0deg.mat) | 5/5 |
+| 80 | 0.9 | 0.5 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_80kph_0.9mu_0.5deg.mat) | 5/5 |
+| 80 | 0.9 | 1 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_80kph_0.9mu_1deg.mat) | 5/5 |
+| 80 | 0.9 | 1.5 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_80kph_0.9mu_1.5deg.mat) | 5/5 |
 | 80 | 0.9 | 2 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_80kph_0.9mu_2deg.mat) | 5/5 |
+| 80 | 0.9 | 2.5 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_80kph_0.9mu_2.5deg.mat) | 4/5 |
+| 80 | 0.9 | 3 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_80kph_0.9mu_3deg.mat) | 1/5 |
+| 80 | 0.8 | 0 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_80kph_0.8mu_0deg.mat) | 5/5 |
+| 80 | 0.8 | 0.5 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_80kph_0.8mu_0.5deg.mat) | 5/5 |
+| 80 | 0.8 | 1 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_80kph_0.8mu_1deg.mat) | 5/5 |
