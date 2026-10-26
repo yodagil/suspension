@@ -1,0 +1,20 @@
+{
+  "equation": "ay=Fy(Fz(ay))/m; Fz uses printed Eq11 at the same RHS stage",
+  "load_moment": "D=m*h*ay+ms*g*hphi*sin(phi)",
+  "reaction_subtraction_used": false,
+  "hidden_load_lag_state": false,
+  "residual_tolerance_m_s2": 2e-10,
+  "fast_solver": "Residual-certified secant, max10 iterations; cached wheel angles; previous RK root is a numerical hint only",
+  "fast_branch_policy": "First residual-certified root; no global uniqueness certificate on fast path",
+  "fallback": "Split preserved 100N activation and16000N clipping breakpoints; 16 scans per smoothsegment; certify residual; choose unique all-positive-load root, else unique globalroot, else numericalunresolved",
+  "numerical_unresolved_bit": 8,
+  "physical_bits": {
+    "yaw": 1,
+    "lateral_acceleration": 2,
+    "wheel_lift": 4
+  },
+  "global_uniqueness_claimed": false,
+  "stage_hints_change_physical_state": false,
+  "root_candidate_count_semantics": "Number found, not a global proof; fast path reports onefound",
+  "independent_root_evidence": "519 sampledstates with5 hints each agree with separate all-root bracketing audit; unique in audited states"
+}

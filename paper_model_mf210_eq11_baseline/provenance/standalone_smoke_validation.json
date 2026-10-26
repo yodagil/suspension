@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "runtime": "GNU Octave9.4",
+  "licensed_MATLAB_executed": false,
+  "standalone_source_sha256": "8e9ba6b534d3edbec933d2567913205b0005b5474bf63dc37f1f0dab732a1f15",
+  "isolated_source_file_only": true,
+  "angles_deg": [
+    0,
+    3.5,
+    7
+  ],
+  "states_per_angle": 27,
+  "horizon_s": 0.02,
+  "unresolved": 0,
+  "all_stable": true,
+  "production_run_claimed": false
+}

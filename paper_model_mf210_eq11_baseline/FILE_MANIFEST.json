@@ -1,0 +1,26 @@
+{
+  "files_sha256": {
+    "GEOMETRY_METHOD.md": "06a21de9564bd56467c79a5412ad26787f5ac0f40e232c526a107eb50ce9500b",
+    "README_KO.md": "edf57e2259c1f5a9efc85268bc42ccc8b96b0caffb312af5a5e837f864e2bb5e",
+    "paper_sec31_region.m": "86b93d3fbccae8d0ba31f708d92b8c67d85f5e589cc801504e15ac540ff5d70b",
+    "plot_mf210_eq11_baseline.m": "9bf403138741ad6021140ea03cea8fd2cbae1c905dfedecc47cd17c996e4b8a9",
+    "provenance/assembly.json": "41a0d7a1dc62de2efe9cc76ff7c42d5dd0f28dd93b816104f41fc9dd49cfac10",
+    "provenance/geometry_synthetic_port_validation.json": "09a18e1ece5d035e87b0513593957bd10f1ac2434a1f1e842045665b9306e72b",
+    "provenance/independent_root_validation.json": "6d09e70ed5862b25e57cded1d9e1fa4a7726bd6b817a744ad0639f93516fdff9",
+    "provenance/independent_step_trajectory_parity.json": "457c773be9251a7097df17968cbfab67236fdc27e040e5a088bf26c397d8f6cd",
+    "provenance/native_mcode_parity.json": "9308b1042d09ccc9923d5b536e985f7dbe2ec79db2a1ca68477ee98ed8a392a4",
+    "provenance/solver_contract.json": "24f0e65167467401522797245fd9c92b6d2015891e509d96e1769717e4daa7f3",
+    "provenance/standalone_smoke_validation.json": "c90310d506222f6ae9adeca027543d91ba7eefaa72ba4883df3e83f921e97c6e",
+    "run_mf210_eq11_baseline.m": "8e9ba6b534d3edbec933d2567913205b0005b5474bf63dc37f1f0dab732a1f15",
+    "source/matlab/mf210_force_scalar.m": "6357f53b09a143f185d6f4b90f457bf833dc26d09a023dd95400729b46b5678f",
+    "source/matlab/mf210_forces.m": "b61291c65052ef153d81f91bb2dcb272d0e496602245a763f2eab417ee221b65",
+    "source/matlab/paper_config.m": "6304478e4d931abe0cb7da668d551a8c58694d1e3626524269564644cf492d6c",
+    "source/matlab/paper_initial.m": "4af0ce55d09284549e411e6e2dc8c9b5731ee362545a909748955894a8cdb2bd",
+    "source/matlab/paper_rhs.m": "fc6849aa6c1526e828ca3860171969b6a29a9ff5ff69e8f2b3defd3f287bd0c3",
+    "source/matlab/paper_simulate_grid.m": "afd504d724fe6f22c826d26b47a697c4cd0d398c44d5137cfe02a25bf67f6094",
+    "source/matlab/paper_step.m": "aa9422ea10f514b1ee6a9652bb1ffe0944ae3f5a394bca8c33072e6cb83049fe",
+    "source/native_mf_eq11.cpp": "dfd9e5185b1596f434fb4e7788f522d99468c6c65a6ae2f67c3814d627a0bde7"
+  },
+  "standalone_entry": "run_mf210_eq11_baseline.m",
+  "paper_exact_reproduction_claimed": false
+}
