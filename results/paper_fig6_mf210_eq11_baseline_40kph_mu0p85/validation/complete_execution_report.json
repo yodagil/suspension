@@ -1,0 +1,214 @@
+{
+  "completed": 3,
+  "total": 3,
+  "complete": true,
+  "cases": [
+    {
+      "initial_states": 138105,
+      "stable_count": 10005,
+      "physical_unstable_count": 125748,
+      "unresolved_count": 2352,
+      "raw_stable_bounds": [
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -0.6133333333333334,
+          0.6133333333333334
+        ],
+        [
+          -0.4,
+          0.4
+        ]
+      ],
+      "reason_histogram": {
+        "0": 10005,
+        "1": 33060,
+        "2": 89677,
+        "3": 2899,
+        "6": 112,
+        "8": 2352
+      },
+      "physical_reason_counts": {
+        "yaw": 35959,
+        "ay": 92688,
+        "lift": 112
+      },
+      "max_load_residual_N": 5.014285581036607e-08,
+      "max_solver_iterations": 102.0,
+      "csv_columns": [
+        "reason",
+        "max_abs_yaw",
+        "max_abs_ay",
+        "min_wheel_load",
+        "max_load_residual",
+        "max_solver_iterations",
+        "solver_failure",
+        "observations",
+        "u",
+        "vc",
+        "r",
+        "phi",
+        "p",
+        "closure_calls",
+        "closure_force_evaluations",
+        "closure_fallback_calls",
+        "max_closure_candidates",
+        "closure_ambiguity_count",
+        "max_closure_residual_m_s2"
+      ],
+      "closure_calls_total": 927513869,
+      "closure_force_evaluations_total": 2049321958,
+      "closure_fallback_calls_total": 2352,
+      "closure_ambiguity_count_total": 0,
+      "max_closure_candidates": 1.0,
+      "max_closure_residual_m_s2": 1.9999999468522077e-10,
+      "angle_deg": 0.0,
+      "runtime_s": 1296.6794163439772,
+      "mat_file": "classification_0deg.mat",
+      "mat_sha256": "daef6872601ff7e21479a683d629be45a99452bc65fb5e6df486716fd1b1da63"
+    },
+    {
+      "initial_states": 138105,
+      "stable_count": 11423,
+      "physical_unstable_count": 124417,
+      "unresolved_count": 2265,
+      "raw_stable_bounds": [
+        [
+          -10.0,
+          2.0
+        ],
+        [
+          -0.6133333333333334,
+          0.6133333333333334
+        ],
+        [
+          -0.4,
+          0.4
+        ]
+      ],
+      "reason_histogram": {
+        "0": 11423,
+        "1": 29515,
+        "2": 91904,
+        "3": 2867,
+        "6": 131,
+        "8": 2265
+      },
+      "physical_reason_counts": {
+        "yaw": 32382,
+        "ay": 94902,
+        "lift": 131
+      },
+      "max_load_residual_N": 5.014280562194123e-08,
+      "max_solver_iterations": 127.0,
+      "csv_columns": [
+        "reason",
+        "max_abs_yaw",
+        "max_abs_ay",
+        "min_wheel_load",
+        "max_load_residual",
+        "max_solver_iterations",
+        "solver_failure",
+        "observations",
+        "u",
+        "vc",
+        "r",
+        "phi",
+        "p",
+        "closure_calls",
+        "closure_force_evaluations",
+        "closure_fallback_calls",
+        "max_closure_candidates",
+        "closure_ambiguity_count",
+        "max_closure_residual_m_s2"
+      ],
+      "closure_calls_total": 966309635,
+      "closure_force_evaluations_total": 2448439394,
+      "closure_fallback_calls_total": 2266,
+      "closure_ambiguity_count_total": 0,
+      "max_closure_candidates": 1.0,
+      "max_closure_residual_m_s2": 1.9999979450346927e-10,
+      "angle_deg": 3.5,
+      "runtime_s": 1541.4306135660154,
+      "mat_file": "classification_3.5deg.mat",
+      "mat_sha256": "8a3bb4d33a835681cf610766f06dafe7869301a96713e82fe5abf62fa8e5b9bc"
+    },
+    {
+      "initial_states": 138105,
+      "stable_count": 16459,
+      "physical_unstable_count": 119551,
+      "unresolved_count": 2095,
+      "raw_stable_bounds": [
+        [
+          -9.5,
+          5.0
+        ],
+        [
+          -0.6133333333333334,
+          0.6133333333333334
+        ],
+        [
+          -0.4,
+          0.4
+        ]
+      ],
+      "reason_histogram": {
+        "0": 16459,
+        "1": 31428,
+        "2": 85197,
+        "3": 2837,
+        "6": 66,
+        "7": 23,
+        "8": 2095
+      },
+      "physical_reason_counts": {
+        "yaw": 34288,
+        "ay": 88123,
+        "lift": 89
+      },
+      "max_load_residual_N": 5.0142749952186705e-08,
+      "max_solver_iterations": 121.0,
+      "csv_columns": [
+        "reason",
+        "max_abs_yaw",
+        "max_abs_ay",
+        "min_wheel_load",
+        "max_load_residual",
+        "max_solver_iterations",
+        "solver_failure",
+        "observations",
+        "u",
+        "vc",
+        "r",
+        "phi",
+        "p",
+        "closure_calls",
+        "closure_force_evaluations",
+        "closure_fallback_calls",
+        "max_closure_candidates",
+        "closure_ambiguity_count",
+        "max_closure_residual_m_s2"
+      ],
+      "closure_calls_total": 1095058786,
+      "closure_force_evaluations_total": 2852683365,
+      "closure_fallback_calls_total": 2096,
+      "closure_ambiguity_count_total": 0,
+      "max_closure_candidates": 1.0,
+      "max_closure_residual_m_s2": 1.9999957245886435e-10,
+      "angle_deg": 7,
+      "runtime_s": 888.794695138,
+      "workers": 2,
+      "restarted": true,
+      "mat_file": "classification_7deg.mat",
+      "mat_sha256": "26c193c541cfbf07c94df7a035088e78f9c49426b7e2895a54df3eab70260bd9"
+    }
+  ],
+  "scheduling_restart": true,
+  "restart_receipt": "restart_7deg_receipt.json",
+  "source_frozen": true,
+  "elapsed_since_restart_s": 889.6601146580069,
+  "source_hashes_unchanged": true,
+  "orchestration_only_restart": true
+}

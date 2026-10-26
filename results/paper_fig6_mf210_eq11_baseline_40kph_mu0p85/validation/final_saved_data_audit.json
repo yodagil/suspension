@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "angle_deg": 0,
+      "raw_result_all_fields_unchanged": true,
+      "configuration_unchanged": true,
+      "partition_complete": true,
+      "origin_stable": true,
+      "accepted_inner": false,
+      "stable": 10005,
+      "physical_unstable": 125748,
+      "unresolved": 2352
+    },
+    {
+      "angle_deg": 3.5,
+      "raw_result_all_fields_unchanged": true,
+      "configuration_unchanged": true,
+      "partition_complete": true,
+      "origin_stable": true,
+      "accepted_inner": false,
+      "stable": 11423,
+      "physical_unstable": 124417,
+      "unresolved": 2265
+    },
+    {
+      "angle_deg": 7,
+      "raw_result_all_fields_unchanged": true,
+      "configuration_unchanged": true,
+      "partition_complete": true,
+      "origin_stable": true,
+      "accepted_inner": false,
+      "stable": 16459,
+      "physical_unstable": 119551,
+      "unresolved": 2095
+    }
+  ],
+  "all_frozen_sources_unchanged": true,
+  "MF_kernel_verbatim": true,
+  "actual_licensed_MATLAB_executed": false,
+  "code_runtime_validation": "GNU Octave9.4",
+  "production_engine": "Native C++"
+}

@@ -1,0 +1,267 @@
+{
+  "cases": [
+    {
+      "angle_deg": 0,
+      "initial_states": 138105,
+      "stable_before": 4554,
+      "stable_eq11": 10005,
+      "both_stable": 4494,
+      "old_only_stable": 60,
+      "eq11_only_stable": 5511,
+      "unresolved_numerical_states": 2352,
+      "old_raw_stable_bounds": [
+        [
+          -7.75,
+          1.25
+        ],
+        [
+          -0.6133333333333334,
+          0.6133333333333334
+        ],
+        [
+          -0.18666666666666668,
+          0.18666666666666668
+        ]
+      ],
+      "eq11_raw_stable_bounds": [
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -0.6133333333333334,
+          0.6133333333333334
+        ],
+        [
+          -0.4,
+          0.4
+        ]
+      ],
+      "origin_stable": true,
+      "origin_reason": 0,
+      "vc0_r0_stable_roll_grid_values": [
+        -0.4,
+        -0.37333333333333335,
+        -0.3466666666666667,
+        -0.32,
+        -0.29333333333333333,
+        -0.26666666666666666,
+        -0.24000000000000002,
+        -0.21333333333333335,
+        -0.18666666666666668,
+        -0.16,
+        -0.13333333333333333,
+        -0.10666666666666667,
+        -0.08,
+        -0.05333333333333334,
+        -0.02666666666666667,
+        0.0,
+        0.02666666666666667,
+        0.05333333333333334,
+        0.08,
+        0.10666666666666667,
+        0.13333333333333333,
+        0.16,
+        0.18666666666666668,
+        0.21333333333333335,
+        0.24000000000000002,
+        0.26666666666666666,
+        0.29333333333333333,
+        0.32,
+        0.3466666666666667,
+        0.37333333333333335,
+        0.4
+      ],
+      "phi_negative_grid_boundary_reached": true,
+      "phi_positive_grid_boundary_reached": true,
+      "old_model": "Dynamic roll reaction D_paper-Ixx*pdot",
+      "new_model": "Printed Eq11, same-stage implicit acceleration and MF forces"
+    },
+    {
+      "angle_deg": 3.5,
+      "initial_states": 138105,
+      "stable_before": 4811,
+      "stable_eq11": 11423,
+      "both_stable": 4736,
+      "old_only_stable": 75,
+      "eq11_only_stable": 6687,
+      "unresolved_numerical_states": 2265,
+      "old_raw_stable_bounds": [
+        [
+          -10.0,
+          2.0
+        ],
+        [
+          -0.6133333333333334,
+          0.6133333333333334
+        ],
+        [
+          -0.18666666666666668,
+          0.18666666666666668
+        ]
+      ],
+      "eq11_raw_stable_bounds": [
+        [
+          -10.0,
+          2.0
+        ],
+        [
+          -0.6133333333333334,
+          0.6133333333333334
+        ],
+        [
+          -0.4,
+          0.4
+        ]
+      ],
+      "origin_stable": true,
+      "origin_reason": 0,
+      "vc0_r0_stable_roll_grid_values": [
+        -0.4,
+        -0.37333333333333335,
+        -0.3466666666666667,
+        -0.32,
+        -0.29333333333333333,
+        -0.26666666666666666,
+        -0.24000000000000002,
+        -0.21333333333333335,
+        -0.18666666666666668,
+        -0.16,
+        -0.13333333333333333,
+        -0.10666666666666667,
+        -0.08,
+        -0.05333333333333334,
+        -0.02666666666666667,
+        0.0,
+        0.02666666666666667,
+        0.05333333333333334,
+        0.08,
+        0.10666666666666667,
+        0.13333333333333333,
+        0.16,
+        0.18666666666666668,
+        0.21333333333333335,
+        0.24000000000000002,
+        0.26666666666666666,
+        0.29333333333333333,
+        0.32,
+        0.3466666666666667,
+        0.37333333333333335,
+        0.4
+      ],
+      "phi_negative_grid_boundary_reached": true,
+      "phi_positive_grid_boundary_reached": true,
+      "old_model": "Dynamic roll reaction D_paper-Ixx*pdot",
+      "new_model": "Printed Eq11, same-stage implicit acceleration and MF forces"
+    },
+    {
+      "angle_deg": 7,
+      "initial_states": 138105,
+      "stable_before": 3247,
+      "stable_eq11": 16459,
+      "both_stable": 2969,
+      "old_only_stable": 278,
+      "eq11_only_stable": 13490,
+      "unresolved_numerical_states": 2095,
+      "old_raw_stable_bounds": [
+        [
+          -8.5,
+          1.75
+        ],
+        [
+          -0.6133333333333334,
+          0.6133333333333334
+        ],
+        [
+          -0.18666666666666668,
+          0.18666666666666668
+        ]
+      ],
+      "eq11_raw_stable_bounds": [
+        [
+          -9.5,
+          5.0
+        ],
+        [
+          -0.6133333333333334,
+          0.6133333333333334
+        ],
+        [
+          -0.4,
+          0.4
+        ]
+      ],
+      "origin_stable": true,
+      "origin_reason": 0,
+      "vc0_r0_stable_roll_grid_values": [
+        -0.4,
+        -0.37333333333333335,
+        -0.3466666666666667,
+        -0.32,
+        -0.29333333333333333,
+        -0.26666666666666666,
+        -0.24000000000000002,
+        -0.21333333333333335,
+        -0.18666666666666668,
+        -0.16,
+        -0.13333333333333333,
+        -0.10666666666666667,
+        -0.08,
+        -0.05333333333333334,
+        -0.02666666666666667,
+        0.0,
+        0.02666666666666667,
+        0.05333333333333334,
+        0.08,
+        0.10666666666666667,
+        0.13333333333333333,
+        0.16,
+        0.18666666666666668,
+        0.21333333333333335,
+        0.24000000000000002,
+        0.26666666666666666,
+        0.29333333333333333,
+        0.32,
+        0.3466666666666667,
+        0.37333333333333335,
+        0.4
+      ],
+      "phi_negative_grid_boundary_reached": true,
+      "phi_positive_grid_boundary_reached": true,
+      "old_model": "Dynamic roll reaction D_paper-Ixx*pdot",
+      "new_model": "Printed Eq11, same-stage implicit acceleration and MF forces"
+    }
+  ],
+  "cross_angle_raw_set_comparison": [
+    {
+      "outer_angle": 0,
+      "inner_angle": 3.5,
+      "inner_stable_but_outer_physically_unstable": 2956,
+      "outer_stable_but_inner_physically_unstable": 1585,
+      "unknown_either": 3069,
+      "sampled_set_containment_established": false
+    },
+    {
+      "outer_angle": 3.5,
+      "inner_angle": 7,
+      "inner_stable_but_outer_physically_unstable": 5741,
+      "outer_stable_but_inner_physically_unstable": 907,
+      "unknown_either": 2917,
+      "sampled_set_containment_established": false
+    },
+    {
+      "outer_angle": 0,
+      "inner_angle": 7,
+      "inner_stable_but_outer_physically_unstable": 8370,
+      "outer_stable_but_inner_physically_unstable": 2140,
+      "unknown_either": 3399,
+      "sampled_set_containment_established": false
+    }
+  ],
+  "same_grid_used": true,
+  "MF_coefficients_changed": false,
+  "comparison_is_not_an_image_fit": true,
+  "exact_min_load_in_initial_phi_and_classifier_ay_box_N": 139.8917341037145,
+  "analytical_box": "phi within +/-0.4 rad, ay within +/-mu*g, symmetric baseline parameters",
+  "note": "Raw sampled classifications and selected inner approximations must be assessed separately; grid-boundary contact indicates censoring, not a measured physical roll bound."
+}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "actual_completed_MATs_loaded": 3,
+  "actual_licensed_MATLAB_execution": false,
+  "runtime": "GNU Octave9.4",
+  "view": [
+    -72,
+    11
+  ],
+  "xdir": "reverse",
+  "xlim": [
+    -0.72,
+    0.72
+  ],
+  "plot_source_sha256": "9bf403138741ad6021140ea03cea8fd2cbae1c905dfedecc47cd17c996e4b8a9",
+  "note": "Headlessgnuplotwarnings occurred; rendering finished and figure properties passed"
+}
