@@ -1,0 +1,57 @@
+{
+  "scope": "Independent diagnostic on classifier-admissible ay interval; finite sampling, not global uniqueness proof",
+  "tire_evaluator_source_sha256": "7edb69e47db99e462119960784c4c29a625e3d06b90f9368e7055333ef9fcd88",
+  "random_state_seed": 20261026,
+  "ay_interval": [
+    -8.3385,
+    8.3385
+  ],
+  "phi_interval": [
+    -0.4,
+    0.4
+  ],
+  "exact_min_raw_load_over_box_N": 139.8917341037145,
+  "force_activation_at_100N_not_reached_in_this_box": true,
+  "cases": [
+    {
+      "angle_deg": 0,
+      "states": 4141,
+      "ay_scan_points": 257,
+      "observed_min_f_secant_derivative": 0.8472177421518703,
+      "observed_max_abs_fixed_point_secant_derivative": 0.15426792127955197,
+      "state_count_with_nonmonotone_residual": 0,
+      "states_with_multiple_sign_crossings": 0,
+      "max_sign_crossings": 1,
+      "states_with_one_sign_crossing": 3467,
+      "states_with_no_sign_crossing": 674,
+      "max_exact_scan_roots": 0
+    },
+    {
+      "angle_deg": 3.5,
+      "states": 4141,
+      "ay_scan_points": 257,
+      "observed_min_f_secant_derivative": 0.8452289638369003,
+      "observed_max_abs_fixed_point_secant_derivative": 0.1552148584643272,
+      "state_count_with_nonmonotone_residual": 0,
+      "states_with_multiple_sign_crossings": 0,
+      "max_sign_crossings": 1,
+      "states_with_one_sign_crossing": 3484,
+      "states_with_no_sign_crossing": 657,
+      "max_exact_scan_roots": 0
+    },
+    {
+      "angle_deg": 7,
+      "states": 4141,
+      "ay_scan_points": 257,
+      "observed_min_f_secant_derivative": 0.8470128173463608,
+      "observed_max_abs_fixed_point_secant_derivative": 0.16801983650237712,
+      "state_count_with_nonmonotone_residual": 0,
+      "states_with_multiple_sign_crossings": 0,
+      "max_sign_crossings": 1,
+      "states_with_one_sign_crossing": 3568,
+      "states_with_no_sign_crossing": 573,
+      "max_exact_scan_roots": 0
+    }
+  ],
+  "full_root_branch_policy_selected": false
+}

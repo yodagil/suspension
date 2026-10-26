@@ -1,0 +1,441 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "name": "axis_box",
+      "passed": true,
+      "valid_inner": true,
+      "volume": 64.0,
+      "censored_slices": 0,
+      "branch_counts": {
+        "one_band_coincident": 10,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 0
+      }
+    },
+    {
+      "name": "diamond_prism",
+      "passed": true,
+      "valid_inner": true,
+      "volume": 31.999999999999996,
+      "censored_slices": 0,
+      "branch_counts": {
+        "one_band_coincident": 10,
+        "two_bands_central_pair": 15,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 0
+      }
+    },
+    {
+      "name": "sheared_diamond_prism",
+      "passed": true,
+      "valid_inner": true,
+      "volume": 32.0,
+      "censored_slices": 0,
+      "branch_counts": {
+        "one_band_coincident": 18,
+        "two_bands_central_pair": 55,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 0
+      }
+    },
+    {
+      "name": "roll_hole_must_reject",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 64.0,
+      "censored_slices": 0,
+      "branch_counts": {
+        "one_band_coincident": 10,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 0
+      }
+    },
+    {
+      "name": "two_disconnected_vc_lobes_must_reject",
+      "passed": true,
+      "valid_inner": false,
+      "volume": NaN,
+      "censored_slices": 0,
+      "branch_counts": {
+        "one_band_coincident": 0,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 6
+      }
+    },
+    {
+      "name": "three_vc_bands_ambiguous_must_reject",
+      "passed": true,
+      "valid_inner": false,
+      "volume": NaN,
+      "censored_slices": 0,
+      "branch_counts": {
+        "one_band_coincident": 0,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 6,
+        "central_interval_contains_unstable_excluded": 0
+      }
+    },
+    {
+      "name": "roll_grid_censoring_is_diagnosed",
+      "passed": true,
+      "valid_inner": true,
+      "volume": 96.0,
+      "censored_slices": 25,
+      "branch_counts": {
+        "one_band_coincident": 10,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 0
+      }
+    },
+    {
+      "name": "degenerate_roll_plane",
+      "passed": true,
+      "valid_inner": false,
+      "volume": NaN,
+      "censored_slices": 0,
+      "branch_counts": {
+        "one_band_coincident": 5,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 0
+      }
+    },
+    {
+      "name": "all_unstable",
+      "passed": true,
+      "valid_inner": false,
+      "volume": NaN,
+      "censored_slices": 0,
+      "branch_counts": {
+        "one_band_coincident": 0,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 0
+      }
+    },
+    {
+      "name": "random_0",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 30.833333333333332,
+      "censored_slices": 25,
+      "branch_counts": {
+        "one_band_coincident": 10,
+        "two_bands_central_pair": 2,
+        "multiple_bands_ambiguous_excluded": 1,
+        "central_interval_contains_unstable_excluded": 9
+      }
+    },
+    {
+      "name": "random_1",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 82.66666666666666,
+      "censored_slices": 36,
+      "branch_counts": {
+        "one_band_coincident": 15,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 4
+      }
+    },
+    {
+      "name": "random_2",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 8.833333333333334,
+      "censored_slices": 22,
+      "branch_counts": {
+        "one_band_coincident": 6,
+        "two_bands_central_pair": 1,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 8
+      }
+    },
+    {
+      "name": "random_3",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 56.66666666666667,
+      "censored_slices": 27,
+      "branch_counts": {
+        "one_band_coincident": 9,
+        "two_bands_central_pair": 1,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 5
+      }
+    },
+    {
+      "name": "random_4",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 15.999999999999998,
+      "censored_slices": 13,
+      "branch_counts": {
+        "one_band_coincident": 11,
+        "two_bands_central_pair": 1,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 4
+      }
+    },
+    {
+      "name": "random_5",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 15.0,
+      "censored_slices": 18,
+      "branch_counts": {
+        "one_band_coincident": 16,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 1
+      }
+    },
+    {
+      "name": "random_6",
+      "passed": true,
+      "valid_inner": false,
+      "volume": NaN,
+      "censored_slices": 10,
+      "branch_counts": {
+        "one_band_coincident": 8,
+        "two_bands_central_pair": 1,
+        "multiple_bands_ambiguous_excluded": 1,
+        "central_interval_contains_unstable_excluded": 6
+      }
+    },
+    {
+      "name": "random_7",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 26.5,
+      "censored_slices": 11,
+      "branch_counts": {
+        "one_band_coincident": 10,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 8
+      }
+    },
+    {
+      "name": "random_8",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 27.0,
+      "censored_slices": 24,
+      "branch_counts": {
+        "one_band_coincident": 12,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 2
+      }
+    },
+    {
+      "name": "random_9",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 5.166666666666667,
+      "censored_slices": 14,
+      "branch_counts": {
+        "one_band_coincident": 10,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 1
+      }
+    },
+    {
+      "name": "random_10",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 19.166666666666664,
+      "censored_slices": 23,
+      "branch_counts": {
+        "one_band_coincident": 13,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 4
+      }
+    },
+    {
+      "name": "random_11",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 16.0,
+      "censored_slices": 7,
+      "branch_counts": {
+        "one_band_coincident": 12,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 2
+      }
+    },
+    {
+      "name": "random_12",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 26.5,
+      "censored_slices": 20,
+      "branch_counts": {
+        "one_band_coincident": 18,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 9
+      }
+    },
+    {
+      "name": "random_13",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 9.333333333333332,
+      "censored_slices": 13,
+      "branch_counts": {
+        "one_band_coincident": 23,
+        "two_bands_central_pair": 1,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 1
+      }
+    },
+    {
+      "name": "random_14",
+      "passed": true,
+      "valid_inner": false,
+      "volume": NaN,
+      "censored_slices": 32,
+      "branch_counts": {
+        "one_band_coincident": 7,
+        "two_bands_central_pair": 1,
+        "multiple_bands_ambiguous_excluded": 3,
+        "central_interval_contains_unstable_excluded": 17
+      }
+    },
+    {
+      "name": "random_15",
+      "passed": true,
+      "valid_inner": false,
+      "volume": NaN,
+      "censored_slices": 21,
+      "branch_counts": {
+        "one_band_coincident": 5,
+        "two_bands_central_pair": 1,
+        "multiple_bands_ambiguous_excluded": 2,
+        "central_interval_contains_unstable_excluded": 6
+      }
+    },
+    {
+      "name": "random_16",
+      "passed": true,
+      "valid_inner": false,
+      "volume": NaN,
+      "censored_slices": 11,
+      "branch_counts": {
+        "one_band_coincident": 14,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 4
+      }
+    },
+    {
+      "name": "random_17",
+      "passed": true,
+      "valid_inner": false,
+      "volume": NaN,
+      "censored_slices": 39,
+      "branch_counts": {
+        "one_band_coincident": 12,
+        "two_bands_central_pair": 1,
+        "multiple_bands_ambiguous_excluded": 7,
+        "central_interval_contains_unstable_excluded": 16
+      }
+    },
+    {
+      "name": "random_18",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 28.0,
+      "censored_slices": 20,
+      "branch_counts": {
+        "one_band_coincident": 9,
+        "two_bands_central_pair": 2,
+        "multiple_bands_ambiguous_excluded": 1,
+        "central_interval_contains_unstable_excluded": 6
+      }
+    },
+    {
+      "name": "random_19",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 29.000000000000004,
+      "censored_slices": 20,
+      "branch_counts": {
+        "one_band_coincident": 25,
+        "two_bands_central_pair": 1,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 12
+      }
+    },
+    {
+      "name": "random_20",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 9.333333333333334,
+      "censored_slices": 21,
+      "branch_counts": {
+        "one_band_coincident": 8,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 3
+      }
+    },
+    {
+      "name": "random_21",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 13.000000000000002,
+      "censored_slices": 30,
+      "branch_counts": {
+        "one_band_coincident": 10,
+        "two_bands_central_pair": 0,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 5
+      }
+    },
+    {
+      "name": "random_22",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 24.666666666666668,
+      "censored_slices": 29,
+      "branch_counts": {
+        "one_band_coincident": 13,
+        "two_bands_central_pair": 1,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 5
+      }
+    },
+    {
+      "name": "random_23",
+      "passed": true,
+      "valid_inner": false,
+      "volume": 31.666666666666668,
+      "censored_slices": 36,
+      "branch_counts": {
+        "one_band_coincident": 8,
+        "two_bands_central_pair": 3,
+        "multiple_bands_ambiguous_excluded": 2,
+        "central_interval_contains_unstable_excluded": 5
+      }
+    }
+  ],
+  "case_count": 33,
+  "runtime": "GNU Octave 9.4; not licensed MATLAB",
+  "python_source_sha256": "8719cee2c344b13ecae36c3ce39abbdc24c3648456915dab805faa9ec805dca1",
+  "matlab_source_sha256": "86b93d3fbccae8d0ba31f708d92b8c67d85f5e589cc801504e15ac540ff5d70b",
+  "author_algorithm_exactly_recovered": false,
+  "max_volume_objective_used": false,
+  "equilibrium_anchor_used": false
+}

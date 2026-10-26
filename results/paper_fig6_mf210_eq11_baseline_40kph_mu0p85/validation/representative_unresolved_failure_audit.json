@@ -1,0 +1,1713 @@
+{
+  "native_source_sha256": "dfd9e5185b1596f434fb4e7788f522d99468c6c65a6ae2f67c3814d627a0bde7",
+  "production_modified": false,
+  "benchmark_failure_cases": [
+    {
+      "angle_deg": 0,
+      "initial_vc_r_phi": [
+        -6.75,
+        -0.4266666666666667,
+        -0.37333333333333335
+      ],
+      "first_failed_stage_found": true,
+      "terminal_reason": 8,
+      "observation_index": 37,
+      "rk_substep": 7,
+      "rk_stage": 2,
+      "first_failed_stage_time_s": 0.37374999999999997,
+      "last_hint": 8.154561232773236,
+      "first_failed_state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -2.107931631248101,
+        -0.470212170989485,
+        0.4381805351457579,
+        1.2359261946876297
+      ],
+      "preceding_successful_rhs_state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -2.111276178005038,
+        -0.4701263215371682,
+        0.4378704939096285,
+        1.2401649445174772
+      ],
+      "preceding_successful_root": 8.154561232773236,
+      "independent_root_audit": {
+        "roots": [],
+        "all_contact_roots": [],
+        "smooth_segments": [
+          {
+            "interval": [
+              -70.0,
+              -55.263307528501585
+            ],
+            "samples": 4097,
+            "f_left": -84.75939483794025,
+            "f_right": -70.02270236844183,
+            "sampled_min_secant_derivative": 0.9999999999960502,
+            "closest_sampled_abs_residual": 70.02270236844183,
+            "minimized_abs_residual": 70.02270341860928
+          },
+          {
+            "interval": [
+              -55.263307528501585,
+              -16.4801166453107
+            ],
+            "samples": 4097,
+            "f_left": -70.02270236636907,
+            "f_right": -24.58296671768739,
+            "sampled_min_secant_derivative": 1.072791196331085,
+            "closest_sampled_abs_residual": 24.58296671768739,
+            "minimized_abs_residual": 24.582967275506164
+          },
+          {
+            "interval": [
+              -16.4801166453107,
+              8.155495890301832
+            ],
+            "samples": 4097,
+            "f_left": -24.745542235518514,
+            "f_right": -0.0017759774329899614,
+            "sampled_min_secant_derivative": 0.8514411342566538,
+            "closest_sampled_abs_residual": 0.0017759774329899614,
+            "minimized_abs_residual": 0.0017761634705220075
+          },
+          {
+            "interval": [
+              8.155495890301832,
+              46.93868677349271
+            ],
+            "samples": 4097,
+            "f_left": 0.16222652448995323,
+            "f_right": 32.369996771083635,
+            "sampled_min_secant_derivative": 0.7469265857683448,
+            "closest_sampled_abs_residual": 0.16222652448995323,
+            "minimized_abs_residual": 0.16222663896925393
+          },
+          {
+            "interval": [
+              46.93868677349271,
+              70.0
+            ],
+            "samples": 4097,
+            "f_left": 32.36999677301069,
+            "f_right": 55.43130999751798,
+            "sampled_min_secant_derivative": 1.0,
+            "closest_sampled_abs_residual": 32.36999677301069,
+            "minimized_abs_residual": 32.369997885238064
+          }
+        ],
+        "breakpoint_limits": [
+          {
+            "ay": -55.263307528501585,
+            "left_limit_residual": -70.02270237744183,
+            "actual_cut_residual": -70.02270236744184,
+            "right_limit_residual": -70.02270235671419,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              16000.0,
+              -9623.5,
+              16000.0,
+              -9623.5
+            ]
+          },
+          {
+            "ay": -16.4801166453107,
+            "left_limit_residual": -24.582966729001555,
+            "actual_cut_residual": -24.582966716430263,
+            "right_limit_residual": -24.745542227855907,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              6276.5,
+              100.0,
+              6276.5,
+              100.0
+            ]
+          },
+          {
+            "ay": 8.155495890301832,
+            "left_limit_residual": -0.0017759878394461026,
+            "actual_cut_residual": -0.001775976276716662,
+            "right_limit_residual": 0.16222653121212005,
+            "skips_zero": true,
+            "raw_loads_at_cut": [
+              100.0,
+              6276.5,
+              100.0,
+              6276.5
+            ]
+          },
+          {
+            "ay": 46.93868677349271,
+            "left_limit_residual": 32.369996762740044,
+            "actual_cut_residual": 32.369996772010694,
+            "right_limit_residual": 32.369996782010695,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              -9623.5,
+              16000.0,
+              -9623.5,
+              16000.0
+            ]
+          }
+        ],
+        "no_root_with_observed_zero_skipping_jump": true,
+        "scope": "Dense independent smooth-segment scan plus Brent and scalar minimum search; numerical evidence, not a symbolic uniqueness proof"
+      }
+    },
+    {
+      "angle_deg": 0,
+      "initial_vc_r_phi": [
+        -4,
+        0.32,
+        -0.4
+      ],
+      "first_failed_stage_found": true,
+      "terminal_reason": 8,
+      "observation_index": 37,
+      "rk_substep": 7,
+      "rk_stage": 4,
+      "first_failed_stage_time_s": 0.374,
+      "last_hint": 7.901558280592979,
+      "first_failed_state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -2.46426009781238,
+        0.3720071595919619,
+        0.46696389922521514,
+        1.2690856923795963
+      ],
+      "preceding_successful_rhs_state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -2.4652022881962177,
+        0.3719517830846932,
+        0.46664545544745384,
+        1.2737768199056165
+      ],
+      "preceding_successful_root": 7.901558280592979,
+      "independent_root_audit": {
+        "roots": [],
+        "all_contact_roots": [],
+        "smooth_segments": [
+          {
+            "interval": [
+              -70.0,
+              -55.517236572267315
+            ],
+            "samples": 4097,
+            "f_left": -83.92340366442323,
+            "f_right": -69.44064023869055,
+            "sampled_min_secant_derivative": 0.9999999999979905,
+            "closest_sampled_abs_residual": 69.44064023869055,
+            "minimized_abs_residual": 69.44064125287203
+          },
+          {
+            "interval": [
+              -55.517236572267315,
+              -16.73404568907644
+            ],
+            "samples": 4097,
+            "f_left": -69.44064023661923,
+            "f_right": -24.390837975045734,
+            "sampled_min_secant_derivative": 1.0713427198062977,
+            "closest_sampled_abs_residual": 24.390837975045734,
+            "minimized_abs_residual": 24.390838525457422
+          },
+          {
+            "interval": [
+              -16.73404568907644,
+              7.901566846536095
+            ],
+            "samples": 4097,
+            "f_left": -24.55036374975108,
+            "f_right": -0.00035985038146968407,
+            "sampled_min_secant_derivative": 0.842547863538322,
+            "closest_sampled_abs_residual": 0.00035985038146968407,
+            "minimized_abs_residual": 0.0003600398732821475
+          },
+          {
+            "interval": [
+              7.901566846536095,
+              46.68475772972698
+            ],
+            "samples": 4097,
+            "f_left": 0.15777581585389644,
+            "f_right": 32.57424025981713,
+            "sampled_min_secant_derivative": 0.7564014440612928,
+            "closest_sampled_abs_residual": 0.15777581585389644,
+            "minimized_abs_residual": 0.15777593463432016
+          },
+          {
+            "interval": [
+              46.68475772972698,
+              70.0
+            ],
+            "samples": 4097,
+            "f_left": 32.5742402617444,
+            "f_right": 55.88948253001742,
+            "sampled_min_secant_derivative": 1.0,
+            "closest_sampled_abs_residual": 32.5742402617444,
+            "minimized_abs_residual": 32.574241391729004
+          }
+        ],
+        "breakpoint_limits": [
+          {
+            "ay": -55.517236572267315,
+            "left_limit_residual": -69.44064024769055,
+            "actual_cut_residual": -69.44064023769054,
+            "right_limit_residual": -69.44064022697737,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              16000.0,
+              -9623.5,
+              16000.0,
+              -9623.5
+            ]
+          },
+          {
+            "ay": -16.73404568907644,
+            "left_limit_residual": -24.39083798620966,
+            "actual_cut_residual": -24.550363750593586,
+            "right_limit_residual": -24.550363742168532,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              6276.5,
+              100.0,
+              6276.5,
+              100.0
+            ]
+          },
+          {
+            "ay": 7.901566846536095,
+            "left_limit_residual": -0.0003598607386985364,
+            "actual_cut_residual": 0.1577758150975157,
+            "right_limit_residual": 0.1577758226613417,
+            "skips_zero": true,
+            "raw_loads_at_cut": [
+              100.0,
+              6276.5,
+              100.0,
+              6276.5
+            ]
+          },
+          {
+            "ay": 46.68475772972698,
+            "left_limit_residual": 32.574240251471636,
+            "actual_cut_residual": 32.5742402607444,
+            "right_limit_residual": 32.574240270744404,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              -9623.5,
+              16000.0,
+              -9623.5,
+              16000.0
+            ]
+          }
+        ],
+        "no_root_with_observed_zero_skipping_jump": true,
+        "scope": "Dense independent smooth-segment scan plus Brent and scalar minimum search; numerical evidence, not a symbolic uniqueness proof"
+      }
+    },
+    {
+      "angle_deg": 3.5,
+      "initial_vc_r_phi": [
+        -6.75,
+        -0.4266666666666667,
+        -0.37333333333333335
+      ],
+      "first_failed_stage_found": true,
+      "terminal_reason": 8,
+      "observation_index": 38,
+      "rk_substep": 2,
+      "rk_stage": 2,
+      "first_failed_stage_time_s": 0.38125,
+      "last_hint": 8.097825293911827,
+      "first_failed_state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -1.97109567732892,
+        -0.51481063252445,
+        0.4446918803174582,
+        1.10069101649931
+      ],
+      "preceding_successful_rhs_state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -1.9745497426127214,
+        -0.514659225698929,
+        0.44441564005756995,
+        1.104961039552974
+      ],
+      "preceding_successful_root": 8.097825293911827,
+      "independent_root_audit": {
+        "roots": [],
+        "all_contact_roots": [],
+        "smooth_segments": [
+          {
+            "interval": [
+              -70.0,
+              -55.321060476525496
+            ],
+            "samples": 4097,
+            "f_left": -84.40896564795374,
+            "f_right": -69.73002612647923,
+            "sampled_min_secant_derivative": 0.9999999999960346,
+            "closest_sampled_abs_residual": 69.73002612647923,
+            "minimized_abs_residual": 69.73002716846214
+          },
+          {
+            "interval": [
+              -55.321060476525496,
+              -16.537869593334612
+            ],
+            "samples": 4097,
+            "f_left": -69.73002612441589,
+            "f_right": -24.56576658049677,
+            "sampled_min_secant_derivative": 1.063378709128914,
+            "closest_sampled_abs_residual": 24.56576658049677,
+            "minimized_abs_residual": 24.565767137227038
+          },
+          {
+            "interval": [
+              -16.537869593334612,
+              8.097742942277922
+            ],
+            "samples": 4097,
+            "f_left": -24.725899165157003,
+            "f_right": -0.002717369852126339,
+            "sampled_min_secant_derivative": 0.8549888891794043,
+            "closest_sampled_abs_residual": 0.002717369852126339,
+            "minimized_abs_residual": 0.0027175559808672034
+          },
+          {
+            "interval": [
+              8.097742942277922,
+              46.8809338254688
+            ],
+            "samples": 4097,
+            "f_left": 0.15843077833208508,
+            "f_right": 32.56963364383463,
+            "sampled_min_secant_derivative": 0.7484004737916622,
+            "closest_sampled_abs_residual": 0.15843077833208508,
+            "minimized_abs_residual": 0.15843089367827456
+          },
+          {
+            "interval": [
+              46.8809338254688,
+              70.0
+            ],
+            "samples": 4097,
+            "f_left": 32.56963364576911,
+            "f_right": 55.68869981830031,
+            "sampled_min_secant_derivative": 1.0,
+            "closest_sampled_abs_residual": 32.56963364576911,
+            "minimized_abs_residual": 32.56963476338202
+          }
+        ],
+        "breakpoint_limits": [
+          {
+            "ay": -55.321060476525496,
+            "left_limit_residual": -69.73002613547924,
+            "actual_cut_residual": -69.73002612547924,
+            "right_limit_residual": -69.73002611484571,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              16000.0,
+              -9623.5,
+              16000.0,
+              -9623.5
+            ]
+          },
+          {
+            "ay": -16.537869593334612,
+            "left_limit_residual": -24.56576659178885,
+            "actual_cut_residual": -24.72589916601195,
+            "right_limit_residual": -24.725899157462454,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              6276.5,
+              100.0,
+              6276.5,
+              100.0
+            ]
+          },
+          {
+            "ay": 8.097742942277922,
+            "left_limit_residual": -0.0027173802085496135,
+            "actual_cut_residual": 0.1584307775837086,
+            "right_limit_residual": 0.15843078506751507,
+            "skips_zero": true,
+            "raw_loads_at_cut": [
+              100.0,
+              6276.5,
+              100.0,
+              6276.5
+            ]
+          },
+          {
+            "ay": 46.8809338254688,
+            "left_limit_residual": 32.56963363542426,
+            "actual_cut_residual": 32.56963364476911,
+            "right_limit_residual": 32.56963365476911,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              -9623.5,
+              16000.0,
+              -9623.5,
+              16000.0
+            ]
+          }
+        ],
+        "no_root_with_observed_zero_skipping_jump": true,
+        "scope": "Dense independent smooth-segment scan plus Brent and scalar minimum search; numerical evidence, not a symbolic uniqueness proof"
+      }
+    },
+    {
+      "angle_deg": 3.5,
+      "initial_vc_r_phi": [
+        -4,
+        0.32,
+        -0.4
+      ],
+      "first_failed_stage_found": true,
+      "terminal_reason": 8,
+      "observation_index": 40,
+      "rk_substep": 6,
+      "rk_stage": 4,
+      "first_failed_stage_time_s": 0.4035,
+      "last_hint": 7.701443184533686,
+      "first_failed_state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -2.2839104022802568,
+        0.2980789592335322,
+        0.4901152379726531,
+        0.6959313370915721
+      ],
+      "preceding_successful_rhs_state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -2.28500770556817,
+        0.2981008419357066,
+        0.48994006607677903,
+        0.7006873696641405
+      ],
+      "preceding_successful_root": 7.701443184533686,
+      "independent_root_audit": {
+        "roots": [],
+        "all_contact_roots": [],
+        "smooth_segments": [
+          {
+            "interval": [
+              -70.0,
+              -55.718834546929514
+            ],
+            "samples": 4097,
+            "f_left": -83.55875014379177,
+            "f_right": -69.27758469272128,
+            "sampled_min_secant_derivative": 0.9999999999979621,
+            "closest_sampled_abs_residual": 69.27758469272128,
+            "minimized_abs_residual": 69.27758567833297
+          },
+          {
+            "interval": [
+              -55.718834546929514,
+              -16.935643663738635
+            ],
+            "samples": 4097,
+            "f_left": -69.27758469065265,
+            "f_right": -24.423691335683312,
+            "sampled_min_secant_derivative": 1.0686670583185334,
+            "closest_sampled_abs_residual": 24.423691335683312,
+            "minimized_abs_residual": 24.42369188329207
+          },
+          {
+            "interval": [
+              -16.935643663738635,
+              7.6999688718739
+            ],
+            "samples": 4097,
+            "f_left": -24.580361389990642,
+            "f_right": -0.002236306664455512,
+            "sampled_min_secant_derivative": 0.8434747828700817,
+            "closest_sampled_abs_residual": 0.002236306664455512,
+            "minimized_abs_residual": 0.0022364997793040686
+          },
+          {
+            "interval": [
+              7.6999688718739,
+              46.48315975506478
+            ],
+            "samples": 4097,
+            "f_left": 0.15340534581950838,
+            "f_right": 32.792782156792256,
+            "sampled_min_secant_derivative": 0.7638061405394788,
+            "closest_sampled_abs_residual": 0.15340534581950838,
+            "minimized_abs_residual": 0.1534054680466337
+          },
+          {
+            "interval": [
+              46.48315975506478,
+              70.0
+            ],
+            "samples": 4097,
+            "f_left": 32.79278215872235,
+            "f_right": 56.30962240165757,
+            "sampled_min_secant_derivative": 1.0,
+            "closest_sampled_abs_residual": 32.79278215872235,
+            "minimized_abs_residual": 32.792783298477495
+          }
+        ],
+        "breakpoint_limits": [
+          {
+            "ay": -55.718834546929514,
+            "left_limit_residual": -69.27758470172128,
+            "actual_cut_residual": -69.27758469172129,
+            "right_limit_residual": -69.27758468103487,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              16000.0,
+              -9623.5,
+              16000.0,
+              -9623.5
+            ]
+          },
+          {
+            "ay": -16.935643663738635,
+            "left_limit_residual": -24.423691346790385,
+            "actual_cut_residual": -24.42369133444919,
+            "right_limit_residual": -24.58036138239976,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              6276.5,
+              100.0,
+              6276.5,
+              100.0
+            ]
+          },
+          {
+            "ay": 7.6999688718739,
+            "left_limit_residual": -0.0022363170314481096,
+            "actual_cut_residual": -0.0022363055125680376,
+            "right_limit_residual": 0.15340535269359634,
+            "skips_zero": true,
+            "raw_loads_at_cut": [
+              100.0,
+              6276.5,
+              100.0,
+              6276.5
+            ]
+          },
+          {
+            "ay": 46.48315975506478,
+            "left_limit_residual": 32.79278214842135,
+            "actual_cut_residual": 32.79278215772236,
+            "right_limit_residual": 32.79278216772236,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              -9623.5,
+              16000.0,
+              -9623.5,
+              16000.0
+            ]
+          }
+        ],
+        "no_root_with_observed_zero_skipping_jump": true,
+        "scope": "Dense independent smooth-segment scan plus Brent and scalar minimum search; numerical evidence, not a symbolic uniqueness proof"
+      }
+    },
+    {
+      "angle_deg": 7,
+      "initial_vc_r_phi": [
+        -6.75,
+        -0.4266666666666667,
+        -0.37333333333333335
+      ],
+      "first_failed_stage_found": true,
+      "terminal_reason": 8,
+      "observation_index": 38,
+      "rk_substep": 15,
+      "rk_stage": 2,
+      "first_failed_stage_time_s": 0.38775,
+      "last_hint": 8.057205692374312,
+      "first_failed_state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -1.8417659597136007,
+        -0.5586108814070081,
+        0.44934001633455994,
+        0.9849691344558792
+      ],
+      "preceding_successful_rhs_state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -1.8453313842435082,
+        -0.5584043184530412,
+        0.44909270334031265,
+        0.9892519769891035
+      ],
+      "preceding_successful_root": 8.057205692374312,
+      "independent_root_audit": {
+        "roots": [],
+        "all_contact_roots": [],
+        "smooth_segments": [
+          {
+            "interval": [
+              -70.0,
+              -55.36217822122297
+            ],
+            "samples": 4097,
+            "f_left": -83.97080340223027,
+            "f_right": -69.33298162545324,
+            "sampled_min_secant_derivative": 0.9999999999980117,
+            "closest_sampled_abs_residual": 69.33298162545324,
+            "minimized_abs_residual": 69.33298266160908
+          },
+          {
+            "interval": [
+              -55.36217822122297,
+              -16.578987338032093
+            ],
+            "samples": 4097,
+            "f_left": -69.33298162340219,
+            "f_right": -24.538149622294217,
+            "sampled_min_secant_derivative": 1.051083055207428,
+            "closest_sampled_abs_residual": 24.538149622294217,
+            "minimized_abs_residual": 24.5381501778521
+          },
+          {
+            "interval": [
+              -16.578987338032093,
+              8.056625197580441
+            ],
+            "samples": 4097,
+            "f_left": -24.69561301475254,
+            "f_right": -0.0025780742168652893,
+            "sampled_min_secant_derivative": 0.8588585821477028,
+            "closest_sampled_abs_residual": 0.0025780742168652893,
+            "minimized_abs_residual": 0.002578259938470495
+          },
+          {
+            "interval": [
+              8.056625197580441,
+              46.83981608077133
+            ],
+            "samples": 4097,
+            "f_left": 0.15531844848152865,
+            "f_right": 32.84154643937949,
+            "sampled_min_secant_derivative": 0.7495418475774759,
+            "closest_sampled_abs_residual": 0.15531844848152865,
+            "minimized_abs_residual": 0.15531856446056747
+          },
+          {
+            "interval": [
+              46.83981608077133,
+              70.0
+            ],
+            "samples": 4097,
+            "f_left": 32.84154644132414,
+            "f_right": 56.00173035855281,
+            "sampled_min_secant_derivative": 1.0,
+            "closest_sampled_abs_residual": 32.84154644132414,
+            "minimized_abs_residual": 32.84154756277133
+          }
+        ],
+        "breakpoint_limits": [
+          {
+            "ay": -55.36217822122297,
+            "left_limit_residual": -69.33298163445325,
+            "actual_cut_residual": -69.33298162445325,
+            "right_limit_residual": -69.33298161394268,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              16000.0,
+              -9623.5,
+              16000.0,
+              -9623.5
+            ]
+          },
+          {
+            "ay": -16.578987338032093,
+            "left_limit_residual": -24.53814963356252,
+            "actual_cut_residual": -24.695613015611364,
+            "right_limit_residual": -24.695613007023148,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              6276.5,
+              100.0,
+              6276.5,
+              100.0
+            ]
+          },
+          {
+            "ay": 8.056625197580441,
+            "left_limit_residual": -0.002578084511815959,
+            "actual_cut_residual": -0.002578073072982079,
+            "right_limit_residual": 0.155318455227218,
+            "skips_zero": true,
+            "raw_loads_at_cut": [
+              100.00000000000023,
+              6276.5,
+              100.00000000000023,
+              6276.5
+            ]
+          },
+          {
+            "ay": 46.83981608077133,
+            "left_limit_residual": 32.841546430877614,
+            "actual_cut_residual": 32.841546440324144,
+            "right_limit_residual": 32.841546450324145,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              -9623.5,
+              16000.0,
+              -9623.5,
+              16000.0
+            ]
+          }
+        ],
+        "no_root_with_observed_zero_skipping_jump": true,
+        "scope": "Dense independent smooth-segment scan plus Brent and scalar minimum search; numerical evidence, not a symbolic uniqueness proof"
+      }
+    },
+    {
+      "angle_deg": 7,
+      "initial_vc_r_phi": [
+        -4,
+        0.32,
+        -0.4
+      ],
+      "first_failed_stage_found": true,
+      "terminal_reason": 8,
+      "observation_index": 43,
+      "rk_substep": 14,
+      "rk_stage": 4,
+      "first_failed_stage_time_s": 0.4375,
+      "last_hint": 7.629072584437443,
+      "first_failed_state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -2.051971138038582,
+        0.22397148806657916,
+        0.4982789057721396,
+        0.054844883079516925
+      ],
+      "preceding_successful_rhs_state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -2.0532560160128077,
+        0.22406065394374736,
+        0.49826405368694,
+        0.0594060780207142
+      ],
+      "preceding_successful_root": 7.629072584437443,
+      "independent_root_audit": {
+        "roots": [],
+        "all_contact_roots": [],
+        "smooth_segments": [
+          {
+            "interval": [
+              -70.0,
+              -55.78933767986183
+            ],
+            "samples": 4097,
+            "f_left": -83.44974500420467,
+            "f_right": -69.23908268606651,
+            "sampled_min_secant_derivative": 0.999999999997952,
+            "closest_sampled_abs_residual": 69.23908268606651,
+            "minimized_abs_residual": 69.2390836616867
+          },
+          {
+            "interval": [
+              -55.78933767986183,
+              -17.006146796670944
+            ],
+            "samples": 4097,
+            "f_left": -69.23908268399897,
+            "f_right": -24.44187809482164,
+            "sampled_min_secant_derivative": 1.067566087437395,
+            "closest_sampled_abs_residual": 24.44187809482164,
+            "minimized_abs_residual": 24.441878641734093
+          },
+          {
+            "interval": [
+              -17.006146796670944,
+              7.6294657389415885
+            ],
+            "samples": 4097,
+            "f_left": -24.596919025943553,
+            "f_right": -0.0004124388716126859,
+            "sampled_min_secant_derivative": 0.8459629280057315,
+            "closest_sampled_abs_residual": 0.0004124388716126859,
+            "minimized_abs_residual": 0.0004126330298870329
+          },
+          {
+            "interval": [
+              7.6294657389415885,
+              46.412656622132474
+            ],
+            "samples": 4097,
+            "f_left": 0.15394733065104305,
+            "f_right": 32.87478927663054,
+            "sampled_min_secant_derivative": 0.7660366325354531,
+            "closest_sampled_abs_residual": 0.15394733065104305,
+            "minimized_abs_residual": 0.15394745403616827
+          },
+          {
+            "interval": [
+              46.412656622132474,
+              70.0
+            ],
+            "samples": 4097,
+            "f_left": 32.874789278562204,
+            "f_right": 56.46213265442974,
+            "sampled_min_secant_derivative": 0.9999999999987661,
+            "closest_sampled_abs_residual": 32.874789278562204,
+            "minimized_abs_residual": 32.87479042173432
+          }
+        ],
+        "breakpoint_limits": [
+          {
+            "ay": -55.78933767986183,
+            "left_limit_residual": -69.23908269506651,
+            "actual_cut_residual": -69.2390826850665,
+            "right_limit_residual": -69.23908267439108,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              16000.0,
+              -9623.5,
+              16000.0,
+              -9623.5
+            ]
+          },
+          {
+            "ay": -17.006146796670944,
+            "left_limit_residual": -24.44187810591459,
+            "actual_cut_residual": -24.59691902678947,
+            "right_limit_residual": -24.596919018330272,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              6276.5,
+              100.0,
+              6276.5,
+              100.0
+            ]
+          },
+          {
+            "ay": 7.6294657389415885,
+            "left_limit_residual": -0.00041244923000860467,
+            "actual_cut_residual": 0.15394732988502735,
+            "right_limit_residual": 0.1539473375452074,
+            "skips_zero": true,
+            "raw_loads_at_cut": [
+              100.0,
+              6276.5,
+              100.0,
+              6276.5
+            ]
+          },
+          {
+            "ay": 46.412656622132474,
+            "left_limit_residual": 32.87478926824545,
+            "actual_cut_residual": 32.874789277562215,
+            "right_limit_residual": 32.87478928756221,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              -9623.5,
+              16000.0,
+              -9623.5,
+              16000.0
+            ]
+          }
+        ],
+        "no_root_with_observed_zero_skipping_jump": true,
+        "scope": "Dense independent smooth-segment scan plus Brent and scalar minimum search; numerical evidence, not a symbolic uniqueness proof"
+      }
+    }
+  ],
+  "wide_rhs_failure_cases": [
+    {
+      "angle_deg": 0,
+      "state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -3.168685109588168,
+        0.6974253537125232,
+        0.5182204383093995,
+        0.468643697949779
+      ],
+      "independent_root_audit": {
+        "roots": [],
+        "all_contact_roots": [],
+        "smooth_segments": [
+          {
+            "interval": [
+              -70.0,
+              -55.96023363954017
+            ],
+            "samples": 4097,
+            "f_left": -83.0541860951627,
+            "f_right": -69.01441973670288,
+            "sampled_min_secant_derivative": 0.999999999997927,
+            "closest_sampled_abs_residual": 69.01441973670288,
+            "minimized_abs_residual": 69.01442068810427
+          },
+          {
+            "interval": [
+              -55.96023363954017,
+              -17.17704275634929
+            ],
+            "samples": 4097,
+            "f_left": -69.01441973463939,
+            "f_right": -24.437142285379228,
+            "sampled_min_secant_derivative": 1.0635120355176497,
+            "closest_sampled_abs_residual": 24.437142285379228,
+            "minimized_abs_residual": 24.437142829661973
+          },
+          {
+            "interval": [
+              -17.17704275634929,
+              7.458569779263243
+            ],
+            "samples": 4097,
+            "f_left": -24.590407917574563,
+            "f_right": -0.08998017169981765,
+            "sampled_min_secant_derivative": 0.8444640120575178,
+            "closest_sampled_abs_residual": 0.08998017169981765,
+            "minimized_abs_residual": 0.08998036765472239
+          },
+          {
+            "interval": [
+              7.458569779263243,
+              46.241760662454126
+            ],
+            "samples": 4097,
+            "f_left": 0.060747496568733794,
+            "f_right": 32.8862475077173,
+            "sampled_min_secant_derivative": 0.7685754908532676,
+            "closest_sampled_abs_residual": 0.060747496568733794,
+            "minimized_abs_residual": 0.06074762231092645
+          },
+          {
+            "interval": [
+              46.241760662454126,
+              70.0
+            ],
+            "samples": 4097,
+            "f_left": 32.886247509651135,
+            "f_right": 56.64448684519701,
+            "sampled_min_secant_derivative": 1.0,
+            "closest_sampled_abs_residual": 32.886247509651135,
+            "minimized_abs_residual": 32.886248661105796
+          }
+        ],
+        "breakpoint_limits": [
+          {
+            "ay": -55.96023363954017,
+            "left_limit_residual": -69.01441974570288,
+            "actual_cut_residual": -69.01441973570287,
+            "right_limit_residual": -69.014419725068,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              16000.0,
+              -9623.5,
+              16000.0,
+              -9623.5
+            ]
+          },
+          {
+            "ay": -17.17704275634929,
+            "left_limit_residual": -24.437142296418838,
+            "actual_cut_residual": -24.590407918418983,
+            "right_limit_residual": -24.59040790997477,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              6276.5,
+              100.0,
+              6276.5,
+              100.0
+            ]
+          },
+          {
+            "ay": 7.458569779263243,
+            "left_limit_residual": -0.08998018199930691,
+            "actual_cut_residual": 0.06074749580017613,
+            "right_limit_residual": 0.060747503485746535,
+            "skips_zero": true,
+            "raw_loads_at_cut": [
+              100.0,
+              6276.5,
+              100.0,
+              6276.5
+            ]
+          },
+          {
+            "ay": 46.241760662454126,
+            "left_limit_residual": 32.88624749931273,
+            "actual_cut_residual": 32.88624750865114,
+            "right_limit_residual": 32.88624751865114,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              -9623.5,
+              16000.0,
+              -9623.5,
+              16000.0
+            ]
+          }
+        ],
+        "no_root_with_observed_zero_skipping_jump": true,
+        "scope": "Dense independent smooth-segment scan plus Brent and scalar minimum search; numerical evidence, not a symbolic uniqueness proof"
+      }
+    },
+    {
+      "angle_deg": 0,
+      "state_u_vc_r_phi_p": [
+        11.11111111111111,
+        2.9304896046067057,
+        0.4012963264185896,
+        -0.5143151669749302,
+        -0.7216673432877114
+      ],
+      "independent_root_audit": {
+        "roots": [],
+        "all_contact_roots": [],
+        "smooth_segments": [
+          {
+            "interval": [
+              -70.0,
+              -46.27507822552569
+            ],
+            "samples": 4097,
+            "f_left": -56.42953172199826,
+            "f_right": -32.70460994952395,
+            "sampled_min_secant_derivative": 1.0,
+            "closest_sampled_abs_residual": 32.70460994952395,
+            "minimized_abs_residual": 32.70461109936386
+          },
+          {
+            "interval": [
+              -46.27507822552569,
+              -7.491887342334811
+            ],
+            "samples": 4097,
+            "f_left": -32.70460994759476,
+            "f_right": -0.018478403719456082,
+            "sampled_min_secant_derivative": 0.765547881399079,
+            "closest_sampled_abs_residual": 0.018478403719456082,
+            "minimized_abs_residual": 0.018478528588004473
+          },
+          {
+            "interval": [
+              -7.491887342334811,
+              17.143725193277724
+            ],
+            "samples": 4097,
+            "f_left": 0.1378032289126887,
+            "f_right": 24.85413244817511,
+            "sampled_min_secant_derivative": 0.8514890538947982,
+            "closest_sampled_abs_residual": 0.1378032289126887,
+            "minimized_abs_residual": 0.13780342615691943
+          },
+          {
+            "interval": [
+              17.143725193277724,
+              55.92691607646861
+            ],
+            "samples": 4097,
+            "f_left": 24.69937143636532,
+            "f_right": 69.67995928447644,
+            "sampled_min_secant_derivative": 1.0725422296188705,
+            "closest_sampled_abs_residual": 24.69937143636532,
+            "minimized_abs_residual": 24.69937198540756
+          },
+          {
+            "interval": [
+              55.92691607646861,
+              70.0
+            ],
+            "samples": 4097,
+            "f_left": 69.67995928654895,
+            "f_right": 83.75304320808034,
+            "sampled_min_secant_derivative": 0.999999999997932,
+            "closest_sampled_abs_residual": 69.67995928654895,
+            "minimized_abs_residual": 69.679960242672
+          }
+        ],
+        "breakpoint_limits": [
+          {
+            "ay": -46.27507822552569,
+            "left_limit_residual": -32.70460995852395,
+            "actual_cut_residual": -32.70460994852395,
+            "right_limit_residual": -32.70460993923194,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              16000.0,
+              -9623.5,
+              16000.0,
+              -9623.5
+            ]
+          },
+          {
+            "ay": -7.491887342334811,
+            "left_limit_residual": -0.01847841060921862,
+            "actual_cut_residual": 0.1378032277574377,
+            "right_limit_residual": 0.1378032393099522,
+            "skips_zero": true,
+            "raw_loads_at_cut": [
+              6276.5,
+              100.0,
+              6276.5,
+              100.0
+            ]
+          },
+          {
+            "ay": 17.143725193277724,
+            "left_limit_residual": 24.854132440512103,
+            "actual_cut_residual": 24.69937143512797,
+            "right_limit_residual": 24.69937144750147,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              100.0,
+              6276.5,
+              100.0,
+              6276.5
+            ]
+          },
+          {
+            "ay": 55.92691607646861,
+            "left_limit_residual": 69.67995927482377,
+            "actual_cut_residual": 69.67995928554895,
+            "right_limit_residual": 69.67995929554895,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              -9623.5,
+              16000.0,
+              -9623.5,
+              16000.0
+            ]
+          }
+        ],
+        "no_root_with_observed_zero_skipping_jump": true,
+        "scope": "Dense independent smooth-segment scan plus Brent and scalar minimum search; numerical evidence, not a symbolic uniqueness proof"
+      }
+    },
+    {
+      "angle_deg": 0,
+      "state_u_vc_r_phi_p": [
+        11.11111111111111,
+        1.0386372083087636,
+        0.42367153921304634,
+        -0.42486841565631284,
+        -0.21810999060213598
+      ],
+      "independent_root_audit": {
+        "roots": [],
+        "all_contact_roots": [],
+        "smooth_segments": [
+          {
+            "interval": [
+              -70.0,
+              -47.057306324543134
+            ],
+            "samples": 4097,
+            "f_left": -56.78549637220547,
+            "f_right": -33.842802698748606,
+            "sampled_min_secant_derivative": 1.0,
+            "closest_sampled_abs_residual": 33.842802698748606,
+            "minimized_abs_residual": 33.84280379991457
+          },
+          {
+            "interval": [
+              -47.057306324543134,
+              -8.27411544135226
+            ],
+            "samples": 4097,
+            "f_left": -33.84280269677933,
+            "f_right": -0.1326785871666889,
+            "sampled_min_secant_derivative": 0.7528224351683239,
+            "closest_sampled_abs_residual": 0.1326785871666889,
+            "minimized_abs_residual": 0.1326787012234245
+          },
+          {
+            "interval": [
+              -8.27411544135226,
+              16.361497094260276
+            ],
+            "samples": 4097,
+            "f_left": 0.02282932663582926,
+            "f_right": 24.590169160270904,
+            "sampled_min_secant_derivative": 0.8513028622134163,
+            "closest_sampled_abs_residual": 0.02282932663582926,
+            "minimized_abs_residual": 0.02282950835198072
+          },
+          {
+            "interval": [
+              16.361497094260276,
+              55.144687977451156
+            ],
+            "samples": 4097,
+            "f_left": 24.433106469564663,
+            "f_right": 68.18723715045601,
+            "sampled_min_secant_derivative": 1.02913750773163,
+            "closest_sampled_abs_residual": 24.433106469564663,
+            "minimized_abs_residual": 24.433107021656664
+          },
+          {
+            "interval": [
+              55.144687977451156,
+              70.0
+            ],
+            "samples": 4097,
+            "f_left": 68.18723715248512,
+            "f_right": 83.04254917303396,
+            "sampled_min_secant_derivative": 0.9999999999980409,
+            "closest_sampled_abs_residual": 68.18723715248512,
+            "minimized_abs_residual": 68.18723821946296
+          }
+        ],
+        "breakpoint_limits": [
+          {
+            "ay": -47.057306324543134,
+            "left_limit_residual": -33.84280270774861,
+            "actual_cut_residual": -33.84280269774861,
+            "right_limit_residual": -33.8428026880558,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              16000.0,
+              -9623.499999999998,
+              16000.0,
+              -9623.499999999998
+            ]
+          },
+          {
+            "ay": -8.27411544135226,
+            "left_limit_residual": -0.13267859394181514,
+            "actual_cut_residual": -0.13267858641389907,
+            "right_limit_residual": 0.022829336912941756,
+            "skips_zero": true,
+            "raw_loads_at_cut": [
+              6276.5,
+              100.0,
+              6276.5,
+              100.0
+            ]
+          },
+          {
+            "ay": 16.361497094260276,
+            "left_limit_residual": 24.59016915260947,
+            "actual_cut_residual": 24.433106468320442,
+            "right_limit_residual": 24.433106480762675,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              100.0,
+              6276.5,
+              100.0,
+              6276.5
+            ]
+          },
+          {
+            "ay": 55.144687977451156,
+            "left_limit_residual": 68.18723714119395,
+            "actual_cut_residual": 68.18723715148512,
+            "right_limit_residual": 68.18723716148513,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              -9623.5,
+              16000.0,
+              -9623.5,
+              16000.0
+            ]
+          }
+        ],
+        "no_root_with_observed_zero_skipping_jump": true,
+        "scope": "Dense independent smooth-segment scan plus Brent and scalar minimum search; numerical evidence, not a symbolic uniqueness proof"
+      }
+    },
+    {
+      "angle_deg": 0,
+      "state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -2.4677596206792973,
+        0.16556295892045225,
+        0.4775476293699784,
+        0.07266812970110381
+      ],
+      "independent_root_audit": {
+        "roots": [],
+        "all_contact_roots": [],
+        "smooth_segments": [
+          {
+            "interval": [
+              -70.0,
+              -55.60969815498859
+            ],
+            "samples": 4097,
+            "f_left": -83.88800230774538,
+            "f_right": -69.49770046473398,
+            "sampled_min_secant_derivative": 0.9999999999979775,
+            "closest_sampled_abs_residual": 69.49770046473398,
+            "minimized_abs_residual": 69.49770146581211
+          },
+          {
+            "interval": [
+              -55.60969815498859,
+              -16.82650727179771
+            ],
+            "samples": 4097,
+            "f_left": -69.49770046266244,
+            "f_right": -24.463340972052535,
+            "sampled_min_secant_derivative": 1.071584794608091,
+            "closest_sampled_abs_residual": 24.463340972052535,
+            "minimized_abs_residual": 24.463341522046115
+          },
+          {
+            "interval": [
+              -16.82650727179771,
+              7.809105263814827
+            ],
+            "samples": 4097,
+            "f_left": -24.622135961288752,
+            "f_right": -0.02487741723139969,
+            "sampled_min_secant_derivative": 0.8434893681646695,
+            "closest_sampled_abs_residual": 0.02487741723139969,
+            "minimized_abs_residual": 0.024877608750503377
+          },
+          {
+            "interval": [
+              7.809105263814827,
+              46.592296147005705
+            ],
+            "samples": 4097,
+            "f_left": 0.13327298672845167,
+            "f_right": 32.617674437743716,
+            "sampled_min_secant_derivative": 0.759104326763212,
+            "closest_sampled_abs_residual": 0.13327298672845167,
+            "minimized_abs_residual": 0.1332731069743751
+          },
+          {
+            "interval": [
+              46.592296147005705,
+              70.0
+            ],
+            "samples": 4097,
+            "f_left": 32.61767443967138,
+            "f_right": 56.02537829066568,
+            "sampled_min_secant_derivative": 1.0,
+            "closest_sampled_abs_residual": 32.61767443967138,
+            "minimized_abs_residual": 32.61767557413718
+          }
+        ],
+        "breakpoint_limits": [
+          {
+            "ay": -55.60969815498859,
+            "left_limit_residual": -69.49770047373399,
+            "actual_cut_residual": -69.49770046373398,
+            "right_limit_residual": -69.4977004530184,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              16000.0,
+              -9623.5,
+              16000.0,
+              -9623.5
+            ]
+          },
+          {
+            "ay": -16.82650727179771,
+            "left_limit_residual": -24.463340983207978,
+            "actual_cut_residual": -24.463340970813036,
+            "right_limit_residual": -24.622135953697736,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              6276.5,
+              100.0,
+              6276.5,
+              100.0
+            ]
+          },
+          {
+            "ay": 7.809105263814827,
+            "left_limit_residual": -0.024877427612968184,
+            "actual_cut_residual": -0.024877416077892178,
+            "right_limit_residual": 0.13327299356022593,
+            "skips_zero": true,
+            "raw_loads_at_cut": [
+              100.0,
+              6276.5,
+              100.0,
+              6276.5
+            ]
+          },
+          {
+            "ay": 46.592296147005705,
+            "left_limit_residual": 32.61767442939459,
+            "actual_cut_residual": 32.617674438671386,
+            "right_limit_residual": 32.61767444867139,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              -9623.5,
+              16000.0,
+              -9623.5,
+              16000.0
+            ]
+          }
+        ],
+        "no_root_with_observed_zero_skipping_jump": true,
+        "scope": "Dense independent smooth-segment scan plus Brent and scalar minimum search; numerical evidence, not a symbolic uniqueness proof"
+      }
+    },
+    {
+      "angle_deg": 7,
+      "state_u_vc_r_phi_p": [
+        11.11111111111111,
+        4.911299100451167,
+        -0.33548612483450857,
+        -0.5575149058289632,
+        0.6046703239263049
+      ],
+      "independent_root_audit": {
+        "roots": [],
+        "all_contact_roots": [],
+        "smooth_segments": [
+          {
+            "interval": [
+              -70.0,
+              -45.91073165941503
+            ],
+            "samples": 4097,
+            "f_left": -57.23144845643656,
+            "f_right": -33.14218011785159,
+            "sampled_min_secant_derivative": 1.0,
+            "closest_sampled_abs_residual": 33.14218011785159,
+            "minimized_abs_residual": 33.142181285349736
+          },
+          {
+            "interval": [
+              -45.91073165941503,
+              -7.127540776224141
+            ],
+            "samples": 4097,
+            "f_left": -33.142180115915,
+            "f_right": -0.02834711701103121,
+            "sampled_min_secant_derivative": 0.7778300232430544,
+            "closest_sampled_abs_residual": 0.02834711701103121,
+            "minimized_abs_residual": 0.028347248086395993
+          },
+          {
+            "interval": [
+              -7.127540776224141,
+              17.508071759388393
+            ],
+            "samples": 4097,
+            "f_left": 0.11712557714854377,
+            "f_right": 24.689940508732377,
+            "sampled_min_secant_derivative": 0.8540262251667056,
+            "closest_sampled_abs_residual": 0.11712557714854377,
+            "minimized_abs_residual": 0.11712577582584593
+          },
+          {
+            "interval": [
+              17.508071759388393,
+              56.29126264257927
+            ],
+            "samples": 4097,
+            "f_left": 24.543118645408043,
+            "f_right": 68.91997428209163,
+            "sampled_min_secant_derivative": 1.0620846890974511,
+            "closest_sampled_abs_residual": 24.543118645408043,
+            "minimized_abs_residual": 24.54311918677976
+          },
+          {
+            "interval": [
+              56.29126264257927,
+              70.0
+            ],
+            "samples": 4097,
+            "f_left": 68.91997428415368,
+            "f_right": 82.62871163957442,
+            "sampled_min_secant_derivative": 0.999999999997877,
+            "closest_sampled_abs_residual": 68.91997428415368,
+            "minimized_abs_residual": 68.91997518864275
+          }
+        ],
+        "breakpoint_limits": [
+          {
+            "ay": -45.91073165941503,
+            "left_limit_residual": -33.14218012685159,
+            "actual_cut_residual": -33.14218011685159,
+            "right_limit_residual": -33.14218010748563,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              16000.0,
+              -9623.5,
+              16000.0,
+              -9623.5
+            ]
+          },
+          {
+            "ay": -7.127540776224141,
+            "left_limit_residual": -0.028347124011334657,
+            "actual_cut_residual": -0.028347116233219616,
+            "right_limit_residual": 0.1171255874132262,
+            "skips_zero": true,
+            "raw_loads_at_cut": [
+              6276.5,
+              100.0,
+              6276.5,
+              100.0
+            ]
+          },
+          {
+            "ay": 17.508071759388393,
+            "left_limit_residual": 24.689940501046518,
+            "actual_cut_residual": 24.689940509586364,
+            "right_limit_residual": 24.543118656388614,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              100.0,
+              6276.5,
+              100.0,
+              6276.5
+            ]
+          },
+          {
+            "ay": 56.29126264257927,
+            "left_limit_residual": 68.91997427253307,
+            "actual_cut_residual": 68.91997428315369,
+            "right_limit_residual": 68.91997429315369,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              -9623.5,
+              16000.0,
+              -9623.5,
+              16000.0
+            ]
+          }
+        ],
+        "no_root_with_observed_zero_skipping_jump": true,
+        "scope": "Dense independent smooth-segment scan plus Brent and scalar minimum search; numerical evidence, not a symbolic uniqueness proof"
+      }
+    },
+    {
+      "angle_deg": 7,
+      "state_u_vc_r_phi_p": [
+        11.11111111111111,
+        -3.3334163474063505,
+        0.6524081431389888,
+        0.5689219095165196,
+        0.9914173708918605
+      ],
+      "independent_root_audit": {
+        "roots": [],
+        "all_contact_roots": [],
+        "smooth_segments": [
+          {
+            "interval": [
+              -70.0,
+              -56.38588047270959
+            ],
+            "samples": 4097,
+            "f_left": -82.08683991219925,
+            "f_right": -68.47272038690885,
+            "sampled_min_secant_derivative": 0.9999999999978623,
+            "closest_sampled_abs_residual": 68.47272038690885,
+            "minimized_abs_residual": 68.47272127798898
+          },
+          {
+            "interval": [
+              -56.38588047270959,
+              -17.602689589518704
+            ],
+            "samples": 4097,
+            "f_left": -68.47272038485457,
+            "f_right": -24.421461102573566,
+            "sampled_min_secant_derivative": 1.0543090676590616,
+            "closest_sampled_abs_residual": 24.421461102573566,
+            "minimized_abs_residual": 24.421461640203873
+          },
+          {
+            "interval": [
+              -17.602689589518704,
+              7.032922946093828
+            ],
+            "samples": 4097,
+            "f_left": -24.565286662476453,
+            "f_right": -0.0084320511611784,
+            "sampled_min_secant_derivative": 0.8531471402642498,
+            "closest_sampled_abs_residual": 0.0084320511611784,
+            "minimized_abs_residual": 0.00843224970539147
+          },
+          {
+            "interval": [
+              7.032922946093828,
+              45.81611382928471
+            ],
+            "samples": 4097,
+            "f_left": 0.13355667607843547,
+            "f_right": 33.55648107192399,
+            "sampled_min_secant_derivative": 0.7858239512399384,
+            "closest_sampled_abs_residual": 0.13355667607843547,
+            "minimized_abs_residual": 0.1335568092627195
+          },
+          {
+            "interval": [
+              45.81611382928471,
+              70.0
+            ],
+            "samples": 4097,
+            "f_left": 33.55648107386804,
+            "f_right": 57.74036724258333,
+            "sampled_min_secant_derivative": 1.0,
+            "closest_sampled_abs_residual": 33.55648107386804,
+            "minimized_abs_residual": 33.55648224595189
+          }
+        ],
+        "breakpoint_limits": [
+          {
+            "ay": -56.38588047270959,
+            "left_limit_residual": -68.47272039590885,
+            "actual_cut_residual": -68.47272038590884,
+            "right_limit_residual": -68.47272037536598,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              16000.0,
+              -9623.5,
+              16000.0,
+              -9623.5
+            ]
+          },
+          {
+            "ay": -17.602689589518704,
+            "left_limit_residual": -24.421461113478248,
+            "actual_cut_residual": -24.565286663329555,
+            "right_limit_residual": -24.56528665479851,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              6276.5,
+              100.0,
+              6276.5,
+              100.0
+            ]
+          },
+          {
+            "ay": 7.032922946093828,
+            "left_limit_residual": -0.008432061418981007,
+            "actual_cut_residual": -0.008432050021420778,
+            "right_limit_residual": 0.13355668315068403,
+            "skips_zero": true,
+            "raw_loads_at_cut": [
+              100.0,
+              6276.5,
+              100.0,
+              6276.5
+            ]
+          },
+          {
+            "ay": 45.81611382928471,
+            "left_limit_residual": 33.55648106342747,
+            "actual_cut_residual": 33.556481072868046,
+            "right_limit_residual": 33.556481082868046,
+            "skips_zero": false,
+            "raw_loads_at_cut": [
+              -9623.5,
+              16000.0,
+              -9623.5,
+              16000.0
+            ]
+          }
+        ],
+        "no_root_with_observed_zero_skipping_jump": true,
+        "scope": "Dense independent smooth-segment scan plus Brent and scalar minimum search; numerical evidence, not a symbolic uniqueness proof"
+      }
+    }
+  ],
+  "all_benchmark_failures_have_no_global_root_and_activation_jump": true
+}

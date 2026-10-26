@@ -1,0 +1,44 @@
+{
+  "target_pid": 330548,
+  "verified_argv": [
+    "/workspace/suspension/validation/fig6_mf_eq11_baseline/engine/native_mf_eq11",
+    "points",
+    "40",
+    ".85",
+    "7",
+    "/workspace/suspension/validation/fig6_mf_eq11_baseline/run/initial_points_full.txt",
+    "/workspace/suspension/validation/fig6_mf_eq11_baseline/run/full_5s/raw_7deg.csv",
+    ".01",
+    "5",
+    "1"
+  ],
+  "original_runner_pid": 330541,
+  "discarded_partial_progress": {
+    "processed_initial_states": 50176,
+    "total_initial_states": 138105,
+    "stable_so_far": 6745,
+    "numerical_failures": 929,
+    "elapsed_s": 744.792
+  },
+  "reason": "Coordinator-authorized scheduling optimization only",
+  "model_source_changed": false,
+  "points_changed": false,
+  "old_workers": 1,
+  "new_workers": 2,
+  "old_partial_outputs_available": false,
+  "full_recalculation_from_first_point": true,
+  "new_pid": 331351,
+  "new_argv": [
+    "/workspace/suspension/validation/fig6_mf_eq11_baseline/engine/native_mf_eq11",
+    "points",
+    "40",
+    ".85",
+    "7",
+    "/workspace/suspension/validation/fig6_mf_eq11_baseline/run/initial_points_full.txt",
+    "/workspace/suspension/validation/fig6_mf_eq11_baseline/run/full_5s/raw_7deg.csv",
+    ".01",
+    "5",
+    "2"
+  ],
+  "restart_started": true
+}

@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "scope": "Independent parent C++ vs Octave step and finite-trajectory checks",
+  "native_source_sha256": "dfd9e5185b1596f434fb4e7788f522d99468c6c65a6ae2f67c3814d627a0bde7",
+  "native_executable_sha256": "c095b134b751cbc9654322401fca483c51419ca715eb3fd87343b93142bb1943",
+  "cases": [
+    {
+      "angle_deg": 0,
+      "step_states": 257,
+      "step_max_abs_error": 1.6919798895287386e-13,
+      "mini_states": 27,
+      "mini_horizon_s": 0.2,
+      "reason_masks_identical": true,
+      "mini_stable": 27,
+      "mini_unresolved": 0,
+      "mini_diagnostic_max_error": {
+        "max_abs_yaw": 9.1393559387143e-20,
+        "max_abs_ay": 4.001243780749064e-12,
+        "min_wheel_load": 3.078912413911894e-08
+      }
+    },
+    {
+      "angle_deg": 3.5,
+      "step_states": 257,
+      "step_max_abs_error": 1.2967404927621828e-13,
+      "mini_states": 27,
+      "mini_horizon_s": 0.2,
+      "reason_masks_identical": true,
+      "mini_stable": 22,
+      "mini_unresolved": 0,
+      "mini_diagnostic_max_error": {
+        "max_abs_yaw": 2.2926105458509483e-14,
+        "max_abs_ay": 2.4416024757556443e-12,
+        "min_wheel_load": 4.621279003913514e-08
+      }
+    },
+    {
+      "angle_deg": 7,
+      "step_states": 257,
+      "step_max_abs_error": 1.438849039914203e-13,
+      "mini_states": 27,
+      "mini_horizon_s": 0.2,
+      "reason_masks_identical": true,
+      "mini_stable": 21,
+      "mini_unresolved": 0,
+      "mini_diagnostic_max_error": {
+        "max_abs_yaw": 2.493005801795789e-13,
+        "max_abs_ay": 1.48840939573347e-11,
+        "min_wheel_load": 6.53014922136208e-08
+      }
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "passed": true,
+  "native_source_sha256": "dfd9e5185b1596f434fb4e7788f522d99468c6c65a6ae2f67c3814d627a0bde7",
+  "native_executable_sha256": "c095b134b751cbc9654322401fca483c51419ca715eb3fd87343b93142bb1943",
+  "MF_force_kernel_verbatim": true,
+  "Mcode_runtime": "GNU Octave9.4",
+  "licensed_MATLAB_executed": false,
+  "rhs_cases": [
+    {
+      "angle": 0,
+      "samevalid": true,
+      "finite": 253,
+      "maxdiff": 2.2737367544323206e-12,
+      "max_rhs": 7.105427357601002e-15,
+      "max_load": 1.8189894035458565e-12,
+      "nativefallback": 4,
+      "nativefailed": 4,
+      "failed_states": [
+        [
+          11.11111111111111,
+          -3.168685109588168,
+          0.6974253537125232,
+          0.5182204383093995,
+          0.468643697949779
+        ],
+        [
+          11.11111111111111,
+          2.9304896046067057,
+          0.4012963264185896,
+          -0.5143151669749302,
+          -0.7216673432877114
+        ],
+        [
+          11.11111111111111,
+          1.0386372083087636,
+          0.42367153921304634,
+          -0.42486841565631284,
+          -0.21810999060213598
+        ],
+        [
+          11.11111111111111,
+          -2.4677596206792973,
+          0.16556295892045225,
+          0.4775476293699784,
+          0.07266812970110381
+        ]
+      ]
+    },
+    {
+      "angle": 3.5,
+      "samevalid": true,
+      "finite": 257,
+      "maxdiff": 2.7284841053187847e-12,
+      "max_rhs": 7.105427357601002e-15,
+      "max_load": 1.3642420526593924e-12,
+      "nativefallback": 0,
+      "nativefailed": 0,
+      "failed_states": []
+    },
+    {
+      "angle": 7,
+      "samevalid": true,
+      "finite": 255,
+      "maxdiff": 2.7284841053187847e-12,
+      "max_rhs": 7.105427357601002e-15,
+      "max_load": 1.8189894035458565e-12,
+      "nativefallback": 2,
+      "nativefailed": 2,
+      "failed_states": [
+        [
+          11.11111111111111,
+          4.911299100451167,
+          -0.33548612483450857,
+          -0.5575149058289632,
+          0.6046703239263049
+        ],
+        [
+          11.11111111111111,
+          -3.3334163474063505,
+          0.6524081431389888,
+          0.5689219095165196,
+          0.9914173708918605
+        ]
+      ]
+    }
+  ],
+  "step_and_trajectory": {
+    "passed": true,
+    "scope": "Independent parent C++ vs Octave step and finite-trajectory checks",
+    "native_source_sha256": "dfd9e5185b1596f434fb4e7788f522d99468c6c65a6ae2f67c3814d627a0bde7",
+    "native_executable_sha256": "c095b134b751cbc9654322401fca483c51419ca715eb3fd87343b93142bb1943",
+    "cases": [
+      {
+        "angle_deg": 0,
+        "step_states": 257,
+        "step_max_abs_error": 1.6919798895287386e-13,
+        "mini_states": 27,
+        "mini_horizon_s": 0.2,
+        "reason_masks_identical": true,
+        "mini_stable": 27,
+        "mini_unresolved": 0,
+        "mini_diagnostic_max_error": {
+          "max_abs_yaw": 9.1393559387143e-20,
+          "max_abs_ay": 4.001243780749064e-12,
+          "min_wheel_load": 3.078912413911894e-08
+        }
+      },
+      {
+        "angle_deg": 3.5,
+        "step_states": 257,
+        "step_max_abs_error": 1.2967404927621828e-13,
+        "mini_states": 27,
+        "mini_horizon_s": 0.2,
+        "reason_masks_identical": true,
+        "mini_stable": 22,
+        "mini_unresolved": 0,
+        "mini_diagnostic_max_error": {
+          "max_abs_yaw": 2.2926105458509483e-14,
+          "max_abs_ay": 2.4416024757556443e-12,
+          "min_wheel_load": 4.621279003913514e-08
+        }
+      },
+      {
+        "angle_deg": 7,
+        "step_states": 257,
+        "step_max_abs_error": 1.438849039914203e-13,
+        "mini_states": 27,
+        "mini_horizon_s": 0.2,
+        "reason_masks_identical": true,
+        "mini_stable": 21,
+        "mini_unresolved": 0,
+        "mini_diagnostic_max_error": {
+          "max_abs_yaw": 2.493005801795789e-13,
+          "max_abs_ay": 1.48840939573347e-11,
+          "min_wheel_load": 6.53014922136208e-08
+        }
+      }
+    ]
+  },
+  "Mcode_sources_sha256": {
+    "audit_eq11_mcode.m": "e9398dbfb0a5ba7699e7a7383b1975ea7e1013d72dc7db685a09b29a7cf312c4",
+    "audit_eq11_steps_and_mini.m": "431c69f6785d42cbe34b8bc4932bfc0f4d7e51cb1f4b8f4a7585d0973e103626",
+    "mf210_force_scalar.m": "6357f53b09a143f185d6f4b90f457bf833dc26d09a023dd95400729b46b5678f",
+    "mf210_forces.m": "b61291c65052ef153d81f91bb2dcb272d0e496602245a763f2eab417ee221b65",
+    "paper_config.m": "6304478e4d931abe0cb7da668d551a8c58694d1e3626524269564644cf492d6c",
+    "paper_initial.m": "4af0ce55d09284549e411e6e2dc8c9b5731ee362545a909748955894a8cdb2bd",
+    "paper_rhs.m": "fc6849aa6c1526e828ca3860171969b6a29a9ff5ff69e8f2b3defd3f287bd0c3",
+    "paper_simulate_grid.m": "96684010fe20ba7207bac536498192dd366a2b85a25e2eb3d4fdad63cc2cd623",
+    "paper_step.m": "aa9422ea10f514b1ee6a9652bb1ffe0944ae3f5a394bca8c33072e6cb83049fe"
+  },
+  "solver_contract_sha256": "24f0e65167467401522797245fd9c92b6d2015891e509d96e1769717e4daa7f3",
+  "frozen_for_production": true
+}

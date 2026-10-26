@@ -1,0 +1,49 @@
+{
+  "angle_deg": 0.0,
+  "passed": true,
+  "source_classification_sha256": "daef6872601ff7e21479a683d629be45a99452bc65fb5e6df486716fd1b1da63",
+  "frozen_python_sha256": "8719cee2c344b13ecae36c3ce39abbdc24c3648456915dab805faa9ec805dca1",
+  "frozen_matlab_sha256": "86b93d3fbccae8d0ba31f708d92b8c67d85f5e589cc801504e15ac540ff5d70b",
+  "grid_shape": [
+    81,
+    55,
+    31
+  ],
+  "raw_counts": {
+    "stable": 10005,
+    "physical_unstable": 125748,
+    "numerical_unresolved": 2352
+  },
+  "branch_counts": {
+    "one_band_coincident": 135,
+    "two_bands_central_pair": 2,
+    "multiple_bands_ambiguous_excluded": 0,
+    "central_interval_contains_unstable_excluded": 0
+  },
+  "roll_domain_censored_slices": 353,
+  "physical_roll_boundary_resolved": false,
+  "candidates": {
+    "inner_candidate": {
+      "valid": false,
+      "volume": 1.221214814814815,
+      "extreme_vertices": 8,
+      "planar_faces": 10,
+      "classified_stable_inside": 5149,
+      "physical_unstable_inside": 1860,
+      "numerical_unresolved_inside": 0,
+      "unavailable_reason": "Extreme-point candidate fails eight-vertex/six-quad/zero-unstable audit"
+    },
+    "outer_candidate": {
+      "valid": false,
+      "volume": 1.221214814814815,
+      "extreme_vertices": 8,
+      "planar_faces": 10,
+      "classified_stable_inside": 5149,
+      "physical_unstable_inside": 1860,
+      "numerical_unresolved_inside": 0,
+      "unavailable_reason": "Extreme-point candidate fails eight-vertex/six-quad/zero-unstable audit"
+    }
+  },
+  "elapsed_s": 1.0134251160197891,
+  "runtime": "GNU Octave 9.4; not licensed MATLAB"
+}

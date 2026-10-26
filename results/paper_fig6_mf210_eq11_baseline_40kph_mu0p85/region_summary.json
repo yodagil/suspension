@@ -1,0 +1,109 @@
+{
+  "model": "Original MF with printed Eq11 and paper Sec3.1 extreme-point sequence",
+  "speed_kmh": 40,
+  "mu": 0.85,
+  "angles_deg": [
+    0,
+    3.5,
+    7
+  ],
+  "completed": 1,
+  "total": 3,
+  "all_simulations_complete": false,
+  "accepted_inner_count": 0,
+  "forced_nesting": false,
+  "roll_scaling_or_caps": false,
+  "max_volume_objective": false,
+  "equilibrium_anchor": false,
+  "author_exact_corner_algorithm_claimed": false,
+  "continuous_stability_certificate": false,
+  "cases": [
+    {
+      "angle_deg": 0,
+      "file": "stable_point_40kph_0.85mu_0deg.mat",
+      "file_sha256": "549c5f5819b08c0ef2f1ca3d80f390074e35b673730bee72a889908dbf3824b6",
+      "classification_source_sha256": "daef6872601ff7e21479a683d629be45a99452bc65fb5e6df486716fd1b1da63",
+      "initial_states": 138105,
+      "stable_count": 10005,
+      "physical_unstable_count": 125748,
+      "unresolved_count": 2352,
+      "raw_stable_bounds": [
+        [
+          -1.25,
+          1.25
+        ],
+        [
+          -0.6133333333333334,
+          0.6133333333333334
+        ],
+        [
+          -0.4,
+          0.4
+        ]
+      ],
+      "origin_raw_stable": true,
+      "origin_inside_extreme_candidate": true,
+      "accepted_inner": false,
+      "accepted_volume": null,
+      "candidate_volume": 1.221214814814815,
+      "candidate_vertices": [
+        [
+          -1.25,
+          -0.6133333333333334,
+          -0.10666666666666667
+        ],
+        [
+          -1.0,
+          -0.6133333333333334,
+          -0.4
+        ],
+        [
+          1.25,
+          -0.6133333333333334,
+          -0.08
+        ],
+        [
+          1.0,
+          -0.6133333333333334,
+          0.4
+        ],
+        [
+          -1.25,
+          0.6133333333333334,
+          -0.16
+        ],
+        [
+          -1.0,
+          0.6133333333333334,
+          -0.4
+        ],
+        [
+          1.25,
+          0.6133333333333334,
+          -0.13333333333333333
+        ],
+        [
+          1.0,
+          0.6133333333333334,
+          0.4
+        ]
+      ],
+      "candidate_faces": [],
+      "candidate_extreme_vertices": 8,
+      "candidate_planar_face_count": 10,
+      "candidate_physical_unstable_inside": 1860,
+      "candidate_numerical_unresolved_inside": 0,
+      "unavailable_reason": "Extreme-point candidate fails eight-vertex/six-quad/zero-unstable audit",
+      "roll_domain_censored_slices": 353,
+      "stable_vc_yaw_slices": 353,
+      "physical_roll_boundary_resolved": false,
+      "branch_counts": {
+        "one_band_coincident": 135,
+        "two_bands_central_pair": 2,
+        "multiple_bands_ambiguous_excluded": 0,
+        "central_interval_contains_unstable_excluded": 0
+      },
+      "disconnected_roll_slices": 0
+    }
+  ]
+}
