@@ -1,0 +1,28 @@
+{
+  "passed": 1,
+  "actual_vertices_matched": [
+    1,
+    1,
+    1
+  ],
+  "view": [
+    -72.0,
+    11.0
+  ],
+  "xlim": [
+    -0.72,
+    0.72
+  ],
+  "ylim": [
+    -2.0,
+    2.0
+  ],
+  "zlim": [
+    -0.3,
+    0.3
+  ],
+  "licensed_matlab_execution": 0,
+  "runtime": "9.4.0",
+  "plot_m_sha256": "a4d208d6929884285028f35e453ceb096e23e4653654e19292b8ca08011db67e",
+  "note": "Gnuplot headless rendering issued warnings; patch coordinates, alpha and camera properties passed. Python supplies main publication PNG."
+}

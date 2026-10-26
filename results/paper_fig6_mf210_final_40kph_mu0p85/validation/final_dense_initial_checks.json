@@ -1,0 +1,54 @@
+{
+  "cases": [
+    {
+      "angle_deg": 0.0,
+      "samples": 6742,
+      "sobol_samples": 4096,
+      "face_samples": 2646,
+      "passed": true,
+      "failed_count": 0,
+      "max_abs_yaw_rad_s": 0.56,
+      "yaw_limit_rad_s": 0.63789525,
+      "max_abs_ay_m_s2": 8.271864329794449,
+      "ay_limit_m_s2": 8.3385,
+      "min_initial_wheel_load_N": 317.5782525582872,
+      "failed_points": [],
+      "failed_ay": []
+    },
+    {
+      "angle_deg": 3.5,
+      "samples": 6742,
+      "sobol_samples": 4096,
+      "face_samples": 2646,
+      "passed": true,
+      "failed_count": 0,
+      "max_abs_yaw_rad_s": 0.6133333333333334,
+      "yaw_limit_rad_s": 0.63789525,
+      "max_abs_ay_m_s2": 7.271082287371802,
+      "ay_limit_m_s2": 8.3385,
+      "min_initial_wheel_load_N": 317.5782525582881,
+      "failed_points": [],
+      "failed_ay": []
+    },
+    {
+      "angle_deg": 7.0,
+      "samples": 6742,
+      "sobol_samples": 4096,
+      "face_samples": 2646,
+      "passed": true,
+      "failed_count": 0,
+      "max_abs_yaw_rad_s": 0.6133333333333334,
+      "yaw_limit_rad_s": 0.63789525,
+      "max_abs_ay_m_s2": 7.118387741457727,
+      "ay_limit_m_s2": 8.3385,
+      "min_initial_wheel_load_N": 317.5782525582872,
+      "failed_points": [],
+      "failed_ay": []
+    }
+  ],
+  "passed": true,
+  "dynamics_scope": "Initial instant only; separate full-horizon corner/interior checks also required",
+  "model_source_sha256": "16af6956d881dc9b726bc34b06412d25e4f5fd00fff2ae02dbdab535b53941f9",
+  "geometry_adjusted_after_checks": false,
+  "continuous_stability_certificate": false
+}

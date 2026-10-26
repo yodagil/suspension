@@ -1,0 +1,49 @@
+{
+  "helper": "build_stable_cell_sheared_region.m",
+  "helper_sha256": "c83ae19723124e77323cc00661813680237685c6cfb32e9152ef67e6a3d27616",
+  "frozen": true,
+  "execution": "GNU Octave 9.4; actual MATLAB not available",
+  "small_end_to_end_cpp_parity_cases": 24,
+  "full_mask_end_to_end_cpp_parity_cases": 3,
+  "full_tests_complete": true,
+  "all_passed": true,
+  "cases": [
+    {
+      "angle_deg": 0,
+      "all_raw_unstable_nodes_tested": 133551,
+      "raw_unstable_inside_inclusive": 0,
+      "eight_extreme_vertices": true,
+      "six_planar_faces": true,
+      "all_vertices_exact_original_grid_coordinates": true,
+      "all_vertices_classified_stable": true,
+      "region_mat": "region_matlab_0deg.mat",
+      "region_mat_sha256": "9498345f96219534ce9b08668bd2ed57343a369f7ec25852f4ec30a32298730b",
+      "source_classification_sha256": "a6665a2ada0d2180d3a234533b55d7e13569f18c02465c71839a6d4ab642faa9"
+    },
+    {
+      "angle_deg": 3.5,
+      "all_raw_unstable_nodes_tested": 133294,
+      "raw_unstable_inside_inclusive": 0,
+      "eight_extreme_vertices": true,
+      "six_planar_faces": true,
+      "all_vertices_exact_original_grid_coordinates": true,
+      "all_vertices_classified_stable": true,
+      "region_mat": "region_matlab_3.5deg.mat",
+      "region_mat_sha256": "cd9039afec4ea453f472586c172ae60cffd02d7136f73839ad609bafb1c1506d",
+      "source_classification_sha256": "ac444c486a3d608eee30d2bee6eeb9a5328adac874ea16c68fbb32a347faa807"
+    },
+    {
+      "angle_deg": 7,
+      "all_raw_unstable_nodes_tested": 134858,
+      "raw_unstable_inside_inclusive": 0,
+      "eight_extreme_vertices": true,
+      "six_planar_faces": true,
+      "all_vertices_exact_original_grid_coordinates": true,
+      "all_vertices_classified_stable": true,
+      "region_mat": "region_matlab_7deg.mat",
+      "region_mat_sha256": "6bf41a3ae291d0ba95599ea7a5f34b045f704a0f25d8d43195f9dd13d7f51434",
+      "source_classification_sha256": "4c94752fc5ceddd9a1009bfd9bc65029f209fd5e28d2cb4af3f30e35ab1d03c9"
+    }
+  ],
+  "continuous_stability_certificate": false
+}

@@ -1,0 +1,5449 @@
+{
+  "passed": true,
+  "method": "Exhaustive candidates vs inclusive raw bad points and direct open-interior overlap with unsafe-cell corner-projection bounding boxes; no raster/histogram",
+  "source_sha256": "b1b44f2049faeed3bc89d6b4d125931c9bd76255938608dc8d8ac7e17f13c0ff",
+  "binary_sha256": "96a5ae0b1b2211bfcede80b1483ce7553a9af7696659c09a4869003ea682411e",
+  "independent_reference_sha256": "ac6d06b7a9b812a7619b3159af4cb052bb45eb5454dbdde4490223fa6f3dfac4",
+  "random_seed": 119249,
+  "cases": 112,
+  "candidate_rectangles_tested": 27693,
+  "seconds": 1.4180553939659148,
+  "checks": [
+    {
+      "case": 0,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "5de1f0a583366d167acf3f7bf2980b377dcd20bf76746135b90af80b0436af1d",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 1333
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 42,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 1,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        1.25,
+        3.5,
+        2.75
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "722c9ebbb9af700665a7a8bf6eb031fda337f26b336fcf4baf5d78195b1ff74a",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 279
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 13,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 2,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "7574696ca89a9deb48f04a982c722442d8f87b52515953f611d5ad1c33b9dfa7",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 116
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 9,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 3,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "d0acc6ed265f6ba9e64c198e244c3237ee322ae2216077f703d8adf915df1bc9",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 116
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 9,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 4,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "cc0220de0787d6527fa443854211dfd04032273aa5edda74344cb669eca3201c",
+      "reference": {
+        "volume_grid_units": 64,
+        "bounds": [
+          0,
+          4,
+          0,
+          4,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 1333
+      },
+      "native": {
+        "volume_grid_units": 64,
+        "bounds": [
+          0,
+          4,
+          0,
+          4,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 42,
+        "rectangles": 103
+      },
+      "passed": true
+    },
+    {
+      "case": 5,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        1.25,
+        3.5,
+        2.75
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "d5fbb91a026530330583e395b5939eefdcc5a4521b2eace22bd040049a673b08",
+      "reference": {
+        "volume_grid_units": 64,
+        "bounds": [
+          0,
+          4,
+          0,
+          4,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 279
+      },
+      "native": {
+        "volume_grid_units": 64,
+        "bounds": [
+          0,
+          4,
+          0,
+          4,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 13,
+        "rectangles": 39
+      },
+      "passed": true
+    },
+    {
+      "case": 6,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "07f54d1f23ade8ce5dc22b0eb0b5c20d5c27fe8430edfc61d5bdcc04ac3d3d35",
+      "reference": {
+        "volume_grid_units": 64,
+        "bounds": [
+          0,
+          4,
+          0,
+          4,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 116
+      },
+      "native": {
+        "volume_grid_units": 64,
+        "bounds": [
+          0,
+          4,
+          0,
+          4,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 9,
+        "rectangles": 29
+      },
+      "passed": true
+    },
+    {
+      "case": 7,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "5f4083e63b2abaaa8c197d221a13580cf13d46a27d44318013bae86dfe254deb",
+      "reference": {
+        "volume_grid_units": 64,
+        "bounds": [
+          0,
+          4,
+          0,
+          4,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 116
+      },
+      "native": {
+        "volume_grid_units": 64,
+        "bounds": [
+          0,
+          4,
+          0,
+          4,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 9,
+        "rectangles": 9
+      },
+      "passed": true
+    },
+    {
+      "case": 8,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "592cb190c3e15b23d1a57201fbea3223669c531190db0c6ee8bd51c961b39a11",
+      "reference": {
+        "volume_grid_units": 16,
+        "bounds": [
+          1,
+          3,
+          0,
+          2,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 1333
+      },
+      "native": {
+        "volume_grid_units": 16,
+        "bounds": [
+          1,
+          3,
+          0,
+          2,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 42,
+        "rectangles": 47
+      },
+      "passed": true
+    },
+    {
+      "case": 9,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        1.25,
+        3.5,
+        2.75
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "2d00172396f99cdb63f5f0850977b194cebdb3f5be2858bbb0deb6500c50727c",
+      "reference": {
+        "volume_grid_units": 16,
+        "bounds": [
+          0,
+          4,
+          0,
+          4,
+          2,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "exhaustive_rectangles_tested": 279
+      },
+      "native": {
+        "volume_grid_units": 16,
+        "bounds": [
+          0,
+          4,
+          0,
+          4,
+          2,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "configurations": 13,
+        "rectangles": 27
+      },
+      "passed": true
+    },
+    {
+      "case": 10,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "289ebea6648ecf5a461dffc9db0000c8cdc3e812b70bc2d5c308cdf7a6bec8a6",
+      "reference": {
+        "volume_grid_units": 16,
+        "bounds": [
+          0,
+          2,
+          0,
+          2,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 116
+      },
+      "native": {
+        "volume_grid_units": 16,
+        "bounds": [
+          0,
+          2,
+          0,
+          2,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 9,
+        "rectangles": 6
+      },
+      "passed": true
+    },
+    {
+      "case": 11,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "8ffb0c33875239cd907e954e897895b9c190677c82dce1c7b10aadbd531fa42a",
+      "reference": {
+        "volume_grid_units": 32,
+        "bounds": [
+          0,
+          4,
+          0,
+          4,
+          2,
+          4,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 116
+      },
+      "native": {
+        "volume_grid_units": 32,
+        "bounds": [
+          0,
+          4,
+          0,
+          4,
+          2,
+          4,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 9,
+        "rectangles": 11
+      },
+      "passed": true
+    },
+    {
+      "case": 12,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "fb0b160f049368ccd40796d9aab8151099914605d49b7753a44e40771166d2e5",
+      "reference": {
+        "volume_grid_units": 4,
+        "bounds": [
+          1,
+          3,
+          2,
+          3,
+          0,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 2,
+        "exhaustive_rectangles_tested": 1333
+      },
+      "native": {
+        "volume_grid_units": 4,
+        "bounds": [
+          1,
+          3,
+          2,
+          3,
+          0,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 2,
+        "configurations": 42,
+        "rectangles": 7
+      },
+      "passed": true
+    },
+    {
+      "case": 13,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        1.25,
+        3.5,
+        2.75
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "0dac511fbc61267cdb09318aa806ba717b70946caa22ac2107f43b2e604606c6",
+      "reference": {
+        "volume_grid_units": 3,
+        "bounds": [
+          1,
+          2,
+          3,
+          4,
+          1,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "exhaustive_rectangles_tested": 279
+      },
+      "native": {
+        "volume_grid_units": 3,
+        "bounds": [
+          1,
+          2,
+          3,
+          4,
+          1,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "configurations": 13,
+        "rectangles": 2
+      },
+      "passed": true
+    },
+    {
+      "case": 14,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "7dfb25bfe159208340f0d626d027c69848085a55cf6dcf195bda79658a8715cf",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 116
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 9,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 15,
+      "shape": [
+        5,
+        5,
+        5
+      ],
+      "anchor": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "slopes": [
+        0.5,
+        -0.5
+      ],
+      "source_input_sha256": "0bef7ca2d8389de5b56774bd0b1dd19746214b908062409f96aef3b536b41ef7",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 116
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 9,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 16,
+      "shape": [
+        4,
+        5,
+        5
+      ],
+      "anchor": [
+        1.0,
+        4.0,
+        3.286310323383601
+      ],
+      "slopes": [
+        0.0,
+        0.0
+      ],
+      "source_input_sha256": "d872184bde0852aac7ef71dc686039eb6ed63e986baa44d65fa43f5033ed4d7b",
+      "reference": {
+        "volume_grid_units": 12,
+        "bounds": [
+          0,
+          1,
+          1,
+          4,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 80
+      },
+      "native": {
+        "volume_grid_units": 12,
+        "bounds": [
+          0,
+          1,
+          1,
+          4,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 4,
+        "rectangles": 4
+      },
+      "passed": true
+    },
+    {
+      "case": 17,
+      "shape": [
+        6,
+        6,
+        6
+      ],
+      "anchor": [
+        4.480910349526544,
+        3.5930493349399875,
+        0.6952989122013753
+      ],
+      "slopes": [
+        -0.6801658896584113,
+        -0.8748792389462484
+      ],
+      "source_input_sha256": "415d2348badfccb1139663a2d88b7bee2c50c78401d2e6cf8cee1dd00f22b103",
+      "reference": {
+        "volume_grid_units": 3,
+        "bounds": [
+          4,
+          5,
+          2,
+          5,
+          0,
+          1,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "exhaustive_rectangles_tested": 315
+      },
+      "native": {
+        "volume_grid_units": 3,
+        "bounds": [
+          4,
+          5,
+          2,
+          5,
+          0,
+          1,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "configurations": 16,
+        "rectangles": 4
+      },
+      "passed": true
+    },
+    {
+      "case": 18,
+      "shape": [
+        3,
+        3,
+        5
+      ],
+      "anchor": [
+        0.5496493429463822,
+        1.45331995970857,
+        3.6099965428478065
+      ],
+      "slopes": [
+        0.40619691286528625,
+        0.14782773928168025
+      ],
+      "source_input_sha256": "54ac1cba7117b2ecc83cd183ccc508c2449b31132d2c8e79ada90b62a6e6f78a",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 26
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 4,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 19,
+      "shape": [
+        6,
+        6,
+        3
+      ],
+      "anchor": [
+        1.0,
+        1.8745631304565002,
+        1.8647949992086998
+      ],
+      "slopes": [
+        -0.4303001668823285,
+        0.15987862215091542
+      ],
+      "source_input_sha256": "aba02f282550caed57fe8303126d5f9ea9792e9afc9d39bb2b6109ef96ec26d0",
+      "reference": {
+        "volume_grid_units": 2,
+        "bounds": [
+          0,
+          2,
+          1,
+          2,
+          1,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "exhaustive_rectangles_tested": 232
+      },
+      "native": {
+        "volume_grid_units": 2,
+        "bounds": [
+          0,
+          2,
+          1,
+          2,
+          1,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "configurations": 20,
+        "rectangles": 3
+      },
+      "passed": true
+    },
+    {
+      "case": 20,
+      "shape": [
+        4,
+        3,
+        3
+      ],
+      "anchor": [
+        2.4494876605396545,
+        1.6695088255634862,
+        1.6432436443550165
+      ],
+      "slopes": [
+        -1.0217299031519516,
+        -0.19226619624908992
+      ],
+      "source_input_sha256": "a84f4337a7470d5c1c9b13a851ef4a681605ab35d32bbaa3a06fc4b4317f9e51",
+      "reference": {
+        "volume_grid_units": 6,
+        "bounds": [
+          0,
+          3,
+          0,
+          2,
+          1,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "exhaustive_rectangles_tested": 12
+      },
+      "native": {
+        "volume_grid_units": 6,
+        "bounds": [
+          0,
+          3,
+          0,
+          2,
+          1,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "configurations": 2,
+        "rectangles": 2
+      },
+      "passed": true
+    },
+    {
+      "case": 21,
+      "shape": [
+        4,
+        6,
+        5
+      ],
+      "anchor": [
+        2.475977537264174,
+        3.9660934907553376,
+        2.5513877245614296
+      ],
+      "slopes": [
+        -0.775705290579201,
+        -0.11761194638497008
+      ],
+      "source_input_sha256": "a89c79ba0cfce0ef2c7b06527cadbf24f4d22727ab32189b28440aac588f659f",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 234
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 18,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 22,
+      "shape": [
+        6,
+        3,
+        6
+      ],
+      "anchor": [
+        2.0,
+        0.33935405427787346,
+        2.200272970106073
+      ],
+      "slopes": [
+        -0.8186668893594169,
+        0.09428966790087823
+      ],
+      "source_input_sha256": "655cd1bda314db934265538f5d93b02015c2e882e8c41ec88ec1bae501f6e5dd",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 555
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 10,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 23,
+      "shape": [
+        5,
+        3,
+        6
+      ],
+      "anchor": [
+        3.3728857460244,
+        0.0,
+        3.752159353921209
+      ],
+      "slopes": [
+        -0.45942086124208226,
+        0.2991851239774692
+      ],
+      "source_input_sha256": "bc6df9972e6b2d1997d3cdf995b0c1f6ec6051be50b9b341ca9ddba9bef73497",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 168
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 8,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 24,
+      "shape": [
+        6,
+        6,
+        3
+      ],
+      "anchor": [
+        2.337830224934047,
+        3.7984570639758726,
+        1.4749544705272613
+      ],
+      "slopes": [
+        0.0,
+        0.0
+      ],
+      "source_input_sha256": "4dae288ba54c5b79585bb478895a21175d850b9dcb988beca81e33469adb2805",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 144
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 8,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 25,
+      "shape": [
+        5,
+        6,
+        5
+      ],
+      "anchor": [
+        3.0,
+        0.19636172048510703,
+        2.2335409567809017
+      ],
+      "slopes": [
+        -0.5978408457396762,
+        0.6431502065225878
+      ],
+      "source_input_sha256": "44f4bff5ed313ee22265bfe82d4f5c5c8a13c717a1c6745d117698149856e0bb",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 426
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 22,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 26,
+      "shape": [
+        4,
+        4,
+        3
+      ],
+      "anchor": [
+        2.856115872960299,
+        2.1350471177137917,
+        0.9370807062271473
+      ],
+      "slopes": [
+        0.5386831041441527,
+        0.12109491351195945
+      ],
+      "source_input_sha256": "54488a314443c6e66fc2ee42c0ba6ffe9f8648a41daa48fa15253db3148c7831",
+      "reference": {
+        "volume_grid_units": 4,
+        "bounds": [
+          1,
+          3,
+          2,
+          3,
+          0,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 2,
+        "exhaustive_rectangles_tested": 27
+      },
+      "native": {
+        "volume_grid_units": 4,
+        "bounds": [
+          1,
+          3,
+          2,
+          3,
+          0,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 2,
+        "configurations": 6,
+        "rectangles": 2
+      },
+      "passed": true
+    },
+    {
+      "case": 27,
+      "shape": [
+        6,
+        4,
+        6
+      ],
+      "anchor": [
+        4.03007147935614,
+        0.21788550363388415,
+        1.3547236337409152
+      ],
+      "slopes": [
+        -0.19499658515273066,
+        -0.9694355801140411
+      ],
+      "source_input_sha256": "7075b86fdac8e551441615a71e6674bd96ecdb0e9cdc1c1751a9aafc379dee93",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 288
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 10,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 28,
+      "shape": [
+        5,
+        3,
+        4
+      ],
+      "anchor": [
+        4.0,
+        1.3264878014211823,
+        1.0005254050425467
+      ],
+      "slopes": [
+        0.26463177191859577,
+        0.05630297437251364
+      ],
+      "source_input_sha256": "e2893f5ce81511a9b51eefe468eafef71b1bcd9c82978b46fb2332bfe315ae81",
+      "reference": {
+        "volume_grid_units": 24,
+        "bounds": [
+          0,
+          4,
+          0,
+          2,
+          0,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "exhaustive_rectangles_tested": 48
+      },
+      "native": {
+        "volume_grid_units": 24,
+        "bounds": [
+          0,
+          4,
+          0,
+          2,
+          0,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "configurations": 4,
+        "rectangles": 4
+      },
+      "passed": true
+    },
+    {
+      "case": 29,
+      "shape": [
+        6,
+        3,
+        4
+      ],
+      "anchor": [
+        1.5540230017664258,
+        1.6890153918805262,
+        0.4945543615555965
+      ],
+      "slopes": [
+        -0.2802124927841956,
+        -0.30008678970607106
+      ],
+      "source_input_sha256": "05628f4e11d69f3a650e576e69409754896cc6248420d8c923779eea12aab178",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 140
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 8,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 30,
+      "shape": [
+        5,
+        4,
+        4
+      ],
+      "anchor": [
+        0.2853060562002905,
+        3.0,
+        0.6923436473503304
+      ],
+      "slopes": [
+        1.0468056216934394,
+        0.290477057584025
+      ],
+      "source_input_sha256": "b077d1c0344791cbceca45ebc0724d851e31512ace3eed0f25c1afb784a6af94",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 36
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 3,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 31,
+      "shape": [
+        6,
+        5,
+        6
+      ],
+      "anchor": [
+        0.0,
+        3.235051742237861,
+        1.5477578862282675
+      ],
+      "slopes": [
+        0.20781766894179032,
+        0.1871137275363095
+      ],
+      "source_input_sha256": "8a33d13cd3aaafbd30f61b79fa700d3bd6119c23403b4043373b5ecc9cc6da4a",
+      "reference": {
+        "volume_grid_units": 8,
+        "bounds": [
+          0,
+          2,
+          3,
+          4,
+          1,
+          5,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 250
+      },
+      "native": {
+        "volume_grid_units": 8,
+        "bounds": [
+          0,
+          2,
+          3,
+          4,
+          1,
+          5,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 8,
+        "rectangles": 4
+      },
+      "passed": true
+    },
+    {
+      "case": 32,
+      "shape": [
+        3,
+        5,
+        6
+      ],
+      "anchor": [
+        0.09794239019048678,
+        1.8412578994758588,
+        3.630348931264589
+      ],
+      "slopes": [
+        0.0,
+        0.0
+      ],
+      "source_input_sha256": "8f5377525cc056533304eb58dd8c9fd3fa8c3256b738a38097ef1030ded6ad16",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 96
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 6,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 33,
+      "shape": [
+        6,
+        6,
+        6
+      ],
+      "anchor": [
+        1.9489878780234222,
+        3.151024065324972,
+        3.2165100231616615
+      ],
+      "slopes": [
+        -0.8583386567338361,
+        0.3897177309740132
+      ],
+      "source_input_sha256": "b4b6c88a009e3a6eb8954168f35298f5bab6050e64592fdf91699d64d255b2ba",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 1626
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 55,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 34,
+      "shape": [
+        6,
+        5,
+        4
+      ],
+      "anchor": [
+        4.0,
+        3.069661983119132,
+        1.9949400545203786
+      ],
+      "slopes": [
+        -0.20957159077992504,
+        -0.3528162767243651
+      ],
+      "source_input_sha256": "4fdb6eec2beae2ff7dc31fbb52dea41d16ded137488c8ddf10646a2051a53cdb",
+      "reference": {
+        "volume_grid_units": 36,
+        "bounds": [
+          1,
+          4,
+          0,
+          4,
+          0,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "exhaustive_rectangles_tested": 312
+      },
+      "native": {
+        "volume_grid_units": 36,
+        "bounds": [
+          1,
+          4,
+          0,
+          4,
+          0,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "configurations": 16,
+        "rectangles": 24
+      },
+      "passed": true
+    },
+    {
+      "case": 35,
+      "shape": [
+        3,
+        3,
+        5
+      ],
+      "anchor": [
+        1.349909740248931,
+        1.4125218257197445,
+        3.326196811692063
+      ],
+      "slopes": [
+        0.6271152183864155,
+        0.22126887201841128
+      ],
+      "source_input_sha256": "7a8a177c5fb1acf45257993fbe6486f9c42bfaa68b4e49018038e6a0e2ec0c4b",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 42
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 8,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 36,
+      "shape": [
+        6,
+        3,
+        5
+      ],
+      "anchor": [
+        1.327329942979349,
+        1.8502047099609453,
+        1.7973379698569625
+      ],
+      "slopes": [
+        0.8637062237326467,
+        0.4478812316167049
+      ],
+      "source_input_sha256": "414b036f41c58f01b6aec67b29fff0465eda73805ae940576ba6d8e2055f92eb",
+      "reference": {
+        "volume_grid_units": 1,
+        "bounds": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "exhaustive_rectangles_tested": 216
+      },
+      "native": {
+        "volume_grid_units": 1,
+        "bounds": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "configurations": 8,
+        "rectangles": 1
+      },
+      "passed": true
+    },
+    {
+      "case": 37,
+      "shape": [
+        3,
+        6,
+        5
+      ],
+      "anchor": [
+        1.0,
+        0.0,
+        3.0045125973491027
+      ],
+      "slopes": [
+        0.6450639058119112,
+        -0.8288032019441722
+      ],
+      "source_input_sha256": "0bae6136fdec23379ef8e7b0d612145a7dc06b88213440d9ad002b270aff2df0",
+      "reference": {
+        "volume_grid_units": 8,
+        "bounds": [
+          0,
+          2,
+          0,
+          4,
+          3,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "exhaustive_rectangles_tested": 119
+      },
+      "native": {
+        "volume_grid_units": 8,
+        "bounds": [
+          0,
+          2,
+          0,
+          4,
+          3,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "configurations": 19,
+        "rectangles": 16
+      },
+      "passed": true
+    },
+    {
+      "case": 38,
+      "shape": [
+        4,
+        3,
+        3
+      ],
+      "anchor": [
+        0.0726423560071896,
+        0.19292892424987795,
+        1.0822455754602502
+      ],
+      "slopes": [
+        -0.7160427062409391,
+        0.32418736376547375
+      ],
+      "source_input_sha256": "4ce46ed62a2f5bc5e4fc2ed0071db487d206e15aadd4a94219c8554d5fec5ef5",
+      "reference": {
+        "volume_grid_units": 2,
+        "bounds": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 2,
+        "exhaustive_rectangles_tested": 18
+      },
+      "native": {
+        "volume_grid_units": 2,
+        "bounds": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 2,
+        "configurations": 4,
+        "rectangles": 2
+      },
+      "passed": true
+    },
+    {
+      "case": 39,
+      "shape": [
+        6,
+        5,
+        5
+      ],
+      "anchor": [
+        3.2911779857274706,
+        3.0413387907655665,
+        1.8453577764139668
+      ],
+      "slopes": [
+        -0.6250427126681135,
+        -0.2971401883947331
+      ],
+      "source_input_sha256": "0ab7af3fa1a36c1df71382ab419fce10236f5321324d521be9ed44e126172e7c",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 598
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 22,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 40,
+      "shape": [
+        6,
+        3,
+        3
+      ],
+      "anchor": [
+        3.0,
+        1.0796341306647288,
+        1.4492551883973128
+      ],
+      "slopes": [
+        0.0,
+        0.0
+      ],
+      "source_input_sha256": "7b0ccfa3ffa6315e3e1c48337e61512a208d87e067664bb2bed8582f9a9231d2",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 44
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 2,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 41,
+      "shape": [
+        5,
+        6,
+        5
+      ],
+      "anchor": [
+        2.3217409627948404,
+        1.9975988062567585,
+        1.1411148639783626
+      ],
+      "slopes": [
+        0.5813735794598502,
+        1.0343495399071125
+      ],
+      "source_input_sha256": "54579c00acf7a2e5988550224525a4d6e52e3e75653b69436837f6dfc5e18ae7",
+      "reference": {
+        "volume_grid_units": 30,
+        "bounds": [
+          0,
+          3,
+          0,
+          5,
+          0,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 2,
+        "exhaustive_rectangles_tested": 564
+      },
+      "native": {
+        "volume_grid_units": 30,
+        "bounds": [
+          0,
+          3,
+          0,
+          5,
+          0,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 2,
+        "configurations": 29,
+        "rectangles": 19
+      },
+      "passed": true
+    },
+    {
+      "case": 42,
+      "shape": [
+        5,
+        6,
+        6
+      ],
+      "anchor": [
+        2.9073717851148326,
+        0.9585130887754523,
+        3.5212882453319376
+      ],
+      "slopes": [
+        0.13403094870676302,
+        -0.42498955989865295
+      ],
+      "source_input_sha256": "6d9b788b74eadfd73eb2733d020a492ca87c5d2a0abc4cd7615dbe836a68d9a6",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 660
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 26,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 43,
+      "shape": [
+        6,
+        3,
+        6
+      ],
+      "anchor": [
+        0.0,
+        0.22155303619238365,
+        0.8578130618621471
+      ],
+      "slopes": [
+        0.6533617424497797,
+        0.3933276589606465
+      ],
+      "source_input_sha256": "19d544fdf6edefea95faffc708e0a923d500cecf9ea12fb3fd124a53164b7089",
+      "reference": {
+        "volume_grid_units": 5,
+        "bounds": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          5,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 5,
+        "exhaustive_rectangles_tested": 90
+      },
+      "native": {
+        "volume_grid_units": 5,
+        "bounds": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          5,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 5,
+        "configurations": 4,
+        "rectangles": 6
+      },
+      "passed": true
+    },
+    {
+      "case": 44,
+      "shape": [
+        3,
+        6,
+        5
+      ],
+      "anchor": [
+        1.7493711461418162,
+        5.0,
+        0.6558915231812374
+      ],
+      "slopes": [
+        0.46109582706622976,
+        0.9092432151331478
+      ],
+      "source_input_sha256": "885438f34eba2f94648220db17f82f6f5df19bdb8f20d30da503dc982cdad80f",
+      "reference": {
+        "volume_grid_units": 4,
+        "bounds": [
+          0,
+          2,
+          3,
+          5,
+          0,
+          1,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "exhaustive_rectangles_tested": 56
+      },
+      "native": {
+        "volume_grid_units": 4,
+        "bounds": [
+          0,
+          2,
+          3,
+          5,
+          0,
+          1,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "configurations": 9,
+        "rectangles": 4
+      },
+      "passed": true
+    },
+    {
+      "case": 45,
+      "shape": [
+        3,
+        4,
+        4
+      ],
+      "anchor": [
+        1.9119326106954457,
+        1.295869570738311,
+        1.076977125729242
+      ],
+      "slopes": [
+        0.10543604386009986,
+        -0.15741678017938665
+      ],
+      "source_input_sha256": "840df9c9ff8aab33f410d818a58a8a090828ace2bd14b6380a1a688f10ddd1cd",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 48
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 8,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 46,
+      "shape": [
+        3,
+        6,
+        5
+      ],
+      "anchor": [
+        2.0,
+        4.867956113714676,
+        1.6366553012235818
+      ],
+      "slopes": [
+        0.19875960808893156,
+        -0.23719031275647906
+      ],
+      "source_input_sha256": "310508bcd75dcd427a6aeeb715865dae6a63fe42765e434a28769574cf1935f6",
+      "reference": {
+        "volume_grid_units": 24,
+        "bounds": [
+          0,
+          2,
+          2,
+          5,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 104
+      },
+      "native": {
+        "volume_grid_units": 24,
+        "bounds": [
+          0,
+          2,
+          2,
+          5,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 11,
+        "rectangles": 6
+      },
+      "passed": true
+    },
+    {
+      "case": 47,
+      "shape": [
+        3,
+        4,
+        4
+      ],
+      "anchor": [
+        0.2323607503232059,
+        1.3027396859715534,
+        2.242667574919243
+      ],
+      "slopes": [
+        0.003919259263688968,
+        -0.45844885775621813
+      ],
+      "source_input_sha256": "7f1d4b94b118aad7807eedfba467122242e583e5eecd8c064b9102c84d39a672",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 45
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 10,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 48,
+      "shape": [
+        4,
+        3,
+        4
+      ],
+      "anchor": [
+        2.465162457604587,
+        0.8254706085064316,
+        2.8307858990474717
+      ],
+      "slopes": [
+        0.0,
+        0.0
+      ],
+      "source_input_sha256": "39785b590d7162e8f6a8fa3c167f2c327cc3300d6b348c50cb3239f58c22198d",
+      "reference": {
+        "volume_grid_units": 6,
+        "bounds": [
+          0,
+          3,
+          0,
+          2,
+          2,
+          3,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 3,
+        "exhaustive_rectangles_tested": 18
+      },
+      "native": {
+        "volume_grid_units": 6,
+        "bounds": [
+          0,
+          3,
+          0,
+          2,
+          2,
+          3,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 3,
+        "configurations": 2,
+        "rectangles": 4
+      },
+      "passed": true
+    },
+    {
+      "case": 49,
+      "shape": [
+        3,
+        3,
+        5
+      ],
+      "anchor": [
+        2.0,
+        1.6472971932632778,
+        3.1733374365594553
+      ],
+      "slopes": [
+        -0.8656988147044723,
+        0.5967751042392513
+      ],
+      "source_input_sha256": "33858b987d4a3665692ad16f83d929d5a04b592b94da8a0a9e8c96c3634b587b",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 32
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 5,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 50,
+      "shape": [
+        5,
+        5,
+        3
+      ],
+      "anchor": [
+        3.053170481038373,
+        0.9526661226162441,
+        0.5420415769805706
+      ],
+      "slopes": [
+        0.6915965993852424,
+        -0.7460548296070495
+      ],
+      "source_input_sha256": "59beb6c2298afae519faabdf0d73c82168a2b5f93ff378e9fd22e5735156edeb",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 58
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 10,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 51,
+      "shape": [
+        4,
+        4,
+        6
+      ],
+      "anchor": [
+        2.743745018300546,
+        0.0,
+        4.6133720321259695
+      ],
+      "slopes": [
+        -0.4720661900722827,
+        -0.5376319573218006
+      ],
+      "source_input_sha256": "52e2bba82cdfa4a6472cfdfe02d0e8778fd1ec4c50568d00188dce3e16025d9b",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 177
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 19,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 52,
+      "shape": [
+        4,
+        6,
+        3
+      ],
+      "anchor": [
+        2.0,
+        4.85103421407443,
+        0.9893762883701949
+      ],
+      "slopes": [
+        -0.6647691569317369,
+        0.26463133947898254
+      ],
+      "source_input_sha256": "a1dc5ccdae89ee934a52a64ff6fb6e2570708895721d29dfc0aa02e6591144ee",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 93
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 16,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 53,
+      "shape": [
+        5,
+        3,
+        3
+      ],
+      "anchor": [
+        0.05457327898305664,
+        0.3104450512718373,
+        0.7515142739793732
+      ],
+      "slopes": [
+        -0.8411869693705943,
+        -0.6576102844427454
+      ],
+      "source_input_sha256": "c302c4b63d9123e8f3a4fc1b4ff20c6957d007fe14c8f5c1d2f999afdf7beae8",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 20
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 3,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 54,
+      "shape": [
+        3,
+        3,
+        6
+      ],
+      "anchor": [
+        0.6910347529394305,
+        1.8500020255146563,
+        4.301445178966824
+      ],
+      "slopes": [
+        0.7759660813447671,
+        0.11828865932868982
+      ],
+      "source_input_sha256": "1c25e765b25fae4a83b68126d4a99f4744b8af30fdec3d122c2ae860d03df548",
+      "reference": {
+        "volume_grid_units": 4,
+        "bounds": [
+          0,
+          1,
+          0,
+          2,
+          3,
+          5,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 2,
+        "exhaustive_rectangles_tested": 36
+      },
+      "native": {
+        "volume_grid_units": 4,
+        "bounds": [
+          0,
+          1,
+          0,
+          2,
+          3,
+          5,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 2,
+        "configurations": 4,
+        "rectangles": 4
+      },
+      "passed": true
+    },
+    {
+      "case": 55,
+      "shape": [
+        3,
+        3,
+        5
+      ],
+      "anchor": [
+        1.0,
+        1.1700841351899518,
+        3.0169807067968932
+      ],
+      "slopes": [
+        0.6973261894034897,
+        0.8087770221604949
+      ],
+      "source_input_sha256": "d53c622fe7df448b29c1b18e7c700c7e43e9aec7c94df285791d7633aef0db9c",
+      "reference": {
+        "volume_grid_units": 8,
+        "bounds": [
+          0,
+          2,
+          0,
+          2,
+          2,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 2,
+        "exhaustive_rectangles_tested": 64
+      },
+      "native": {
+        "volume_grid_units": 8,
+        "bounds": [
+          0,
+          2,
+          0,
+          2,
+          2,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 2,
+        "tie_roll_span_grid_max": 2,
+        "configurations": 10,
+        "rectangles": 12
+      },
+      "passed": true
+    },
+    {
+      "case": 56,
+      "shape": [
+        5,
+        3,
+        6
+      ],
+      "anchor": [
+        3.457971779738838,
+        1.2258460646620957,
+        1.277025210557186
+      ],
+      "slopes": [
+        0.0,
+        0.0
+      ],
+      "source_input_sha256": "439b72f28dde68f4cd046026374ddb22e1dc46828402892c1ce6006a1691ec21",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 64
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 2,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 57,
+      "shape": [
+        6,
+        6,
+        5
+      ],
+      "anchor": [
+        1.8509266853341022,
+        3.7236951645098793,
+        1.9139098274335828
+      ],
+      "slopes": [
+        -0.5096216043633967,
+        0.056888774216807825
+      ],
+      "source_input_sha256": "80f86b06bfa3f23225487c5c6044ef79838227dbf3bf5f346440f6a6e367d0bb",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 1256
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 46,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 58,
+      "shape": [
+        6,
+        3,
+        6
+      ],
+      "anchor": [
+        4.0,
+        2.0,
+        2.4385880472546066
+      ],
+      "slopes": [
+        -0.3474735620129218,
+        0.4606257759684955
+      ],
+      "source_input_sha256": "0bda902fba053ca00766edcd5973691d91b837ece49e7ba7d07673dff0bb92f8",
+      "reference": {
+        "volume_grid_units": 24,
+        "bounds": [
+          2,
+          5,
+          0,
+          2,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 390
+      },
+      "native": {
+        "volume_grid_units": 24,
+        "bounds": [
+          2,
+          5,
+          0,
+          2,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 8,
+        "rectangles": 24
+      },
+      "passed": true
+    },
+    {
+      "case": 59,
+      "shape": [
+        6,
+        6,
+        5
+      ],
+      "anchor": [
+        1.5328419779918379,
+        0.5089075873191512,
+        0.7869280367018061
+      ],
+      "slopes": [
+        -0.12813977786965036,
+        0.5912534698675862
+      ],
+      "source_input_sha256": "4eccb78cd1e79d9f49aee30dab3ee0227a05cf6351bfc7d2dbdfb54ad1f4c5af",
+      "reference": {
+        "volume_grid_units": 27,
+        "bounds": [
+          1,
+          4,
+          0,
+          3,
+          0,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "exhaustive_rectangles_tested": 482
+      },
+      "native": {
+        "volume_grid_units": 27,
+        "bounds": [
+          1,
+          4,
+          0,
+          3,
+          0,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "configurations": 28,
+        "rectangles": 34
+      },
+      "passed": true
+    },
+    {
+      "case": 60,
+      "shape": [
+        4,
+        3,
+        6
+      ],
+      "anchor": [
+        0.5714853806241571,
+        1.421656647820172,
+        2.621560790844919
+      ],
+      "slopes": [
+        -0.4775370344681834,
+        -0.07480008355016254
+      ],
+      "source_input_sha256": "25fb6af3482c3442a2fee27e9085dd9b4dae447ee2fd365dd46781c0d0307004",
+      "reference": {
+        "volume_grid_units": 18,
+        "bounds": [
+          0,
+          3,
+          0,
+          2,
+          1,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "exhaustive_rectangles_tested": 120
+      },
+      "native": {
+        "volume_grid_units": 18,
+        "bounds": [
+          0,
+          3,
+          0,
+          2,
+          1,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "configurations": 6,
+        "rectangles": 16
+      },
+      "passed": true
+    },
+    {
+      "case": 61,
+      "shape": [
+        5,
+        3,
+        6
+      ],
+      "anchor": [
+        0.0,
+        0.09933421194839709,
+        1.7111279264863937
+      ],
+      "slopes": [
+        -0.6785699162467733,
+        0.011362004569479556
+      ],
+      "source_input_sha256": "6dd8f047a0e4993a35399381c84a52616f401ab42e37806b7a51c706d1d658bf",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 112
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 4,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 62,
+      "shape": [
+        6,
+        3,
+        4
+      ],
+      "anchor": [
+        3.038217707748795,
+        0.6601173776512363,
+        0.6858614326127659
+      ],
+      "slopes": [
+        -0.9112411073773605,
+        -0.53886891662673
+      ],
+      "source_input_sha256": "979fcc9e2a2ca901a1e2ff16d4f41bd24089dec51a466c605a42ce46c1996a8f",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 160
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 10,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 63,
+      "shape": [
+        4,
+        3,
+        4
+      ],
+      "anchor": [
+        0.3565259699118617,
+        0.6549797632657617,
+        1.1422513483836823
+      ],
+      "slopes": [
+        0.38804775092976973,
+        0.6349497403871105
+      ],
+      "source_input_sha256": "ea93502e35d3fcdd229a2b57c0b28c7e09cb022e23cb93caf6e6879bd29ea5fa",
+      "reference": {
+        "volume_grid_units": 12,
+        "bounds": [
+          0,
+          2,
+          0,
+          2,
+          0,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "exhaustive_rectangles_tested": 53
+      },
+      "native": {
+        "volume_grid_units": 12,
+        "bounds": [
+          0,
+          2,
+          0,
+          2,
+          0,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "configurations": 8,
+        "rectangles": 13
+      },
+      "passed": true
+    },
+    {
+      "case": 64,
+      "shape": [
+        4,
+        3,
+        5
+      ],
+      "anchor": [
+        1.0,
+        0.4286088898002558,
+        2.354756417483172
+      ],
+      "slopes": [
+        0.0,
+        0.0
+      ],
+      "source_input_sha256": "6be2f413c5d786f5e3c17cd77f25e402158e75c4312e1b3544325a46f9064f79",
+      "reference": {
+        "volume_grid_units": 6,
+        "bounds": [
+          1,
+          3,
+          0,
+          1,
+          1,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "exhaustive_rectangles_tested": 60
+      },
+      "native": {
+        "volume_grid_units": 6,
+        "bounds": [
+          1,
+          3,
+          0,
+          1,
+          1,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "configurations": 2,
+        "rectangles": 2
+      },
+      "passed": true
+    },
+    {
+      "case": 65,
+      "shape": [
+        6,
+        5,
+        5
+      ],
+      "anchor": [
+        0.45734382474106383,
+        0.0,
+        1.1839022131859545
+      ],
+      "slopes": [
+        0.65860452329272,
+        -0.45956244291011816
+      ],
+      "source_input_sha256": "5e1a8027f05085db378f75a07af0902a0217fa3fefda29aec42ad10d1d646a92",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 387
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 22,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 66,
+      "shape": [
+        5,
+        4,
+        5
+      ],
+      "anchor": [
+        2.0061518654107497,
+        1.4115001472787216,
+        0.7489414749003318
+      ],
+      "slopes": [
+        -0.915257155240907,
+        0.9233955006227972
+      ],
+      "source_input_sha256": "5bcbfe3a3d50484c84e69815e8d338c3a0f332fc8baacdad03c1f25e1832c8ea",
+      "reference": {
+        "volume_grid_units": 4,
+        "bounds": [
+          2,
+          3,
+          1,
+          2,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 298
+      },
+      "native": {
+        "volume_grid_units": 4,
+        "bounds": [
+          2,
+          3,
+          1,
+          2,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 22,
+        "rectangles": 5
+      },
+      "passed": true
+    },
+    {
+      "case": 67,
+      "shape": [
+        6,
+        5,
+        5
+      ],
+      "anchor": [
+        3.0,
+        0.6476984532595047,
+        2.796647151009756
+      ],
+      "slopes": [
+        0.11852117682535224,
+        1.0160810760748848
+      ],
+      "source_input_sha256": "7eb3560843843af3f5e0e48f7f09575d1a62ab9da26d00a7c67385dc78e924a9",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 493
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 12,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 68,
+      "shape": [
+        4,
+        5,
+        5
+      ],
+      "anchor": [
+        1.113058323573314,
+        0.9364300430429648,
+        0.483610872003871
+      ],
+      "slopes": [
+        1.0737466434218708,
+        0.08329756749017281
+      ],
+      "source_input_sha256": "2c2bb003829582cd9b1634f7f020dce27b0e71f14e5d12102911a8312e464fac",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 115
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 10,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 69,
+      "shape": [
+        5,
+        5,
+        3
+      ],
+      "anchor": [
+        1.6298221134992894,
+        1.8025225110910559,
+        1.5536197745701996
+      ],
+      "slopes": [
+        -0.25350501315363283,
+        1.0365996323881808
+      ],
+      "source_input_sha256": "d35193f399d4ff1cd7bb9e67aaf3160b7f2dde84f832c936d72539caa1c41ef4",
+      "reference": {
+        "volume_grid_units": 4,
+        "bounds": [
+          0,
+          2,
+          0,
+          2,
+          1,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "exhaustive_rectangles_tested": 132
+      },
+      "native": {
+        "volume_grid_units": 4,
+        "bounds": [
+          0,
+          2,
+          0,
+          2,
+          1,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "configurations": 15,
+        "rectangles": 2
+      },
+      "passed": true
+    },
+    {
+      "case": 70,
+      "shape": [
+        3,
+        6,
+        4
+      ],
+      "anchor": [
+        2.0,
+        1.7585700532163806,
+        0.5842165520832943
+      ],
+      "slopes": [
+        0.5794768000984107,
+        -0.7718862927938929
+      ],
+      "source_input_sha256": "4b133c122c8c5f2392dba640c00124231cf66555f30d3905d363064855f84fdd",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 58
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 11,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 71,
+      "shape": [
+        4,
+        5,
+        4
+      ],
+      "anchor": [
+        2.672248848561001,
+        3.7922210742813083,
+        1.3287047627288326
+      ],
+      "slopes": [
+        -0.3962078633498771,
+        0.02956288797185902
+      ],
+      "source_input_sha256": "cd51f6f0fb86d22445e52a9d8ec59bc1d222b0aa7f95109d90d459620f8f60b7",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 72
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 8,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 72,
+      "shape": [
+        4,
+        3,
+        5
+      ],
+      "anchor": [
+        1.2423760492619325,
+        2.0,
+        3.9538100108106575
+      ],
+      "slopes": [
+        0.0,
+        0.0
+      ],
+      "source_input_sha256": "57214e29be7b88db8f225c15bc89a1d180aa94274876a213979278032f2e3ef4",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 32
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 2,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 73,
+      "shape": [
+        6,
+        3,
+        4
+      ],
+      "anchor": [
+        1.0,
+        1.3008974404562899,
+        2.515098139835701
+      ],
+      "slopes": [
+        -0.9087438689940535,
+        -0.8013801684646149
+      ],
+      "source_input_sha256": "9b0862b355ba98d1b7d6288a1c37dd6c8f3d688c0eaf82e679efa3a2b3e46de6",
+      "reference": {
+        "volume_grid_units": 4,
+        "bounds": [
+          1,
+          5,
+          1,
+          2,
+          2,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "exhaustive_rectangles_tested": 113
+      },
+      "native": {
+        "volume_grid_units": 4,
+        "bounds": [
+          1,
+          5,
+          1,
+          2,
+          2,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "configurations": 7,
+        "rectangles": 5
+      },
+      "passed": true
+    },
+    {
+      "case": 74,
+      "shape": [
+        3,
+        4,
+        4
+      ],
+      "anchor": [
+        1.2433584353552345,
+        2.190861589996345,
+        1.1108050897725734
+      ],
+      "slopes": [
+        0.7778775541501659,
+        0.9286995221090546
+      ],
+      "source_input_sha256": "4f8b8ce5cf7aad1b9dd68de62eac910db67066f430f555c2bff614424031b7d8",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 38
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 7,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 75,
+      "shape": [
+        6,
+        4,
+        4
+      ],
+      "anchor": [
+        1.7353544265126035,
+        2.3888478542987865,
+        0.359490684982149
+      ],
+      "slopes": [
+        0.8824835437271965,
+        -0.3682431379033466
+      ],
+      "source_input_sha256": "c72c88b01a41563fed4279d0c026ceab938b9c7322a5f18b8748c0c409e8626a",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 182
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 12,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 76,
+      "shape": [
+        3,
+        4,
+        6
+      ],
+      "anchor": [
+        1.0,
+        1.9095293209238622,
+        4.385234433732301
+      ],
+      "slopes": [
+        1.0900094510123175,
+        -0.14108385134705848
+      ],
+      "source_input_sha256": "9bc2adf796a75cad3c66521c1f813e6ca15d03c503ebda4006ff31065080cb9d",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 77
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 6,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 77,
+      "shape": [
+        6,
+        4,
+        4
+      ],
+      "anchor": [
+        0.21642972203844923,
+        2.106636197858877,
+        0.5309235075228704
+      ],
+      "slopes": [
+        -0.6505281877916713,
+        0.12547194105633785
+      ],
+      "source_input_sha256": "182ab9ccbcf95da0389ad29b71128154f8f423000aae26e509e6de2d558570e8",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 55
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 4,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 78,
+      "shape": [
+        6,
+        3,
+        6
+      ],
+      "anchor": [
+        2.635693641923046,
+        1.3660004592629384,
+        1.654927651516736
+      ],
+      "slopes": [
+        -0.06031116860009966,
+        -0.06353788872739274
+      ],
+      "source_input_sha256": "e23f5a025aad6022add26bf6018b4124109b10d67584bd6edfc148159d6f855f",
+      "reference": {
+        "volume_grid_units": 40,
+        "bounds": [
+          0,
+          5,
+          0,
+          2,
+          1,
+          5,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 420
+      },
+      "native": {
+        "volume_grid_units": 40,
+        "bounds": [
+          0,
+          5,
+          0,
+          2,
+          1,
+          5,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 8,
+        "rectangles": 20
+      },
+      "passed": true
+    },
+    {
+      "case": 79,
+      "shape": [
+        5,
+        4,
+        5
+      ],
+      "anchor": [
+        3.0,
+        0.0,
+        0.3607587101155936
+      ],
+      "slopes": [
+        0.03520267823704226,
+        -0.9358280549981306
+      ],
+      "source_input_sha256": "47248d17b3bad0e93bc490880975e489a9afb7c0b67208d8705ba02cfce8d0ed",
+      "reference": {
+        "volume_grid_units": 8,
+        "bounds": [
+          2,
+          4,
+          0,
+          1,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 120
+      },
+      "native": {
+        "volume_grid_units": 8,
+        "bounds": [
+          2,
+          4,
+          0,
+          1,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 6,
+        "rectangles": 5
+      },
+      "passed": true
+    },
+    {
+      "case": 80,
+      "shape": [
+        3,
+        3,
+        4
+      ],
+      "anchor": [
+        1.7929778470732953,
+        1.5271236999881774,
+        0.9567221689950133
+      ],
+      "slopes": [
+        0.0,
+        0.0
+      ],
+      "source_input_sha256": "754d12b67ef58df4d9715ab727966c4d32043f7fcefd1d6282348896c1dbd765",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 12
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 2,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 81,
+      "shape": [
+        3,
+        3,
+        4
+      ],
+      "anchor": [
+        1.0337778472472594,
+        0.022578884694334667,
+        2.8861876287473214
+      ],
+      "slopes": [
+        0.8682125941540066,
+        -0.36270419780594754
+      ],
+      "source_input_sha256": "bb596363a677ae92585f54f663bc9acfc1c5705ef9fd831b6fdd8ce25f1af46f",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 20
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 4,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 82,
+      "shape": [
+        6,
+        3,
+        6
+      ],
+      "anchor": [
+        5.0,
+        0.3177320232376093,
+        2.8428027260652766
+      ],
+      "slopes": [
+        -0.42914209042981477,
+        0.2868484514158578
+      ],
+      "source_input_sha256": "30acf6614f94993f3a6df2eb40cb25f4a7a33f43d9e8da55e64ecbb092f6a697",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 150
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 4,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 83,
+      "shape": [
+        6,
+        6,
+        4
+      ],
+      "anchor": [
+        2.245536414134062,
+        3.2348999717596922,
+        1.1220191571121743
+      ],
+      "slopes": [
+        -1.0017310372741024,
+        0.4933089595666813
+      ],
+      "source_input_sha256": "0cde259c275c08405a79415ca420d018f1d53f54333e270119fc542731fdd526",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 573
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 35,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 84,
+      "shape": [
+        3,
+        4,
+        6
+      ],
+      "anchor": [
+        1.2467322009869073,
+        0.31868855671745133,
+        4.45701883095243
+      ],
+      "slopes": [
+        -0.3199858672810384,
+        -0.5165090613487573
+      ],
+      "source_input_sha256": "138a76750bbeee9b63c71ba0ff99f6ac593f1c0c8f4d06981bf28b95e3df985d",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 99
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 16,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 85,
+      "shape": [
+        5,
+        3,
+        5
+      ],
+      "anchor": [
+        1.0,
+        0.15414531012504917,
+        2.66775278510836
+      ],
+      "slopes": [
+        0.7947177513336956,
+        0.3473377521352119
+      ],
+      "source_input_sha256": "9bdce2d6c81563a1fdaa7f5de87a3ae97980b1fcfef1f36c2dd32ad547bb2475",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 198
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 10,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 86,
+      "shape": [
+        4,
+        3,
+        5
+      ],
+      "anchor": [
+        1.5079422414785995,
+        2.0,
+        0.8369773963294032
+      ],
+      "slopes": [
+        -0.36705056813352266,
+        0.6014235765380518
+      ],
+      "source_input_sha256": "21cb377fb1ea50d6fe6857893ec1635d24cd2e853806a117e1aa820e83623d99",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 48
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 4,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 87,
+      "shape": [
+        3,
+        4,
+        5
+      ],
+      "anchor": [
+        0.7125683282201936,
+        2.1429208964468325,
+        0.7488680848678713
+      ],
+      "slopes": [
+        -0.28794749713997625,
+        -0.23902751462676342
+      ],
+      "source_input_sha256": "156e947a100bd5549785e1f910262ebefedb1c918ea7033a5b64e7beeac68529",
+      "reference": {
+        "volume_grid_units": 24,
+        "bounds": [
+          0,
+          2,
+          0,
+          3,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "exhaustive_rectangles_tested": 50
+      },
+      "native": {
+        "volume_grid_units": 24,
+        "bounds": [
+          0,
+          2,
+          0,
+          3,
+          0,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 4,
+        "tie_roll_span_grid_max": 4,
+        "configurations": 9,
+        "rectangles": 14
+      },
+      "passed": true
+    },
+    {
+      "case": 88,
+      "shape": [
+        6,
+        3,
+        5
+      ],
+      "anchor": [
+        4.0,
+        0.7127355265320081,
+        3.6558814772410058
+      ],
+      "slopes": [
+        0.0,
+        0.0
+      ],
+      "source_input_sha256": "65ea5720893a8bb21c2328ffb5f949558e6817d179495343852cf8c4064fca8d",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 72
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 2,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 89,
+      "shape": [
+        3,
+        5,
+        5
+      ],
+      "anchor": [
+        0.3345581932301658,
+        3.1985368990313057,
+        1.350692170966517
+      ],
+      "slopes": [
+        -0.32173935779581786,
+        0.7047593814536
+      ],
+      "source_input_sha256": "3d1aaf2cb7f30134f5ce7c92ec6bcddba99a9ca2d016a14fbcf87069bfe2f7a9",
+      "reference": {
+        "volume_grid_units": 12,
+        "bounds": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "exhaustive_rectangles_tested": 78
+      },
+      "native": {
+        "volume_grid_units": 12,
+        "bounds": [
+          0,
+          2,
+          2,
+          4,
+          1,
+          4,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "configurations": 9,
+        "rectangles": 8
+      },
+      "passed": true
+    },
+    {
+      "case": 90,
+      "shape": [
+        4,
+        5,
+        5
+      ],
+      "anchor": [
+        0.74368606383086,
+        3.3817327613413304,
+        0.2652882910465628
+      ],
+      "slopes": [
+        -0.7570048352658163,
+        -0.29735251364423565
+      ],
+      "source_input_sha256": "0e3221800dbea485c2ea5c91a8d2943e075c9fb04bc2be42fca2045d7879afbd",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 93
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 11,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 91,
+      "shape": [
+        5,
+        4,
+        4
+      ],
+      "anchor": [
+        2.0,
+        1.4674024092078803,
+        1.7392434313694338
+      ],
+      "slopes": [
+        1.0900417550209198,
+        0.021483498900557896
+      ],
+      "source_input_sha256": "8488fe9f5a2291ec22081aec1a667481da25b4d51d74dcac6998ff54559cc363",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 258
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 18,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 92,
+      "shape": [
+        5,
+        6,
+        6
+      ],
+      "anchor": [
+        2.4180552954381307,
+        3.836905602781575,
+        4.030092144858298
+      ],
+      "slopes": [
+        0.23438028454288595,
+        0.7395122236674243
+      ],
+      "source_input_sha256": "c7fef724a3b48566b940452db7fdeed24c6701ad6dc1a7c2abeb044c04ee70a7",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 776
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 45,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 93,
+      "shape": [
+        6,
+        6,
+        5
+      ],
+      "anchor": [
+        2.757529234541662,
+        0.0,
+        1.401089685210735
+      ],
+      "slopes": [
+        1.01082776237073,
+        0.3614051536343159
+      ],
+      "source_input_sha256": "08388155feb86ef96558d9788f0ed3c695cdc260be0f610379a33aee242756b3",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 624
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 19,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 94,
+      "shape": [
+        4,
+        6,
+        5
+      ],
+      "anchor": [
+        0.0,
+        1.0141305628607595,
+        1.0557645925968138
+      ],
+      "slopes": [
+        -0.9340627184565041,
+        0.6158822780643414
+      ],
+      "source_input_sha256": "aff3228ace6179d91be3a1ab932da8c82c6b853515f5cdec014f3f090bda5638",
+      "reference": {
+        "volume_grid_units": 1,
+        "bounds": [
+          0,
+          1,
+          1,
+          2,
+          1,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "exhaustive_rectangles_tested": 240
+      },
+      "native": {
+        "volume_grid_units": 1,
+        "bounds": [
+          0,
+          1,
+          1,
+          2,
+          1,
+          2,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "configurations": 21,
+        "rectangles": 1
+      },
+      "passed": true
+    },
+    {
+      "case": 95,
+      "shape": [
+        5,
+        6,
+        6
+      ],
+      "anchor": [
+        0.6721116621344256,
+        2.579363532549471,
+        4.540737196911847
+      ],
+      "slopes": [
+        0.23336657111509518,
+        -0.438577104248948
+      ],
+      "source_input_sha256": "77059705407f5b082d2cc239e28e61def3312424c231e57c739c7a508a7e84aa",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 390
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 24,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 96,
+      "shape": [
+        4,
+        3,
+        6
+      ],
+      "anchor": [
+        1.930668133092268,
+        1.8422977007915322,
+        2.775274225115532
+      ],
+      "slopes": [
+        0.0,
+        0.0
+      ],
+      "source_input_sha256": "31084740e0b9cec54735aafd8296a51410e3c0331432ba7e1f035faf88734c23",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 72
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 2,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 97,
+      "shape": [
+        3,
+        5,
+        5
+      ],
+      "anchor": [
+        2.0,
+        1.8234917599052185,
+        1.0174922076631643
+      ],
+      "slopes": [
+        1.075690113184189,
+        0.3534535216778296
+      ],
+      "source_input_sha256": "7417ffd0da379c951ac1a59c0ba8612e7329e1d675ff98a6ff1db7071fec9497",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 116
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 14,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 98,
+      "shape": [
+        3,
+        4,
+        6
+      ],
+      "anchor": [
+        0.8174088534754702,
+        1.162882488232213,
+        4.005904342780005
+      ],
+      "slopes": [
+        0.2010736087690821,
+        0.7070273539841396
+      ],
+      "source_input_sha256": "40df193ecdb85f028b0a5a9a28fef1db1206e28c300a298178d1b1ea88ea38c3",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 105
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 16,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 99,
+      "shape": [
+        6,
+        4,
+        3
+      ],
+      "anchor": [
+        0.2935627294687343,
+        1.472116963224295,
+        0.9152030893486502
+      ],
+      "slopes": [
+        0.1821810981663765,
+        0.6082066068749645
+      ],
+      "source_input_sha256": "84bae0cc059329acdb9765e4c19fa07ebc55f19937de72690945b30d4b51a444",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 72
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 10,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 100,
+      "shape": [
+        6,
+        5,
+        4
+      ],
+      "anchor": [
+        2.0,
+        4.0,
+        2.350417091066201
+      ],
+      "slopes": [
+        -0.8032475638161394,
+        0.6381592201726614
+      ],
+      "source_input_sha256": "4354b1b7c2f890140b98839fb237107cf4a81dfe73803b48073fdb553c70d961",
+      "reference": {
+        "volume_grid_units": 45,
+        "bounds": [
+          0,
+          5,
+          1,
+          4,
+          0,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "exhaustive_rectangles_tested": 399
+      },
+      "native": {
+        "volume_grid_units": 45,
+        "bounds": [
+          0,
+          5,
+          1,
+          4,
+          0,
+          3,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 3,
+        "tie_roll_span_grid_max": 3,
+        "configurations": 26,
+        "rectangles": 66
+      },
+      "passed": true
+    },
+    {
+      "case": 101,
+      "shape": [
+        5,
+        6,
+        6
+      ],
+      "anchor": [
+        2.4750646176473636,
+        4.409847742022761,
+        3.229103446973402
+      ],
+      "slopes": [
+        0.6350733779230895,
+        -0.685010767333587
+      ],
+      "source_input_sha256": "912925d52cf13c816986e8e8673ba76a6ecb1bf0385c50b7ce26619f4cea81d5",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 598
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 24,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 102,
+      "shape": [
+        5,
+        3,
+        4
+      ],
+      "anchor": [
+        1.9671232530384124,
+        0.9844303845010205,
+        1.1898693962903995
+      ],
+      "slopes": [
+        0.059418476717351565,
+        0.6910872544292681
+      ],
+      "source_input_sha256": "7d46b9bef44910578c0740eb3b80f0033ead7f2e2f6ef5eedf66d34befa4a73c",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 124
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 10,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 103,
+      "shape": [
+        5,
+        3,
+        3
+      ],
+      "anchor": [
+        3.0,
+        0.13188396339920438,
+        0.7981102930824042
+      ],
+      "slopes": [
+        0.6158825076678913,
+        0.3020119330526376
+      ],
+      "source_input_sha256": "69fa1a8fcfb028627e83661061e4a98f42547c7ea942b74aa7ee0a5f093a2b46",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 60
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 8,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 104,
+      "shape": [
+        4,
+        3,
+        3
+      ],
+      "anchor": [
+        0.7679226995792103,
+        1.7228639494086604,
+        1.721366295013071
+      ],
+      "slopes": [
+        0.0,
+        0.0
+      ],
+      "source_input_sha256": "f1a4b56a4bfc5869f71413d392c0f70ab0422acb43e0206ebcc39df2ad74b0ef",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 12
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 2,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 105,
+      "shape": [
+        5,
+        3,
+        4
+      ],
+      "anchor": [
+        0.13686554166042253,
+        1.2470888542183307,
+        2.10797976359608
+      ],
+      "slopes": [
+        -0.48520812941014757,
+        -0.12707289933001187
+      ],
+      "source_input_sha256": "a22b702c29ffc40bc9ecbe14377cf33a541083387d67e4fa5268520a30ec6b06",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 40
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 4,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 106,
+      "shape": [
+        6,
+        4,
+        3
+      ],
+      "anchor": [
+        4.0,
+        1.3216722975138757,
+        0.2826973659798757
+      ],
+      "slopes": [
+        -0.13323508925164773,
+        -0.5273965040789408
+      ],
+      "source_input_sha256": "ee83877f125c16e5236668124a92ea2b325ea12424679b7370b3fb0e8581e4f9",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 104
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 8,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 107,
+      "shape": [
+        5,
+        3,
+        5
+      ],
+      "anchor": [
+        2.332043882596163,
+        0.0,
+        1.986324613596112
+      ],
+      "slopes": [
+        -1.0173971738617476,
+        -0.12134398431449189
+      ],
+      "source_input_sha256": "c05da7f42736e689e83cb4653eadd6ccc50dae25779784980d76c103aca01c4f",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 180
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 10,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 108,
+      "shape": [
+        4,
+        5,
+        3
+      ],
+      "anchor": [
+        1.9270389106779104,
+        1.0590451184674792,
+        0.8750708919264798
+      ],
+      "slopes": [
+        1.0786380605947938,
+        1.0425228370573696
+      ],
+      "source_input_sha256": "65573c8384a8a1f46f9f704752f8e8fc2ee333af19171bc7c8ebfd93e51defe3",
+      "reference": {
+        "volume_grid_units": 4,
+        "bounds": [
+          0,
+          2,
+          1,
+          3,
+          0,
+          1,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "exhaustive_rectangles_tested": 60
+      },
+      "native": {
+        "volume_grid_units": 4,
+        "bounds": [
+          0,
+          2,
+          1,
+          3,
+          0,
+          1,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "configurations": 10,
+        "rectangles": 4
+      },
+      "passed": true
+    },
+    {
+      "case": 109,
+      "shape": [
+        6,
+        4,
+        3
+      ],
+      "anchor": [
+        4.0,
+        1.216112691818346,
+        0.18872253585020737
+      ],
+      "slopes": [
+        -0.8687084396796758,
+        -0.4264184048828076
+      ],
+      "source_input_sha256": "61625e9465bc1dec4c65a7bc7de0a4139ae9e0608494f40d157bf8c69248dcf7",
+      "reference": {
+        "volume_grid_units": 4,
+        "bounds": [
+          1,
+          5,
+          1,
+          2,
+          0,
+          1,
+          0,
+          0
+        ],
+        "ties": 3,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "exhaustive_rectangles_tested": 108
+      },
+      "native": {
+        "volume_grid_units": 4,
+        "bounds": [
+          1,
+          5,
+          1,
+          2,
+          0,
+          1,
+          0,
+          0
+        ],
+        "ties": 3,
+        "tie_roll_span_grid_min": 1,
+        "tie_roll_span_grid_max": 1,
+        "configurations": 9,
+        "rectangles": 10
+      },
+      "passed": true
+    },
+    {
+      "case": 110,
+      "shape": [
+        6,
+        6,
+        6
+      ],
+      "anchor": [
+        3.479729580987223,
+        0.7286809183380194,
+        1.2693815512867528
+      ],
+      "slopes": [
+        -0.2799355613934289,
+        0.2795859238678533
+      ],
+      "source_input_sha256": "8365813a7e94d0bcde5a9f8d14edfc7724dffa9a81be587b5ed0838d43e8afdc",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 1120
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 30,
+        "rectangles": 0
+      },
+      "passed": true
+    },
+    {
+      "case": 111,
+      "shape": [
+        6,
+        3,
+        3
+      ],
+      "anchor": [
+        3.768545631238484,
+        0.09923145658015642,
+        1.0750838746743079
+      ],
+      "slopes": [
+        0.9313893396259805,
+        0.8367572936769665
+      ],
+      "source_input_sha256": "db4220a280b31dcf2c3c776cbda75c7a66821aec8e43acfd17937215b3e72003",
+      "reference": {
+        "volume_grid_units": -1,
+        "bounds": null,
+        "ties": 0,
+        "tie_roll_span_grid_min": null,
+        "tie_roll_span_grid_max": null,
+        "exhaustive_rectangles_tested": 60
+      },
+      "native": {
+        "volume_grid_units": -1,
+        "bounds": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ties": 0,
+        "tie_roll_span_grid_min": 100000,
+        "tie_roll_span_grid_max": 0,
+        "configurations": 6,
+        "rectangles": 0
+      },
+      "passed": true
+    }
+  ]
+}

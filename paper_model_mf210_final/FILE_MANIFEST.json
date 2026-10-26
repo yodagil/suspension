@@ -1,0 +1,28 @@
+{
+  "files_sha256": {
+    "README_KO.md": "04693d91bd16167d728da9b800960115ef01a403d0bc0d0ec1dbd0e2dba0f58b",
+    "build_stable_cell_sheared_region.m": "c83ae19723124e77323cc00661813680237685c6cfb32e9152ef67e6a3d27616",
+    "plot_mf210_final.m": "a4d208d6929884285028f35e453ceb096e23e4653654e19292b8ca08011db67e",
+    "provenance/actual_plot_validation.json": "241261ffe70c2d86cbbdefcb451e0d6f259a13a32e2fefba2aad32148fee1585",
+    "provenance/core_invariance.json": "d0c5ab63f6024130f2cc87db2e0c9344e46d33d91f624b688ac89b014f04af4c",
+    "provenance/full_geometry_mcode_parity.json": "162e01658ca740c0959919b6761ddd01e6a260fd4bc9a641023150db0729be3d",
+    "provenance/geometry_mcode_provenance.json": "c91c1e3e51c292cfef9eedc1f9dc1f09181d94972bf4985622863fb435c6fcab",
+    "provenance/small_geometry_mcode_parity.json": "392d900d266ec90de4be2a86f28f2ced101c537fb69888194329a3b5f1bd6ab8",
+    "provenance/standalone_smoke_validation.json": "c1ff4b80d81c94f535e9154ccf3c63c3c007cdd8fcb7b05206535cccd1cddee6",
+    "run_mf210_final.m": "11d842cb17003ee36ee974ca7f42188870013761402de274efde00925d5ba045",
+    "source/compute_mf210_body_equilibria.m": "26d3fe364d0c94efc293be4638395b83143b5574b246e2b0edf6d5505d259a2d",
+    "source/empty_sheared_cell_box.cpp": "b1b44f2049faeed3bc89d6b4d125931c9bd76255938608dc8d8ac7e17f13c0ff",
+    "source/matlab/mf210_force_scalar.m": "6357f53b09a143f185d6f4b90f457bf833dc26d09a023dd95400729b46b5678f",
+    "source/matlab/mf210_forces.m": "b61291c65052ef153d81f91bb2dcb272d0e496602245a763f2eab417ee221b65",
+    "source/matlab/paper_config.m": "fa9dce0baba738255cda04996bc4b6bd463b8d573a37f942037a7349d5e6bde5",
+    "source/matlab/paper_initial.m": "4af0ce55d09284549e411e6e2dc8c9b5731ee362545a909748955894a8cdb2bd",
+    "source/matlab/paper_rhs.m": "0cdca91157f4a62164d657770aa7b5abb38f2d9bc088ab9cc84f3628ea5bf692",
+    "source/matlab/paper_simulate_grid.m": "afd504d724fe6f22c826d26b47a697c4cd0d398c44d5137cfe02a25bf67f6094",
+    "source/matlab/paper_step.m": "aa9422ea10f514b1ee6a9652bb1ffe0944ae3f5a394bca8c33072e6cb83049fe",
+    "source/native_mf.cpp": "16af6956d881dc9b726bc34b06412d25e4f5fd00fff2ae02dbdab535b53941f9"
+  },
+  "standalone_entry": "run_mf210_final.m",
+  "physical_core_unchanged_from": "43d9ffb600741b143dcf03b98298e4529c79cca2",
+  "licensed_MATLAB_execution": false,
+  "public_paper_exact_reproduction_claimed": false
+}

@@ -1,0 +1,445 @@
+{
+  "cases": [
+    {
+      "angle_deg": 0.0,
+      "valid": true,
+      "source_classification_sha256": "a6665a2ada0d2180d3a234533b55d7e13569f18c02465c71839a6d4ab642faa9",
+      "method": "Maximum-volume own-equilibrium-containing sheared grid box in a conservative stable-cell candidate family",
+      "orientation_rule": "Equal-yaw-row OLS of component mean vc and phi grid indices vs yaw grid index; each yaw span tests zero, floor(slope*span), ceil(slope*span) independently on both axes",
+      "fitted_grid_slopes": [
+        0.010773530710471746,
+        0.017969062845073484
+      ],
+      "six_connected_component_nodes": 4553,
+      "component_count": 2,
+      "equilibrium_anchor_vc_r_phi": [
+        -0.012878114784871249,
+        -4.026412060458348e-23,
+        -8.668782813842327e-24
+      ],
+      "vertices": [
+        [
+          -0.5,
+          -0.56,
+          -0.18666666666666668
+        ],
+        [
+          -0.5,
+          -0.56,
+          0.16
+        ],
+        [
+          -0.5,
+          0.48000000000000004,
+          -0.18666666666666668
+        ],
+        [
+          -0.5,
+          0.48000000000000004,
+          0.16
+        ],
+        [
+          0.5,
+          -0.56,
+          -0.18666666666666668
+        ],
+        [
+          0.5,
+          -0.56,
+          0.16
+        ],
+        [
+          0.5,
+          0.48000000000000004,
+          -0.18666666666666668
+        ],
+        [
+          0.5,
+          0.48000000000000004,
+          0.16
+        ]
+      ],
+      "faces": [
+        [
+          1,
+          2,
+          4,
+          3
+        ],
+        [
+          5,
+          7,
+          8,
+          6
+        ],
+        [
+          1,
+          5,
+          6,
+          2
+        ],
+        [
+          3,
+          4,
+          8,
+          7
+        ],
+        [
+          1,
+          3,
+          7,
+          5
+        ],
+        [
+          2,
+          6,
+          8,
+          4
+        ]
+      ],
+      "volume": 0.3605333333333342,
+      "lower_bounds": [
+        -0.5,
+        -0.56,
+        -0.18666666666666668
+      ],
+      "upper_bounds": [
+        0.5,
+        0.48000000000000004,
+        0.16
+      ],
+      "roll_bounds": [
+        -0.18666666666666668,
+        0.16
+      ],
+      "roll_span": 0.3466666666666667,
+      "nesting_constraints_applied": false,
+      "roll_scaling_or_caps_applied": false,
+      "coordinate_correction_applied": false,
+      "unstable_nodes_inside_inclusive": 0,
+      "stable_nodes_inside_inclusive": 2800,
+      "optimizer": {
+        "volume_grid_units": 2028,
+        "bounds": [
+          38,
+          42,
+          6,
+          45,
+          8,
+          21,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 13,
+        "tie_roll_span_grid_max": 13,
+        "configurations": 3132,
+        "rectangles": 7006
+      },
+      "elapsed_s": 3.244176465959754
+    },
+    {
+      "angle_deg": 3.5,
+      "valid": true,
+      "source_classification_sha256": "ac444c486a3d608eee30d2bee6eeb9a5328adac874ea16c68fbb32a347faa807",
+      "method": "Maximum-volume own-equilibrium-containing sheared grid box in a conservative stable-cell candidate family",
+      "orientation_rule": "Equal-yaw-row OLS of component mean vc and phi grid indices vs yaw grid index; each yaw span tests zero, floor(slope*span), ceil(slope*span) independently on both axes",
+      "fitted_grid_slopes": [
+        0.015539668050415635,
+        0.04369787665147061
+      ],
+      "six_connected_component_nodes": 4752,
+      "component_count": 4,
+      "equilibrium_anchor_vc_r_phi": [
+        0.16228844721374142,
+        0.2832703227267875,
+        0.06101359545198329
+      ],
+      "vertices": [
+        [
+          0.0,
+          -0.5333333333333333,
+          -0.10666666666666667
+        ],
+        [
+          0.0,
+          -0.5333333333333333,
+          0.18666666666666668
+        ],
+        [
+          0.0,
+          0.6133333333333334,
+          -0.10666666666666667
+        ],
+        [
+          0.0,
+          0.6133333333333334,
+          0.18666666666666668
+        ],
+        [
+          0.75,
+          -0.5333333333333333,
+          -0.10666666666666667
+        ],
+        [
+          0.75,
+          -0.5333333333333333,
+          0.18666666666666668
+        ],
+        [
+          0.75,
+          0.6133333333333334,
+          -0.10666666666666667
+        ],
+        [
+          0.75,
+          0.6133333333333334,
+          0.18666666666666668
+        ]
+      ],
+      "faces": [
+        [
+          1,
+          2,
+          4,
+          3
+        ],
+        [
+          5,
+          7,
+          8,
+          6
+        ],
+        [
+          1,
+          5,
+          6,
+          2
+        ],
+        [
+          3,
+          4,
+          8,
+          7
+        ],
+        [
+          1,
+          3,
+          7,
+          5
+        ],
+        [
+          2,
+          6,
+          8,
+          4
+        ]
+      ],
+      "volume": 0.2522666666666673,
+      "lower_bounds": [
+        0.0,
+        -0.5333333333333333,
+        -0.10666666666666667
+      ],
+      "upper_bounds": [
+        0.75,
+        0.6133333333333334,
+        0.18666666666666668
+      ],
+      "roll_bounds": [
+        -0.10666666666666667,
+        0.18666666666666668
+      ],
+      "roll_span": 0.29333333333333333,
+      "nesting_constraints_applied": false,
+      "roll_scaling_or_caps_applied": false,
+      "coordinate_correction_applied": false,
+      "unstable_nodes_inside_inclusive": 0,
+      "stable_nodes_inside_inclusive": 2112,
+      "optimizer": {
+        "volume_grid_units": 1419,
+        "bounds": [
+          40,
+          43,
+          7,
+          50,
+          11,
+          22,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 11,
+        "tie_roll_span_grid_max": 11,
+        "configurations": 3400,
+        "rectangles": 4032
+      },
+      "elapsed_s": 5.662048677972052
+    },
+    {
+      "angle_deg": 7.0,
+      "valid": true,
+      "source_classification_sha256": "4c94752fc5ceddd9a1009bfd9bc65029f209fd5e28d2cb4af3f30e35ab1d03c9",
+      "method": "Maximum-volume own-equilibrium-containing sheared grid box in a conservative stable-cell candidate family",
+      "orientation_rule": "Equal-yaw-row OLS of component mean vc and phi grid indices vs yaw grid index; each yaw span tests zero, floor(slope*span), ceil(slope*span) independently on both axes",
+      "fitted_grid_slopes": [
+        0.10766295531476174,
+        0.04320753098262529
+      ],
+      "six_connected_component_nodes": 3042,
+      "component_count": 4,
+      "equilibrium_anchor_vc_r_phi": [
+        0.2941180424539372,
+        0.5670758920419262,
+        0.12214247766784059
+      ],
+      "vertices": [
+        [
+          0.25,
+          -0.05333333333333334,
+          -0.02666666666666667
+        ],
+        [
+          0.25,
+          -0.05333333333333334,
+          0.13333333333333333
+        ],
+        [
+          0.25,
+          0.6133333333333334,
+          0.02666666666666667
+        ],
+        [
+          0.25,
+          0.6133333333333334,
+          0.18666666666666668
+        ],
+        [
+          1.0,
+          -0.05333333333333334,
+          -0.02666666666666667
+        ],
+        [
+          1.0,
+          -0.05333333333333334,
+          0.13333333333333333
+        ],
+        [
+          1.0,
+          0.6133333333333334,
+          0.02666666666666667
+        ],
+        [
+          1.0,
+          0.6133333333333334,
+          0.18666666666666668
+        ]
+      ],
+      "faces": [
+        [
+          1,
+          2,
+          4,
+          3
+        ],
+        [
+          5,
+          7,
+          8,
+          6
+        ],
+        [
+          1,
+          5,
+          6,
+          2
+        ],
+        [
+          3,
+          4,
+          8,
+          7
+        ],
+        [
+          1,
+          3,
+          7,
+          5
+        ],
+        [
+          2,
+          6,
+          8,
+          4
+        ]
+      ],
+      "volume": 0.0800000000000002,
+      "lower_bounds": [
+        0.25,
+        -0.05333333333333334,
+        -0.02666666666666667
+      ],
+      "upper_bounds": [
+        1.0,
+        0.6133333333333334,
+        0.18666666666666668
+      ],
+      "roll_bounds": [
+        -0.02666666666666667,
+        0.18666666666666668
+      ],
+      "roll_span": 0.21333333333333335,
+      "nesting_constraints_applied": false,
+      "roll_scaling_or_caps_applied": false,
+      "coordinate_correction_applied": false,
+      "unstable_nodes_inside_inclusive": 0,
+      "stable_nodes_inside_inclusive": 632,
+      "optimizer": {
+        "volume_grid_units": 450,
+        "bounds": [
+          41,
+          44,
+          25,
+          50,
+          14,
+          20,
+          0,
+          2
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 6,
+        "tie_roll_span_grid_max": 8,
+        "configurations": 2199,
+        "rectangles": 545
+      },
+      "elapsed_s": 2.810079115035478
+    }
+  ],
+  "all_cases_valid": true,
+  "nesting_constraints_applied": false,
+  "roll_scaling_or_caps_applied": false,
+  "coordinate_correction_applied": false,
+  "pairwise_containment": [
+    {
+      "outer_angle": 0.0,
+      "inner_angle": 3.5,
+      "contained": false,
+      "max_residual": 0.25
+    },
+    {
+      "outer_angle": 3.5,
+      "inner_angle": 7.0,
+      "contained": false,
+      "max_residual": 0.25
+    },
+    {
+      "outer_angle": 0.0,
+      "inner_angle": 7.0,
+      "contained": false,
+      "max_residual": 0.5
+    }
+  ],
+  "physical_model_changed": false,
+  "strict_roll_span_narrowing": true,
+  "continuous_stability_certificate": false
+}

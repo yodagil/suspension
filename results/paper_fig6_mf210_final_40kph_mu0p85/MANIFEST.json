@@ -1,0 +1,106 @@
+{
+  "model": "Unchanged five-state quasisteady original210 MF model with dynamic roll-reaction extension",
+  "speed_kmh": 40,
+  "mu": 0.85,
+  "angles_deg": [
+    0,
+    3.5,
+    7
+  ],
+  "healthy_tires_only": true,
+  "initial_states_per_angle": 138105,
+  "original210_sweep_resumed": false,
+  "all_original_MF_coefficients_and_shifts_retained": true,
+  "physical_model_changed_from_43d9ffb": false,
+  "classification_reused_unchanged": true,
+  "geometry": "Maximum volume in independent data-derived conservative stable-cell sheared-box families",
+  "paper_exact_reproduction": false,
+  "nesting_constraints_used": false,
+  "natural_nesting_established": false,
+  "raw_roll_envelopes_shrink": false,
+  "selected_projected_roll_spans_shrink": true,
+  "geometry_source_sha256": "c83ae19723124e77323cc00661813680237685c6cfb32e9152ef67e6a3d27616",
+  "cases": [
+    {
+      "angle_deg": 0.0,
+      "file": "stable_point_40kph_0.85mu_0deg.mat",
+      "sha256": "3f7bc4c9e926d2ed2970d090ed911073b102e37b575de564c2fa5ae6eb4d8f42",
+      "source_classification_sha256": "a6665a2ada0d2180d3a234533b55d7e13569f18c02465c71839a6d4ab642faa9",
+      "raw_result_fields_identical_after_save": true,
+      "stable_count": 4554,
+      "projected_roll_bounds": [
+        -0.18666666666666668,
+        0.16
+      ],
+      "projected_roll_span": 0.3466666666666667,
+      "volume": 0.3605333333333342,
+      "unstable_raw_nodes_inside": 0,
+      "eight_extreme_vertices_six_planar_faces": true
+    },
+    {
+      "angle_deg": 3.5,
+      "file": "stable_point_40kph_0.85mu_3.5deg.mat",
+      "sha256": "e32180b9c4e7a99db851eb002672baf48b818b7b712787780191b8a68d12827d",
+      "source_classification_sha256": "ac444c486a3d608eee30d2bee6eeb9a5328adac874ea16c68fbb32a347faa807",
+      "raw_result_fields_identical_after_save": true,
+      "stable_count": 4811,
+      "projected_roll_bounds": [
+        -0.10666666666666667,
+        0.18666666666666668
+      ],
+      "projected_roll_span": 0.29333333333333333,
+      "volume": 0.2522666666666673,
+      "unstable_raw_nodes_inside": 0,
+      "eight_extreme_vertices_six_planar_faces": true
+    },
+    {
+      "angle_deg": 7.0,
+      "file": "stable_point_40kph_0.85mu_7deg.mat",
+      "sha256": "3c0fe2b9cfe06b33375e6c3e744093c763e4a44c0ab05e4430b3541ae1c210cf",
+      "source_classification_sha256": "4c94752fc5ceddd9a1009bfd9bc65029f209fd5e28d2cb4af3f30e35ab1d03c9",
+      "raw_result_fields_identical_after_save": true,
+      "stable_count": 3247,
+      "projected_roll_bounds": [
+        -0.02666666666666667,
+        0.18666666666666668
+      ],
+      "projected_roll_span": 0.21333333333333335,
+      "volume": 0.0800000000000002,
+      "unstable_raw_nodes_inside": 0,
+      "eight_extreme_vertices_six_planar_faces": true
+    }
+  ],
+  "standalone_m_sha256": "11d842cb17003ee36ee974ca7f42188870013761402de274efde00925d5ba045",
+  "code_zip_sha256": "5ce6afe0c0d112f0d246fdcab1d5f07e62e70d6fb969367d73dbfacffed0b4dc",
+  "files_sha256": {
+    "README_KO.md": "dd5dfdce41475d4e8fcbaffc273e618f824f653a757e27ee5a6e9157e2d8e8e9",
+    "paper_axes_comparison.png": "58c9a176072e1b8e7495a7f0ef7b310dea89293dc5f11f9ba73bc63baa70b11c",
+    "paper_roll_comparison.png": "0e73344c1214cf33bd134d33ae7ff0d976605c8f113b719dfd816e4d060aa997",
+    "paper_roll_comparison.svg": "79fdf3ea7e191a4dbc4226d979bd5acbcdf8a76a3c31b65d0070ba4324325f84",
+    "region_summary.json": "d450ecfb03ddfc187a4a240557f92e077bb6ab14f63560f8c1e9a768f064940a",
+    "source/render_final.py": "1e1aa43e7b93a49b956e9743032b032a28bc5fca61ed6264bccc972265b08e31",
+    "stable_point_40kph_0.85mu_0deg.mat": "3f7bc4c9e926d2ed2970d090ed911073b102e37b575de564c2fa5ae6eb4d8f42",
+    "stable_point_40kph_0.85mu_3.5deg.mat": "e32180b9c4e7a99db851eb002672baf48b818b7b712787780191b8a68d12827d",
+    "stable_point_40kph_0.85mu_7deg.mat": "3c0fe2b9cfe06b33375e6c3e744093c763e4a44c0ab05e4430b3541ae1c210cf",
+    "validation/actual_plot_validation.json": "241261ffe70c2d86cbbdefcb451e0d6f259a13a32e2fefba2aad32148fee1585",
+    "validation/equilibrium_audit.json": "1a65853a071dcb98f42032692006cfac9839e370bf3b4b3ca58468714d5266db",
+    "validation/final_dense_initial_checks.json": "b8616ae80f70ec02b8cd2e7f687a86794700d349a3a800ea26be36cde212ae24",
+    "validation/final_independent_delivery_audit.json": "95e22ea77f53e8eae76b1607cbeefde4c4adc99be96a9055354b0f94a92cb50e",
+    "validation/final_trajectories_time_refinement.json": "e5144dacbe799ca77d6c15fee953c7a8931a22b6ac32158fe6be7a7499e84100",
+    "validation/full_geometry_mcode_parity.json": "162e01658ca740c0959919b6761ddd01e6a260fd4bc9a641023150db0729be3d",
+    "validation/geometry_cpp_independent_bruteforce.json": "46e9d92ffbc33f6092b3a941e83f527db6560f8b414703a85241ba7302235ec8",
+    "validation/geometry_mathematical_review.md": "a760beeb54a889e08b4f1221710ea219ce591154edbece918a5c1bae5fa19d76",
+    "validation/geometry_mcode_provenance.json": "c91c1e3e51c292cfef9eedc1f9dc1f09181d94972bf4985622863fb435c6fcab",
+    "validation/mf_source_manifest.json": "a68e2720e77dd449c1876778248fed7f0bef1fd5ddc23e806566a598f58a519e",
+    "validation/native_mcode_physics_parity.json": "37ad30f3aa5cc502cb4bb9fa11b1df339732a7b85b50c0069826c64b6791b8e8",
+    "validation/original_computation_plan.json": "b76e50d0469f6ae2f7a334cd53935f9f986673fd4012a632c84c6b29eb9dc335",
+    "validation/physics_parity_audit.json": "1850eaceeb19fd9c7df13b21218d392c5bc830e7d112507040501f967ec7d849",
+    "validation/raw_set_comparison.json": "99d89e5236881450d4d48a8115db4b762a12b975e0030cefbc1633693f6fb2a5",
+    "validation/rejected_point_only_oblique_trajectories.json": "1178fd53f951310dd9dee567eb90c47b6252adafde8bde419e58749f6b7b63c8",
+    "validation/standalone_smoke_validation.json": "c1ff4b80d81c94f535e9154ccf3c63c3c007cdd8fcb7b05206535cccd1cddee6"
+  },
+  "finalization_complete": true,
+  "actual_MATLAB_executed": false,
+  "Mcode_validation_runtime": "GNU Octave 9.4",
+  "original_full_sweep_engine": "Validated native C++"
+}

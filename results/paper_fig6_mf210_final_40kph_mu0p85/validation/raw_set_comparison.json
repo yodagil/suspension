@@ -1,0 +1,44 @@
+[
+  {
+    "outer_angle": 0,
+    "inner_angle": 3.5,
+    "inner_stable_but_outer_unstable": 1209,
+    "outer_stable_but_inner_unstable": 952,
+    "intersection_stable": 3602,
+    "example": [
+      -1.25,
+      -0.6133333333333334,
+      0.05333333333333334
+    ],
+    "example_stable_min_wheel_load_N": 1996.7004904816954,
+    "example_outer_reason": 2
+  },
+  {
+    "outer_angle": 3.5,
+    "inner_angle": 7,
+    "inner_stable_but_outer_unstable": 591,
+    "outer_stable_but_inner_unstable": 2155,
+    "intersection_stable": 2656,
+    "example": [
+      -0.75,
+      -0.24000000000000002,
+      0.05333333333333334
+    ],
+    "example_stable_min_wheel_load_N": 1270.9490911174491,
+    "example_outer_reason": 2
+  },
+  {
+    "outer_angle": 0,
+    "inner_angle": 7,
+    "inner_stable_but_outer_unstable": 990,
+    "outer_stable_but_inner_unstable": 2297,
+    "intersection_stable": 2257,
+    "example": [
+      -0.75,
+      -0.26666666666666666,
+      0.05333333333333334
+    ],
+    "example_stable_min_wheel_load_N": 1279.2503841593168,
+    "example_outer_reason": 2
+  }
+]

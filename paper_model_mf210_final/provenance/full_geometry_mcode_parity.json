@@ -1,0 +1,741 @@
+{
+  "all_passed_so_far": true,
+  "cases": [
+    {
+      "angle_deg": 0,
+      "passed": true,
+      "elapsed_s": 11.913815021514893,
+      "result": {
+        "valid": true,
+        "is_valid_inner": true,
+        "volume": 0.3605333333333342,
+        "inner_volume": 0.3605333333333342,
+        "vertices": [
+          [
+            -0.5,
+            -0.56,
+            -0.18666666666666668
+          ],
+          [
+            -0.5,
+            -0.56,
+            0.16
+          ],
+          [
+            -0.5,
+            0.48000000000000004,
+            -0.18666666666666668
+          ],
+          [
+            -0.5,
+            0.48000000000000004,
+            0.16
+          ],
+          [
+            0.5,
+            -0.56,
+            -0.18666666666666668
+          ],
+          [
+            0.5,
+            -0.56,
+            0.16
+          ],
+          [
+            0.5,
+            0.48000000000000004,
+            -0.18666666666666668
+          ],
+          [
+            0.5,
+            0.48000000000000004,
+            0.16
+          ]
+        ],
+        "inner_vertices": [
+          [
+            -0.5,
+            -0.56,
+            -0.18666666666666668
+          ],
+          [
+            -0.5,
+            -0.56,
+            0.16
+          ],
+          [
+            -0.5,
+            0.48000000000000004,
+            -0.18666666666666668
+          ],
+          [
+            -0.5,
+            0.48000000000000004,
+            0.16
+          ],
+          [
+            0.5,
+            -0.56,
+            -0.18666666666666668
+          ],
+          [
+            0.5,
+            -0.56,
+            0.16
+          ],
+          [
+            0.5,
+            0.48000000000000004,
+            -0.18666666666666668
+          ],
+          [
+            0.5,
+            0.48000000000000004,
+            0.16
+          ]
+        ],
+        "faces": [
+          [
+            1,
+            2,
+            4,
+            3
+          ],
+          [
+            5,
+            7,
+            8,
+            6
+          ],
+          [
+            1,
+            5,
+            6,
+            2
+          ],
+          [
+            3,
+            4,
+            8,
+            7
+          ],
+          [
+            1,
+            3,
+            7,
+            5
+          ],
+          [
+            2,
+            6,
+            8,
+            4
+          ]
+        ],
+        "bounds": [
+          [
+            -0.5,
+            0.5
+          ],
+          [
+            -0.56,
+            0.48000000000000004
+          ],
+          [
+            -0.18666666666666668,
+            0.16
+          ]
+        ],
+        "equilibrium_anchor_vc_r_phi": [
+          -0.012878114784871247,
+          -4.026412060458348e-23,
+          -8.668782813842328e-24
+        ],
+        "equilibrium_containment_required": true,
+        "equilibrium_centering_required": false,
+        "nesting_constraints_applied": false,
+        "roll_scaling_or_caps_applied": false,
+        "coordinate_correction_applied": false,
+        "continuous_stability_certificate": false,
+        "method": "Maximum-volume conservative stable-cell sheared grid box",
+        "orientation_rule": "Six-connected component row means; OLS slopes; endpoint shifts zero/floor/ceil",
+        "tie_rule": "Lexicographic [vc0,vc1,r0,r1,phi0,phi1,vc_shift,phi_shift]",
+        "fitted_grid_slopes": [
+          0.010773530710471768,
+          0.017969062845073238
+        ],
+        "six_connected_component_nodes": 4553,
+        "configurations": 3132,
+        "rectangles": 7006,
+        "volume_grid_units": 2028,
+        "grid_bound_indices_zero_based": [
+          38,
+          42,
+          6,
+          45,
+          8,
+          21,
+          0,
+          0
+        ],
+        "optimizer_bounds_zero_based": [
+          38,
+          42,
+          6,
+          45,
+          8,
+          21,
+          0,
+          0
+        ],
+        "lower_bounds": [
+          -0.5,
+          -0.56,
+          -0.18666666666666668
+        ],
+        "upper_bounds": [
+          0.5,
+          0.48000000000000004,
+          0.16
+        ],
+        "coordinate_spans": [
+          1,
+          1.04,
+          0.3466666666666667
+        ],
+        "coordinate_centers": [
+          0,
+          -0.04000000000000001,
+          -0.013333333333333336
+        ],
+        "roll_bounds": [
+          -0.18666666666666668,
+          0.16
+        ],
+        "roll_span": 0.3466666666666667,
+        "roll_center": -0.013333333333333336,
+        "maximum_volume_tie_count": 2,
+        "tie_roll_span_grid_min": 13,
+        "tie_roll_span_grid_max": 13,
+        "maximum_volume_ties_roll_span_range": [
+          0.34666666666666673,
+          0.34666666666666673
+        ],
+        "contains_equilibrium": true,
+        "unstable_nodes_inside_inclusive": 0,
+        "all_physical_cells_intersected_have_eight_stable_corners": true,
+        "global_maximum_within_specified_conservative_candidate_family": true
+      },
+      "expected": {
+        "volume_grid_units": 2028,
+        "bounds": [
+          38,
+          42,
+          6,
+          45,
+          8,
+          21,
+          0,
+          0
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 13,
+        "tie_roll_span_grid_max": 13,
+        "configurations": 3132,
+        "rectangles": 7006
+      }
+    },
+    {
+      "angle_deg": 3.5,
+      "passed": true,
+      "elapsed_s": 12.509361028671265,
+      "result": {
+        "valid": true,
+        "is_valid_inner": true,
+        "volume": 0.2522666666666673,
+        "inner_volume": 0.2522666666666673,
+        "vertices": [
+          [
+            0,
+            -0.5333333333333333,
+            -0.10666666666666667
+          ],
+          [
+            0,
+            -0.5333333333333333,
+            0.18666666666666668
+          ],
+          [
+            0,
+            0.6133333333333334,
+            -0.10666666666666667
+          ],
+          [
+            0,
+            0.6133333333333334,
+            0.18666666666666668
+          ],
+          [
+            0.75,
+            -0.5333333333333333,
+            -0.10666666666666667
+          ],
+          [
+            0.75,
+            -0.5333333333333333,
+            0.18666666666666668
+          ],
+          [
+            0.75,
+            0.6133333333333334,
+            -0.10666666666666667
+          ],
+          [
+            0.75,
+            0.6133333333333334,
+            0.18666666666666668
+          ]
+        ],
+        "inner_vertices": [
+          [
+            0,
+            -0.5333333333333333,
+            -0.10666666666666667
+          ],
+          [
+            0,
+            -0.5333333333333333,
+            0.18666666666666668
+          ],
+          [
+            0,
+            0.6133333333333334,
+            -0.10666666666666667
+          ],
+          [
+            0,
+            0.6133333333333334,
+            0.18666666666666668
+          ],
+          [
+            0.75,
+            -0.5333333333333333,
+            -0.10666666666666667
+          ],
+          [
+            0.75,
+            -0.5333333333333333,
+            0.18666666666666668
+          ],
+          [
+            0.75,
+            0.6133333333333334,
+            -0.10666666666666667
+          ],
+          [
+            0.75,
+            0.6133333333333334,
+            0.18666666666666668
+          ]
+        ],
+        "faces": [
+          [
+            1,
+            2,
+            4,
+            3
+          ],
+          [
+            5,
+            7,
+            8,
+            6
+          ],
+          [
+            1,
+            5,
+            6,
+            2
+          ],
+          [
+            3,
+            4,
+            8,
+            7
+          ],
+          [
+            1,
+            3,
+            7,
+            5
+          ],
+          [
+            2,
+            6,
+            8,
+            4
+          ]
+        ],
+        "bounds": [
+          [
+            0,
+            0.75
+          ],
+          [
+            -0.5333333333333333,
+            0.6133333333333334
+          ],
+          [
+            -0.10666666666666667,
+            0.18666666666666668
+          ]
+        ],
+        "equilibrium_anchor_vc_r_phi": [
+          0.16228844721374142,
+          0.2832703227267875,
+          0.06101359545198329
+        ],
+        "equilibrium_containment_required": true,
+        "equilibrium_centering_required": false,
+        "nesting_constraints_applied": false,
+        "roll_scaling_or_caps_applied": false,
+        "coordinate_correction_applied": false,
+        "continuous_stability_certificate": false,
+        "method": "Maximum-volume conservative stable-cell sheared grid box",
+        "orientation_rule": "Six-connected component row means; OLS slopes; endpoint shifts zero/floor/ceil",
+        "tie_rule": "Lexicographic [vc0,vc1,r0,r1,phi0,phi1,vc_shift,phi_shift]",
+        "fitted_grid_slopes": [
+          0.015539668050415492,
+          0.04369787665147051
+        ],
+        "six_connected_component_nodes": 4752,
+        "configurations": 3400,
+        "rectangles": 4032,
+        "volume_grid_units": 1419,
+        "grid_bound_indices_zero_based": [
+          40,
+          43,
+          7,
+          50,
+          11,
+          22,
+          0,
+          0
+        ],
+        "optimizer_bounds_zero_based": [
+          40,
+          43,
+          7,
+          50,
+          11,
+          22,
+          0,
+          0
+        ],
+        "lower_bounds": [
+          0,
+          -0.5333333333333333,
+          -0.10666666666666667
+        ],
+        "upper_bounds": [
+          0.75,
+          0.6133333333333334,
+          0.18666666666666668
+        ],
+        "coordinate_spans": [
+          0.75,
+          1.1466666666666667,
+          0.29333333333333333
+        ],
+        "coordinate_centers": [
+          0.375,
+          0.040000000000000036,
+          0.04
+        ],
+        "roll_bounds": [
+          -0.10666666666666667,
+          0.18666666666666668
+        ],
+        "roll_span": 0.29333333333333333,
+        "roll_center": 0.04,
+        "maximum_volume_tie_count": 1,
+        "tie_roll_span_grid_min": 11,
+        "tie_roll_span_grid_max": 11,
+        "maximum_volume_ties_roll_span_range": [
+          0.2933333333333334,
+          0.2933333333333334
+        ],
+        "contains_equilibrium": true,
+        "unstable_nodes_inside_inclusive": 0,
+        "all_physical_cells_intersected_have_eight_stable_corners": true,
+        "global_maximum_within_specified_conservative_candidate_family": true
+      },
+      "expected": {
+        "volume_grid_units": 1419,
+        "bounds": [
+          40,
+          43,
+          7,
+          50,
+          11,
+          22,
+          0,
+          0
+        ],
+        "ties": 1,
+        "tie_roll_span_grid_min": 11,
+        "tie_roll_span_grid_max": 11,
+        "configurations": 3400,
+        "rectangles": 4032
+      }
+    },
+    {
+      "angle_deg": 7,
+      "passed": true,
+      "elapsed_s": 7.615664958953857,
+      "result": {
+        "valid": true,
+        "is_valid_inner": true,
+        "volume": 0.0800000000000002,
+        "inner_volume": 0.0800000000000002,
+        "vertices": [
+          [
+            0.25,
+            -0.05333333333333334,
+            -0.02666666666666667
+          ],
+          [
+            0.25,
+            -0.05333333333333334,
+            0.13333333333333333
+          ],
+          [
+            0.25,
+            0.6133333333333334,
+            0.02666666666666667
+          ],
+          [
+            0.25,
+            0.6133333333333334,
+            0.18666666666666668
+          ],
+          [
+            1,
+            -0.05333333333333334,
+            -0.02666666666666667
+          ],
+          [
+            1,
+            -0.05333333333333334,
+            0.13333333333333333
+          ],
+          [
+            1,
+            0.6133333333333334,
+            0.02666666666666667
+          ],
+          [
+            1,
+            0.6133333333333334,
+            0.18666666666666668
+          ]
+        ],
+        "inner_vertices": [
+          [
+            0.25,
+            -0.05333333333333334,
+            -0.02666666666666667
+          ],
+          [
+            0.25,
+            -0.05333333333333334,
+            0.13333333333333333
+          ],
+          [
+            0.25,
+            0.6133333333333334,
+            0.02666666666666667
+          ],
+          [
+            0.25,
+            0.6133333333333334,
+            0.18666666666666668
+          ],
+          [
+            1,
+            -0.05333333333333334,
+            -0.02666666666666667
+          ],
+          [
+            1,
+            -0.05333333333333334,
+            0.13333333333333333
+          ],
+          [
+            1,
+            0.6133333333333334,
+            0.02666666666666667
+          ],
+          [
+            1,
+            0.6133333333333334,
+            0.18666666666666668
+          ]
+        ],
+        "faces": [
+          [
+            1,
+            2,
+            4,
+            3
+          ],
+          [
+            5,
+            7,
+            8,
+            6
+          ],
+          [
+            1,
+            5,
+            6,
+            2
+          ],
+          [
+            3,
+            4,
+            8,
+            7
+          ],
+          [
+            1,
+            3,
+            7,
+            5
+          ],
+          [
+            2,
+            6,
+            8,
+            4
+          ]
+        ],
+        "bounds": [
+          [
+            0.25,
+            1
+          ],
+          [
+            -0.05333333333333334,
+            0.6133333333333334
+          ],
+          [
+            -0.02666666666666667,
+            0.18666666666666668
+          ]
+        ],
+        "equilibrium_anchor_vc_r_phi": [
+          0.2941180424539372,
+          0.5670758920419262,
+          0.1221424776678406
+        ],
+        "equilibrium_containment_required": true,
+        "equilibrium_centering_required": false,
+        "nesting_constraints_applied": false,
+        "roll_scaling_or_caps_applied": false,
+        "coordinate_correction_applied": false,
+        "continuous_stability_certificate": false,
+        "method": "Maximum-volume conservative stable-cell sheared grid box",
+        "orientation_rule": "Six-connected component row means; OLS slopes; endpoint shifts zero/floor/ceil",
+        "tie_rule": "Lexicographic [vc0,vc1,r0,r1,phi0,phi1,vc_shift,phi_shift]",
+        "fitted_grid_slopes": [
+          0.10766295531476133,
+          0.043207530982625156
+        ],
+        "six_connected_component_nodes": 3042,
+        "configurations": 2199,
+        "rectangles": 545,
+        "volume_grid_units": 450,
+        "grid_bound_indices_zero_based": [
+          41,
+          44,
+          25,
+          50,
+          14,
+          20,
+          0,
+          2
+        ],
+        "optimizer_bounds_zero_based": [
+          41,
+          44,
+          25,
+          50,
+          14,
+          20,
+          0,
+          2
+        ],
+        "lower_bounds": [
+          0.25,
+          -0.05333333333333334,
+          -0.02666666666666667
+        ],
+        "upper_bounds": [
+          1,
+          0.6133333333333334,
+          0.18666666666666668
+        ],
+        "coordinate_spans": [
+          0.75,
+          0.6666666666666667,
+          0.21333333333333335
+        ],
+        "coordinate_centers": [
+          0.625,
+          0.28,
+          0.08
+        ],
+        "roll_bounds": [
+          -0.02666666666666667,
+          0.18666666666666668
+        ],
+        "roll_span": 0.21333333333333335,
+        "roll_center": 0.08,
+        "maximum_volume_tie_count": 2,
+        "tie_roll_span_grid_min": 6,
+        "tie_roll_span_grid_max": 8,
+        "maximum_volume_ties_roll_span_range": [
+          0.16000000000000003,
+          0.21333333333333337
+        ],
+        "contains_equilibrium": true,
+        "unstable_nodes_inside_inclusive": 0,
+        "all_physical_cells_intersected_have_eight_stable_corners": true,
+        "global_maximum_within_specified_conservative_candidate_family": true
+      },
+      "expected": {
+        "volume_grid_units": 450,
+        "bounds": [
+          41,
+          44,
+          25,
+          50,
+          14,
+          20,
+          0,
+          2
+        ],
+        "ties": 2,
+        "tie_roll_span_grid_min": 6,
+        "tie_roll_span_grid_max": 8,
+        "configurations": 2199,
+        "rectangles": 545
+      }
+    }
+  ],
+  "all_tests_complete": true,
+  "all_passed": true,
+  "execution": "GNU Octave 9.4; no licensed MATLAB execution",
+  "helper_sha256": "c83ae19723124e77323cc00661813680237685c6cfb32e9152ef67e6a3d27616"
+}

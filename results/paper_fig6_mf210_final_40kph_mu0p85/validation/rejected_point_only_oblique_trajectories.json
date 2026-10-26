@@ -1,0 +1,223 @@
+{
+  "cases": [
+    {
+      "angle_deg": 0.0,
+      "checks": [
+        {
+          "name": "vertices_center_100_interior",
+          "trajectories": 109,
+          "stable_count": 104,
+          "unstable_count": 5,
+          "all_stable": false,
+          "observation_dt_s": 0.01,
+          "integration_dt_s": 0.0005,
+          "min_wheel_load_N": 21.40023936216994,
+          "failed_initial_states": [
+            [
+              0.5361510804153149,
+              -0.05474994934487343,
+              -0.031852638445209386
+            ],
+            [
+              0.6398131914846736,
+              0.21301438945399853,
+              -0.019463976316700188
+            ],
+            [
+              -0.5760115820324127,
+              -0.10828876935212967,
+              -0.04359609104018225
+            ],
+            [
+              -0.5960423197631037,
+              -0.02269329876069337,
+              0.13082063961046514
+            ],
+            [
+              0.6350218516385824,
+              0.058235243664204406,
+              -0.02731234817802425
+            ]
+          ],
+          "failed_reason_bits": [
+            2.0,
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "csv": "0deg_vertices_center_100_interior.csv"
+        },
+        {
+          "name": "vertices_center_100_interior_half_step",
+          "trajectories": 109,
+          "stable_count": 104,
+          "unstable_count": 5,
+          "all_stable": false,
+          "observation_dt_s": 0.005,
+          "integration_dt_s": 0.00025,
+          "min_wheel_load_N": 21.401164927258833,
+          "failed_initial_states": [
+            [
+              0.5361510804153149,
+              -0.05474994934487343,
+              -0.031852638445209386
+            ],
+            [
+              0.6398131914846736,
+              0.21301438945399853,
+              -0.019463976316700188
+            ],
+            [
+              -0.5760115820324127,
+              -0.10828876935212967,
+              -0.04359609104018225
+            ],
+            [
+              -0.5960423197631037,
+              -0.02269329876069337,
+              0.13082063961046514
+            ],
+            [
+              0.6350218516385824,
+              0.058235243664204406,
+              -0.02731234817802425
+            ]
+          ],
+          "failed_reason_bits": [
+            2.0,
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "csv": "0deg_vertices_center_100_interior_half_step.csv"
+        },
+        {
+          "name": "corners_tenth_step",
+          "trajectories": 8,
+          "stable_count": 8,
+          "unstable_count": 0,
+          "all_stable": true,
+          "observation_dt_s": 0.001,
+          "integration_dt_s": 5e-05,
+          "min_wheel_load_N": 21.034003365784883,
+          "failed_initial_states": [],
+          "failed_reason_bits": [],
+          "csv": "0deg_corners_tenth_step.csv"
+        }
+      ],
+      "all_pass": false
+    },
+    {
+      "angle_deg": 3.5,
+      "checks": [
+        {
+          "name": "vertices_center_100_interior",
+          "trajectories": 109,
+          "stable_count": 108,
+          "unstable_count": 1,
+          "all_stable": false,
+          "observation_dt_s": 0.01,
+          "integration_dt_s": 0.0005,
+          "min_wheel_load_N": 2.9478209020503527,
+          "failed_initial_states": [
+            [
+              0.8963601241455068,
+              0.233301474163903,
+              -0.005545703578028499
+            ]
+          ],
+          "failed_reason_bits": [
+            2.0
+          ],
+          "csv": "3.5deg_vertices_center_100_interior.csv"
+        },
+        {
+          "name": "vertices_center_100_interior_half_step",
+          "trajectories": 109,
+          "stable_count": 108,
+          "unstable_count": 1,
+          "all_stable": false,
+          "observation_dt_s": 0.005,
+          "integration_dt_s": 0.00025,
+          "min_wheel_load_N": 1.9516575461643697,
+          "failed_initial_states": [
+            [
+              0.8963601241455068,
+              0.233301474163903,
+              -0.005545703578028499
+            ]
+          ],
+          "failed_reason_bits": [
+            2.0
+          ],
+          "csv": "3.5deg_vertices_center_100_interior_half_step.csv"
+        },
+        {
+          "name": "corners_tenth_step",
+          "trajectories": 8,
+          "stable_count": 8,
+          "unstable_count": 0,
+          "all_stable": true,
+          "observation_dt_s": 0.001,
+          "integration_dt_s": 5e-05,
+          "min_wheel_load_N": 1.9194469113231207,
+          "failed_initial_states": [],
+          "failed_reason_bits": [],
+          "csv": "3.5deg_corners_tenth_step.csv"
+        }
+      ],
+      "all_pass": false
+    },
+    {
+      "angle_deg": 7.0,
+      "checks": [
+        {
+          "name": "vertices_center_100_interior",
+          "trajectories": 109,
+          "stable_count": 109,
+          "unstable_count": 0,
+          "all_stable": true,
+          "observation_dt_s": 0.01,
+          "integration_dt_s": 0.0005,
+          "min_wheel_load_N": 38.861630045498714,
+          "failed_initial_states": [],
+          "failed_reason_bits": [],
+          "csv": "7deg_vertices_center_100_interior.csv"
+        },
+        {
+          "name": "vertices_center_100_interior_half_step",
+          "trajectories": 109,
+          "stable_count": 109,
+          "unstable_count": 0,
+          "all_stable": true,
+          "observation_dt_s": 0.005,
+          "integration_dt_s": 0.00025,
+          "min_wheel_load_N": 38.87209404907844,
+          "failed_initial_states": [],
+          "failed_reason_bits": [],
+          "csv": "7deg_vertices_center_100_interior_half_step.csv"
+        },
+        {
+          "name": "corners_tenth_step",
+          "trajectories": 8,
+          "stable_count": 8,
+          "unstable_count": 0,
+          "all_stable": true,
+          "observation_dt_s": 0.001,
+          "integration_dt_s": 5e-05,
+          "min_wheel_load_N": 38.786201168242314,
+          "failed_initial_states": [],
+          "failed_reason_bits": [],
+          "csv": "7deg_corners_tenth_step.csv"
+        }
+      ],
+      "all_pass": true
+    }
+  ],
+  "all_pass": false,
+  "geometry_adjusted_after_checks": false,
+  "continuous_stability_certificate": false,
+  "random_seed": 20261026
+}

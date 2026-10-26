@@ -1,0 +1,102 @@
+{
+  "model": "PRIVATE quasisteady MF free-rolling model with dynamic normal-reaction extension",
+  "private_experiment": true,
+  "paper_exact_reproduction": false,
+  "original_full_tire_transient_model": false,
+  "model_dimension": 5,
+  "model_difference": "Only hidden tire transient subsystem replaced by instantaneous exact wheel kinematics and Fx=0 shifted MF root; body and load extension match transient comparator",
+  "speed_kmh": 40,
+  "mu": 0.85,
+  "angles_deg": [
+    0,
+    3.5,
+    7
+  ],
+  "horizon_s": 5.0,
+  "observation_dt_s": 0.01,
+  "RK4_substeps": 20,
+  "integration_dt_s": 0.0005,
+  "grid": "vc_refined",
+  "grid_shape": [
+    81,
+    55,
+    31
+  ],
+  "initial_states_per_angle": 138105,
+  "source_sha256": {
+    "native_mf.cpp": "16af6956d881dc9b726bc34b06412d25e4f5fd00fff2ae02dbdab535b53941f9",
+    "native_mf": "c213dede1f0a91faf6bb599f69a69848bcd615700f56a63d87f81d94a26a7fad",
+    "run_grid.py": "502f5cb27accf8cb37323bea90ea92db67403a21e5952b6df3d5dbf3cf890f8f",
+    "mf_source_manifest.json": "a68e2720e77dd449c1876778248fed7f0bef1fd5ddc23e806566a598f58a519e",
+    "matlab/mf210_force_scalar.m": "6357f53b09a143f185d6f4b90f457bf833dc26d09a023dd95400729b46b5678f",
+    "matlab/mf210_forces.m": "b61291c65052ef153d81f91bb2dcb272d0e496602245a763f2eab417ee221b65",
+    "matlab/paper_config.m": "fa9dce0baba738255cda04996bc4b6bd463b8d573a37f942037a7349d5e6bde5",
+    "matlab/paper_initial.m": "4af0ce55d09284549e411e6e2dc8c9b5731ee362545a909748955894a8cdb2bd",
+    "matlab/paper_rhs.m": "0cdca91157f4a62164d657770aa7b5abb38f2d9bc088ab9cc84f3628ea5bf692",
+    "matlab/paper_simulate_grid.m": "afd504d724fe6f22c826d26b47a697c4cd0d398c44d5137cfe02a25bf67f6094",
+    "matlab/paper_step.m": "aa9422ea10f514b1ee6a9652bb1ffe0944ae3f5a394bca8c33072e6cb83049fe"
+  },
+  "original_MF_source": {
+    "original_source": "/workspace/.matlab-env/reference09_full210_code/fullcar_model.m",
+    "source_sha256": "29c4062948d71dd794d042233025718097ad9654526f64fd7699f63321cd0e7c",
+    "extracted_functions": [
+      "calc_combined_tire_force_scalar",
+      "calc_longitudinal_peak_mu",
+      "calc_mf_longitudinal_scalar",
+      "calc_mf_lateral_scalar",
+      "normalize_wear_case"
+    ],
+    "verbatim_block_sha256": "a26aaa7cc85deb673dbb7c78d0ae0fb307a4aa472d64aec546804a3f90348783",
+    "Fz0_N": 5425,
+    "force_min_N": 100,
+    "force_max_N": 16000,
+    "mu_reference": 0.9,
+    "mu_scaling": "mu_road / 0.9; no peak renormalization",
+    "wear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "MF_combined_slip": "original longitudinal-priority friction ellipse; no complete MF6.2 R-coefficients available",
+    "private_experiment": true,
+    "paper_exact_reproduction": false,
+    "original_full_tire_transient_model": false,
+    "model": "quasisteady MF free-rolling model with dynamic normal-reaction extension",
+    "model_dimension": 5,
+    "native_source_sha256": "16af6956d881dc9b726bc34b06412d25e4f5fd00fff2ae02dbdab535b53941f9",
+    "verbatim_native_tire_block_sha256": "3fa69ba204f787d640eba4d783f7594e0b9644b0bae122c0d448637ecde0da12",
+    "verbatim_native_tire_block_bytes": 1255,
+    "native_tire_block_reference": "/workspace/suspension/validation/fig6_mf_roll_reaction/native_mf.cpp",
+    "native_tire_block_reference_sha256": "87a9bce11db92b9128775bfb0a14da1fe27454036f34f801cf4c301cf87076a4",
+    "original_tire_force_kernel_preserved": true,
+    "original_tire_initialization_preserved": false,
+    "initialization_note": "New explicit comparison replaces hidden tire transients with instantaneous algebraic alpha and shifted zero-Fx kappa; no original210 files changed",
+    "normal_load_equation": "PRIVATE dynamic roll-reaction extension: D=(m*h-ms*hphi)*ay+Cphi*p+Kphi*phi+ms*g*hphi*(sin(phi)-phi); baseline m*h-ms*hphi=0",
+    "free_rolling_root": "kappa=-Shx=0.001635-0.0025297*((clippedFz-5425)/5425), source longitudinal Vx=0",
+    "force_offset_note": "All source force shifts and lateral vertical offsets retained",
+    "body_dynamics": "Paper Eqs2/3/4 unchanged from transient comparator; fixed u",
+    "integration": {
+      "observation_dt_s": 0.01,
+      "RK4_substeps": 20,
+      "integration_dt_s": 0.0005
+    },
+    "source_comparator_path": "/workspace/suspension/validation/fig6_mf_roll_reaction"
+  },
+  "body_parameters": "Paper Table1; explicit ms=1300,hphi=.54 closure",
+  "load_transfer_model": "Dynamic roll-reaction extension; not literal printed paper Eq11",
+  "roll_reaction_equation": "D=Cphi*p+Kphi*phi+ms*g*hphi*(sin(phi)-phi), baseline m*h-ms*hphi=0",
+  "force_load_clip_N": [
+    100,
+    16000
+  ],
+  "force_activation": "clippedFz>100N; rawFz>0 required for stability",
+  "friction_scaling": "mu/.9; no peak renormalization",
+  "longitudinal_slip": "kappa=-Shx=0.001635-0.0025297*((clippedFz-5425)/5425); original MF Vx=0",
+  "lateral_slip": "Instantaneous atan2(vw,us) in exact original wheel frame; original +/-0.1m/s denominator guard",
+  "force_offsets_retained": true,
+  "nesting_constraints_used": false,
+  "roll_scaling_or_caps_applied": false,
+  "angle_specific_parameter_changes": false,
+  "hidden_state_clips_used": false
+}

@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "licensed_MATLAB_execution_claimed": false,
+  "standalone_source_sha256": "11d842cb17003ee36ee974ca7f42188870013761402de274efde00925d5ba045",
+  "frozen_native_source_identical": true,
+  "frozen_core_function_checks": [
+    {
+      "function": "paper_simulate_grid",
+      "same_code": true,
+      "sha256": "11f07cf46e9d1faa363dd6e5b391d091d208afe4462aca687d8737107c0b5ead"
+    },
+    {
+      "function": "paper_initial",
+      "same_code": true,
+      "sha256": "bf52b1443cffc26cd9657fb3dca2109ba8acf59209c893f06bc55a4ab5066e4b"
+    },
+    {
+      "function": "paper_step",
+      "same_code": true,
+      "sha256": "9f2de2849ff440729cc3a4de62f71d505a9be691b2b971d367142f1b1d5dfb49"
+    },
+    {
+      "function": "paper_rhs",
+      "same_code": true,
+      "sha256": "149d3571f22aaab532faa448a93367e8b49fe699583703936b13828d227f452a"
+    },
+    {
+      "function": "mf210_forces",
+      "same_code": true,
+      "sha256": "0c583eb7310053c70edfa0ed381b88fd6554a460b4f18e0b5bfd809c8ae6a099"
+    },
+    {
+      "function": "compute_mf210_body_equilibria",
+      "same_code": true,
+      "sha256": "c3191a49b70b0c4fb3229a4e5dabbe06f9aa387785cbae02ff8f36f06bd5e274"
+    },
+    {
+      "function": "body_newton",
+      "same_code": true,
+      "sha256": "ca15df504564e452964cb46bec4b9799da3c85961b4bc5567734d0a55b98792d"
+    },
+    {
+      "function": "body_equilibrium_residual",
+      "same_code": true,
+      "sha256": "d64d12e4d4b12a96125878d9606597938f87ace5a7818de483930dedadf97f4b"
+    },
+    {
+      "function": "body_dynamic_jacobian",
+      "same_code": true,
+      "sha256": "76891a2cc58d43027b321614c00b857d6417dcde5888d453d946bbf6600c48ba"
+    },
+    {
+      "function": "describe_body_equilibrium",
+      "same_code": true,
+      "sha256": "bdd0a7c0504e104978644f05069aae6d902346fe86baf7cf7692d80defe6f23e"
+    }
+  ],
+  "final_saved_artifact_checks": [
+    {
+      "angle_deg": 0,
+      "file_sha256": "3f7bc4c9e926d2ed2970d090ed911073b102e37b575de564c2fa5ae6eb4d8f42",
+      "raw_result_identical": true,
+      "raw_configuration_identical": true,
+      "extreme_vertices": 8,
+      "planar_quadrilateral_faces": 6,
+      "boundary_edges": 12,
+      "maximum_planarity_residual": 0.0,
+      "raw_unstable_inside": 0,
+      "stable_grid_nodes_inside": 2800,
+      "volume": 0.3605333333333334,
+      "projected_roll_span": 0.3466666666666667
+    },
+    {
+      "angle_deg": 3.5,
+      "file_sha256": "e32180b9c4e7a99db851eb002672baf48b818b7b712787780191b8a68d12827d",
+      "raw_result_identical": true,
+      "raw_configuration_identical": true,
+      "extreme_vertices": 8,
+      "planar_quadrilateral_faces": 6,
+      "boundary_edges": 12,
+      "maximum_planarity_residual": 0.0,
+      "raw_unstable_inside": 0,
+      "stable_grid_nodes_inside": 2112,
+      "volume": 0.2522666666666667,
+      "projected_roll_span": 0.29333333333333333
+    },
+    {
+      "angle_deg": 7,
+      "file_sha256": "3c0fe2b9cfe06b33375e6c3e744093c763e4a44c0ab05e4430b3541ae1c210cf",
+      "raw_result_identical": true,
+      "raw_configuration_identical": true,
+      "extreme_vertices": 8,
+      "planar_quadrilateral_faces": 6,
+      "boundary_edges": 12,
+      "maximum_planarity_residual": 6.916795459555903e-18,
+      "raw_unstable_inside": 0,
+      "stable_grid_nodes_inside": 632,
+      "volume": 0.08,
+      "projected_roll_span": 0.21333333333333335
+    }
+  ],
+  "pairwise_containment": [
+    {
+      "outer_angle": 0,
+      "inner_angle": 3.5,
+      "contained": false,
+      "max_outside_distance": 0.25
+    },
+    {
+      "outer_angle": 3.5,
+      "inner_angle": 7,
+      "contained": false,
+      "max_outside_distance": 0.25
+    },
+    {
+      "outer_angle": 0,
+      "inner_angle": 7,
+      "contained": false,
+      "max_outside_distance": 0.5
+    }
+  ],
+  "raw_roll_bound_shrink_claimed": false,
+  "continuous_stability_certificate": false,
+  "remaining_scope_note": "Observed inner-region roll spans narrow; actual regions are not nested; MF tire and extended roll-load formula differ from the original paper."
+}
