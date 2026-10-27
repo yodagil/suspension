@@ -9,8 +9,8 @@
       "speed_kmh": 90,
       "mu_road": 0.5,
       "front_steer_deg": 1,
-      "completed_wear_cases": 0,
-      "current_wear_case": 1,
+      "completed_wear_cases": 1,
+      "current_wear_case": 2,
       "wear_total": 5,
       "phase": "simulating"
     }
@@ -28,7 +28,7 @@
     "run_stability_sweep.m": "fbeb6fcf6719021846668f2a2e242be5a3b74f20d724f9a96dfe7cf0e96ec640",
     "native_stability_masks.m": "189a6bd3dd6f1417a4c6208d731b9bef1033ec5b87da2561e8e77187066effab"
   },
-  "updated_utc": "2026-10-27T16:50:42+00:00",
+  "updated_utc": "2026-10-27T16:56:25+00:00",
   "scenarios": [
     {
       "filename": "stable_point_50kph_0.9mu_0deg.mat",
