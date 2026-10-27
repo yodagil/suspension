@@ -1,8 +1,8 @@
 # 수정된 안정영역 MAT 결과
 
-**수정 코드 완료·검증 결과: 154/210개. 계산 진행 중.** 완료된 MAT를 검증한 뒤 순서대로 자동 업로드합니다.
+**수정 코드 완료·검증 결과: 155/210개. 계산 진행 중.** 완료된 MAT를 검증한 뒤 순서대로 자동 업로드합니다.
 
-현재: 90 km/h · mu=0.7 · 0° · 마모 5/5 (5/5 완료).
+현재: 90 km/h · mu=0.7 · 0.5° · 마모 1/5 (0/5 완료).
 [진행 상태 JSON](reference09_progress.json)
 
 실험 조건: 속도 50·60·70·80·90·100 km/h, 노면 마찰계수 0.9·0.8·0.7·0.6·0.5, 앞 휠 조향각 0·0.5·1·1.5·2·2.5·3°. 바퀴 조향각은 [angle, angle, 0, 0]입니다.
@@ -171,3 +171,4 @@
 | 90 | 0.8 | 2 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_90kph_0.8mu_2deg.mat) | 2/5 |
 | 90 | 0.8 | 2.5 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_90kph_0.8mu_2.5deg.mat) | 0/5 |
 | 90 | 0.8 | 3 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_90kph_0.8mu_3deg.mat) | 0/5 |
+| 90 | 0.7 | 0 | [다운로드](https://raw.githubusercontent.com/yodagil/suspension/main/results/stable_point_90kph_0.7mu_0deg.mat) | 5/5 |
