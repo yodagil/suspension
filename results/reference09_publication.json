@@ -1,22 +1,22 @@
 {
   "active_progress": {
-    "completed": 178,
+    "completed": 179,
     "total": 210,
     "run_version": "mu-sweep-v3-reference09-matlabgrid",
     "producer_phase": "running",
     "current": {
-      "filename": "stable_point_100kph_0.9mu_1.5deg.mat",
+      "filename": "stable_point_100kph_0.9mu_2deg.mat",
       "speed_kmh": 100,
       "mu_road": 0.9,
-      "front_steer_deg": 1.5,
-      "completed_wear_cases": 4,
-      "current_wear_case": 5,
+      "front_steer_deg": 2,
+      "completed_wear_cases": 0,
+      "current_wear_case": 1,
       "wear_total": 5,
       "phase": "simulating"
     }
   },
   "run_version": "mu-sweep-v3-reference09-matlabgrid",
-  "completed_scenarios": 178,
+  "completed_scenarios": 179,
   "total_scenarios": 210,
   "producer_phase": "running",
   "source_sha256": {
@@ -28,7 +28,7 @@
     "run_stability_sweep.m": "fbeb6fcf6719021846668f2a2e242be5a3b74f20d724f9a96dfe7cf0e96ec640",
     "native_stability_masks.m": "189a6bd3dd6f1417a4c6208d731b9bef1033ec5b87da2561e8e77187066effab"
   },
-  "updated_utc": "2026-10-28T03:27:56+00:00",
+  "updated_utc": "2026-10-28T03:32:33+00:00",
   "scenarios": [
     {
       "filename": "stable_point_50kph_0.9mu_0deg.mat",
@@ -9639,6 +9639,60 @@
           "outer_volume": 1.005451851851852,
           "numerical_failure_count": 0,
           "hard_state_guard_count": 6098
+        }
+      ]
+    },
+    {
+      "filename": "stable_point_100kph_0.9mu_1.5deg.mat",
+      "speed_kmh": 100,
+      "mu_road": 0.9,
+      "front_steer_deg": 1.5,
+      "sha256": "7e7a1adbc4ce74999d58e46d0eb2e12ee7b7ff747e58a6d751e4c6995dbccf2b",
+      "cases": [
+        {
+          "wear_case": 1,
+          "stable_count": 3752,
+          "inner_valid": true,
+          "inner_volume": 0.8800000000000001,
+          "outer_volume": 1.098725925925926,
+          "numerical_failure_count": 0,
+          "hard_state_guard_count": 2606
+        },
+        {
+          "wear_case": 2,
+          "stable_count": 3600,
+          "inner_valid": true,
+          "inner_volume": 0.7405037037037038,
+          "outer_volume": 1.1017481481481481,
+          "numerical_failure_count": 0,
+          "hard_state_guard_count": 1242
+        },
+        {
+          "wear_case": 3,
+          "stable_count": 0,
+          "inner_valid": false,
+          "inner_volume": null,
+          "outer_volume": null,
+          "numerical_failure_count": 0,
+          "hard_state_guard_count": 0
+        },
+        {
+          "wear_case": 4,
+          "stable_count": 3657,
+          "inner_valid": true,
+          "inner_volume": 0.8530962962962962,
+          "outer_volume": 1.1109925925925928,
+          "numerical_failure_count": 0,
+          "hard_state_guard_count": 3743
+        },
+        {
+          "wear_case": 5,
+          "stable_count": 3388,
+          "inner_valid": true,
+          "inner_volume": 0.5480296296296296,
+          "outer_volume": 1.0039703703703704,
+          "numerical_failure_count": 0,
+          "hard_state_guard_count": 6017
         }
       ]
     }
