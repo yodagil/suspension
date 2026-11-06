@@ -1,0 +1,17 @@
+{
+  "completed_scenarios": 210,
+  "total_scenarios": 210,
+  "completed_simulations": 85050,
+  "total_simulations": 85050,
+  "status_counts": {
+    "converged": 83274,
+    "hard_guard": 799,
+    "not_converged_time_limit": 977
+  },
+  "extension_completed": 2520,
+  "extension_total": 2520,
+  "phase": "completed",
+  "updated_utc": "2026-11-06T08:21:15.276483+00:00",
+  "mat_file": "steady_state_lookup_210x5x81.mat",
+  "all_core_checks_passed": true
+}

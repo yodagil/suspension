@@ -1,0 +1,25 @@
+{
+  "all_core_checks_passed": true,
+  "complete": true,
+  "combinations": 85050,
+  "suspension_modes": 81,
+  "converged": 83274,
+  "constraint_safe_steady": 63698,
+  "converged_constraint_unsafe": 19576,
+  "not_converged_300s": 977,
+  "hard_guard_terminated": 799,
+  "additional_time_limit_checks": 2520,
+  "output_file": "steady_state_lookup_210x5x81.mat",
+  "output_bytes": 22266579,
+  "output_sha256": "b18f2c4a11967444a7ff0186cd6ad850e6c44a6d16e090d9a5d3e1c09f814aed",
+  "final_simulation_rows_sha256": "2b5b92a893867cd64bfa99175141399a403f974fe2873bfd8f4a35b94693638e",
+  "validation_reports": [
+    "base_audit.json",
+    "equilibrium_continuation_validation.json",
+    "independent_mat_audit.json",
+    "independent_row_audit.json",
+    "native_octave_validation.json",
+    "octave_mat_load_validation.json",
+    "zero_ic_replay_validation.json"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "fullcar-steady-state-lut-validation-v1",
+  "complete": true,
+  "completed_count": 85050,
+  "expected_count": 85050,
+  "all_checks_passed": true,
+  "array_size": [
+    6,
+    5,
+    7,
+    5,
+    81
+  ],
+  "status_counts": {
+    "not_simulated": 0,
+    "converged": 83274,
+    "not_converged_time_limit": 977,
+    "numerical_failure": 0,
+    "hard_guard": 799
+  },
+  "converged_count": 83274,
+  "usable_safe_steady_count": 63698,
+  "input_jsonl": [
+    {
+      "name": "rows.jsonl",
+      "sha256": "2b5b92a893867cd64bfa99175141399a403f974fe2873bfd8f4a35b94693638e"
+    }
+  ],
+  "output_file": "steady_state_lookup_210x5x81.mat",
+  "output_bytes": 22266579,
+  "output_sha256": "b18f2c4a11967444a7ff0186cd6ad850e6c44a6d16e090d9a5d3e1c09f814aed",
+  "checks": [
+    "unique bounded row ids",
+    "row-id-to-condition mapping",
+    "all 81 n/s/h mode stiffness vectors",
+    "950 mA CDC currents",
+    "five tire-wear vectors",
+    "convergence certificate thresholds",
+    "nonconverged/missing outputs remain NaN",
+    "MAT round-trip exact arrays",
+    "MAT final state round-trip",
+    "file under 90 MiB"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "all_passed": true,
+  "description": "Full seven-second zero-IC direct-start asymmetric n/s/h/h suspension replay against the unchanged frozen M-code.",
+  "input": {
+    "speed_kmh": 50,
+    "mu_road": 0.9,
+    "steer_deg": 2,
+    "wear_index": 1,
+    "mode": "nshh"
+  },
+  "samples": 701,
+  "Ts": 0.01,
+  "Nsub": 20,
+  "tail_samples": 201,
+  "dynamic_state_indices": "MATLAB 1:29",
+  "first5_reason": 0,
+  "total_reason": 0,
+  "native_converged_by_7s": true,
+  "checks": [
+    {
+      "field": "state_final32",
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 1.9128494002683737e-16
+    },
+    {
+      "field": "state_mean29",
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 1.7766064305376918e-16
+    },
+    {
+      "field": "p2p29",
+      "max_absolute_error": 4.263256414560601e-14,
+      "max_scaled_error": 4.2632564145369126e-14
+    },
+    {
+      "field": "rhs_max_abs29",
+      "max_absolute_error": 6.689891313066381e-13,
+      "max_scaled_error": 6.689891312725542e-13
+    },
+    {
+      "field": "adjacent_mean_difference29",
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_scaled_error": 2.8421709430300206e-14
+    }
+  ]
+}

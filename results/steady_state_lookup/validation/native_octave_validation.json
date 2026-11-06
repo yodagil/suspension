@@ -1,0 +1,1084 @@
+{
+  "all_passed": true,
+  "fixture_mode_count": 81,
+  "rhs_checks": 81,
+  "rk4_checks": 25,
+  "max_scaled_error": 1.6876945629006796e-15,
+  "max_absolute_error": 5.684341886080802e-14,
+  "source_frozen_unchanged": true,
+  "embedded_source_exact": true,
+  "native_executable_sha256": "a59152cb37ab2e2a6bfb7b14e0a8f070a71bc4c4975f05911f96cb7eea7cdd8e",
+  "adapter_source_sha256": "d196de0c7c50c1f9b07195f8d66baebb2eb8a7fa81fb5f4b3ce1075fd5b6e40e",
+  "source_sha256": {
+    "fullcar_model.m": "29c4062948d71dd794d042233025718097ad9654526f64fd7699f63321cd0e7c",
+    "stability_run_signature.m": "c25efc66813b08d17f013fff1896ac76a7eb2695f0180e0a1980a296e0a459b4",
+    "native_accel.cpp": "bf9877ca3ff0a0a83ea0b09bfe2805694e80bea35c21d9f9730cd07752705be2",
+    "native_accel": "dc2cda5aeadc0019c79e4777fe5dcb0c2261bc73b0343b711857dc941dd0a0b2",
+    "stability_region.m": "f87d9cc2d9cc9a894b08cd5accc86f99721b9f90e97cb344230bdbdb9fcd3eec",
+    "run_stability_sweep.m": "fbeb6fcf6719021846668f2a2e242be5a3b74f20d724f9a96dfe7cf0e96ec640",
+    "native_stability_masks.m": "189a6bd3dd6f1417a4c6208d731b9bef1033ec5b87da2561e8e77187066effab"
+  },
+  "checks": [
+    {
+      "probe": "rhs",
+      "mode": "nnnn",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "step",
+      "mode": "nnnn",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 6.938893903907228e-18,
+      "max_scaled_error": 6.691392740672535e-18
+    },
+    {
+      "probe": "rhs",
+      "mode": "nnns",
+      "wear_index": 2,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "step",
+      "mode": "nnns",
+      "wear_index": 2,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "max_scaled_error": 1.3229263113050333e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "nnnh",
+      "wear_index": 3,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "step",
+      "mode": "nnnh",
+      "wear_index": 3,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 5.551115123125783e-17,
+      "max_scaled_error": 4.6146787104597826e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "nnsn",
+      "wear_index": 4,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "step",
+      "mode": "nnsn",
+      "wear_index": 4,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 5.551115123125783e-17,
+      "max_scaled_error": 4.98059850062039e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "nnss",
+      "wear_index": 5,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "step",
+      "mode": "nnss",
+      "wear_index": 5,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "max_scaled_error": 1.2951960238969527e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "nnsh",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 1.5987211554602254e-14,
+      "max_scaled_error": 1.6876945629006796e-15
+    },
+    {
+      "probe": "step",
+      "mode": "nnsh",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 1.1102230246251565e-16,
+      "max_scaled_error": 8.149033901428915e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "nnhn",
+      "wear_index": 2,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 5.684341886080802e-14,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "step",
+      "mode": "nnhn",
+      "wear_index": 2,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 2.7755575615628914e-17,
+      "max_scaled_error": 2.5331720774162983e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "nnhs",
+      "wear_index": 3,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "step",
+      "mode": "nnhs",
+      "wear_index": 3,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 2.7755575615628914e-17,
+      "max_scaled_error": 2.2299315659747733e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "nnhh",
+      "wear_index": 4,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "step",
+      "mode": "nnhh",
+      "wear_index": 4,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 5.551115123125783e-17,
+      "max_scaled_error": 4.4686408857732686e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "nsnn",
+      "wear_index": 5,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "step",
+      "mode": "nsnn",
+      "wear_index": 5,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "max_scaled_error": 1.2648565469945111e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "nsns",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "step",
+      "mode": "nsns",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 2.7755575615628914e-17,
+      "max_scaled_error": 2.324309800854576e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "nsnh",
+      "wear_index": 2,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 1.2434497875801753e-14,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "nssn",
+      "wear_index": 3,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "nsss",
+      "wear_index": 4,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "nssh",
+      "wear_index": 5,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "nshn",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "step",
+      "mode": "nshn",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "max_scaled_error": 1.2809214214689938e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "nshs",
+      "wear_index": 2,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "nshh",
+      "wear_index": 3,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "nhnn",
+      "wear_index": 4,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 5.684341886080802e-14,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "nhns",
+      "wear_index": 5,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "nhnh",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "step",
+      "mode": "nhnh",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 5.551115123125783e-17,
+      "max_scaled_error": 4.449269992571249e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "nhsn",
+      "wear_index": 2,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.2434497875801753e-14,
+      "max_scaled_error": 1.0231331795232554e-15
+    },
+    {
+      "probe": "rhs",
+      "mode": "nhss",
+      "wear_index": 3,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "nhsh",
+      "wear_index": 4,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "nhhn",
+      "wear_index": 5,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "nhhs",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "step",
+      "mode": "nhhs",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "max_scaled_error": 1.2808218386330976e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "nhhh",
+      "wear_index": 2,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 8.66717894546409e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "snnn",
+      "wear_index": 3,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 3.552713678800501e-15,
+      "max_scaled_error": 4.569542631102074e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "snns",
+      "wear_index": 4,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 4.811291785876614e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "snnh",
+      "wear_index": 5,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 5.333116832587421e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "snsn",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 3.552713678800501e-15,
+      "max_scaled_error": 4.569542631102074e-16
+    },
+    {
+      "probe": "step",
+      "mode": "snsn",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "max_scaled_error": 1.2953488284558716e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "snss",
+      "wear_index": 2,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_scaled_error": 4.811291785876614e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "snsh",
+      "wear_index": 3,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 3.552713678800501e-15,
+      "max_scaled_error": 4.438165824785078e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "snhn",
+      "wear_index": 4,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 5.856793890323156e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "snhs",
+      "wear_index": 5,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 5.294503756105781e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "snhh",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_scaled_error": 8.531846832176768e-16
+    },
+    {
+      "probe": "step",
+      "mode": "snhh",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 5.551115123125783e-17,
+      "max_scaled_error": 4.134259450379206e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "ssnn",
+      "wear_index": 2,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 4.569542631102074e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "ssns",
+      "wear_index": 3,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.791773686708865e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "ssnh",
+      "wear_index": 4,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_scaled_error": 4.438165824785078e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "sssn",
+      "wear_index": 5,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 3.552713678800501e-15,
+      "max_scaled_error": 4.569542631102074e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "ssss",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 5.699091229048867e-16
+    },
+    {
+      "probe": "step",
+      "mode": "ssss",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "max_scaled_error": 1.343196606441265e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "sssh",
+      "wear_index": 2,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 3.552713678800501e-15,
+      "max_scaled_error": 4.438165824785078e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "sshn",
+      "wear_index": 3,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 5.294503756105781e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "sshs",
+      "wear_index": 4,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 5.294503756105781e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "sshh",
+      "wear_index": 5,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 5.294503756105781e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "shnn",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 4.569542631102074e-16
+    },
+    {
+      "probe": "step",
+      "mode": "shnn",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 6.938893903907228e-18,
+      "max_scaled_error": 6.716958083705807e-18
+    },
+    {
+      "probe": "rhs",
+      "mode": "shns",
+      "wear_index": 2,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 4.811291785876614e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "shnh",
+      "wear_index": 3,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 4.438165824785078e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "shsn",
+      "wear_index": 4,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 4.569542631102074e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "shss",
+      "wear_index": 5,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 7.236974361228018e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "shsh",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 3.552713678800501e-15,
+      "max_scaled_error": 4.438165824785078e-16
+    },
+    {
+      "probe": "step",
+      "mode": "shsh",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 2.7755575615628914e-17,
+      "max_scaled_error": 2.251970727850822e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "shhn",
+      "wear_index": 2,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 5.294503756105781e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "shhs",
+      "wear_index": 3,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 5.294503756105781e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "shhh",
+      "wear_index": 4,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_scaled_error": 5.294503756105781e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hnnn",
+      "wear_index": 5,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hnns",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "step",
+      "mode": "hnns",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "max_scaled_error": 1.3228482370528183e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "hnnh",
+      "wear_index": 2,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hnsn",
+      "wear_index": 3,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hnss",
+      "wear_index": 4,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hnsh",
+      "wear_index": 5,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hnhn",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "step",
+      "mode": "hnhn",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 2.7755575615628914e-17,
+      "max_scaled_error": 2.473551789585141e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "hnhs",
+      "wear_index": 2,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hnhh",
+      "wear_index": 3,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 8.881784197001252e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hsnn",
+      "wear_index": 4,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hsns",
+      "wear_index": 5,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hsnh",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "step",
+      "mode": "hsnh",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 5.551115123125783e-17,
+      "max_scaled_error": 4.075229749016447e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "hssn",
+      "wear_index": 2,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hsss",
+      "wear_index": 3,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hssh",
+      "wear_index": 4,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hshn",
+      "wear_index": 5,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hshs",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "step",
+      "mode": "hshs",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 4.163336342344337e-17,
+      "max_scaled_error": 3.842338841363757e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "hshh",
+      "wear_index": 2,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 2.842170943040401e-14,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hhnn",
+      "wear_index": 3,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 0.0,
+      "max_absolute_error": 8.881784197001252e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hhns",
+      "wear_index": 4,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 5.329070518200751e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hhnh",
+      "wear_index": 5,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 3.0,
+      "max_absolute_error": 8.881784197001252e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hhsn",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 4.263256414560601e-14,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "step",
+      "mode": "hhsn",
+      "wear_index": 1,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "max_scaled_error": 1.3178979773314494e-17
+    },
+    {
+      "probe": "rhs",
+      "mode": "hhss",
+      "wear_index": 2,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 2.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hhsh",
+      "wear_index": 3,
+      "speed_kmh": 100.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 1.4210854715202004e-14,
+      "max_scaled_error": 8.759286019333842e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hhhn",
+      "wear_index": 4,
+      "speed_kmh": 50.0,
+      "mu_road": 0.5,
+      "steer_deg": 0.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hhhs",
+      "wear_index": 5,
+      "speed_kmh": 100.0,
+      "mu_road": 0.5,
+      "steer_deg": 2.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "rhs",
+      "mode": "hhhh",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 7.105427357601002e-15,
+      "max_scaled_error": 8.122732565539836e-16
+    },
+    {
+      "probe": "step",
+      "mode": "hhhh",
+      "wear_index": 1,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "steer_deg": 3.0,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "max_scaled_error": 1.3178136125082737e-17
+    }
+  ],
+  "validation_wall_seconds": 0.8133725899970159
+}

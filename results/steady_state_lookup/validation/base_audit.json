@@ -1,0 +1,67 @@
+{
+  "all_passed": true,
+  "scope": "complete",
+  "rows_checked": 85050,
+  "scenario_chunks_checked": 1,
+  "statuses": {
+    "converged": 81731,
+    "hard_guard": 799,
+    "not_converged_time_limit": 2520
+  },
+  "checks": {
+    "input_metadata_rows": 85050,
+    "recomputed_window_metrics": 85050,
+    "convergence_flags_consistent": 81731
+  },
+  "normal_mode_original_5s_exact_comparisons": 1050,
+  "normal_mode_original_5s_partial_reason_subset_comparisons": 0,
+  "converged_but_currently_constraint_unsafe": 18033,
+  "unsafe_examples": [
+    {
+      "row_id": 25199,
+      "speed_kmh": 60,
+      "mu_road": 0.6,
+      "steer_deg": 3,
+      "wear_id": 2,
+      "mode": "nnhh",
+      "lastwindow_reason": 1
+    },
+    {
+      "row_id": 25200,
+      "speed_kmh": 60,
+      "mu_road": 0.6,
+      "steer_deg": 3,
+      "wear_id": 2,
+      "mode": "nsnn",
+      "lastwindow_reason": 1
+    },
+    {
+      "row_id": 25202,
+      "speed_kmh": 60,
+      "mu_road": 0.6,
+      "steer_deg": 3,
+      "wear_id": 2,
+      "mode": "nsnh",
+      "lastwindow_reason": 1
+    },
+    {
+      "row_id": 25206,
+      "speed_kmh": 60,
+      "mu_road": 0.6,
+      "steer_deg": 3,
+      "wear_id": 2,
+      "mode": "nshn",
+      "lastwindow_reason": 1
+    },
+    {
+      "row_id": 25208,
+      "speed_kmh": 60,
+      "mu_road": 0.6,
+      "steer_deg": 3,
+      "wear_id": 2,
+      "mode": "nshh",
+      "lastwindow_reason": 1
+    }
+  ],
+  "all_frozen_sources_unchanged": true
+}

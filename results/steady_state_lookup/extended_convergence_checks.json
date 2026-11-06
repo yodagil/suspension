@@ -1,0 +1,17 @@
+{
+  "base_status_counts": {
+    "converged": 81731,
+    "hard_guard": 799,
+    "not_converged_time_limit": 2520
+  },
+  "final_status_counts": {
+    "converged": 83274,
+    "hard_guard": 799,
+    "not_converged_time_limit": 977
+  },
+  "base_simulation_count": 85050,
+  "additional_simulation_count": 2520,
+  "extended_time_limit_s": 300.0,
+  "final_rows_sha256": "2b5b92a893867cd64bfa99175141399a403f974fe2873bfd8f4a35b94693638e",
+  "completed_utc": "2026-11-06T08:18:14.484631+00:00"
+}

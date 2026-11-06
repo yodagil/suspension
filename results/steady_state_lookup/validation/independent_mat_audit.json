@@ -1,0 +1,24 @@
+{
+  "all_passed": true,
+  "complete": true,
+  "completed_count": 85050,
+  "rows_crosschecked": 85050,
+  "shape": [
+    6,
+    5,
+    7,
+    5,
+    81
+  ],
+  "mode_count": 81,
+  "suspension_order": "n,s,h per FL FR RL RR; RR fastest",
+  "numeric_mu_axis": "ascending",
+  "output_mapping": "vc=x1, r=x2, phi=x4, last two-second mean only if converged",
+  "converged_count": 83274,
+  "safe_steady_count": 63698,
+  "mat_sha256": "b18f2c4a11967444a7ff0186cd6ad850e6c44a6d16e090d9a5d3e1c09f814aed",
+  "input_jsonl": {
+    "name": "rows.jsonl",
+    "sha256": "2b5b92a893867cd64bfa99175141399a403f974fe2873bfd8f4a35b94693638e"
+  }
+}
