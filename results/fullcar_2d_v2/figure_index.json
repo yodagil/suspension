@@ -286,6 +286,13 @@
       "sha256": "67cd3b6a357380dc11470fb579cab08b4227ba647541a15ad0a6dc20c45c9fd1",
       "source_mat": "fullcar2d_v2_60kph_mu0.9_delta+2.5_trim_trim.mat",
       "source_sha256": "3efe376967287d1fb2951d58c0b91f8fcfbcf87826b7fdefac8c362d44c8658b"
+    },
+    {
+      "filename": "fullcar2d_v2_60kph_mu0.9_delta+3_trim_trim.png",
+      "bytes": 328675,
+      "sha256": "06a8522f224fcf18f7a2a42dab99171c82b69af3578e63c4fc261a88e301a713",
+      "source_mat": "fullcar2d_v2_60kph_mu0.9_delta+3_trim_trim.mat",
+      "source_sha256": "0fd037454b9261de236b02f309f7d7166b8c224d75079f8802ff65838af4e408"
     }
   ],
   "overview_figures": [
@@ -358,8 +365,22 @@
         "fullcar2d_v2_50kph_mu0.5_delta+2.5_trim_trim.mat",
         "fullcar2d_v2_50kph_mu0.5_delta+3_trim_trim.mat"
       ]
+    },
+    {
+      "filename": "overview_selected_60kph_mu0p9_trim_trim.png",
+      "bytes": 572024,
+      "sha256": "fbc7b8a7c9eda042c3497964ca20b483c210d5d2e9e1b932c50b64c73852e955",
+      "source_mats": [
+        "fullcar2d_v2_60kph_mu0.9_delta+0_trim_trim.mat",
+        "fullcar2d_v2_60kph_mu0.9_delta+0.5_trim_trim.mat",
+        "fullcar2d_v2_60kph_mu0.9_delta+1_trim_trim.mat",
+        "fullcar2d_v2_60kph_mu0.9_delta+1.5_trim_trim.mat",
+        "fullcar2d_v2_60kph_mu0.9_delta+2_trim_trim.mat",
+        "fullcar2d_v2_60kph_mu0.9_delta+2.5_trim_trim.mat",
+        "fullcar2d_v2_60kph_mu0.9_delta+3_trim_trim.mat"
+      ]
     }
   ],
   "plotter_sha256": "4e08a4a6485a1d7a51515da2c6fe9bbc1c3517665924855bad4ba31f6289cdfb",
-  "updated_utc": "2026-11-10T17:14:06+00:00"
+  "updated_utc": "2026-11-10T17:15:10+00:00"
 }
