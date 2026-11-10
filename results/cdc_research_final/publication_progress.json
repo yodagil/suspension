@@ -1,17 +1,17 @@
 {
-  "completed": 29,
+  "completed": 30,
   "total": 210,
   "producer_phase": "running",
   "current": {
-    "scenario_index": 30,
+    "scenario_index": 31,
     "speed_kmh": 50,
     "mu_road": 0.5,
-    "front_steer_deg": 0.5,
+    "front_steer_deg": 1,
     "completed_wear_cases": 0,
     "current_wear_case": 1,
     "wear_total": 5
   },
-  "producer_completed_scenarios": 29,
+  "producer_completed_scenarios": 30,
   "grid_size": [
     61,
     121
@@ -29,5 +29,5 @@
     5,
     10
   ],
-  "observed_utc": "2026-11-10T18:45:11+00:00"
+  "observed_utc": "2026-11-10T18:45:44+00:00"
 }
