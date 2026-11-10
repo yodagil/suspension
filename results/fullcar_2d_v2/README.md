@@ -17,4 +17,4 @@ MAT 변수명은 `STABILITY2D`입니다. `stable_points`는 초기 `[vc0, r0]` �
 | 50 | 0.9 | 1 | [MAT](fullcar2d_v2_50kph_mu0.9_delta+1_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.9_delta+1_trim_trim.png) | 1529, 1587, 1862, 1474, 1651 | 1, 2, 3, 4, 5 |
 | 50 | 0.9 | 1.5 | [MAT](fullcar2d_v2_50kph_mu0.9_delta+1.5_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.9_delta+1.5_trim_trim.png) | 1553, 1602, 1872, 1487, 1664 | 1, 2, 3, 4, 5 |
 | 50 | 0.9 | 2 | [MAT](fullcar2d_v2_50kph_mu0.9_delta+2_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.9_delta+2_trim_trim.png) | 1585, 1622, 1856, 1520, 1687 | 1, 2, 3, 4, 5 |
-| 50 | 0.9 | 2.5 | [MAT](fullcar2d_v2_50kph_mu0.9_delta+2.5_trim_trim.mat) | 생성 중 | 1597, 1649, 1859, 1560, 1720 | 1, 2, 3, 4, 5 |
+| 50 | 0.9 | 2.5 | [MAT](fullcar2d_v2_50kph_mu0.9_delta+2.5_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.9_delta+2.5_trim_trim.png) | 1597, 1649, 1859, 1560, 1720 | 1, 2, 3, 4, 5 |
