@@ -13,4 +13,4 @@ MAT 변수명은 `STABILITY2D`입니다. `stable_points`는 초기 `[vc0, r0]` �
 | 속도 km/h | μ | 앞 휠 조향각 ° | MAT | 2D 그림 | 선택점 수, 마모 1~5 | 격자 경계 접촉 |
 |---|---|---|---|---|---|---|
 | 50 | 0.9 | 0 | [MAT](fullcar2d_v2_50kph_mu0.9_delta+0_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.9_delta+0_trim_trim.png) | 1519, 1571, 1818, 1460, 1629 | 1, 2, 3, 4, 5 |
-| 50 | 0.9 | 0.5 | [MAT](fullcar2d_v2_50kph_mu0.9_delta+0.5_trim_trim.mat) | 생성 중 | 1523, 1578, 1832, 1466, 1634 | 1, 2, 3, 4, 5 |
+| 50 | 0.9 | 0.5 | [MAT](fullcar2d_v2_50kph_mu0.9_delta+0.5_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.9_delta+0.5_trim_trim.png) | 1523, 1578, 1832, 1466, 1634 | 1, 2, 3, 4, 5 |

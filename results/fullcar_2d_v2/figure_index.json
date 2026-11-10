@@ -6,9 +6,16 @@
       "sha256": "5752f6f87aa6d332e8d8718cd99f193fecd4ccdd33cf56e66c78170444b996ec",
       "source_mat": "fullcar2d_v2_50kph_mu0.9_delta+0_trim_trim.mat",
       "source_sha256": "2acde683a5d5b234ebf251036840b11b31d7bae619df5d329310ba1dc694266d"
+    },
+    {
+      "filename": "fullcar2d_v2_50kph_mu0.9_delta+0.5_trim_trim.png",
+      "bytes": 346054,
+      "sha256": "bf39321606b3cf2ea6c9d58d00eaf46c6ff3c40158fd44d4dc24a2a52ebac93e",
+      "source_mat": "fullcar2d_v2_50kph_mu0.9_delta+0.5_trim_trim.mat",
+      "source_sha256": "e6fb0a4962ffbf51441b8c4266695c873b61d8e9944176183f92f9284805487d"
     }
   ],
   "overview_figures": [],
   "plotter_sha256": "4e08a4a6485a1d7a51515da2c6fe9bbc1c3517665924855bad4ba31f6289cdfb",
-  "updated_utc": "2026-11-10T13:39:28+00:00"
+  "updated_utc": "2026-11-10T13:40:31+00:00"
 }
