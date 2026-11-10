@@ -39,6 +39,7 @@ SOURCES = {
     'fullcar_2d_v2/native/frozen_native_model.cpp',
     'fullcar_2d_v2/native/README.md', 'fullcar_2d_v2/native/SHA256SUMS.json',
 }
+OPTIONAL_SOURCE_PACKAGES = {'downloads/Fullcar_2D_V2_Full_Code.zip'}
 GENERATED = {'README.md','publication.json','publication_progress.json',
              'publication_summary.csv','figure_index.json'}
 CACHE = {}
@@ -173,7 +174,7 @@ def figures(items):
 
 
 def allowed_path(path):
-    if path in SOURCES:
+    if path in SOURCES or path in OPTIONAL_SOURCE_PACKAGES:
         return True
     prefix='results/fullcar_2d_v2/'
     if not path.startswith(prefix):
@@ -294,6 +295,7 @@ def publish(items,errors,hashes,cases,overviews,producer):
     sync_git()
     write_public_files(items,errors,hashes,cases,overviews,producer)
     paths=sorted(SOURCES)
+    paths += sorted(path for path in OPTIONAL_SOURCE_PACKAGES if (ROOT/path).is_file())
     paths += [str((OUT/name).relative_to(ROOT)) for name in GENERATED]
     for item in items:
         paths.append(str((OUT/item['filename']).relative_to(ROOT)))
