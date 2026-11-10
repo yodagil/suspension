@@ -46,7 +46,7 @@ MAT 변수는 **`RESEARCH2D`**이며 `CASE`는 마모 5종의 cell 배열입니�
 | 50 | 0.5 | 1.5 | [MAT](research_50kph_mu0.5_delta+1.5_I950_950_950_950_trim.mat) | [그림](figures/research_50kph_mu0.5_delta+1.5_I950_950_950_950_trim.png) | 197, 174, 136, 181, 143 | 없음 |
 | 50 | 0.5 | 2 | [MAT](research_50kph_mu0.5_delta+2_I950_950_950_950_trim.mat) | [그림](figures/research_50kph_mu0.5_delta+2_I950_950_950_950_trim.png) | 198, 178, 133, 185, 141 | 없음 |
 | 50 | 0.5 | 2.5 | [MAT](research_50kph_mu0.5_delta+2.5_I950_950_950_950_trim.mat) | [그림](figures/research_50kph_mu0.5_delta+2.5_I950_950_950_950_trim.png) | 195, 177, 132, 184, 137 | 없음 |
-| 50 | 0.5 | 3 | [MAT](research_50kph_mu0.5_delta+3_I950_950_950_950_trim.mat) | 생성 중 | 198, 174, 132, 178, 137 | 없음 |
+| 50 | 0.5 | 3 | [MAT](research_50kph_mu0.5_delta+3_I950_950_950_950_trim.mat) | [그림](figures/research_50kph_mu0.5_delta+3_I950_950_950_950_trim.png) | 198, 174, 132, 178, 137 | 없음 |
 
 ## 조향각 7종 비교
 
@@ -54,3 +54,4 @@ MAT 변수는 **`RESEARCH2D`**이며 `CASE`는 마모 5종의 cell 배열입니�
 - [50 km/h · μ=0.8](figures/overview_final_50kph_mu0p8_trim.png)
 - [50 km/h · μ=0.7](figures/overview_final_50kph_mu0p7_trim.png)
 - [50 km/h · μ=0.6](figures/overview_final_50kph_mu0p6_trim.png)
+- [50 km/h · μ=0.5](figures/overview_final_50kph_mu0p5_trim.png)
