@@ -1,0 +1,26 @@
+{
+  "completed": 48,
+  "total": 210,
+  "producer_phase": "running",
+  "current": {
+    "scenario_index": 49,
+    "speed_kmh": 60,
+    "mu_road": 0.8,
+    "front_steer_deg": 3,
+    "completed_wear_cases": 3,
+    "current_wear_case": 4,
+    "wear_total": 5
+  },
+  "producer_completed_scenarios": 48,
+  "grid_size": [
+    41,
+    31
+  ],
+  "initial_roll_rad": 0,
+  "roll_dynamics_retained": true,
+  "horizons_s": [
+    5,
+    10
+  ],
+  "observed_utc": "2026-11-10T08:25:06+00:00"
+}

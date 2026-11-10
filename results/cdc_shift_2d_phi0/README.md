@@ -1,0 +1,71 @@
+# 초기 롤각 0의 2차원 CDC 안전·복귀 영역
+
+**검증 후 업로드: 48/210조건 · 조건별 마모 5종.** 계산 상태: `running`.
+
+[현재 진행 상황](publication_progress.json) · [전체 수치 요약](publication_summary.csv) · [실행·판정 설명](../../cdc_shift_2d/README_KO.md)
+
+초기조건은 횡속도 41개 × 요레이트 31개입니다. **초기 롤각만 0으로 고정**하고 32상태 모델의 롤 운동은 계속 적분합니다. 3차원 영역을 투영하거나 데이터를 평행이동한 결과가 아닙니다.
+
+첨부 CDC 코드의 trim 초기화와 5초·10초 판정을 유지합니다. `safe`, `guarded_safe`, `recoverable`, `safe_unresolved`를 따로 저장하며 대표 선택 영역은 10초 복귀와 요레이트 정책의 교집합입니다. 유한시간 표본 판정이며 증명된 점근 안정영역이나 불변집합을 뜻하지 않습니다.
+
+MAT 변수명은 `STABILITY2D`입니다. `stable_points`는 초기 `[vc0, r0]` 좌표이고, `region.sampled_area`는 네 꼭짓점과 요청된 중심점 검사를 통과한 2차원 셀 면적입니다. 격자 끝에 닿은 결과는 잘렸을 수 있으므로 아래 표시와 원시 마스크를 함께 확인하세요.
+
+| 속도 km/h | μ | 앞 휠 조향각 ° | MAT | 2D 그림 | 선택점 수, 마모 1~5 | 격자 경계 접촉 |
+|---|---|---|---|---|---|---|
+| 50 | 0.9 | 0 | [MAT](cdc2d_50kph_mu0.9_delta+0_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.9_delta+0_trim_phi00.png) | 122, 127, 312, 116, 185 | 1, 2, 3, 4, 5 |
+| 50 | 0.9 | 0.5 | [MAT](cdc2d_50kph_mu0.9_delta+0.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.9_delta+0.5_trim_phi00.png) | 127, 138, 319, 118, 197 | 1, 2, 3, 4, 5 |
+| 50 | 0.9 | 1 | [MAT](cdc2d_50kph_mu0.9_delta+1_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.9_delta+1_trim_phi00.png) | 145, 161, 340, 124, 209 | 1, 2, 3, 4, 5 |
+| 50 | 0.9 | 1.5 | [MAT](cdc2d_50kph_mu0.9_delta+1.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.9_delta+1.5_trim_phi00.png) | 174, 193, 371, 146, 241 | 1, 2, 3, 4, 5 |
+| 50 | 0.9 | 2 | [MAT](cdc2d_50kph_mu0.9_delta+2_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.9_delta+2_trim_phi00.png) | 210, 231, 399, 176, 285 | 1, 2, 3, 4, 5 |
+| 50 | 0.9 | 2.5 | [MAT](cdc2d_50kph_mu0.9_delta+2.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.9_delta+2.5_trim_phi00.png) | 245, 271, 436, 211, 325 | 1, 2, 3, 4, 5 |
+| 50 | 0.9 | 3 | [MAT](cdc2d_50kph_mu0.9_delta+3_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.9_delta+3_trim_phi00.png) | 279, 298, 483, 259, 383 | 1, 2, 3, 4, 5 |
+| 50 | 0.8 | 0 | [MAT](cdc2d_50kph_mu0.8_delta+0_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.8_delta+0_trim_phi00.png) | 112, 113, 202, 110, 128 | 1, 2, 3, 4, 5 |
+| 50 | 0.8 | 0.5 | [MAT](cdc2d_50kph_mu0.8_delta+0.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.8_delta+0.5_trim_phi00.png) | 115, 117, 197, 111, 131 | 1, 2, 3, 4, 5 |
+| 50 | 0.8 | 1 | [MAT](cdc2d_50kph_mu0.8_delta+1_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.8_delta+1_trim_phi00.png) | 120, 128, 205, 113, 146 | 1, 2, 3, 4, 5 |
+| 50 | 0.8 | 1.5 | [MAT](cdc2d_50kph_mu0.8_delta+1.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.8_delta+1.5_trim_phi00.png) | 133, 150, 218, 122, 164 | 1, 2, 3, 4, 5 |
+| 50 | 0.8 | 2 | [MAT](cdc2d_50kph_mu0.8_delta+2_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.8_delta+2_trim_phi00.png) | 161, 170, 267, 126, 198 | 1, 2, 3, 4, 5 |
+| 50 | 0.8 | 2.5 | [MAT](cdc2d_50kph_mu0.8_delta+2.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.8_delta+2.5_trim_phi00.png) | 192, 201, 324, 140, 240 | 1, 2, 3, 4, 5 |
+| 50 | 0.8 | 3 | [MAT](cdc2d_50kph_mu0.8_delta+3_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.8_delta+3_trim_phi00.png) | 219, 238, 373, 177, 293 | 1, 2, 3, 4, 5 |
+| 50 | 0.7 | 0 | [MAT](cdc2d_50kph_mu0.7_delta+0_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.7_delta+0_trim_phi00.png) | 107, 106, 140, 106, 104 | 1, 2, 3, 4, 5 |
+| 50 | 0.7 | 0.5 | [MAT](cdc2d_50kph_mu0.7_delta+0.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.7_delta+0.5_trim_phi00.png) | 108, 105, 116, 107, 106 | 1, 2, 3, 4, 5 |
+| 50 | 0.7 | 1 | [MAT](cdc2d_50kph_mu0.7_delta+1_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.7_delta+1_trim_phi00.png) | 108, 107, 111, 104, 114 | 1, 2, 3, 4, 5 |
+| 50 | 0.7 | 1.5 | [MAT](cdc2d_50kph_mu0.7_delta+1.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.7_delta+1.5_trim_phi00.png) | 111, 110, 123, 103, 128 | 1, 2, 3, 4, 5 |
+| 50 | 0.7 | 2 | [MAT](cdc2d_50kph_mu0.7_delta+2_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.7_delta+2_trim_phi00.png) | 117, 123, 170, 109, 146 | 1, 2, 3, 4, 5 |
+| 50 | 0.7 | 2.5 | [MAT](cdc2d_50kph_mu0.7_delta+2.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.7_delta+2.5_trim_phi00.png) | 140, 142, 208, 113, 164 | 1, 2, 3, 4, 5 |
+| 50 | 0.7 | 3 | [MAT](cdc2d_50kph_mu0.7_delta+3_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.7_delta+3_trim_phi00.png) | 179, 183, 257, 128, 197 | 1, 2, 3, 4, 5 |
+| 50 | 0.6 | 0 | [MAT](cdc2d_50kph_mu0.6_delta+0_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.6_delta+0_trim_phi00.png) | 83, 80, 75, 79, 70 | 없음 |
+| 50 | 0.6 | 0.5 | [MAT](cdc2d_50kph_mu0.6_delta+0.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.6_delta+0.5_trim_phi00.png) | 83, 78, 74, 79, 73 | 없음 |
+| 50 | 0.6 | 1 | [MAT](cdc2d_50kph_mu0.6_delta+1_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.6_delta+1_trim_phi00.png) | 79, 77, 75, 78, 76 | 없음 |
+| 50 | 0.6 | 1.5 | [MAT](cdc2d_50kph_mu0.6_delta+1.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.6_delta+1.5_trim_phi00.png) | 80, 79, 76, 79, 87 | 없음 |
+| 50 | 0.6 | 2 | [MAT](cdc2d_50kph_mu0.6_delta+2_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.6_delta+2_trim_phi00.png) | 83, 82, 88, 80, 104 | 5 |
+| 50 | 0.6 | 2.5 | [MAT](cdc2d_50kph_mu0.6_delta+2.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.6_delta+2.5_trim_phi00.png) | 98, 103, 116, 88, 127 | 2, 3, 5 |
+| 50 | 0.6 | 3 | [MAT](cdc2d_50kph_mu0.6_delta+3_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.6_delta+3_trim_phi00.png) | 127, 133, 152, 94, 146 | 1, 2, 3, 5 |
+| 50 | 0.5 | 0 | [MAT](cdc2d_50kph_mu0.5_delta+0_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.5_delta+0_trim_phi00.png) | 55, 52, 49, 52, 48 | 없음 |
+| 50 | 0.5 | 0.5 | [MAT](cdc2d_50kph_mu0.5_delta+0.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.5_delta+0.5_trim_phi00.png) | 55, 53, 49, 53, 49 | 없음 |
+| 50 | 0.5 | 1 | [MAT](cdc2d_50kph_mu0.5_delta+1_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.5_delta+1_trim_phi00.png) | 58, 57, 51, 59, 56 | 없음 |
+| 50 | 0.5 | 1.5 | [MAT](cdc2d_50kph_mu0.5_delta+1.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.5_delta+1.5_trim_phi00.png) | 60, 59, 59, 60, 68 | 없음 |
+| 50 | 0.5 | 2 | [MAT](cdc2d_50kph_mu0.5_delta+2_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.5_delta+2_trim_phi00.png) | 64, 62, 64, 62, 75 | 5 |
+| 50 | 0.5 | 2.5 | [MAT](cdc2d_50kph_mu0.5_delta+2.5_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.5_delta+2.5_trim_phi00.png) | 73, 69, 83, 66, 97 | 5 |
+| 50 | 0.5 | 3 | [MAT](cdc2d_50kph_mu0.5_delta+3_trim_phi00.mat) | [그림](figures/cdc2d_50kph_mu0.5_delta+3_trim_phi00.png) | 105, 65, 91, 65, 110 | 1, 3, 5 |
+| 60 | 0.9 | 0 | [MAT](cdc2d_60kph_mu0.9_delta+0_trim_phi00.mat) | [그림](figures/cdc2d_60kph_mu0.9_delta+0_trim_phi00.png) | 137, 132, 178, 130, 127 | 1, 2, 3, 4, 5 |
+| 60 | 0.9 | 0.5 | [MAT](cdc2d_60kph_mu0.9_delta+0.5_trim_phi00.mat) | [그림](figures/cdc2d_60kph_mu0.9_delta+0.5_trim_phi00.png) | 142, 135, 173, 131, 137 | 1, 2, 3, 4, 5 |
+| 60 | 0.9 | 1 | [MAT](cdc2d_60kph_mu0.9_delta+1_trim_phi00.mat) | [그림](figures/cdc2d_60kph_mu0.9_delta+1_trim_phi00.png) | 145, 146, 189, 140, 158 | 1, 2, 3, 4, 5 |
+| 60 | 0.9 | 1.5 | [MAT](cdc2d_60kph_mu0.9_delta+1.5_trim_phi00.mat) | [그림](figures/cdc2d_60kph_mu0.9_delta+1.5_trim_phi00.png) | 149, 154, 234, 142, 190 | 1, 2, 3, 4, 5 |
+| 60 | 0.9 | 2 | [MAT](cdc2d_60kph_mu0.9_delta+2_trim_phi00.mat) | [그림](figures/cdc2d_60kph_mu0.9_delta+2_trim_phi00.png) | 160, 169, 276, 150, 217 | 1, 2, 3, 4, 5 |
+| 60 | 0.9 | 2.5 | [MAT](cdc2d_60kph_mu0.9_delta+2.5_trim_phi00.mat) | [그림](figures/cdc2d_60kph_mu0.9_delta+2.5_trim_phi00.png) | 179, 208, 343, 162, 240 | 1, 2, 3, 4, 5 |
+| 60 | 0.9 | 3 | [MAT](cdc2d_60kph_mu0.9_delta+3_trim_phi00.mat) | [그림](figures/cdc2d_60kph_mu0.9_delta+3_trim_phi00.png) | 216, 246, 401, 175, 282 | 1, 2, 3, 4, 5 |
+| 60 | 0.8 | 0 | [MAT](cdc2d_60kph_mu0.8_delta+0_trim_phi00.mat) | [그림](figures/cdc2d_60kph_mu0.8_delta+0_trim_phi00.png) | 121, 120, 122, 120, 114 | 1, 2, 3, 4, 5 |
+| 60 | 0.8 | 0.5 | [MAT](cdc2d_60kph_mu0.8_delta+0.5_trim_phi00.mat) | [그림](figures/cdc2d_60kph_mu0.8_delta+0.5_trim_phi00.png) | 122, 119, 121, 119, 114 | 1, 2, 3, 4, 5 |
+| 60 | 0.8 | 1 | [MAT](cdc2d_60kph_mu0.8_delta+1_trim_phi00.mat) | [그림](figures/cdc2d_60kph_mu0.8_delta+1_trim_phi00.png) | 128, 122, 126, 125, 124 | 1, 2, 3, 4, 5 |
+| 60 | 0.8 | 1.5 | [MAT](cdc2d_60kph_mu0.8_delta+1.5_trim_phi00.mat) | [그림](figures/cdc2d_60kph_mu0.8_delta+1.5_trim_phi00.png) | 139, 138, 138, 137, 139 | 1, 2, 3, 4, 5 |
+| 60 | 0.8 | 2 | [MAT](cdc2d_60kph_mu0.8_delta+2_trim_phi00.mat) | [그림](figures/cdc2d_60kph_mu0.8_delta+2_trim_phi00.png) | 143, 148, 168, 142, 161 | 1, 2, 3, 4, 5 |
+| 60 | 0.8 | 2.5 | [MAT](cdc2d_60kph_mu0.8_delta+2.5_trim_phi00.mat) | [그림](figures/cdc2d_60kph_mu0.8_delta+2.5_trim_phi00.png) | 155, 158, 214, 149, 183 | 1, 2, 3, 4, 5 |
+
+## 조향각 7종 비교
+
+- [50 km/h · μ=0.9](figures/overview_selected_50kph_mu0p9_trim.png)
+- [50 km/h · μ=0.8](figures/overview_selected_50kph_mu0p8_trim.png)
+- [50 km/h · μ=0.7](figures/overview_selected_50kph_mu0p7_trim.png)
+- [50 km/h · μ=0.6](figures/overview_selected_50kph_mu0p6_trim.png)
+- [50 km/h · μ=0.5](figures/overview_selected_50kph_mu0p5_trim.png)
+- [60 km/h · μ=0.9](figures/overview_selected_60kph_mu0p9_trim.png)
