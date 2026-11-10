@@ -139,6 +139,13 @@
       "sha256": "d45b6a5a8af41b40f5217fa31f9cb132dc0b0d4e3dcf4bcd409a4f7878914953",
       "source_mat": "fullcar2d_v2_50kph_mu0.7_delta+2.5_trim_trim.mat",
       "source_sha256": "c975912b04273100c04525f19e27f75ef3df5288beecd986794afbff5d977a67"
+    },
+    {
+      "filename": "fullcar2d_v2_50kph_mu0.7_delta+3_trim_trim.png",
+      "bytes": 320582,
+      "sha256": "3a943a2854c37f13a60b5ca6f883bc242b379cb5b36f4d32c5d0dc1885f371df",
+      "source_mat": "fullcar2d_v2_50kph_mu0.7_delta+3_trim_trim.mat",
+      "source_sha256": "35046a2c05410068ddfedb0bbbe94f2d5eee77dfd54f5a455c6c500cd9e63e65"
     }
   ],
   "overview_figures": [
@@ -169,8 +176,22 @@
         "fullcar2d_v2_50kph_mu0.8_delta+2.5_trim_trim.mat",
         "fullcar2d_v2_50kph_mu0.8_delta+3_trim_trim.mat"
       ]
+    },
+    {
+      "filename": "overview_selected_50kph_mu0p7_trim_trim.png",
+      "bytes": 596343,
+      "sha256": "25abd63592f4a2e5791002ea52ab2b328ac75164faaf19cb43925430a5596c31",
+      "source_mats": [
+        "fullcar2d_v2_50kph_mu0.7_delta+0_trim_trim.mat",
+        "fullcar2d_v2_50kph_mu0.7_delta+0.5_trim_trim.mat",
+        "fullcar2d_v2_50kph_mu0.7_delta+1_trim_trim.mat",
+        "fullcar2d_v2_50kph_mu0.7_delta+1.5_trim_trim.mat",
+        "fullcar2d_v2_50kph_mu0.7_delta+2_trim_trim.mat",
+        "fullcar2d_v2_50kph_mu0.7_delta+2.5_trim_trim.mat",
+        "fullcar2d_v2_50kph_mu0.7_delta+3_trim_trim.mat"
+      ]
     }
   ],
   "plotter_sha256": "4e08a4a6485a1d7a51515da2c6fe9bbc1c3517665924855bad4ba31f6289cdfb",
-  "updated_utc": "2026-11-10T15:27:55+00:00"
+  "updated_utc": "2026-11-10T15:28:44+00:00"
 }
