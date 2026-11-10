@@ -1,6 +1,6 @@
 {
   "version": "cdc-shift-2d-fixed-phi-v1",
-  "validated_scenarios": 198,
+  "validated_scenarios": 199,
   "total_scenarios": 210,
   "producer_phase": "running",
   "validation_errors": {},
@@ -62598,9 +62598,325 @@
         "native_bridge_sha256": "b9edbc9ec9ad4436bd3e528eb39962c26618a951c81a3459ca03349a981175df",
         "native_exporter_sha256": "3e5620db06b91bd808ba644782ccb22db61fc688b56d08127787018f0572baac"
       }
+    },
+    {
+      "all_checks_passed": true,
+      "filename": "cdc2d_100kph_mu0.6_delta+1_trim_phi00.mat",
+      "sha256": "dd0b3a8be6a891196f0d3acb27d3e0dde44d69f68283119d56d7472efd995925",
+      "bytes": 3122395,
+      "speed_kmh": 100,
+      "mu_road": 0.6,
+      "front_steer_deg": 1.0,
+      "fixed_initial_roll_rad": 0,
+      "horizons_s": [
+        5,
+        10
+      ],
+      "grid_shape": [
+        41,
+        31
+      ],
+      "wear_cases": 5,
+      "case_summaries": [
+        {
+          "wear_case": 1,
+          "wear": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "safe_counts": [
+            309,
+            217
+          ],
+          "guarded_safe_counts": [
+            59,
+            59
+          ],
+          "recovered_counts": [
+            145,
+            145
+          ],
+          "selected_counts": [
+            59,
+            59
+          ],
+          "safe_unresolved_counts": [
+            164,
+            72
+          ],
+          "selected_count": 59,
+          "sampled_area": 0.5466666666666662,
+          "selected_centroid": [
+            0.1440677966101695,
+            -0.012203389830508485
+          ],
+          "area_centroid": [
+            0.12804878048780496,
+            -0.011382113821138223
+          ],
+          "trim_root_found": true,
+          "trim_usable": true,
+          "trim_admissible": true,
+          "trim_yaw_admissible": true,
+          "trim_locally_stable_test": true,
+          "initialization_used": "trim",
+          "trim_residual_norm": 1.6940523058413721e-09,
+          "max_real_eigenvalue": -3.9909322050397655,
+          "touches_grid": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "candidate_cells": 41,
+          "accepted_cells": 41,
+          "interior_points_tested": 41
+        },
+        {
+          "wear_case": 2,
+          "wear": [
+            25,
+            25,
+            0,
+            0
+          ],
+          "safe_counts": [
+            269,
+            178
+          ],
+          "guarded_safe_counts": [
+            60,
+            57
+          ],
+          "recovered_counts": [
+            139,
+            139
+          ],
+          "selected_counts": [
+            57,
+            57
+          ],
+          "safe_unresolved_counts": [
+            130,
+            39
+          ],
+          "selected_count": 57,
+          "sampled_area": 0.5333333333333329,
+          "selected_centroid": [
+            0.14035087719298245,
+            -0.009356725146198834
+          ],
+          "area_centroid": [
+            0.15000000000000016,
+            -0.010666666666666677
+          ],
+          "trim_root_found": true,
+          "trim_usable": true,
+          "trim_admissible": true,
+          "trim_yaw_admissible": true,
+          "trim_locally_stable_test": true,
+          "initialization_used": "trim",
+          "trim_residual_norm": 7.0374685895981916e-12,
+          "max_real_eigenvalue": -3.3490197280504264,
+          "touches_grid": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "candidate_cells": 40,
+          "accepted_cells": 40,
+          "interior_points_tested": 40
+        },
+        {
+          "wear_case": 3,
+          "wear": [
+            50,
+            50,
+            25,
+            25
+          ],
+          "safe_counts": [
+            244,
+            159
+          ],
+          "guarded_safe_counts": [
+            2,
+            0
+          ],
+          "recovered_counts": [
+            133,
+            133
+          ],
+          "selected_counts": [
+            0,
+            0
+          ],
+          "safe_unresolved_counts": [
+            111,
+            26
+          ],
+          "selected_count": 0,
+          "sampled_area": 0.0,
+          "selected_centroid": [
+            null,
+            null
+          ],
+          "area_centroid": [
+            null,
+            null
+          ],
+          "trim_root_found": true,
+          "trim_usable": true,
+          "trim_admissible": true,
+          "trim_yaw_admissible": false,
+          "trim_locally_stable_test": true,
+          "initialization_used": "trim",
+          "trim_residual_norm": 1.4247365832555198e-11,
+          "max_real_eigenvalue": -3.013886482690701,
+          "touches_grid": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "candidate_cells": 0,
+          "accepted_cells": 0,
+          "interior_points_tested": 0
+        },
+        {
+          "wear_case": 4,
+          "wear": [
+            0,
+            0,
+            25,
+            25
+          ],
+          "safe_counts": [
+            302,
+            163
+          ],
+          "guarded_safe_counts": [
+            56,
+            56
+          ],
+          "recovered_counts": [
+            140,
+            140
+          ],
+          "selected_counts": [
+            56,
+            56
+          ],
+          "safe_unresolved_counts": [
+            162,
+            23
+          ],
+          "selected_count": 56,
+          "sampled_area": 0.5066666666666663,
+          "selected_centroid": [
+            0.20535714285714285,
+            -0.009999999999999998
+          ],
+          "area_centroid": [
+            0.19736842105263175,
+            -0.007017543859649127
+          ],
+          "trim_root_found": true,
+          "trim_usable": true,
+          "trim_admissible": true,
+          "trim_yaw_admissible": true,
+          "trim_locally_stable_test": true,
+          "initialization_used": "trim",
+          "trim_residual_norm": 3.888455898952289e-12,
+          "max_real_eigenvalue": -3.9909322050475255,
+          "touches_grid": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "candidate_cells": 38,
+          "accepted_cells": 38,
+          "interior_points_tested": 38
+        },
+        {
+          "wear_case": 5,
+          "wear": [
+            25,
+            25,
+            50,
+            50
+          ],
+          "safe_counts": [
+            293,
+            137
+          ],
+          "guarded_safe_counts": [
+            54,
+            54
+          ],
+          "recovered_counts": [
+            135,
+            135
+          ],
+          "selected_counts": [
+            54,
+            54
+          ],
+          "safe_unresolved_counts": [
+            158,
+            2
+          ],
+          "selected_count": 54,
+          "sampled_area": 0.49333333333333296,
+          "selected_centroid": [
+            0.2962962962962963,
+            -0.0054320987654320925
+          ],
+          "area_centroid": [
+            0.2770270270270272,
+            -0.003963963963963971
+          ],
+          "trim_root_found": true,
+          "trim_usable": true,
+          "trim_admissible": true,
+          "trim_yaw_admissible": true,
+          "trim_locally_stable_test": true,
+          "initialization_used": "trim",
+          "trim_residual_norm": 1.4702140329104886e-11,
+          "max_real_eigenvalue": -3.9909322050195346,
+          "touches_grid": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "candidate_cells": 37,
+          "accepted_cells": 37,
+          "interior_points_tested": 37
+        }
+      ],
+      "statistics": {
+        "usable_trims": 5,
+        "wear_cases": 5,
+        "initial_points": 6355,
+        "center_tests": 156,
+        "selected_at_10s": 226,
+        "safe_at_10s": 854,
+        "recovered_at_10s": 692
+      },
+      "provenance": {
+        "main_source_sha256": "84179093cce345104c537868ff71a72ae18b92b1e2904fcf9a6b13a875bb75e6",
+        "native_executable_sha256": "f94e2185f6027d0950e69208bfa81d6d49b1cde4a2eb6cef2b3be6322760063f",
+        "native_bridge_sha256": "b9edbc9ec9ad4436bd3e528eb39962c26618a951c81a3459ca03349a981175df",
+        "native_exporter_sha256": "3e5620db06b91bd808ba644782ccb22db61fc688b56d08127787018f0572baac"
+      }
     }
   ],
   "condition_figures": 198,
   "overview_figures": 28,
-  "updated_utc": "2026-11-10T10:07:50+00:00"
+  "updated_utc": "2026-11-10T10:08:24+00:00"
 }
