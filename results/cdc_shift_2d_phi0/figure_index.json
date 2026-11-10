@@ -1105,6 +1105,13 @@
       "sha256": "3f4d8baee5d939088d733afbf4f308f8239df7196988a1798edc2d3c0f709acd",
       "source_mat": "cdc2d_90kph_mu0.7_delta+1.5_trim_phi00.mat",
       "source_sha256": "f341529626ca1079ba9a87c6e07eb6adf37d9b63f47de72b0e6149f5bf546980"
+    },
+    {
+      "filename": "cdc2d_90kph_mu0.7_delta+2_trim_phi00.png",
+      "bytes": 152874,
+      "sha256": "fa1d3f39f09d346730a570f88fdc1c84390cef2af47024d2a9f9fe6b88254b92",
+      "source_mat": "cdc2d_90kph_mu0.7_delta+2_trim_phi00.mat",
+      "source_sha256": "924ab7957cad99d95f56010ce26c4761562cf64aa0d9d633f4737368d26fdf2c"
     }
   ],
   "overview_figures": [
@@ -1418,5 +1425,5 @@
     }
   ],
   "plotter_sha256": "8c79258ccdbc8ef52b1929b64130f5a47b940fbda15d6931187e5bad49bea07d",
-  "updated_utc": "2026-11-10T09:46:14+00:00"
+  "updated_utc": "2026-11-10T09:46:33+00:00"
 }
