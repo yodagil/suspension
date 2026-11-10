@@ -832,6 +832,13 @@
       "sha256": "765bbae176a81c6f699e25be0a6f098ef362c9a4fc6ea826e02420bf8e1c9e6c",
       "source_mat": "research_80kph_mu0.8_delta+3_I950_950_950_950_trim.mat",
       "source_sha256": "08c5a227c2046414ec69abc11f2ab72bc858f4a01e760d1a72aa19eeeb6e84b6"
+    },
+    {
+      "filename": "research_80kph_mu0.7_delta+0_I950_950_950_950_trim.png",
+      "bytes": 161748,
+      "sha256": "1db4cc179cb62e20c0de8e4d6f385753a35d1a787497eebdbdd0dec0900b6d36",
+      "source_mat": "research_80kph_mu0.7_delta+0_I950_950_950_950_trim.mat",
+      "source_sha256": "2cceaf091e771192d4a239b7be997e716bf7f5bfe468383af8c69915d16e7e75"
     }
   ],
   "overview_figures": [
@@ -1075,5 +1082,5 @@
     }
   ],
   "plotter_sha256": "bde0a84be1855ee1c28dbf0e18991a40607a68e7215ac72dcb2e3e74cad9acab",
-  "updated_utc": "2026-11-10T22:03:46+00:00"
+  "updated_utc": "2026-11-10T22:04:49+00:00"
 }
