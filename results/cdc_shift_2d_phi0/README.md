@@ -221,7 +221,7 @@ MAT 변수명은 `STABILITY2D`입니다. `stable_points`는 초기 `[vc0, r0]` �
 | 100 | 0.5 | 1.5 | [MAT](cdc2d_100kph_mu0.5_delta+1.5_trim_phi00.mat) | [그림](figures/cdc2d_100kph_mu0.5_delta+1.5_trim_phi00.png) | 0, 0, 0, 0, 0 | 없음 |
 | 100 | 0.5 | 2 | [MAT](cdc2d_100kph_mu0.5_delta+2_trim_phi00.mat) | [그림](figures/cdc2d_100kph_mu0.5_delta+2_trim_phi00.png) | 0, 0, 0, 0, 0 | 없음 |
 | 100 | 0.5 | 2.5 | [MAT](cdc2d_100kph_mu0.5_delta+2.5_trim_phi00.mat) | [그림](figures/cdc2d_100kph_mu0.5_delta+2.5_trim_phi00.png) | 0, 0, 0, 0, 0 | 없음 |
-| 100 | 0.5 | 3 | [MAT](cdc2d_100kph_mu0.5_delta+3_trim_phi00.mat) | 생성 중 | 0, 0, 0, 0, 0 | 없음 |
+| 100 | 0.5 | 3 | [MAT](cdc2d_100kph_mu0.5_delta+3_trim_phi00.mat) | [그림](figures/cdc2d_100kph_mu0.5_delta+3_trim_phi00.png) | 0, 0, 0, 0, 0 | 없음 |
 
 ## 조향각 7종 비교
 
@@ -254,3 +254,4 @@ MAT 변수명은 `STABILITY2D`입니다. `stable_points`는 초기 `[vc0, r0]` �
 - [100 km/h · μ=0.8](figures/overview_selected_100kph_mu0p8_trim.png)
 - [100 km/h · μ=0.7](figures/overview_selected_100kph_mu0p7_trim.png)
 - [100 km/h · μ=0.6](figures/overview_selected_100kph_mu0p6_trim.png)
+- [100 km/h · μ=0.5](figures/overview_selected_100kph_mu0p5_trim.png)

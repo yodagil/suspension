@@ -1462,6 +1462,13 @@
       "sha256": "c0b8c37d88c32248f353a9ae17377ea2c8baa41ba4a116e2609ee34f556d38f9",
       "source_mat": "cdc2d_100kph_mu0.5_delta+2.5_trim_phi00.mat",
       "source_sha256": "ec0cb6a52594331646814f72677ec35077f820717cdb1b3f38c20871dbe63e0c"
+    },
+    {
+      "filename": "cdc2d_100kph_mu0.5_delta+3_trim_phi00.png",
+      "bytes": 150533,
+      "sha256": "b95d3a8d1995d4c60390654bc5436d7d69aee150ae841c077d39404a5432a483",
+      "source_mat": "cdc2d_100kph_mu0.5_delta+3_trim_phi00.mat",
+      "source_sha256": "cefbd059c1cc1eabbabd2451f63b06882f5c7e177389a92d813407e122138be3"
     }
   ],
   "overview_figures": [
@@ -1870,8 +1877,22 @@
         "cdc2d_100kph_mu0.6_delta+2.5_trim_phi00.mat",
         "cdc2d_100kph_mu0.6_delta+3_trim_phi00.mat"
       ]
+    },
+    {
+      "filename": "overview_selected_100kph_mu0p5_trim.png",
+      "bytes": 170374,
+      "sha256": "7b1f4514b039b18d498bfb71e09a48a527a227195d455de96af5c67841de02ab",
+      "source_mats": [
+        "cdc2d_100kph_mu0.5_delta+0_trim_phi00.mat",
+        "cdc2d_100kph_mu0.5_delta+0.5_trim_phi00.mat",
+        "cdc2d_100kph_mu0.5_delta+1_trim_phi00.mat",
+        "cdc2d_100kph_mu0.5_delta+1.5_trim_phi00.mat",
+        "cdc2d_100kph_mu0.5_delta+2_trim_phi00.mat",
+        "cdc2d_100kph_mu0.5_delta+2.5_trim_phi00.mat",
+        "cdc2d_100kph_mu0.5_delta+3_trim_phi00.mat"
+      ]
     }
   ],
   "plotter_sha256": "8c79258ccdbc8ef52b1929b64130f5a47b940fbda15d6931187e5bad49bea07d",
-  "updated_utc": "2026-11-10T10:13:35+00:00"
+  "updated_utc": "2026-11-10T10:13:54+00:00"
 }
