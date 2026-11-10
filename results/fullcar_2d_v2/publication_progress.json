@@ -1,0 +1,28 @@
+{
+  "completed": 1,
+  "total": 210,
+  "producer_phase": "running",
+  "current": {
+    "scenario_index": 2,
+    "speed_kmh": 50,
+    "mu_road": 0.9,
+    "front_steer_deg": 0.5,
+    "completed_wear_cases": 0,
+    "current_wear_case": 1,
+    "wear_total": 5
+  },
+  "producer_completed_scenarios": 1,
+  "grid_size": [
+    49,
+    81
+  ],
+  "slice_mode": "trim",
+  "initial_roll_mode": "per-case computed trim phi_eq",
+  "use_yaw_policy_for_region": false,
+  "roll_dynamics_retained": true,
+  "horizons_s": [
+    5,
+    10
+  ],
+  "observed_utc": "2026-11-10T13:33:44+00:00"
+}

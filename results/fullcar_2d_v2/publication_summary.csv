@@ -1,0 +1,6 @@
+filename,speed_kmh,mu_road,front_steer_deg,wear_case,initial_roll_rad,safe_5s,safe_10s,guarded_safe_5s,guarded_safe_10s,recovered_5s,recovered_10s,selected_5s,selected_10s,sampled_area,trim_root_found,trim_usable,grid_truncated
+fullcar2d_v2_50kph_mu0.9_delta+0_trim_trim.mat,50,0.9,0.0,1,-3.7128921626158944e-06,1795,1580,350,350,1519,1519,1519,1519,9.982500000000194,True,True,True
+fullcar2d_v2_50kph_mu0.9_delta+0_trim_trim.mat,50,0.9,0.0,2,-0.000235384796444903,1799,1592,366,366,1571,1571,1571,1571,10.327500000000207,True,True,True
+fullcar2d_v2_50kph_mu0.9_delta+0_trim_trim.mat,50,0.9,0.0,3,-1.7187480360012523e-05,2194,1912,509,509,1811,1818,1811,1818,11.925000000000267,True,True,True
+fullcar2d_v2_50kph_mu0.9_delta+0_trim_trim.mat,50,0.9,0.0,4,0.00022504881782861808,1864,1685,328,328,1460,1460,1460,1460,9.547500000000177,True,True,True
+fullcar2d_v2_50kph_mu0.9_delta+0_trim_trim.mat,50,0.9,0.0,5,1.35942643071619e-05,2059,1800,422,422,1629,1629,1629,1629,10.462500000000212,True,True,True

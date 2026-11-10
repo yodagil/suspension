@@ -1,0 +1,15 @@
+# V2 Full-car 2차원 CDC 안전·복귀 영역
+
+**검증 후 업로드: 1/210조건 · 조건별 마모 5종.** 계산 상태: `running`.
+
+[현재 진행 상황](publication_progress.json) · [전체 수치 요약](publication_summary.csv) · [실행·판정 설명](../../fullcar_2d_v2/README_KO.md)
+
+초기조건은 횡속도 49개 × 요레이트 81개입니다. **V2 기본 trim 단면**을 사용해 롤각을 포함한 숨은 상태를 각 마모의 계산된 정상선회점에 맞추고, 32상태 Full-car 모델의 롤·현가 운동을 계속 적분합니다. 그래프의 두 축은 초기 횡속도와 요레이트입니다.
+
+첨부 V2 Full-car 코드의 trim 초기화와 5초·10초 판정을 유지합니다. `safe`, `guarded_safe`, `recoverable`, `guarded_recoverable`, `safe_unresolved`를 따로 저장하며 대표 선택 영역은 **10초 recoverable**입니다. 절대 요레이트 정책은 별도 마스크이며 대표 영역에 자동으로 교차시키지 않습니다. 유한시간 표본 판정이며 증명된 점근 안정영역이나 불변집합을 뜻하지 않습니다.
+
+MAT 변수명은 `STABILITY2D`입니다. `stable_points`는 초기 `[vc0, r0]` 좌표이고, `region.sampled_area`는 네 꼭짓점과 요청된 중심점 검사를 통과한 2차원 셀 면적입니다. 격자 끝에 닿은 결과는 잘렸을 수 있으므로 아래 표시와 원시 마스크를 함께 확인하세요.
+
+| 속도 km/h | μ | 앞 휠 조향각 ° | MAT | 2D 그림 | 선택점 수, 마모 1~5 | 격자 경계 접촉 |
+|---|---|---|---|---|---|---|
+| 50 | 0.9 | 0 | [MAT](fullcar2d_v2_50kph_mu0.9_delta+0_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.9_delta+0_trim_trim.png) | 1519, 1571, 1818, 1460, 1629 | 1, 2, 3, 4, 5 |
