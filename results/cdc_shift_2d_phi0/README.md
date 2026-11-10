@@ -1,6 +1,6 @@
 # 초기 롤각 0의 2차원 CDC 안전·복귀 영역
 
-**검증 후 업로드: 140/210조건 · 조건별 마모 5종.** 계산 상태: `running`.
+**검증 후 업로드: 141/210조건 · 조건별 마모 5종.** 계산 상태: `running`.
 
 [현재 진행 상황](publication_progress.json) · [전체 수치 요약](publication_summary.csv) · [실행·판정 설명](../../cdc_shift_2d/README_KO.md)
 
@@ -151,7 +151,8 @@ MAT 변수명은 `STABILITY2D`입니다. `stable_points`는 초기 `[vc0, r0]` �
 | 80 | 0.5 | 1.5 | [MAT](cdc2d_80kph_mu0.5_delta+1.5_trim_phi00.mat) | [그림](figures/cdc2d_80kph_mu0.5_delta+1.5_trim_phi00.png) | 0, 0, 0, 25, 44 | 없음 |
 | 80 | 0.5 | 2 | [MAT](cdc2d_80kph_mu0.5_delta+2_trim_phi00.mat) | [그림](figures/cdc2d_80kph_mu0.5_delta+2_trim_phi00.png) | 0, 0, 0, 0, 0 | 없음 |
 | 80 | 0.5 | 2.5 | [MAT](cdc2d_80kph_mu0.5_delta+2.5_trim_phi00.mat) | [그림](figures/cdc2d_80kph_mu0.5_delta+2.5_trim_phi00.png) | 0, 0, 0, 0, 0 | 없음 |
-| 80 | 0.5 | 3 | [MAT](cdc2d_80kph_mu0.5_delta+3_trim_phi00.mat) | 생성 중 | 0, 0, 0, 0, 0 | 없음 |
+| 80 | 0.5 | 3 | [MAT](cdc2d_80kph_mu0.5_delta+3_trim_phi00.mat) | [그림](figures/cdc2d_80kph_mu0.5_delta+3_trim_phi00.png) | 0, 0, 0, 0, 0 | 없음 |
+| 90 | 0.9 | 0 | [MAT](cdc2d_90kph_mu0.9_delta+0_trim_phi00.mat) | [그림](figures/cdc2d_90kph_mu0.9_delta+0_trim_phi00.png) | 135, 123, 116, 123, 117 | 없음 |
 
 ## 조향각 7종 비교
 
@@ -174,3 +175,4 @@ MAT 변수명은 `STABILITY2D`입니다. `stable_points`는 초기 `[vc0, r0]` �
 - [80 km/h · μ=0.8](figures/overview_selected_80kph_mu0p8_trim.png)
 - [80 km/h · μ=0.7](figures/overview_selected_80kph_mu0p7_trim.png)
 - [80 km/h · μ=0.6](figures/overview_selected_80kph_mu0p6_trim.png)
+- [80 km/h · μ=0.5](figures/overview_selected_80kph_mu0p5_trim.png)
