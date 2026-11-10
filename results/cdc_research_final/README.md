@@ -136,7 +136,7 @@ MAT 변수는 **`RESEARCH2D`**이며 `CASE`는 마모 5종의 cell 배열입니�
 | 80 | 0.7 | 1 | [MAT](research_80kph_mu0.7_delta+1_I950_950_950_950_trim.mat) | [그림](figures/research_80kph_mu0.7_delta+1_I950_950_950_950_trim.png) | 716, 652, 512, 689, 551 | 없음 |
 | 80 | 0.7 | 1.5 | [MAT](research_80kph_mu0.7_delta+1.5_I950_950_950_950_trim.mat) | [그림](figures/research_80kph_mu0.7_delta+1.5_I950_950_950_950_trim.png) | 700, 637, 508, 675, 541 | 없음 |
 | 80 | 0.7 | 2 | [MAT](research_80kph_mu0.7_delta+2_I950_950_950_950_trim.mat) | [그림](figures/research_80kph_mu0.7_delta+2_I950_950_950_950_trim.png) | 687, 625, 492, 644, 515 | 없음 |
-| 80 | 0.7 | 2.5 | [MAT](research_80kph_mu0.7_delta+2.5_I950_950_950_950_trim.mat) | 생성 중 | 557, 0, 0, 577, 468 | 없음 |
+| 80 | 0.7 | 2.5 | [MAT](research_80kph_mu0.7_delta+2.5_I950_950_950_950_trim.mat) | [그림](figures/research_80kph_mu0.7_delta+2.5_I950_950_950_950_trim.png) | 557, 0, 0, 577, 468 | 없음 |
 
 ## 조향각 7종 비교
 
