@@ -1,6 +1,6 @@
 # CDC Research Final: H-preserving recovery
 
-**검증 후 업로드: 28/210조건 · 조건별 마모 5종.** 계산 상태: `running`.
+**검증 후 업로드: 29/210조건 · 조건별 마모 5종.** 계산 상태: `running`.
 
 [현재 진행 상황](publication_progress.json) · [전체 수치 요약](publication_summary.csv) · [실행·판정 설명](../../cdc_research_final/README_KO.md)
 
@@ -39,10 +39,12 @@ MAT 변수는 **`RESEARCH2D`**이며 `CASE`는 마모 5종의 cell 배열입니�
 | 50 | 0.6 | 1.5 | [MAT](research_50kph_mu0.6_delta+1.5_I950_950_950_950_trim.mat) | [그림](figures/research_50kph_mu0.6_delta+1.5_I950_950_950_950_trim.png) | 284, 252, 192, 262, 201 | 없음 |
 | 50 | 0.6 | 2 | [MAT](research_50kph_mu0.6_delta+2_I950_950_950_950_trim.mat) | [그림](figures/research_50kph_mu0.6_delta+2_I950_950_950_950_trim.png) | 284, 254, 191, 264, 201 | 없음 |
 | 50 | 0.6 | 2.5 | [MAT](research_50kph_mu0.6_delta+2.5_I950_950_950_950_trim.mat) | [그림](figures/research_50kph_mu0.6_delta+2.5_I950_950_950_950_trim.png) | 282, 257, 190, 268, 200 | 없음 |
-| 50 | 0.6 | 3 | [MAT](research_50kph_mu0.6_delta+3_I950_950_950_950_trim.mat) | 생성 중 | 284, 251, 194, 263, 200 | 없음 |
+| 50 | 0.6 | 3 | [MAT](research_50kph_mu0.6_delta+3_I950_950_950_950_trim.mat) | [그림](figures/research_50kph_mu0.6_delta+3_I950_950_950_950_trim.png) | 284, 251, 194, 263, 200 | 없음 |
+| 50 | 0.5 | 0 | [MAT](research_50kph_mu0.5_delta+0_I950_950_950_950_trim.mat) | [그림](figures/research_50kph_mu0.5_delta+0_I950_950_950_950_trim.png) | 200, 179, 132, 186, 138 | 없음 |
 
 ## 조향각 7종 비교
 
 - [50 km/h · μ=0.9](figures/overview_final_50kph_mu0p9_trim.png)
 - [50 km/h · μ=0.8](figures/overview_final_50kph_mu0p8_trim.png)
 - [50 km/h · μ=0.7](figures/overview_final_50kph_mu0p7_trim.png)
+- [50 km/h · μ=0.6](figures/overview_final_50kph_mu0p6_trim.png)
