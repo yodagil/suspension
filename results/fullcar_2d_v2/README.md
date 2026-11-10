@@ -35,7 +35,7 @@ MAT 변수명은 `STABILITY2D`입니다. `stable_points`는 초기 `[vc0, r0]` �
 | 50 | 0.7 | 3 | [MAT](fullcar2d_v2_50kph_mu0.7_delta+3_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.7_delta+3_trim_trim.png) | 1278, 1272, 1330, 1206, 1261 | 1, 2, 3, 4, 5 |
 | 50 | 0.6 | 0 | [MAT](fullcar2d_v2_50kph_mu0.6_delta+0_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.6_delta+0_trim_trim.png) | 1029, 970, 1008, 1057, 1151 | 1, 2, 3, 4, 5 |
 | 50 | 0.6 | 0.5 | [MAT](fullcar2d_v2_50kph_mu0.6_delta+0.5_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.6_delta+0.5_trim_trim.png) | 1028, 965, 1022, 1039, 1107 | 1, 2, 3, 4, 5 |
-| 50 | 0.6 | 1 | [MAT](fullcar2d_v2_50kph_mu0.6_delta+1_trim_trim.mat) | 생성 중 | 1028, 982, 1050, 994, 1055 | 1, 2, 3, 4, 5 |
+| 50 | 0.6 | 1 | [MAT](fullcar2d_v2_50kph_mu0.6_delta+1_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.6_delta+1_trim_trim.png) | 1028, 982, 1050, 994, 1055 | 1, 2, 3, 4, 5 |
 
 ## 조향각 7종 비교
 
