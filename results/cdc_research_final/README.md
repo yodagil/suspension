@@ -1,6 +1,6 @@
 # CDC Research Final: H-preserving recovery
 
-**검증 후 업로드: 86/210조건 · 조건별 마모 5종.** 계산 상태: `running`.
+**검증 후 업로드: 87/210조건 · 조건별 마모 5종.** 계산 상태: `running`.
 
 [현재 진행 상황](publication_progress.json) · [전체 수치 요약](publication_summary.csv) · [실행·판정 설명](../../cdc_research_final/README_KO.md)
 
@@ -98,6 +98,7 @@ MAT 변수는 **`RESEARCH2D`**이며 `CASE`는 마모 5종의 cell 배열입니�
 | 70 | 0.8 | 3 | [MAT](research_70kph_mu0.8_delta+3_I950_950_950_950_trim.mat) | [그림](figures/research_70kph_mu0.8_delta+3_I950_950_950_950_trim.png) | 779, 704, 549, 732, 577 | 없음 |
 | 70 | 0.7 | 0 | [MAT](research_70kph_mu0.7_delta+0_I950_950_950_950_trim.mat) | [그림](figures/research_70kph_mu0.7_delta+0_I950_950_950_950_trim.png) | 630, 565, 438, 598, 472 | 없음 |
 | 70 | 0.7 | 0.5 | [MAT](research_70kph_mu0.7_delta+0.5_I950_950_950_950_trim.mat) | [그림](figures/research_70kph_mu0.7_delta+0.5_I950_950_950_950_trim.png) | 629, 564, 433, 593, 469 | 없음 |
+| 70 | 0.7 | 1 | [MAT](research_70kph_mu0.7_delta+1_I950_950_950_950_trim.mat) | [그림](figures/research_70kph_mu0.7_delta+1_I950_950_950_950_trim.png) | 628, 563, 433, 590, 466 | 없음 |
 
 ## 조향각 7종 비교
 
