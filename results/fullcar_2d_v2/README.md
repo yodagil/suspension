@@ -1,6 +1,6 @@
 # V2 Full-car 2차원 CDC 안전·복귀 영역
 
-**검증 후 업로드: 19/210조건 · 조건별 마모 5종.** 계산 상태: `running`.
+**검증 후 업로드: 20/210조건 · 조건별 마모 5종.** 계산 상태: `running`.
 
 [현재 진행 상황](publication_progress.json) · [전체 수치 요약](publication_summary.csv) · [실행·판정 설명](../../fullcar_2d_v2/README_KO.md)
 
@@ -31,6 +31,7 @@ MAT 변수명은 `STABILITY2D`입니다. `stable_points`는 초기 `[vc0, r0]` �
 | 50 | 0.7 | 1 | [MAT](fullcar2d_v2_50kph_mu0.7_delta+1_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.7_delta+1_trim_trim.png) | 1299, 1292, 1384, 1270, 1408 | 1, 2, 3, 4, 5 |
 | 50 | 0.7 | 1.5 | [MAT](fullcar2d_v2_50kph_mu0.7_delta+1.5_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.7_delta+1.5_trim_trim.png) | 1285, 1280, 1361, 1224, 1368 | 1, 2, 3, 4, 5 |
 | 50 | 0.7 | 2 | [MAT](fullcar2d_v2_50kph_mu0.7_delta+2_trim_trim.mat) | [그림](figures/fullcar2d_v2_50kph_mu0.7_delta+2_trim_trim.png) | 1263, 1265, 1356, 1199, 1301 | 1, 2, 3, 4, 5 |
+| 50 | 0.7 | 2.5 | [MAT](fullcar2d_v2_50kph_mu0.7_delta+2.5_trim_trim.mat) | 생성 중 | 1256, 1254, 1324, 1189, 1269 | 1, 2, 3, 4, 5 |
 
 ## 조향각 7종 비교
 
