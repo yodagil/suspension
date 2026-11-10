@@ -1,5 +1,5 @@
 {
-  "completed": 87,
+  "completed": 88,
   "total": 210,
   "producer_phase": "running",
   "current": {
@@ -7,8 +7,8 @@
     "speed_kmh": 70,
     "mu_road": 0.7,
     "front_steer_deg": 1.5,
-    "completed_wear_cases": 1,
-    "current_wear_case": 2,
+    "completed_wear_cases": 4,
+    "current_wear_case": 5,
     "wear_total": 5
   },
   "producer_completed_scenarios": 87,
@@ -22,5 +22,5 @@
     5,
     10
   ],
-  "observed_utc": "2026-11-10T08:57:05+00:00"
+  "observed_utc": "2026-11-10T08:57:39+00:00"
 }
