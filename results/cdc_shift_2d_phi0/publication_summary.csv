@@ -389,3 +389,8 @@ cdc2d_70kph_mu0.8_delta+0_trim_phi00.mat,70,0.8,0.0,2,273,169,107,105,135,135,10
 cdc2d_70kph_mu0.8_delta+0_trim_phi00.mat,70,0.8,0.0,3,206,169,99,94,154,154,93,93,0.8133333333333322,True,True,False
 cdc2d_70kph_mu0.8_delta+0_trim_phi00.mat,70,0.8,0.0,4,318,249,108,107,136,136,106,106,0.9999999999999986,True,True,False
 cdc2d_70kph_mu0.8_delta+0_trim_phi00.mat,70,0.8,0.0,5,353,219,92,92,122,122,92,92,0.8133333333333324,True,True,False
+cdc2d_70kph_mu0.8_delta+0.5_trim_phi00.mat,70,0.8,0.5,1,310,246,121,115,145,145,114,114,1.1199999999999992,True,True,False
+cdc2d_70kph_mu0.8_delta+0.5_trim_phi00.mat,70,0.8,0.5,2,281,201,119,111,141,141,111,111,1.079999999999999,True,True,False
+cdc2d_70kph_mu0.8_delta+0.5_trim_phi00.mat,70,0.8,0.5,3,181,150,98,94,139,139,93,93,0.8399999999999989,True,True,False
+cdc2d_70kph_mu0.8_delta+0.5_trim_phi00.mat,70,0.8,0.5,4,303,231,111,111,143,143,111,111,1.079999999999999,True,True,False
+cdc2d_70kph_mu0.8_delta+0.5_trim_phi00.mat,70,0.8,0.5,5,329,181,92,92,125,125,92,92,0.8133333333333324,True,True,False
