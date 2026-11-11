@@ -1,6 +1,6 @@
 {
   "version": "CDC_RESEARCH_FINAL_1",
-  "validated_scenarios": 158,
+  "validated_scenarios": 159,
   "total_scenarios": 210,
   "producer_phase": "running",
   "validation_errors": {},
@@ -28780,9 +28780,191 @@
           "reference_grid_truncated": false
         }
       ]
+    },
+    {
+      "all_checks_passed": true,
+      "filename": "research_90kph_mu0.7_delta+2_I950_950_950_950_trim.mat",
+      "sha256": "eed8e1a9b22434d58a12f00d4bdf0f6fc4ced2b96249d2ac01290d9822383221",
+      "bytes": 2657062,
+      "speed_kmh": 90.0,
+      "mu_road": 0.7,
+      "front_steer_deg": 2.0,
+      "version": "CDC_RESEARCH_FINAL_1",
+      "case_summaries": [
+        {
+          "wear_case": 1,
+          "wear": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "reference_count": 1232,
+          "recovered_counts": [
+            689,
+            689
+          ],
+          "final_counts": [
+            610,
+            610
+          ],
+          "guarded_counts": [
+            0,
+            0
+          ],
+          "prepeak_counts": [
+            610,
+            610
+          ],
+          "sampled_area": 1.357499999999991,
+          "accepted_cells": 543,
+          "center_points": 543,
+          "trim_usable": true,
+          "trim_in_reference": true,
+          "initial_roll_rad": 0.04778111077990352,
+          "grid_truncated": false,
+          "reference_grid_truncated": false
+        },
+        {
+          "wear_case": 2,
+          "wear": [
+            25,
+            25,
+            0,
+            0
+          ],
+          "reference_count": 1073,
+          "recovered_counts": [
+            0,
+            0
+          ],
+          "final_counts": [
+            0,
+            0
+          ],
+          "guarded_counts": [
+            0,
+            0
+          ],
+          "prepeak_counts": [
+            0,
+            0
+          ],
+          "sampled_area": 0.0,
+          "accepted_cells": 0,
+          "center_points": 0,
+          "trim_usable": false,
+          "trim_in_reference": true,
+          "initial_roll_rad": 0.05207688979059344,
+          "grid_truncated": false,
+          "reference_grid_truncated": false
+        },
+        {
+          "wear_case": 3,
+          "wear": [
+            50,
+            50,
+            25,
+            25
+          ],
+          "reference_count": 793,
+          "recovered_counts": [
+            0,
+            0
+          ],
+          "final_counts": [
+            0,
+            0
+          ],
+          "guarded_counts": [
+            0,
+            0
+          ],
+          "prepeak_counts": [
+            0,
+            0
+          ],
+          "sampled_area": 0.0,
+          "accepted_cells": 0,
+          "center_points": 0,
+          "trim_usable": false,
+          "trim_in_reference": true,
+          "initial_roll_rad": 0.05176073954805156,
+          "grid_truncated": false,
+          "reference_grid_truncated": false
+        },
+        {
+          "wear_case": 4,
+          "wear": [
+            0,
+            0,
+            25,
+            25
+          ],
+          "reference_count": 1160,
+          "recovered_counts": [
+            704,
+            704
+          ],
+          "final_counts": [
+            641,
+            641
+          ],
+          "guarded_counts": [
+            0,
+            0
+          ],
+          "prepeak_counts": [
+            641,
+            641
+          ],
+          "sampled_area": 1.4299999999999893,
+          "accepted_cells": 572,
+          "center_points": 572,
+          "trim_usable": true,
+          "trim_in_reference": true,
+          "initial_roll_rad": 0.044403725918946806,
+          "grid_truncated": false,
+          "reference_grid_truncated": false
+        },
+        {
+          "wear_case": 5,
+          "wear": [
+            25,
+            25,
+            50,
+            50
+          ],
+          "reference_count": 875,
+          "recovered_counts": [
+            590,
+            590
+          ],
+          "final_counts": [
+            533,
+            533
+          ],
+          "guarded_counts": [
+            0,
+            0
+          ],
+          "prepeak_counts": [
+            533,
+            533
+          ],
+          "sampled_area": 1.1674999999999947,
+          "accepted_cells": 467,
+          "center_points": 467,
+          "trim_usable": true,
+          "trim_in_reference": true,
+          "initial_roll_rad": 0.042432155470580754,
+          "grid_truncated": false,
+          "reference_grid_truncated": false
+        }
+      ]
     }
   ],
-  "condition_figures": 158,
+  "condition_figures": 159,
   "overview_figures": 22,
-  "updated_utc": "2026-11-11T00:01:18+00:00"
+  "updated_utc": "2026-11-11T00:02:20+00:00"
 }
