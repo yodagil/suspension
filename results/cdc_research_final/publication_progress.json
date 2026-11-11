@@ -7,8 +7,8 @@
     "speed_kmh": 90,
     "mu_road": 0.6,
     "front_steer_deg": 0,
-    "completed_wear_cases": 2,
-    "current_wear_case": 3,
+    "completed_wear_cases": 4,
+    "current_wear_case": 5,
     "wear_total": 5
   },
   "producer_completed_scenarios": 161,
@@ -29,5 +29,5 @@
     5,
     10
   ],
-  "observed_utc": "2026-11-11T00:08:23+00:00"
+  "observed_utc": "2026-11-11T00:09:26+00:00"
 }
