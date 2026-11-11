@@ -799,3 +799,8 @@ research_90kph_mu0.7_delta+2.5_I950_950_950_950_trim.mat,90.0,0.7,2.5,2,0.053126
 research_90kph_mu0.7_delta+2.5_I950_950_950_950_trim.mat,90.0,0.7,2.5,3,0.05235993939671227,790,0,0,0,0,0,0,0,0,0.0,0,0,False,False,False,False
 research_90kph_mu0.7_delta+2.5_I950_950_950_950_trim.mat,90.0,0.7,2.5,4,0.05038081481807899,1152,0,0,0,0,0,0,0,0,0.0,0,0,False,True,False,False
 research_90kph_mu0.7_delta+2.5_I950_950_950_950_trim.mat,90.0,0.7,2.5,5,0.04987214444046769,874,0,0,0,0,0,0,0,0,0.0,0,0,False,True,False,False
+research_90kph_mu0.7_delta+3_I950_950_950_950_trim.mat,90.0,0.7,3.0,1,0.05258684663676559,1223,0,0,0,0,0,0,0,0,0.0,0,0,False,False,False,True
+research_90kph_mu0.7_delta+3_I950_950_950_950_trim.mat,90.0,0.7,3.0,2,0.05291454199330065,1071,0,0,0,0,0,0,0,0,0.0,0,0,False,False,False,True
+research_90kph_mu0.7_delta+3_I950_950_950_950_trim.mat,90.0,0.7,3.0,3,0.05197465553025157,785,0,0,0,0,0,0,0,0,0.0,0,0,False,False,False,False
+research_90kph_mu0.7_delta+3_I950_950_950_950_trim.mat,90.0,0.7,3.0,4,0.052278876886184496,1150,0,0,0,0,0,0,0,0,0.0,0,0,False,True,False,True
+research_90kph_mu0.7_delta+3_I950_950_950_950_trim.mat,90.0,0.7,3.0,5,0.05275392074851885,874,0,0,0,0,0,0,0,0,0.0,0,0,False,True,False,False
