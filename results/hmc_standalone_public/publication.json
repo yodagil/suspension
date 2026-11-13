@@ -2,7 +2,7 @@
   "version": "HMC_INDEPENDENT_1",
   "validated_scenarios": 2,
   "total_scenarios": 210,
-  "producer_phase": "running",
+  "producer_phase": "cancelled",
   "validation_errors": {},
   "source_sha256": {
     "hmc_handling_reference.m": "0190bf61d0f4a6e1b22acf29147ffc2d4e8526172f878f1e2e99462e11fc47f7",
@@ -357,5 +357,5 @@
   ],
   "condition_figures": 2,
   "overview_figures": 0,
-  "updated_utc": "2026-11-13T04:32:28+00:00"
+  "updated_utc": "2026-11-13T04:35:16+00:00"
 }

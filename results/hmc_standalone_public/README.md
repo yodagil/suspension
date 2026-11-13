@@ -1,6 +1,6 @@
 # HMC 독립 모델: H 유지 복귀 영역
 
-**검증 후 업로드: 2/210조건 · 조건별 마모 5종.** 계산 상태: `running`.
+**검증 후 업로드: 2/210조건 · 조건별 마모 5종.** 계산 상태: `cancelled`.
 
 [현재 진행 상황](publication_progress.json) · [전체 수치 요약](publication_summary.csv) · [실행·판정 설명](../../hmc_standalone/README_KO.md)
 
