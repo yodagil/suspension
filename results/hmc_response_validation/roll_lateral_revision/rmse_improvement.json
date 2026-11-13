@@ -1,0 +1,46 @@
+{
+  "50": {
+    "vy_mps": {
+      "previous_rmse": 0.005494553563160405,
+      "revised_rmse": 0.002935157138007322,
+      "reduction_percent": 46.58060742756591
+    },
+    "r_radps": {
+      "previous_rmse": 0.0008830096666946321,
+      "revised_rmse": 0.0007372843373116444,
+      "reduction_percent": 16.503254140861333
+    },
+    "roll_deg": {
+      "previous_rmse": 0.015053368706912004,
+      "revised_rmse": 0.007228807692792309,
+      "reduction_percent": 51.97880399041125
+    },
+    "pitch_deg": {
+      "previous_rmse": 0.002279798897603525,
+      "revised_rmse": 0.0006909688157076579,
+      "reduction_percent": 69.69167690913487
+    }
+  },
+  "70": {
+    "vy_mps": {
+      "previous_rmse": 0.025724996255522235,
+      "revised_rmse": 0.009637599666217744,
+      "reduction_percent": 62.53605026609519
+    },
+    "r_radps": {
+      "previous_rmse": 0.006482669493696392,
+      "revised_rmse": 0.002434006062399085,
+      "reduction_percent": 62.45364560439399
+    },
+    "roll_deg": {
+      "previous_rmse": 0.2113018008772214,
+      "revised_rmse": 0.01059902669718549,
+      "reduction_percent": 94.98393925031233
+    },
+    "pitch_deg": {
+      "previous_rmse": 0.005053273129277803,
+      "revised_rmse": 0.003999424586588725,
+      "reduction_percent": 20.85477107071968
+    }
+  }
+}

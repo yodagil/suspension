@@ -1,0 +1,27 @@
+{
+  "case50": {
+    "speed_kmh": 50.0,
+    "rhs_scaled_error": 1.3877787807814457e-14,
+    "hybrid_5ms_scaled_error": 1.0408340855860843e-17,
+    "full_10s_dt_refine_scaled_error": 4.254074132659366e-07,
+    "roll_dt_refine_max_deg": 3.518260227694803e-08,
+    "pitch_dt_refine_max_deg": 4.884857744866271e-09,
+    "trim_residual": 7.063097152066358e-12,
+    "root_found": 1,
+    "native_mcode_implemented": 1
+  },
+  "case70": {
+    "speed_kmh": 70.0,
+    "rhs_scaled_error": 1.9920188849505808e-14,
+    "hybrid_5ms_scaled_error": 1.3877787807814457e-17,
+    "full_10s_dt_refine_scaled_error": 1.1144052074170725e-07,
+    "roll_dt_refine_max_deg": 4.237726808114984e-08,
+    "pitch_dt_refine_max_deg": 4.426858220161698e-09,
+    "trim_residual": 8.531111714496284e-09,
+    "root_found": 1,
+    "native_mcode_implemented": 1
+  },
+  "all_passed": 1,
+  "scope": "RHS 16 probes per condition; independent M-code sampled-delay RK4 for 2 trajectories over 5 ms; native 10 s dt 1 ms vs 0.5 ms. Not proof of CarSim equivalence.",
+  "numeric_implementation_runtime": "GNU Octave M-code reference and C++17 native engine"
+}
