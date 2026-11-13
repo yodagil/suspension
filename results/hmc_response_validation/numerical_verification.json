@@ -1,0 +1,83 @@
+{
+  "scope": "Numerical implementation parity and step refinement; not proof of CarSim equivalence. No vehicle/tire parameters included.",
+  "mcode_native_short_integration": {
+    "all_passed": true,
+    "physical_trim_claim": true,
+    "trim_residual_norm": 7.967302031794624e-11,
+    "rhs_probe_count": 16,
+    "rhs_scaled_max_error": 1.532107773982716e-14,
+    "results": [
+      {
+        "dt_s": 0.001,
+        "duration_s": 0.005,
+        "batch_size": 2,
+        "scaled_terminal_error": 5.149960319306146e-18,
+        "scaled_trajectory_error": 5.149960319306146e-18
+      },
+      {
+        "dt_s": 0.0005,
+        "duration_s": 0.005,
+        "batch_size": 2,
+        "scaled_terminal_error": 1.3877787807814457e-17,
+        "scaled_trajectory_error": 1.3877787807814457e-17
+      }
+    ],
+    "scope": "Numerical parity on final MF vertical candidate; no CarSim time-response equivalence claim."
+  },
+  "native_full_10s_step_refinement": {
+    "all_passed": true,
+    "criterion": "All-state scaled maximum difference below 1e-5 when integration dt is halved; response errors reported separately.",
+    "scope": "Full 10 s native integration convergence; CDC sampling 1 ms and delay 2 ms unchanged. No CarSim equivalence claim.",
+    "cases": [
+      {
+        "case": "50kph_mu05_steer0",
+        "duration_s": 10,
+        "base_dt_s": 0.001,
+        "refined_dt_s": 0.0005,
+        "cdc_control_dt_s": 0.001,
+        "cdc_delay_s": 0.002,
+        "aligned_sample_count": 10001,
+        "all_state_scaled_max_error": 3.731743001391781e-07,
+        "response_max_abs_error": {
+          "vy_mps": 4.671543901713093e-09,
+          "r_radps": 4.227731764672171e-08,
+          "roll_deg": 3.738690735404105e-08,
+          "pitch_deg": 3.8987736868250855e-09,
+          "vx_kmh": 1.4074226584170902e-08,
+          "pitchrate_degps": 5.6343995754995194e-08
+        },
+        "force_max_abs_error_N": {
+          "Fz": 0.00017835572816693457,
+          "spring": 2.4884819140424952e-05,
+          "damper": 0.0011332384730451395
+        },
+        "refined_wall_s": 1.5769929885864258
+      },
+      {
+        "case": "70kph_mu06_steer2p5",
+        "duration_s": 10,
+        "base_dt_s": 0.001,
+        "refined_dt_s": 0.0005,
+        "cdc_control_dt_s": 0.001,
+        "cdc_delay_s": 0.002,
+        "aligned_sample_count": 10001,
+        "all_state_scaled_max_error": 7.544318263054262e-08,
+        "response_max_abs_error": {
+          "vy_mps": 1.9496385200712396e-09,
+          "r_radps": 9.328046446377414e-09,
+          "roll_deg": 1.3786109098402256e-08,
+          "pitch_deg": 1.3556545712408616e-09,
+          "vx_kmh": 4.2749407214159875e-08,
+          "pitchrate_degps": 1.5130932493808476e-07
+        },
+        "force_max_abs_error_N": {
+          "Fz": 5.55504202566226e-05,
+          "spring": 7.228538379422389e-06,
+          "damper": 0.0002774185755853864
+        },
+        "refined_wall_s": 0.9538478851318359
+      }
+    ],
+    "pending_cases": []
+  }
+}
