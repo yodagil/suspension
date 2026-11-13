@@ -1,0 +1,143 @@
+{
+  "independent_file": "validation/hmc_standalone/baseline/hmc_50kph_mu0.5_delta+0.mat",
+  "condition": {
+    "speed_kmh": 50.0,
+    "mu": 0.5,
+    "steer_target_deg": 0.0,
+    "steer_actual_deg": -0.0009047490365432787,
+    "wear": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "reference_H": 227,
+  "independent_H": 227,
+  "H_disagreements": 0,
+  "masks": {
+    "final": [
+      {
+        "horizon_s": 5,
+        "independent_count": 201,
+        "carsim_count": 200,
+        "intersection": 200,
+        "union": 201,
+        "jaccard": 0.9950248756218906,
+        "common_H_disagreements": 1
+      },
+      {
+        "horizon_s": 10,
+        "independent_count": 201,
+        "carsim_count": 200,
+        "intersection": 200,
+        "union": 201,
+        "jaccard": 0.9950248756218906,
+        "common_H_disagreements": 1
+      }
+    ],
+    "recoverable_on_reference": [
+      {
+        "horizon_s": 5,
+        "independent_count": 227,
+        "carsim_count": 227,
+        "intersection": 227,
+        "union": 227,
+        "jaccard": 1.0,
+        "common_H_disagreements": 0
+      },
+      {
+        "horizon_s": 10,
+        "independent_count": 227,
+        "carsim_count": 227,
+        "intersection": 227,
+        "union": 227,
+        "jaccard": 1.0,
+        "common_H_disagreements": 0
+      }
+    ],
+    "guarded_final": [
+      {
+        "horizon_s": 5,
+        "independent_count": 196,
+        "carsim_count": 196,
+        "intersection": 196,
+        "union": 196,
+        "jaccard": 1.0,
+        "common_H_disagreements": 0
+      },
+      {
+        "horizon_s": 10,
+        "independent_count": 196,
+        "carsim_count": 196,
+        "intersection": 196,
+        "union": 196,
+        "jaccard": 1.0,
+        "common_H_disagreements": 0
+      }
+    ],
+    "model_safe": [
+      {
+        "horizon_s": 5,
+        "independent_count": 227,
+        "carsim_count": 227,
+        "intersection": 227,
+        "union": 227,
+        "jaccard": 1.0,
+        "common_H_disagreements": 0
+      },
+      {
+        "horizon_s": 10,
+        "independent_count": 227,
+        "carsim_count": 227,
+        "intersection": 227,
+        "union": 227,
+        "jaccard": 1.0,
+        "common_H_disagreements": 0
+      }
+    ]
+  },
+  "trim": {
+    "vy_mps": {
+      "independent": -0.01460055255465797,
+      "carsim": -0.014578365088368014,
+      "difference": -2.21874662899562e-05
+    },
+    "r_radps": {
+      "independent": -0.00011033688610955682,
+      "carsim": -0.0001481374392321178,
+      "difference": 3.780055312256099e-05
+    },
+    "vx_kmh": {
+      "independent": 50.0,
+      "carsim": 50.00003894993767,
+      "difference": -3.894993766806465e-05
+    },
+    "roll_deg": {
+      "independent": -0.0008951511779023077,
+      "carsim": 0.001948587914838728,
+      "difference": -0.002843739092741036
+    },
+    "pitch_deg": {
+      "independent": 3.925970378483513e-07,
+      "carsim": 0.007769794654387468,
+      "difference": -0.00776940205734962
+    },
+    "rollrate_degps": {
+      "independent": 0.0,
+      "carsim": 1.1064414210903375e-06,
+      "difference": -1.1064414210903375e-06
+    },
+    "pitchrate_degps": {
+      "independent": 0.0,
+      "carsim": -9.987863367301267e-06,
+      "difference": 9.987863367301267e-06
+    }
+  },
+  "independent_cell_area": 0.395,
+  "carsim_cell_area": 0.3924999999999996,
+  "independent_cells": 158,
+  "carsim_cells": 157,
+  "not_carsim_engine": true,
+  "scope": "Finite-time saved-mask comparison only; no time histories were supplied by CarSim"
+}

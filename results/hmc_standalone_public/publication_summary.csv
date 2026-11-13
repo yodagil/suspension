@@ -1,0 +1,6 @@
+filename,speed_kmh,mu_road,front_steer_deg,wear_case,initial_roll_rad,reference_count,recovered_5s,recovered_10s,final_5s,final_10s,guarded_5s,guarded_10s,sampled_area,accepted_cells,center_points,trim_usable,trim_in_reference,grid_truncated,reference_grid_truncated
+hmc_50kph_mu0.9_delta+0.mat,50.0,0.9,0.0,1,-2.3274448362305367e-05,727,727,727,639,639,620,620,1.4075000000000002,563,563,True,True,False,False
+hmc_50kph_mu0.9_delta+0.mat,50.0,0.9,0.0,2,-0.0003188775543165395,648,648,648,575,575,566,566,1.2575000000000003,503,503,True,True,False,False
+hmc_50kph_mu0.9_delta+0.mat,50.0,0.9,0.0,3,-0.0002978084485212825,479,479,479,431,431,431,431,0.9200000000000003,368,368,True,True,False,False
+hmc_50kph_mu0.9_delta+0.mat,50.0,0.9,0.0,4,0.00012851185963428513,671,671,671,601,601,584,584,1.3175000000000003,527,527,True,True,False,False
+hmc_50kph_mu0.9_delta+0.mat,50.0,0.9,0.0,5,3.925785393614055e-05,503,503,503,454,454,453,453,0.9725000000000001,389,389,True,True,False,False

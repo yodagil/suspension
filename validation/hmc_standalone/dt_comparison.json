@@ -1,0 +1,9 @@
+{
+  "reference": true,
+  "final": true,
+  "recoverable_on_reference": true,
+  "guarded_final": true,
+  "model_safe": true,
+  "cell_mask": true,
+  "wall_s": 48.56218099594116
+}

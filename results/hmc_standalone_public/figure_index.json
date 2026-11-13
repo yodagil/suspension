@@ -1,0 +1,14 @@
+{
+  "condition_figures": [
+    {
+      "filename": "hmc_50kph_mu0.9_delta+0.png",
+      "bytes": 149770,
+      "sha256": "a64985810ec44171108d9c57b9862bec0ec0b2155675869edc172f0b12e0cd5c",
+      "source_mat": "hmc_50kph_mu0.9_delta+0.mat",
+      "source_sha256": "d9a86aa5d768c1f133efb37705c8e9cb1240be7691a61c4010cd996f90a0d032"
+    }
+  ],
+  "overview_figures": [],
+  "plotter_sha256": "3d9d395bec21f3ebd5b0705e12e1544d8d3a35b44a8d2e85047f020a026bb197",
+  "updated_utc": "2026-11-13T04:21:45+00:00"
+}

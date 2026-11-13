@@ -1,0 +1,1 @@
+{"all_passed":true,"rhs_scaled_error":0,"short_rk4_scaled_error":0,"short_duration_s":0.002,"policy_errors_5_10s":[0,0],"policy_time_samples":20001,"trace_wall_s":1.4824368953704835,"step_refinement_error":8.506019444354252e-9,"long_mcode_integration_executed":false,"scope":"Independent M RHS+short RK4, independent M full10s classification of native trace, native dt refinement"}

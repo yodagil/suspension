@@ -1,0 +1,197 @@
+{
+  "version": "HMC_INDEPENDENT_1",
+  "validated_scenarios": 1,
+  "total_scenarios": 210,
+  "producer_phase": "running",
+  "validation_errors": {},
+  "source_sha256": {
+    "hmc_handling_reference.m": "0190bf61d0f4a6e1b22acf29147ffc2d4e8526172f878f1e2e99462e11fc47f7",
+    "hmc_options.m": "576eba24f0488539a0459a917625bfe1b356cbfce42fec9a13ccfdfddc34c285",
+    "run_hmc_standalone.m": "eeb1957ac32714fae6867bf61a19e7b80080ac109c8006b5290c229f061a74f5",
+    "hmc_build_native.m": "af6e048286f7a7169877c91f1aac5b6e8b3fea058d489c21083692ea6272835b",
+    "hmc_generate.m": "829244dc2a5e68f488177f33085469c2c8f7c3a4bcf13c60b85c9991050e3276",
+    "hmc_tire_force.m": "74bbd1f683e55e498beb24d93e9318283c5c0803fff24420b705d35fbb02e423",
+    "hmc_mcode_simulate.m": "1a1a4e3b3097eb76772568fffab118a82a7d14af8d7a4121dabcc3206022ee2e",
+    "hmc_vehicle_model.m": "4548ec308ec48e96035c52282c335ffd95bc071e2e0856718925ff03ad4cbc8d",
+    "hmc_native.m": "e3ead3136bb434e7973791b6cce744812d5d27155ae59390b37e5086bc7ce1f8",
+    "hmc_classify.m": "dde22b61f8ade4a31aff341ffebdd897f19bc28dd9f8e6e68510d2e63f48208c",
+    "native/hmc_native.cpp": "6c055a34f29518291e895666c35c915a7d011483e7bee63880b2dfd295f6fbc4",
+    "native/hmc_tire.hpp": "44f89290f9a0b7de128481a474c66cfd8d63b2111a853293f1307e246f4f08d0",
+    "native/hmc_vehicle.hpp": "72a322032c06c5372e7f994724ba808cc0bb3481bdbd59b2411fc877ba7d9701",
+    "data/damper.json": "7c6664767d9cad04a8b66f6c25ae02471936a7feb808dbe0e6acba8c207242e5",
+    "data/vehicle.json": "f345887e44d0617b4130b009225402dbb915707c58327d5f88588a0da7b2e467",
+    "data/tires.json": "864598bede9b992f047b4b38596309b568932d85a45dc3f8e7bc1aa93ba8f840",
+    "data/source_manifest.json": "ea64c444c6e54ecfc9360e2120d103e883d83287784d4c6187c7878b388b50bd",
+    "data/hmc_data.mat": "f58b56dcf585602ae0f6056af6de88bc5ff822a17c4038b8c6fb0cedd31efa84",
+    "native/hmc_native": "45ba96adbf47d13fef84c8386024e585b34d75ebeeb822ecb492ca3d5ae4fb16"
+  },
+  "scenarios": [
+    {
+      "all_checks_passed": true,
+      "filename": "hmc_50kph_mu0.9_delta+0.mat",
+      "sha256": "d9a86aa5d768c1f133efb37705c8e9cb1240be7691a61c4010cd996f90a0d032",
+      "bytes": 2548342,
+      "speed_kmh": 50.0,
+      "mu_road": 0.9,
+      "front_steer_deg": 0.0,
+      "version": "HMC_INDEPENDENT_1",
+      "case_summaries": [
+        {
+          "wear_case": 1,
+          "wear": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "reference_count": 727,
+          "final_counts": [
+            639,
+            639
+          ],
+          "recovered_counts": [
+            727,
+            727
+          ],
+          "guarded_counts": [
+            620,
+            620
+          ],
+          "sampled_area": 1.4075000000000002,
+          "accepted_cells": 563,
+          "center_points": 563,
+          "trim_usable": true,
+          "trim_in_reference": true,
+          "initial_roll_rad": -2.3274448362305367e-05,
+          "grid_truncated": false,
+          "reference_grid_truncated": false
+        },
+        {
+          "wear_case": 2,
+          "wear": [
+            25,
+            25,
+            0,
+            0
+          ],
+          "reference_count": 648,
+          "final_counts": [
+            575,
+            575
+          ],
+          "recovered_counts": [
+            648,
+            648
+          ],
+          "guarded_counts": [
+            566,
+            566
+          ],
+          "sampled_area": 1.2575000000000003,
+          "accepted_cells": 503,
+          "center_points": 503,
+          "trim_usable": true,
+          "trim_in_reference": true,
+          "initial_roll_rad": -0.0003188775543165395,
+          "grid_truncated": false,
+          "reference_grid_truncated": false
+        },
+        {
+          "wear_case": 3,
+          "wear": [
+            50,
+            50,
+            25,
+            25
+          ],
+          "reference_count": 479,
+          "final_counts": [
+            431,
+            431
+          ],
+          "recovered_counts": [
+            479,
+            479
+          ],
+          "guarded_counts": [
+            431,
+            431
+          ],
+          "sampled_area": 0.9200000000000003,
+          "accepted_cells": 368,
+          "center_points": 368,
+          "trim_usable": true,
+          "trim_in_reference": true,
+          "initial_roll_rad": -0.0002978084485212825,
+          "grid_truncated": false,
+          "reference_grid_truncated": false
+        },
+        {
+          "wear_case": 4,
+          "wear": [
+            0,
+            0,
+            25,
+            25
+          ],
+          "reference_count": 671,
+          "final_counts": [
+            601,
+            601
+          ],
+          "recovered_counts": [
+            671,
+            671
+          ],
+          "guarded_counts": [
+            584,
+            584
+          ],
+          "sampled_area": 1.3175000000000003,
+          "accepted_cells": 527,
+          "center_points": 527,
+          "trim_usable": true,
+          "trim_in_reference": true,
+          "initial_roll_rad": 0.00012851185963428513,
+          "grid_truncated": false,
+          "reference_grid_truncated": false
+        },
+        {
+          "wear_case": 5,
+          "wear": [
+            25,
+            25,
+            50,
+            50
+          ],
+          "reference_count": 503,
+          "final_counts": [
+            454,
+            454
+          ],
+          "recovered_counts": [
+            503,
+            503
+          ],
+          "guarded_counts": [
+            453,
+            453
+          ],
+          "sampled_area": 0.9725000000000001,
+          "accepted_cells": 389,
+          "center_points": 389,
+          "trim_usable": true,
+          "trim_in_reference": true,
+          "initial_roll_rad": 3.925785393614055e-05,
+          "grid_truncated": false,
+          "reference_grid_truncated": false
+        }
+      ],
+      "input_sha256": "ed7609d116dbb647982b71da69c64e6f5d1912ddc1d22905d5f6b7b58f2c4ef4",
+      "private_model_data_excluded": true
+    }
+  ],
+  "condition_figures": 1,
+  "overview_figures": 0,
+  "updated_utc": "2026-11-13T04:21:45+00:00"
+}
