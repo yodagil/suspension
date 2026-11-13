@@ -6,9 +6,16 @@
       "sha256": "a64985810ec44171108d9c57b9862bec0ec0b2155675869edc172f0b12e0cd5c",
       "source_mat": "hmc_50kph_mu0.9_delta+0.mat",
       "source_sha256": "d9a86aa5d768c1f133efb37705c8e9cb1240be7691a61c4010cd996f90a0d032"
+    },
+    {
+      "filename": "hmc_50kph_mu0.9_delta+0.5.png",
+      "bytes": 152401,
+      "sha256": "949e6e248cf5bf2c297c0a433556a1715b0a49d30382b8fc126d966555ba67b6",
+      "source_mat": "hmc_50kph_mu0.9_delta+0.5.mat",
+      "source_sha256": "b62a2023c5c91d55cbac2e8a91e743b4286894c98bdec939269a7a1c5a016b36"
     }
   ],
   "overview_figures": [],
   "plotter_sha256": "3d9d395bec21f3ebd5b0705e12e1544d8d3a35b44a8d2e85047f020a026bb197",
-  "updated_utc": "2026-11-13T04:30:10+00:00"
+  "updated_utc": "2026-11-13T04:32:28+00:00"
 }

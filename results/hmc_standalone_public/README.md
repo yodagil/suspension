@@ -1,6 +1,6 @@
 # HMC 독립 모델: H 유지 복귀 영역
 
-**검증 후 업로드: 1/210조건 · 조건별 마모 5종.** 계산 상태: `running`.
+**검증 후 업로드: 2/210조건 · 조건별 마모 5종.** 계산 상태: `running`.
 
 [현재 진행 상황](publication_progress.json) · [전체 수치 요약](publication_summary.csv) · [실행·판정 설명](../../hmc_standalone/README_KO.md)
 
@@ -17,3 +17,4 @@ MAT 변수는 `RESEARCH2D`, `CASE{1}`~`{5}`는 타이어 마모입니다. 10초 
 | 속도 km/h | μ | 앞 휠 조향각 ° | MAT | 2D 그림 | 10초 final 점 수, 마모 1~5 | 격자 접촉 |
 |---|---|---|---|---|---|---|
 | 50 | 0.9 | 0 | [MAT](hmc_50kph_mu0.9_delta+0.mat) | [그림](figures/hmc_50kph_mu0.9_delta+0.png) | 639, 575, 431, 601, 454 | 없음 |
+| 50 | 0.9 | 0.5 | [MAT](hmc_50kph_mu0.9_delta+0.5.mat) | [그림](figures/hmc_50kph_mu0.9_delta+0.5.png) | 642, 578, 438, 601, 450 | 없음 |
