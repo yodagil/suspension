@@ -139,5 +139,5 @@
   "independent_cells": 158,
   "carsim_cells": 157,
   "not_carsim_engine": true,
-  "scope": "Finite-time saved-mask comparison only; no time histories were supplied by CarSim"
+  "scope": "Finite-time saved-mask comparison only; no time-history comparison is part of this report"
 }
