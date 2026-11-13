@@ -1,0 +1,302 @@
+{
+  "format_version": "response_validation_v1",
+  "model_revision": "HMC_ROLL_LATERAL_REVISION_20261113",
+  "unchanged_50_70_frozen_model": true,
+  "coefficients_or_model_tuned_to_this_recording": false,
+  "conditions": {
+    "speed_kmh": 90.0,
+    "road_mu": 0.6,
+    "source_road_mu_from_user": 0.6,
+    "front_steer_command_deg": 2.5,
+    "steering_wheel_ratio_from_user": 14.805,
+    "carsim_trim_front_steer_mean_deg": 2.17661685615922,
+    "carsim_first_front_steer_mean_deg": 2.1766168617519397,
+    "actual_wheel_steer_is_time_varying": true,
+    "healthy_tires": true,
+    "initial_vy_mps": 0.1,
+    "initial_body_yaw_rate_radps": 0.35,
+    "spring_mode": "normal",
+    "cdc_current_mA": 950.0,
+    "reference_trim_time_s": 12.0,
+    "model_trim_method": "Independent numerical steady-state root; no time-domain 12 s model trim was executed",
+    "duration_s": 10.0,
+    "sample_interval_s": 0.001,
+    "recording_start_s": 12.0,
+    "initialization": "Each model retains its own independently obtained steady body, suspension and wheel-speed states. Physical lateral speed/body yaw rate are set to 0.1 m/s and 0.35 rad/s; internal tire relaxation states start from zero using the same restart rule established before this 90 km/h validation. Recorded roll/pitch are not forced to zero and no CarSim trim snapshot is injected into the model."
+  },
+  "metrics_all_samples": {
+    "vy_mps": {
+      "rmse": 0.04214595222065269,
+      "max_abs_error": 0.18037201880824794,
+      "max_abs_error_time_s": 1.086,
+      "carsim_initial": 0.09828263172650084,
+      "model_initial": 0.1,
+      "carsim_final": -0.3775885028745654,
+      "model_final": -0.39453358292749585,
+      "carsim_min": -0.9947260652592921,
+      "carsim_max": 0.09828263172650084,
+      "model_min": -1.0471393603295145,
+      "model_max": 0.1
+    },
+    "r_radps": {
+      "rmse": 0.004771148368609926,
+      "max_abs_error": 0.016614846103703118,
+      "max_abs_error_time_s": 0.92,
+      "carsim_initial": 0.34999999999999976,
+      "model_initial": 0.35,
+      "carsim_final": 0.19474595460742472,
+      "model_final": 0.19653318297807892,
+      "carsim_min": 0.1508163095656153,
+      "carsim_max": 0.34999999999999976,
+      "model_min": 0.15327092383206709,
+      "model_max": 0.35
+    },
+    "roll_deg": {
+      "rmse": 0.04543029382963678,
+      "max_abs_error": 0.21039053156749743,
+      "max_abs_error_time_s": 1.335,
+      "carsim_initial": 2.566042243897544,
+      "model_initial": 2.583624701199055,
+      "carsim_final": 2.5661418885370004,
+      "model_final": 2.5828702601384297,
+      "carsim_min": 2.033122368691988,
+      "carsim_max": 2.9841454106610903,
+      "model_min": 1.9805949441787836,
+      "model_max": 3.0369024494758627
+    },
+    "pitch_deg": {
+      "rmse": 0.009490609173580468,
+      "max_abs_error": 0.020524965618687784,
+      "max_abs_error_time_s": 1.169,
+      "carsim_initial": 0.0440855733,
+      "model_initial": 0.05162633680605906,
+      "carsim_final": 0.04412091626795598,
+      "model_final": 0.05116273648519686,
+      "carsim_min": -0.009662157519276064,
+      "carsim_max": 0.04944533606331608,
+      "model_min": -0.0002973476486458073,
+      "model_max": 0.057801500083462985
+    },
+    "vx_kmh": {
+      "rmse": 0.06360728932263339,
+      "max_abs_error": 0.15429629224416885,
+      "max_abs_error_time_s": 1.305,
+      "carsim_initial": 89.99994376933843,
+      "model_initial": 90.0,
+      "carsim_final": 90.00005011495894,
+      "model_final": 90.00743376490959,
+      "carsim_min": 89.79256084872371,
+      "carsim_max": 90.10249398814018,
+      "model_min": 89.70143442239402,
+      "model_max": 90.16007490030418
+    },
+    "pitchrate_degps": {
+      "rmse": 0.025017759235541226,
+      "max_abs_error": 0.0780174902047116,
+      "max_abs_error_time_s": 0.6980000000000001,
+      "carsim_initial": 0.5000158751,
+      "model_initial": 0.5081753214614386,
+      "carsim_final": 0.5000355272276541,
+      "model_final": 0.5087201225157012,
+      "carsim_min": 0.35092597548180193,
+      "carsim_max": 0.914710284215075,
+      "model_min": 0.363231799531997,
+      "model_max": 0.8972202961347895
+    }
+  },
+  "force_metrics_all_samples": {
+    "spring_force_FL": {
+      "rmse": 117.6034943459379,
+      "max_abs_error": 162.59763701511383,
+      "max_abs_error_time_s": 0.147,
+      "carsim_initial": 4045.7776843701276,
+      "model_initial": 4159.95073569607,
+      "carsim_final": 4045.7661789002123,
+      "model_final": 4159.830611455148,
+      "carsim_min": 3887.481456916452,
+      "carsim_max": 4181.892629995567,
+      "model_min": 4038.403507217964,
+      "model_max": 4344.475588670993
+    },
+    "spring_force_FR": {
+      "rmse": 159.0124017669884,
+      "max_abs_error": 262.60325324100813,
+      "max_abs_error_time_s": 1.298,
+      "carsim_initial": 5878.526333379228,
+      "model_initial": 6028.781208251091,
+      "carsim_final": 5878.588992467004,
+      "model_final": 6028.064581370639,
+      "carsim_min": 5654.091148307749,
+      "carsim_max": 6026.919401041652,
+      "model_min": 5800.610092379266,
+      "model_max": 6245.167255559336
+    },
+    "spring_force_RL": {
+      "rmse": 110.54867447796477,
+      "max_abs_error": 152.2903206815372,
+      "max_abs_error_time_s": 0.151,
+      "carsim_initial": 3732.9909844094714,
+      "model_initial": 3839.7125934443925,
+      "carsim_final": 3732.927902399242,
+      "model_final": 3840.299650956125,
+      "carsim_min": 3590.8647600010586,
+      "carsim_max": 3954.508706402928,
+      "model_min": 3719.5650139510744,
+      "model_max": 4106.7458371934
+    },
+    "spring_force_RR": {
+      "rmse": 143.37805861750124,
+      "max_abs_error": 226.477126273845,
+      "max_abs_error_time_s": 1.321,
+      "carsim_initial": 5648.41976178257,
+      "model_initial": 5783.844789761463,
+      "carsim_final": 5648.430013073254,
+      "model_final": 5783.833328962095,
+      "carsim_min": 5480.039969530195,
+      "carsim_max": 5813.680051299218,
+      "model_min": 5609.484209943208,
+      "model_max": 6005.280205983668
+    },
+    "damper_force_FL": {
+      "rmse": 18.098636587550352,
+      "max_abs_error": 160.58467208815313,
+      "max_abs_error_time_s": 0.046,
+      "carsim_initial": -0.001432553225,
+      "model_initial": 0.0,
+      "carsim_final": -0.0003086477761371498,
+      "model_final": 0.025778869795784535,
+      "carsim_min": -386.81912785896594,
+      "carsim_max": 405.58187681724235,
+      "model_min": -464.407344597952,
+      "model_max": 539.6593062620401
+    },
+    "damper_force_FR": {
+      "rmse": 23.01909043928365,
+      "max_abs_error": 196.8206178755426,
+      "max_abs_error_time_s": 0.007,
+      "carsim_initial": -0.011659693,
+      "model_initial": 0.0,
+      "carsim_final": -0.017589223090780592,
+      "model_final": 0.2664814055754571,
+      "carsim_min": -800.5209528391738,
+      "carsim_max": 422.16823210427526,
+      "model_min": -749.7736168491135,
+      "model_max": 418.3116751987702
+    },
+    "damper_force_RL": {
+      "rmse": 20.730422407628325,
+      "max_abs_error": 144.40472699317252,
+      "max_abs_error_time_s": 0.055,
+      "carsim_initial": 0.01024795064,
+      "model_initial": 0.0,
+      "carsim_final": 0.015951127715609026,
+      "model_final": -0.3703012688494596,
+      "carsim_min": -547.5685284302936,
+      "carsim_max": 681.9916363049587,
+      "model_min": -614.970185003754,
+      "model_max": 803.5943292706187
+    },
+    "damper_force_RR": {
+      "rmse": 23.203709080824027,
+      "max_abs_error": 115.61262088547451,
+      "max_abs_error_time_s": 0.013000000000000001,
+      "carsim_initial": 0.001683188087,
+      "model_initial": 0.0,
+      "carsim_final": 0.0013371290253760039,
+      "model_final": 0.03829797020882738,
+      "carsim_min": -865.9327316449412,
+      "carsim_max": 475.4321856505476,
+      "model_min": -836.6227492385369,
+      "model_max": 479.4850206401879
+    }
+  },
+  "startup_note": "All 10001 samples are retained. The first two recorded rows are identical; the first output already has body yaw rate 0.35 rad/s and lateral speed 0.0982826317 m/s. The comparison uses the supplied uniform timestamps without shifting or removing rows.",
+  "source_fingerprints": {
+    "reference_upload_sha256": "e103a68d45e6c9f2ee0af5536e7ecf959cfcb7853293c2f18dc858713422ad34",
+    "private_candidate_mat_sha256": "50ac577c0ae22672fbd28be1e8e665754b186d5f257fca938ee7f2d08af09886",
+    "exporter_sha256": "a3a4ebc06a3afed79a977af43b1bb0456fceac48e3c335fe7f85ef116aafa5a7",
+    "frozen_manifest_sha256": "20cac42e61b660a4ceab2a1898eca227b12dd19039aa441a32595345572e881f",
+    "frozen_file_sha256": [
+      {
+        "relative_name": "data/damper.json",
+        "sha256": "7c6664767d9cad04a8b66f6c25ae02471936a7feb808dbe0e6acba8c207242e5"
+      },
+      {
+        "relative_name": "data/hmc_data.mat",
+        "sha256": "f58b56dcf585602ae0f6056af6de88bc5ff822a17c4038b8c6fb0cedd31efa84"
+      },
+      {
+        "relative_name": "data/source_manifest.json",
+        "sha256": "ea64c444c6e54ecfc9360e2120d103e883d83287784d4c6187c7878b388b50bd"
+      },
+      {
+        "relative_name": "data/tires.json",
+        "sha256": "864598bede9b992f047b4b38596309b568932d85a45dc3f8e7bc1aa93ba8f840"
+      },
+      {
+        "relative_name": "data/vehicle.json",
+        "sha256": "f345887e44d0617b4130b009225402dbb915707c58327d5f88588a0da7b2e467"
+      },
+      {
+        "relative_name": "hmc_build_native.m",
+        "sha256": "af6e048286f7a7169877c91f1aac5b6e8b3fea058d489c21083692ea6272835b"
+      },
+      {
+        "relative_name": "hmc_classify.m",
+        "sha256": "dde22b61f8ade4a31aff341ffebdd897f19bc28dd9f8e6e68510d2e63f48208c"
+      },
+      {
+        "relative_name": "hmc_generate.m",
+        "sha256": "829244dc2a5e68f488177f33085469c2c8f7c3a4bcf13c60b85c9991050e3276"
+      },
+      {
+        "relative_name": "hmc_handling_reference.m",
+        "sha256": "0190bf61d0f4a6e1b22acf29147ffc2d4e8526172f878f1e2e99462e11fc47f7"
+      },
+      {
+        "relative_name": "hmc_mcode_simulate.m",
+        "sha256": "d0b52b5058a9130d5c67a40f01491e0fcb30634c43a4ad89efc22e45ad1f5612"
+      },
+      {
+        "relative_name": "hmc_native.m",
+        "sha256": "1987c7e0ff47882353ab8bb783381d3cb2f3bf0b3449d28caeef90ca3d259a17"
+      },
+      {
+        "relative_name": "hmc_options.m",
+        "sha256": "576eba24f0488539a0459a917625bfe1b356cbfce42fec9a13ccfdfddc34c285"
+      },
+      {
+        "relative_name": "hmc_tire_force.m",
+        "sha256": "1d2511aff4d6464266f73db6f2a0b581ca700a036f52f9e1aa74fb476d03c317"
+      },
+      {
+        "relative_name": "hmc_vehicle_model.m",
+        "sha256": "7149855617724c26004137eacceb0731557803e1d79621a87ffadd71b9ed3a6b"
+      },
+      {
+        "relative_name": "native/hmc_native",
+        "sha256": "8ba67c0de61ec45c3241aee09f539bbf1663f5f294e423101290bf3210e5aed9"
+      },
+      {
+        "relative_name": "native/hmc_native.cpp",
+        "sha256": "503f3917dddac697d65e2830dbf842696a0c60cb2560454458d69d843eb57824"
+      },
+      {
+        "relative_name": "native/hmc_tire.hpp",
+        "sha256": "4e5cb0e678bfb83e23b5af4ea73a5b2bff34249f6a7a758ebad1f5f1fb4977e0"
+      },
+      {
+        "relative_name": "native/hmc_vehicle.hpp",
+        "sha256": "785a3934d39267dcb4db5820908df2ff78b276c5656a793b6f28a0695a942a39"
+      },
+      {
+        "relative_name": "run_hmc_standalone.m",
+        "sha256": "eeb1957ac32714fae6867bf61a19e7b80080ac109c8006b5290c229f061a74f5"
+      }
+    ]
+  },
+  "scope": "One 90 km/h trajectory validation with the unchanged frozen model; not a full stability-region validation, nor proof of CarSim equivalence for all operating conditions. Only selected outputs, metrics, conditions and hashes are exported; imported model data and original raw72 are excluded.",
+  "sample_count": 10001,
+  "result_mat": "comparison_90kph_0.6mu_2.5deg.mat",
+  "response_figure": "comparison_90kph_0.6mu_2.5deg.png"
+}

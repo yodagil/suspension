@@ -1,0 +1,37 @@
+{
+  "case50": {
+    "speed_kmh": 50.0,
+    "rhs_scaled_error": 1.532107773982716e-14,
+    "hybrid_5ms_scaled_error": 6.938893903907228e-18,
+    "full_10s_dt_refine_scaled_error": 3.959137983272464e-07,
+    "roll_dt_refine_max_deg": 3.53015816529682e-08,
+    "pitch_dt_refine_max_deg": 5.097465353137221e-09,
+    "trim_residual": 4.561295616794321e-13,
+    "root_found": 1,
+    "native_mcode_implemented": 1
+  },
+  "case70": {
+    "speed_kmh": 70.0,
+    "rhs_scaled_error": 1.0010448944155067e-14,
+    "hybrid_5ms_scaled_error": 1.3877787807814457e-17,
+    "full_10s_dt_refine_scaled_error": 1.0733685935880339e-07,
+    "roll_dt_refine_max_deg": 4.2174319669910996e-08,
+    "pitch_dt_refine_max_deg": 4.6324977782303926e-09,
+    "trim_residual": 3.427066323032827e-11,
+    "root_found": 1,
+    "native_mcode_implemented": 1
+  },
+  "case90": {
+    "speed_kmh": 90.0,
+    "rhs_scaled_error": 7.121594763140115e-15,
+    "hybrid_5ms_scaled_error": 1.3877787807814457e-17,
+    "full_10s_dt_refine_scaled_error": 7.410141428988708e-08,
+    "roll_dt_refine_max_deg": 5.149691466165971e-08,
+    "pitch_dt_refine_max_deg": 3.848165325041735e-09,
+    "trim_residual": 4.808546723193803e-11,
+    "root_found": 1,
+    "native_mcode_implemented": 1
+  },
+  "all_passed": 1,
+  "scope": "Selected verified candidate, all three conditions: 16 RHS probes per condition; independent M-code sampled-delay RK4 5 ms with 2 initial conditions; native 10 s integration dt 1 ms versus 0.5 ms. Not proof of exact CarSim equivalence."
+}

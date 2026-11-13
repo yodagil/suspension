@@ -1,0 +1,349 @@
+{
+  "format_version": "response_validation_v1",
+  "model_revision": "HMC_ACCURACY_SOURCE_V2",
+  "coefficient_inputs_unchanged": true,
+  "validation_is_not_blind_holdout": true,
+  "result_selection": "verified",
+  "model_options": {
+    "heading_frame_translation": true,
+    "full_wheel_orientation": false,
+    "source_drive_model": true,
+    "steering_axis_camber": true,
+    "compliance_body_frame": true,
+    "spatial_wheel_velocity": true,
+    "geometric_jacking": true,
+    "roll_geometry_balance": true,
+    "rolling_pitch_moment": true
+  },
+  "model_changes": [
+    "Source load/pressure-dependent tire structural stiffness and native MF angle convention",
+    "Yaw-level translational equations use heading rate from Euler kinematics",
+    "Source mg-scaled PI force request with power limiting, loaded-radius spin balance and equal axle torque"
+  ],
+  "conditions": {
+    "speed_kmh": 70.0,
+    "road_mu": 0.6,
+    "front_steer_command_deg": 2.5,
+    "carsim_trim_front_steer_mean_deg": 2.2221651573960237,
+    "actual_wheel_steer_is_time_varying": true,
+    "healthy_tires": true,
+    "spring_mode": "normal",
+    "cdc_current_mA": 950.0,
+    "initial_vy_mps": 0.1,
+    "initial_body_yaw_rate_radps": 0.35,
+    "duration_s": 10.0,
+    "sample_interval_s": 0.001,
+    "reference_trim_duration_s": 12.0,
+    "model_trim_method": "Independent numerical steady-state root",
+    "initialization": "Body, suspension and wheel-speed states retain each model own trim. Physical vy/r are perturbed; internal tire relaxation states restart at zero."
+  },
+  "metrics_all_samples": {
+    "vy_mps": {
+      "rmse": 0.010184411036726326,
+      "max_abs_error": 0.022749596309044884,
+      "max_abs_error_time_s": 0.5700000000000001,
+      "carsim_initial": 0.0993592741695677,
+      "model_initial": 0.1,
+      "carsim_final": -0.07254359000700221,
+      "model_final": -0.08216799961112238,
+      "carsim_min": -0.3644654106005559,
+      "carsim_max": 0.0993592741695677,
+      "model_min": -0.37017375540076686,
+      "model_max": 0.1
+    },
+    "r_radps": {
+      "rmse": 0.0024063306690924394,
+      "max_abs_error": 0.006633313114619954,
+      "max_abs_error_time_s": 0.402,
+      "carsim_initial": 0.34999999999999976,
+      "model_initial": 0.35,
+      "carsim_final": 0.19861950494047573,
+      "model_final": 0.20086728046661184,
+      "carsim_min": 0.18052692955208416,
+      "carsim_max": 0.34999999999999976,
+      "model_min": 0.18334031146581628,
+      "model_max": 0.35
+    },
+    "roll_deg": {
+      "rmse": 0.010199359263002148,
+      "max_abs_error": 0.0591828387712634,
+      "max_abs_error_time_s": 0.146,
+      "carsim_initial": 2.0179721690353425,
+      "model_initial": 2.0125018265364916,
+      "carsim_final": 2.017953232825981,
+      "model_final": 2.0125170976263154,
+      "carsim_min": 1.6295176195475523,
+      "carsim_max": 2.4675098914385174,
+      "model_min": 1.57738814695738,
+      "model_max": 2.4858138681922153
+    },
+    "pitch_deg": {
+      "rmse": 0.0036852872536415233,
+      "max_abs_error": 0.006386429304323107,
+      "max_abs_error_time_s": 0.10200000000000001,
+      "carsim_initial": 0.04092407726,
+      "model_initial": 0.0446348882281578,
+      "carsim_final": 0.04091468684308818,
+      "model_final": 0.04464881978665211,
+      "carsim_min": -5.885797180434821e-05,
+      "carsim_max": 0.04929957628058165,
+      "model_min": 0.004483002980048618,
+      "model_max": 0.052817311668794345
+    },
+    "vx_kmh": {
+      "rmse": 0.0007356653758212926,
+      "max_abs_error": 0.002789939061841551,
+      "max_abs_error_time_s": 0.709,
+      "carsim_initial": 70.00004514106675,
+      "model_initial": 70.0,
+      "carsim_final": 70.00002300134399,
+      "model_final": 70.00003130638626,
+      "carsim_min": 69.930650497931,
+      "carsim_max": 70.02543801354958,
+      "model_min": 69.92873729174235,
+      "model_max": 70.02660255202412
+    },
+    "pitchrate_degps": {
+      "rmse": 0.007159033429072956,
+      "max_abs_error": 0.04967814834325063,
+      "max_abs_error_time_s": 0.011,
+      "carsim_initial": 0.4009574639,
+      "model_initial": 0.4044103132039699,
+      "carsim_final": 0.40095891921862464,
+      "model_final": 0.40440482203519534,
+      "carsim_min": 0.24599358141612795,
+      "carsim_max": 0.7233956290839911,
+      "model_min": 0.24501379718584057,
+      "model_max": 0.7236364285253625
+    }
+  },
+  "rmse_change_from_previous_model": {
+    "vy_mps": {
+      "previous_rmse": 0.009637599666217744,
+      "revised_rmse": 0.010184411036726326,
+      "reduction_percent": -5.673729864763888
+    },
+    "r_radps": {
+      "previous_rmse": 0.002434006062399085,
+      "revised_rmse": 0.0024063306690924394,
+      "reduction_percent": 1.1370305823875881
+    },
+    "roll_deg": {
+      "previous_rmse": 0.01059902669718549,
+      "revised_rmse": 0.010199359263002148,
+      "reduction_percent": 3.7707937304231054
+    },
+    "pitch_deg": {
+      "previous_rmse": 0.003999424586588725,
+      "revised_rmse": 0.0036852872536415233,
+      "reduction_percent": 7.854563228935452
+    },
+    "vx_kmh": {
+      "previous_rmse": 0.006406520152217937,
+      "revised_rmse": 0.0007356653758212926,
+      "reduction_percent": 88.51692715636577
+    },
+    "pitchrate_degps": {
+      "previous_rmse": 0.007476444689846137,
+      "revised_rmse": 0.007159033429072956,
+      "reduction_percent": 4.24548396919543
+    }
+  },
+  "force_metrics_all_samples": {
+    "spring_force_FL": {
+      "rmse": 75.78607067350121,
+      "max_abs_error": 95.3177424499363,
+      "max_abs_error_time_s": 0.152,
+      "carsim_initial": 4239.968599742528,
+      "model_initial": 4314.384474822153,
+      "carsim_final": 4239.967752867395,
+      "model_final": 4314.390248824489,
+      "carsim_min": 4102.337579106266,
+      "carsim_max": 4346.569225344377,
+      "model_min": 4189.630233222996,
+      "model_max": 4441.176325658963
+    },
+    "spring_force_FR": {
+      "rmse": 88.51762159317137,
+      "max_abs_error": 130.20180344755317,
+      "max_abs_error_time_s": 0.634,
+      "carsim_initial": 5675.0175259030275,
+      "model_initial": 5761.184260392353,
+      "carsim_final": 5675.002506819943,
+      "model_final": 5761.202023916756,
+      "carsim_min": 5528.659756320099,
+      "carsim_max": 5862.133416878557,
+      "model_min": 5602.015115904654,
+      "model_max": 5984.420640602154
+    },
+    "spring_force_RL": {
+      "rmse": 74.78952564654661,
+      "max_abs_error": 93.41956077450232,
+      "max_abs_error_time_s": 0.163,
+      "carsim_initial": 3941.025114571871,
+      "model_initial": 4014.296605202526,
+      "carsim_final": 3941.0382109263514,
+      "model_final": 4014.2820551145924,
+      "carsim_min": 3795.035586547002,
+      "carsim_max": 4119.692072531583,
+      "model_min": 3885.4190597736037,
+      "model_max": 4212.686299013074
+    },
+    "spring_force_RR": {
+      "rmse": 79.55764384182824,
+      "max_abs_error": 122.41047044801962,
+      "max_abs_error_time_s": 0.621,
+      "carsim_initial": 5445.249382591372,
+      "model_initial": 5522.086666846495,
+      "carsim_final": 5445.248542078461,
+      "model_final": 5522.08354159578,
+      "carsim_min": 5330.582078535277,
+      "carsim_max": 5629.9069237094955,
+      "model_min": 5394.785230348481,
+      "model_max": 5745.491247791264
+    },
+    "damper_force_FL": {
+      "rmse": 8.38536772118575,
+      "max_abs_error": 107.1552980245242,
+      "max_abs_error_time_s": 0.005,
+      "carsim_initial": -0.001736232895,
+      "model_initial": 1.4300209654248233e-16,
+      "carsim_final": -0.0009525497478364287,
+      "model_final": -0.0005326493908626162,
+      "carsim_min": -463.3134674531982,
+      "carsim_max": 346.45945156175645,
+      "model_min": -508.48012062785756,
+      "model_max": 419.597765228623
+    },
+    "damper_force_FR": {
+      "rmse": 10.061118008719793,
+      "max_abs_error": 114.60295729066075,
+      "max_abs_error_time_s": 0.005,
+      "carsim_initial": -0.006894899167,
+      "model_initial": 0.0,
+      "carsim_final": -0.0041116894315109676,
+      "model_final": -0.00440757393783997,
+      "carsim_min": -566.2655245239583,
+      "carsim_max": 432.9010968578834,
+      "model_min": -574.8583960499799,
+      "model_max": 462.053595380964
+    },
+    "damper_force_RL": {
+      "rmse": 7.139510285860845,
+      "max_abs_error": 90.83784733221108,
+      "max_abs_error_time_s": 0.01,
+      "carsim_initial": 0.005850713136,
+      "model_initial": 1.7683337433238577e-16,
+      "carsim_final": 0.0034615804653705473,
+      "model_final": 0.0033074006301419376,
+      "carsim_min": -639.738350888736,
+      "carsim_max": 601.786711233334,
+      "model_min": -680.1132464510912,
+      "model_max": 660.7877964557211
+    },
+    "damper_force_RR": {
+      "rmse": 12.233342936556603,
+      "max_abs_error": 95.29673243650433,
+      "max_abs_error_time_s": 0.003,
+      "carsim_initial": 0.001535335837,
+      "model_initial": 0.0,
+      "carsim_final": 0.0008070737732447802,
+      "model_final": -0.00010618411135965289,
+      "carsim_min": -651.9610683587614,
+      "carsim_max": 489.9124831149238,
+      "model_min": -671.258980881113,
+      "model_max": 529.4842051469188
+    }
+  },
+  "startup_note": "All original samples are retained on supplied elapsed timestamps. First logged output may already be slightly evolved from the requested physical initial state. No startup rows are removed or time-aligned.",
+  "source_fingerprints": {
+    "coefficient_input_files_unchanged": true,
+    "exporter_sha256": "0b5480dbbbe269073eebf015a1d62923abd187d9e96c4d4bc10dfbe8d2ad8229",
+    "model_code_and_input_file_sha256": [
+      {
+        "relative_name": "data/damper.json",
+        "sha256": "7c6664767d9cad04a8b66f6c25ae02471936a7feb808dbe0e6acba8c207242e5"
+      },
+      {
+        "relative_name": "data/hmc_data.mat",
+        "sha256": "f58b56dcf585602ae0f6056af6de88bc5ff822a17c4038b8c6fb0cedd31efa84"
+      },
+      {
+        "relative_name": "data/source_manifest.json",
+        "sha256": "ea64c444c6e54ecfc9360e2120d103e883d83287784d4c6187c7878b388b50bd"
+      },
+      {
+        "relative_name": "data/tires.json",
+        "sha256": "864598bede9b992f047b4b38596309b568932d85a45dc3f8e7bc1aa93ba8f840"
+      },
+      {
+        "relative_name": "data/vehicle.json",
+        "sha256": "f345887e44d0617b4130b009225402dbb915707c58327d5f88588a0da7b2e467"
+      },
+      {
+        "relative_name": "hmc_build_native.m",
+        "sha256": "af6e048286f7a7169877c91f1aac5b6e8b3fea058d489c21083692ea6272835b"
+      },
+      {
+        "relative_name": "hmc_classify.m",
+        "sha256": "dde22b61f8ade4a31aff341ffebdd897f19bc28dd9f8e6e68510d2e63f48208c"
+      },
+      {
+        "relative_name": "hmc_generate.m",
+        "sha256": "829244dc2a5e68f488177f33085469c2c8f7c3a4bcf13c60b85c9991050e3276"
+      },
+      {
+        "relative_name": "hmc_handling_reference.m",
+        "sha256": "0190bf61d0f4a6e1b22acf29147ffc2d4e8526172f878f1e2e99462e11fc47f7"
+      },
+      {
+        "relative_name": "hmc_mcode_simulate.m",
+        "sha256": "d0b52b5058a9130d5c67a40f01491e0fcb30634c43a4ad89efc22e45ad1f5612"
+      },
+      {
+        "relative_name": "hmc_native.m",
+        "sha256": "1987c7e0ff47882353ab8bb783381d3cb2f3bf0b3449d28caeef90ca3d259a17"
+      },
+      {
+        "relative_name": "hmc_options.m",
+        "sha256": "576eba24f0488539a0459a917625bfe1b356cbfce42fec9a13ccfdfddc34c285"
+      },
+      {
+        "relative_name": "hmc_tire_force.m",
+        "sha256": "4b632091fe7f4b9b475ad88cb28bfeaef5a35ae05e067200f62b9b3b8f8c7b13"
+      },
+      {
+        "relative_name": "hmc_vehicle_model.m",
+        "sha256": "06830c8ac3616027e9491353160b0513f6e45768c6d9683316a7af3d29560b97"
+      },
+      {
+        "relative_name": "native/hmc_native",
+        "sha256": "f875d6795140debaf5367af13948f1ebcc12576f6c58c9cd4c944492798653b7"
+      },
+      {
+        "relative_name": "native/hmc_native.cpp",
+        "sha256": "503f3917dddac697d65e2830dbf842696a0c60cb2560454458d69d843eb57824"
+      },
+      {
+        "relative_name": "native/hmc_tire.hpp",
+        "sha256": "afc3b0b4ca7587eab2cf267935058d72bf624e0e6fad5801874310dda9dcb423"
+      },
+      {
+        "relative_name": "native/hmc_vehicle.hpp",
+        "sha256": "78dc1af2ca5ef8ae1d6c1bb0b5b03fd6b8ad366620f3503def2ab7b8d803f047"
+      },
+      {
+        "relative_name": "run_hmc_standalone.m",
+        "sha256": "eeb1957ac32714fae6867bf61a19e7b80080ac109c8006b5290c229f061a74f5"
+      }
+    ],
+    "reference_upload_sha256": "92bd0f2702613cf41361184dcb4972a9adddf346175bf2e6ed555fbd0953da63",
+    "selected_reference_mat_sha256": "23102f22222a96e18023267285e12e943bc206465f6ba14c0ef503bed97c1b68",
+    "private_candidate_mat_sha256": "b4a77415d60cd1bd9aaa93d15714b99e13dfcb4b91bda06166d86e2cb3218e5a",
+    "previous_report_sha256": "44ba05f075db63a5f13a09043952dcca2eb7172c73d9c2eee8327879e8399495"
+  },
+  "scope": "General model changes were re-evaluated on all three available reference records; this is not a blind holdout. No fitted output offsets, time shifts, amplitude correction or scenario-specific input-coefficient changes. One trajectory per condition, not proof of full stability-region or 210-condition equivalence.",
+  "sample_count": 10001,
+  "result_mat": "comparison_70kph_0.6mu_2.5deg.mat",
+  "response_figure": "comparison_70kph_0.6mu_2.5deg.png"
+}

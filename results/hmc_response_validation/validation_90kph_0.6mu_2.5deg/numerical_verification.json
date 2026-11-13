@@ -1,0 +1,18 @@
+{
+  "all_passed": 1,
+  "no_model_changes": 1,
+  "root_found": 1,
+  "trim_residual": 6.570735408764413e-10,
+  "local_eigenvalue_max_real": -0.4089137534267651,
+  "rhs_scaled_error": 0.0,
+  "native_full_10s_dt_refine_scaled_error": 7.568882374626917e-08,
+  "roll_dt_refine_max_deg": 5.1614068007935405e-08,
+  "pitch_dt_refine_max_deg": 3.967438486164544e-09,
+  "base_dt_s": 0.001,
+  "refined_dt_s": 0.0005,
+  "duration_s": 10.0,
+  "cdc_sample_s": 0.001,
+  "cdc_delay_s": 0.002,
+  "scope": "Initial M-code/C++ RHS and native full10s dt1ms/0.5ms verification; not proof of CarSim equivalence.",
+  "frozen_hash_file_count_checked": 19
+}
