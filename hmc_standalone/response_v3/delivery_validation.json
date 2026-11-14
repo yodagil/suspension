@@ -1,0 +1,160 @@
+{
+  "model_revision": "HMC_TRANSIENT_RESPONSE_V3",
+  "single_m_sha256": "d493d7e4e145dbdb77a47e1ea17b20d8fa5573e7606c284803984f824ad02e14",
+  "importer_input_parity": {
+    "numeric_fields": 2359,
+    "numeric_values": 6979,
+    "numeric_max_abs_difference": 0.0,
+    "string_fields": 49,
+    "missing": [],
+    "discrepancies": [],
+    "runtime": "GNU Octave 9.4.0",
+    "all_passed": true,
+    "tire_directory_matches_zip_exactly": true,
+    "unsafe_archive_entry_rejected": true,
+    "numeric_array_expression_rejected_without_execution": true,
+    "excluded_benchmark_only_fields": [
+      "D.vehicle.reference_trim",
+      "D.vehicle.assumptions",
+      "D.source"
+    ],
+    "source_values_embedded_in_delivery_code": false
+  },
+  "single_m_parity": {
+    "case50": {
+      "speed_kmh": 50.0,
+      "rhs_probe_count": 12.0,
+      "rhs_max_abs_error": 0.0,
+      "rhs_observation_max_abs_error": 0.0,
+      "short_duration_s": 0.005,
+      "native_vs_single_m_scaled_state_error_1ms": 1.3877787807814457e-17,
+      "native_vs_single_m_max_force_error_N_1ms": 9.094947017729282e-13,
+      "native_vs_single_m_scaled_state_error_halfms": 4.553649124439119e-18
+    },
+    "case70": {
+      "speed_kmh": 70.0,
+      "rhs_probe_count": 12.0,
+      "rhs_max_abs_error": 0.0,
+      "rhs_observation_max_abs_error": 0.0,
+      "short_duration_s": 0.005,
+      "native_vs_single_m_scaled_state_error_1ms": 1.734723475976807e-17,
+      "native_vs_single_m_max_force_error_N_1ms": 9.094947017729282e-13,
+      "native_vs_single_m_scaled_state_error_halfms": 1.0408340855860843e-17
+    },
+    "case90": {
+      "speed_kmh": 90.0,
+      "rhs_probe_count": 12.0,
+      "rhs_max_abs_error": 0.0,
+      "rhs_observation_max_abs_error": 0.0,
+      "short_duration_s": 0.005,
+      "native_vs_single_m_scaled_state_error_1ms": 6.938893903907228e-18,
+      "native_vs_single_m_max_force_error_N_1ms": 1.1368683772161603e-13,
+      "native_vs_single_m_scaled_state_error_halfms": 2.7755575615628914e-17
+    },
+    "all_passed": true,
+    "execution_runtime": "GNU Octave 9.4, original M-code versus bundled M-code, selected native C++17 engine",
+    "full_10s_single_m_executed": false,
+    "scope": "All three conditions: 12 RHS probes each and full-record 5ms sampled-CDC RK4 trajectories at 1ms and 0.5ms. No full 10s single-M execution claim.",
+    "model_revision": "HMC_TRANSIENT_RESPONSE_V3",
+    "single_m_sha256": "e2c27b197387e6d351d1f538933944eba03fd97dc16cd90d7299d567909b14dc"
+  },
+  "end_to_end_50kph_smoke": {
+    "all_passed": true,
+    "model_revision": "HMC_TRANSIENT_RESPONSE_V3",
+    "condition": {
+      "speed_kmh": 50,
+      "mu": 0.5,
+      "steer_deg": 0
+    },
+    "duration_s": 0.005,
+    "sample_count": 6,
+    "response_channel_count": 8,
+    "response_channels_finite": true,
+    "own_unseeded_root_found": true,
+    "own_unseeded_root_usable": true,
+    "root_residual": 7.882390653652242e-11,
+    "exact_bundled_rhs_scaled_error": 0,
+    "result_mat_only_variable": "Result",
+    "no_private_model_structs_in_result": true,
+    "execution_runtime": "GNU Octave 9.4 M-code public single-file wrapper",
+    "full_10s_mcode_run_executed": false,
+    "wall_time_s": 79.12039017677307,
+    "recursive_result_payload_audit_passed": true,
+    "single_m_sha256": "e2c27b197387e6d351d1f538933944eba03fd97dc16cd90d7299d567909b14dc",
+    "saved_result_mat_sha256": "14bb325e62de444958945f95ba3c242a5928fd44f29c4b563d7c53d00558434b"
+  },
+  "runtime": "GNU Octave9.4 M-code reference; C++17 Native engine for full10s reference trajectories",
+  "full_10s_mcode_executed": false,
+  "input_coefficients_embedded_in_public_delivery": false,
+  "tested_single_m_sha256_before_eof_normalization": "e2c27b197387e6d351d1f538933944eba03fd97dc16cd90d7299d567909b14dc",
+  "eof_normalization_only": true,
+  "validation_note": "The published file differs from the numerical-test file only by removing one trailing blank line. Stripped byte streams were verified identical; model formulas and executable MATLAB tokens are unchanged.",
+  "end_to_end_three_condition_workflow": {
+    "all_passed": true,
+    "model_revision": "HMC_TRANSIENT_RESPONSE_V3",
+    "workflow": "Public three dispatcher; first own root unseeded, only own previous condition root reused internally",
+    "duration_s_per_case": 0.005,
+    "sample_count_per_case": 6,
+    "response_channel_count": 8,
+    "execution_runtime": "GNU Octave 9.4 M-code public single-file wrapper",
+    "full_10s_mcode_run_executed": false,
+    "wall_time_s": 289.34896302223206,
+    "case50": {
+      "speed_kmh": 50,
+      "root_found": true,
+      "root_usable": true,
+      "root_residual": 7.882390653652242e-11,
+      "max_abs_first_5ms_difference": {
+        "vy_mps": 0,
+        "r_radps": 0,
+        "roll_deg": 2.097649311194605e-14,
+        "pitch_deg": 4.503342143635791e-15,
+        "rollrate_degps": 1.2337353361147052e-14,
+        "pitchrate_degps": 1.420738526825005e-15,
+        "vx_kmh": 0,
+        "ay_mps2": 2.0539125955565396e-15
+      }
+    },
+    "case70": {
+      "speed_kmh": 70,
+      "root_found": true,
+      "root_usable": true,
+      "root_residual": 8.348023127469926e-13,
+      "max_abs_first_5ms_difference": {
+        "vy_mps": 3.621825062083417e-13,
+        "r_radps": 1.6930901125533637e-14,
+        "roll_deg": 1.1434262425780162e-09,
+        "pitch_deg": 1.7022237785990768e-11,
+        "rollrate_degps": 6.53219922597259e-10,
+        "pitchrate_degps": 4.2036912839549245e-10,
+        "vx_kmh": 2.2595258997171186e-12,
+        "ay_mps2": 7.219147502013357e-11
+      }
+    },
+    "case90": {
+      "speed_kmh": 90,
+      "root_found": true,
+      "root_usable": true,
+      "root_residual": 2.616718807447481e-10,
+      "max_abs_first_5ms_difference": {
+        "vy_mps": 1.790234627208065e-15,
+        "r_radps": 8.881784197001252e-16,
+        "roll_deg": 6.1803895334833214e-12,
+        "pitch_deg": 8.160763731446252e-13,
+        "rollrate_degps": 3.3872904481313526e-12,
+        "pitchrate_degps": 2.3122614933868135e-12,
+        "vx_kmh": 2.842170943040401e-14,
+        "ay_mps2": 3.8496983378877303e-13
+      }
+    },
+    "single_m_sha256": "e2c27b197387e6d351d1f538933944eba03fd97dc16cd90d7299d567909b14dc",
+    "no_external_equilibrium_or_carsim_snapshot_seeds": true,
+    "file_revision_note": "The public file was rebuilt with trailing-EOF whitespace normalization while the workflow test was active. Executed and published hashes are recorded separately; equations and executable tokens are identical.",
+    "executed_single_m_sha256": "e2c27b197387e6d351d1f538933944eba03fd97dc16cd90d7299d567909b14dc",
+    "published_single_m_sha256": "d493d7e4e145dbdb77a47e1ea17b20d8fa5573e7606c284803984f824ad02e14",
+    "eof_normalization_only": true,
+    "byte_equivalence_check": "Parent verified oldbytes.rstrip() == newbytes.rstrip(); only final blank-line removal, no executable token or equation changes."
+  },
+  "three_condition_workflow_uses_only_own_computed_equilibria": true,
+  "all_executed_checks_passed": true
+}

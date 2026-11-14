@@ -1,0 +1,469 @@
+{
+  "format_version": "response_validation_with_rates_v1",
+  "model_revision": "HMC_TRANSIENT_RESPONSE_V3",
+  "result_selection": "mass_lateral",
+  "model_options": {
+    "heading_frame_translation": true,
+    "full_wheel_orientation": false,
+    "source_drive_model": true,
+    "steering_axis_camber": true,
+    "compliance_body_frame": true,
+    "spatial_wheel_velocity": true,
+    "geometric_jacking": true,
+    "roll_geometry_balance": true,
+    "rolling_pitch_moment": true,
+    "tire_deformation_states": true,
+    "coupled_sprung_reference": true,
+    "spin_angular_momentum": false,
+    "wheel_spin_angular_momentum": false,
+    "spin_gyro": false,
+    "wheel_spin_gyro": false,
+    "coupled_point_mass_reference": false,
+    "source_spin_gyro": false,
+    "wheel_spin_momentum": false,
+    "tire_longitudinal_deformation": false,
+    "angular_model": "euler_gyro",
+    "vertical_model": "mf62"
+  },
+  "coefficient_inputs_unchanged": true,
+  "validation_is_not_blind_holdout": true,
+  "conditions": {
+    "speed_kmh": 90.0,
+    "road_mu": 0.6,
+    "front_steer_command_deg": 2.5,
+    "carsim_trim_front_steer_mean_deg": 2.17661685615922,
+    "actual_wheel_steer_is_time_varying": true,
+    "healthy_tires": true,
+    "spring_mode": "normal",
+    "cdc_current_mA": 950.0,
+    "initial_vy_mps": 0.1,
+    "initial_body_yaw_rate_radps": 0.35,
+    "duration_s": 10.0,
+    "sample_interval_s": 0.001,
+    "reference_trim_duration_s": 12.0,
+    "model_trim_method": "Independent numerical steady-state root",
+    "initialization": "Each model retains its own body/suspension/wheel-speed trim; physical vy/r are perturbed and tire internal relaxation restarts at zero."
+  },
+  "units_by_channel": {
+    "vy_mps": "m/s",
+    "r_radps": "rad/s",
+    "roll_deg": "deg",
+    "pitch_deg": "deg",
+    "rollrate_degps": "deg/s",
+    "pitchrate_degps": "deg/s",
+    "vx_kmh": "km/h",
+    "ay_mps2": "m/s^2"
+  },
+  "metrics_all_samples": {
+    "vy_mps": {
+      "rmse": 0.009239783369544185,
+      "max_abs_error": 0.031042778284051775,
+      "max_abs_error_time_s": 1.0010000000000001,
+      "carsim_initial": 0.09828263172650084,
+      "model_initial": 0.1,
+      "carsim_final": -0.3775885028745654,
+      "model_final": -0.3839152765843006,
+      "carsim_min": -0.9947260652592921,
+      "carsim_max": 0.09828263172650084,
+      "model_min": -1.0094920225220871,
+      "model_max": 0.1,
+      "carsim_signed_abs_peak": -0.9947260652592921,
+      "model_signed_abs_peak": -1.0094920225220871,
+      "carsim_abs_peak_time_s": 0.55,
+      "model_abs_peak_time_s": 0.559
+    },
+    "r_radps": {
+      "rmse": 0.0009040755058402672,
+      "max_abs_error": 0.0034091183932991043,
+      "max_abs_error_time_s": 1.374,
+      "carsim_initial": 0.34999999999999976,
+      "model_initial": 0.35,
+      "carsim_final": 0.19474595460742472,
+      "model_final": 0.1950083845599481,
+      "carsim_min": 0.1508163095656153,
+      "carsim_max": 0.34999999999999976,
+      "model_min": 0.1500343634817627,
+      "model_max": 0.35,
+      "carsim_signed_abs_peak": 0.34999999999999976,
+      "model_signed_abs_peak": 0.35,
+      "carsim_abs_peak_time_s": 0.0,
+      "model_abs_peak_time_s": 0.0
+    },
+    "roll_deg": {
+      "rmse": 0.01605316971546523,
+      "max_abs_error": 0.06780812965909444,
+      "max_abs_error_time_s": 0.156,
+      "carsim_initial": 2.566042243897544,
+      "model_initial": 2.565351647853511,
+      "carsim_final": 2.5661418885370004,
+      "model_final": 2.5654581587809386,
+      "carsim_min": 2.033122368691988,
+      "carsim_max": 2.9841454106610903,
+      "model_min": 1.9723997162666849,
+      "model_max": 3.022547379162137,
+      "carsim_signed_abs_peak": 2.9841454106610903,
+      "model_signed_abs_peak": 3.022547379162137,
+      "carsim_abs_peak_time_s": 0.804,
+      "model_abs_peak_time_s": 0.848
+    },
+    "pitch_deg": {
+      "rmse": 0.008232672305249435,
+      "max_abs_error": 0.014810351680063658,
+      "max_abs_error_time_s": 1.111,
+      "carsim_initial": 0.0440855733,
+      "model_initial": 0.05160636161557064,
+      "carsim_final": 0.04412091626795598,
+      "model_final": 0.051661242339003495,
+      "carsim_min": -0.009662157519276064,
+      "carsim_max": 0.04944533606331608,
+      "model_min": 0.0006758720028644863,
+      "model_max": 0.05623627126443473,
+      "carsim_signed_abs_peak": 0.04944533606331608,
+      "model_signed_abs_peak": 0.05623627126443473,
+      "carsim_abs_peak_time_s": 3.646,
+      "model_abs_peak_time_s": 3.682
+    },
+    "rollrate_degps": {
+      "rmse": 0.08222319460971118,
+      "max_abs_error": 0.635038789302075,
+      "max_abs_error_time_s": 0.07200000000000001,
+      "carsim_initial": -0.008639906229,
+      "model_initial": -0.010073552109411776,
+      "carsim_final": -0.00868131286476225,
+      "model_final": -0.010170554125943487,
+      "carsim_min": -7.370351350210854,
+      "carsim_max": 4.656691342199292,
+      "model_min": -7.930694908909818,
+      "model_max": 4.942629218368281,
+      "carsim_signed_abs_peak": -7.370351350210854,
+      "model_signed_abs_peak": -7.930694908909818,
+      "carsim_abs_peak_time_s": 0.048,
+      "model_abs_peak_time_s": 0.049
+    },
+    "pitchrate_degps": {
+      "rmse": 0.011486535003662797,
+      "max_abs_error": 0.059766097067874835,
+      "max_abs_error_time_s": 0.213,
+      "carsim_initial": 0.5000158751,
+      "model_initial": 0.5005887313168391,
+      "carsim_final": 0.5000355272276541,
+      "model_final": 0.5005822338383101,
+      "carsim_min": 0.35092597548180193,
+      "carsim_max": 0.914710284215075,
+      "model_min": 0.37228488614204597,
+      "model_max": 0.8746344989725787,
+      "carsim_signed_abs_peak": 0.914710284215075,
+      "model_signed_abs_peak": 0.8746344989725787,
+      "carsim_abs_peak_time_s": 0.291,
+      "model_abs_peak_time_s": 0.303
+    },
+    "vx_kmh": {
+      "rmse": 0.00193772537537993,
+      "max_abs_error": 0.00580956421198664,
+      "max_abs_error_time_s": 1.045,
+      "carsim_initial": 89.99994376933843,
+      "model_initial": 90.0,
+      "carsim_final": 90.00005011495894,
+      "model_final": 90.00014562145954,
+      "carsim_min": 89.79256084872371,
+      "carsim_max": 90.10249398814018,
+      "model_min": 89.78823397989446,
+      "model_max": 90.10671540679874,
+      "carsim_signed_abs_peak": 90.10249398814018,
+      "model_signed_abs_peak": 90.10671540679874,
+      "carsim_abs_peak_time_s": 2.204,
+      "model_abs_peak_time_s": 2.174
+    },
+    "ay_mps2": {
+      "rmse": 0.013402648317259763,
+      "max_abs_error": 0.1718103928055409,
+      "max_abs_error_time_s": 0.001,
+      "carsim_initial": -0.4331030345239332,
+      "model_initial": -0.3477054568931426,
+      "carsim_final": 4.873590083634404,
+      "model_final": 4.88015634000417,
+      "carsim_min": -0.4331030345239332,
+      "carsim_max": 5.704360992402309,
+      "model_min": -0.3477054568931426,
+      "model_max": 5.718879573496101,
+      "carsim_signed_abs_peak": 5.704360992402309,
+      "model_signed_abs_peak": 5.718879573496101,
+      "carsim_abs_peak_time_s": 0.591,
+      "model_abs_peak_time_s": 0.604
+    }
+  },
+  "rmse_change_from_previous_model": {
+    "vy_mps": {
+      "previous_rmse": 0.038008986703349304,
+      "revised_rmse": 0.009239783369544185,
+      "reduction_percent": 75.69052960643651
+    },
+    "r_radps": {
+      "previous_rmse": 0.004014781903624277,
+      "revised_rmse": 0.0009040755058402672,
+      "reduction_percent": 77.48132955804827
+    },
+    "roll_deg": {
+      "previous_rmse": 0.03869921036156251,
+      "revised_rmse": 0.01605316971546523,
+      "reduction_percent": 58.518094903016845
+    },
+    "pitch_deg": {
+      "previous_rmse": 0.007412319976638083,
+      "revised_rmse": 0.008232672305249435,
+      "reduction_percent": -11.067416560495413
+    },
+    "rollrate_degps": {
+      "previous_rmse": 0.1498814987200885,
+      "revised_rmse": 0.08222319460971118,
+      "reduction_percent": 45.141198005187235
+    },
+    "pitchrate_degps": {
+      "previous_rmse": 0.01813190252328238,
+      "revised_rmse": 0.011486535003662797,
+      "reduction_percent": 36.650139228834696
+    },
+    "vx_kmh": {
+      "previous_rmse": 0.010906802063041484,
+      "revised_rmse": 0.00193772537537993,
+      "reduction_percent": 82.23378984802467
+    },
+    "ay_mps2": {
+      "previous_rmse": 0.0693830916473076,
+      "revised_rmse": 0.013402648317259763,
+      "reduction_percent": 80.68312034091976
+    }
+  },
+  "force_metrics_all_samples": {
+    "spring_force_FL": {
+      "rmse": 123.52593722435942,
+      "max_abs_error": 163.8495022200732,
+      "max_abs_error_time_s": 0.14400000000000002,
+      "carsim_initial": 4045.7776843701276,
+      "model_initial": 4165.451630845814,
+      "carsim_final": 4045.7661789002123,
+      "model_final": 4165.463187610101,
+      "carsim_min": 3887.481456916452,
+      "carsim_max": 4181.892629995567,
+      "model_min": 4038.6541403551746,
+      "model_max": 4345.739619924204,
+      "carsim_signed_abs_peak": 4181.892629995567,
+      "model_signed_abs_peak": 4345.739619924204,
+      "carsim_abs_peak_time_s": 0.145,
+      "model_abs_peak_time_s": 0.145
+    },
+    "spring_force_FR": {
+      "rmse": 148.9024749233344,
+      "max_abs_error": 217.70078339249358,
+      "max_abs_error_time_s": 1.059,
+      "carsim_initial": 5878.526333379228,
+      "model_initial": 6020.73254612394,
+      "carsim_final": 5878.588992467004,
+      "model_final": 6020.826674795406,
+      "carsim_min": 5654.091148307749,
+      "carsim_max": 6026.919401041652,
+      "model_min": 5795.464228033467,
+      "model_max": 6234.402974564558,
+      "carsim_signed_abs_peak": 6026.919401041652,
+      "model_signed_abs_peak": 6234.402974564558,
+      "carsim_abs_peak_time_s": 0.733,
+      "model_abs_peak_time_s": 0.862
+    },
+    "spring_force_RL": {
+      "rmse": 115.51960823261334,
+      "max_abs_error": 153.24892047284175,
+      "max_abs_error_time_s": 0.14400000000000002,
+      "carsim_initial": 3732.9909844094714,
+      "model_initial": 3845.290291791717,
+      "carsim_final": 3732.927902399242,
+      "model_final": 3845.22109271526,
+      "carsim_min": 3590.8647600010586,
+      "carsim_max": 3954.508706402928,
+      "model_min": 3727.4797045484183,
+      "model_max": 4107.488466304753,
+      "carsim_signed_abs_peak": 3954.508706402928,
+      "model_signed_abs_peak": 4107.488466304753,
+      "carsim_abs_peak_time_s": 0.157,
+      "model_abs_peak_time_s": 0.155
+    },
+    "spring_force_RR": {
+      "rmse": 133.40684072963148,
+      "max_abs_error": 193.0732886333326,
+      "max_abs_error_time_s": 1.024,
+      "carsim_initial": 5648.41976178257,
+      "model_initial": 5775.8786698310705,
+      "carsim_final": 5648.430013073254,
+      "model_final": 5775.890348875936,
+      "carsim_min": 5480.039969530195,
+      "carsim_max": 5813.680051299218,
+      "model_min": 5603.229637756818,
+      "model_max": 6002.402750112052,
+      "carsim_signed_abs_peak": 5813.680051299218,
+      "model_signed_abs_peak": 6002.402750112052,
+      "carsim_abs_peak_time_s": 0.794,
+      "model_abs_peak_time_s": 0.886
+    },
+    "damper_force_FL": {
+      "rmse": 14.375708068125958,
+      "max_abs_error": 149.20381479179082,
+      "max_abs_error_time_s": 0.047,
+      "carsim_initial": -0.001432553225,
+      "model_initial": 1.664283724856155e-14,
+      "carsim_final": -0.0003086477761371498,
+      "model_final": 2.926052453994571e-05,
+      "carsim_min": -386.81912785896594,
+      "carsim_max": 405.58187681724235,
+      "model_min": -463.00851029984,
+      "model_max": 530.9743904820185,
+      "carsim_signed_abs_peak": 405.58187681724235,
+      "model_signed_abs_peak": 530.9743904820185,
+      "carsim_abs_peak_time_s": 0.082,
+      "model_abs_peak_time_s": 0.076
+    },
+    "damper_force_FR": {
+      "rmse": 15.728795333766888,
+      "max_abs_error": 191.6527375228875,
+      "max_abs_error_time_s": 0.007,
+      "carsim_initial": -0.011659693,
+      "model_initial": 1.6356833055476585e-14,
+      "carsim_final": -0.017589223090780592,
+      "model_final": -0.018613227745447603,
+      "carsim_min": -800.5209528391738,
+      "carsim_max": 422.16823210427526,
+      "model_min": -742.5664173640307,
+      "model_max": 417.8637347784345,
+      "carsim_signed_abs_peak": -800.5209528391738,
+      "model_signed_abs_peak": -742.5664173640307,
+      "carsim_abs_peak_time_s": 0.075,
+      "model_abs_peak_time_s": 0.078
+    },
+    "damper_force_RL": {
+      "rmse": 12.408956292058889,
+      "max_abs_error": 129.3077683345424,
+      "max_abs_error_time_s": 0.063,
+      "carsim_initial": 0.01024795064,
+      "model_initial": -5.684341886080802e-14,
+      "carsim_final": 0.015951127715609026,
+      "model_final": 0.013966400830512196,
+      "carsim_min": -547.5685284302936,
+      "carsim_max": 681.9916363049587,
+      "model_min": -610.0833657555028,
+      "model_max": 796.6558686288203,
+      "carsim_signed_abs_peak": 681.9916363049587,
+      "model_signed_abs_peak": 796.6558686288203,
+      "carsim_abs_peak_time_s": 0.078,
+      "model_abs_peak_time_s": 0.075
+    },
+    "damper_force_RR": {
+      "rmse": 16.606221153839297,
+      "max_abs_error": 116.24972541387083,
+      "max_abs_error_time_s": 0.013000000000000001,
+      "carsim_initial": 0.001683188087,
+      "model_initial": -5.684341886080802e-14,
+      "carsim_final": 0.0013371290253760039,
+      "model_final": -0.003245846207505565,
+      "carsim_min": -865.9327316449412,
+      "carsim_max": 475.4321856505476,
+      "model_min": -830.5377904095218,
+      "model_max": 479.52690624170094,
+      "carsim_signed_abs_peak": -865.9327316449412,
+      "model_signed_abs_peak": -830.5377904095218,
+      "carsim_abs_peak_time_s": 0.076,
+      "model_abs_peak_time_s": 0.081
+    }
+  },
+  "rate_convention": "Body-fixed p/q angular rates in deg/s, not Euler roll/pitch-angle derivatives. A nonzero body pitch rate can coexist with steady Euler pitch during turning.",
+  "startup_note": "All original elapsed samples are retained. First logged values may already be slightly evolved from requested physical initial states. No startup rows are removed or timestamps shifted.",
+  "source_fingerprints": {
+    "input_coefficient_files_unchanged": true,
+    "exporter_sha256": "f45ef6712dbb46468e1aed0a0da388bfc34bf63d355395c144e3e151f813faf3",
+    "reference_helper_sha256": "0b5480dbbbe269073eebf015a1d62923abd187d9e96c4d4bc10dfbe8d2ad8229",
+    "model_source_and_input_file_sha256": [
+      {
+        "relative_name": "data/damper.json",
+        "sha256": "7c6664767d9cad04a8b66f6c25ae02471936a7feb808dbe0e6acba8c207242e5"
+      },
+      {
+        "relative_name": "data/hmc_data.mat",
+        "sha256": "f58b56dcf585602ae0f6056af6de88bc5ff822a17c4038b8c6fb0cedd31efa84"
+      },
+      {
+        "relative_name": "data/source_manifest.json",
+        "sha256": "ea64c444c6e54ecfc9360e2120d103e883d83287784d4c6187c7878b388b50bd"
+      },
+      {
+        "relative_name": "data/tires.json",
+        "sha256": "864598bede9b992f047b4b38596309b568932d85a45dc3f8e7bc1aa93ba8f840"
+      },
+      {
+        "relative_name": "data/vehicle.json",
+        "sha256": "f345887e44d0617b4130b009225402dbb915707c58327d5f88588a0da7b2e467"
+      },
+      {
+        "relative_name": "hmc_build_native.m",
+        "sha256": "af6e048286f7a7169877c91f1aac5b6e8b3fea058d489c21083692ea6272835b"
+      },
+      {
+        "relative_name": "hmc_classify.m",
+        "sha256": "dde22b61f8ade4a31aff341ffebdd897f19bc28dd9f8e6e68510d2e63f48208c"
+      },
+      {
+        "relative_name": "hmc_generate.m",
+        "sha256": "829244dc2a5e68f488177f33085469c2c8f7c3a4bcf13c60b85c9991050e3276"
+      },
+      {
+        "relative_name": "hmc_handling_reference.m",
+        "sha256": "0190bf61d0f4a6e1b22acf29147ffc2d4e8526172f878f1e2e99462e11fc47f7"
+      },
+      {
+        "relative_name": "hmc_mcode_simulate.m",
+        "sha256": "d0b52b5058a9130d5c67a40f01491e0fcb30634c43a4ad89efc22e45ad1f5612"
+      },
+      {
+        "relative_name": "hmc_native.m",
+        "sha256": "1987c7e0ff47882353ab8bb783381d3cb2f3bf0b3449d28caeef90ca3d259a17"
+      },
+      {
+        "relative_name": "hmc_options.m",
+        "sha256": "576eba24f0488539a0459a917625bfe1b356cbfce42fec9a13ccfdfddc34c285"
+      },
+      {
+        "relative_name": "hmc_tire_force.m",
+        "sha256": "4b632091fe7f4b9b475ad88cb28bfeaef5a35ae05e067200f62b9b3b8f8c7b13"
+      },
+      {
+        "relative_name": "hmc_vehicle_model.m",
+        "sha256": "89387dca559dbb92e685079deaaa8d35378f7891489b7016c981de71e5734ae9"
+      },
+      {
+        "relative_name": "native/hmc_native",
+        "sha256": "84daba21a17f3be2497d13448b788656bae91195367f3479d6a5a389c247e546"
+      },
+      {
+        "relative_name": "native/hmc_native.cpp",
+        "sha256": "503f3917dddac697d65e2830dbf842696a0c60cb2560454458d69d843eb57824"
+      },
+      {
+        "relative_name": "native/hmc_tire.hpp",
+        "sha256": "afc3b0b4ca7587eab2cf267935058d72bf624e0e6fad5801874310dda9dcb423"
+      },
+      {
+        "relative_name": "native/hmc_vehicle.hpp",
+        "sha256": "28392de9c5629ba1e465f7c7c078ae9c4155c70c6d2d92d4789f16a93817d367"
+      },
+      {
+        "relative_name": "run_hmc_standalone.m",
+        "sha256": "eeb1957ac32714fae6867bf61a19e7b80080ac109c8006b5290c229f061a74f5"
+      }
+    ],
+    "reference_upload_sha256": "e103a68d45e6c9f2ee0af5536e7ecf959cfcb7853293c2f18dc858713422ad34",
+    "selected_reference_mat_sha256": "e103a68d45e6c9f2ee0af5536e7ecf959cfcb7853293c2f18dc858713422ad34",
+    "private_candidate_mat_sha256": "bde983720fe007148ae8cd41000ad421014595059b22420c8a1848e5bde8ae28",
+    "previous_report_sha256": "0b86c647267424197c896ff4c12d65c2300bf6a608f5cb513ab2cd3e3951a225",
+    "previous_rate_metrics_sha256": "e2e165ee2ab7c63bd130a0647f768d17d90ae3e7f33b2e0e044d56ec37d89e13"
+  },
+  "scope": "General source-based model corrections re-evaluated on all three available trajectories, not a blind holdout or proof of 210-condition/full-stability-region equivalence. Only selected computed outputs and hashes are published.",
+  "sample_count": 10001,
+  "result_mat": "comparison_90kph_0.6mu_2.5deg.mat",
+  "response_figure": "comparison_90kph_0.6mu_2.5deg.png"
+}

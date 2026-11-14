@@ -1,0 +1,53 @@
+{
+  "single_m_file": "HMC_FullCar_Compare.m",
+  "model_revision": "HMC_TRANSIENT_RESPONSE_V3",
+  "model_options": {
+    "angular_model": "euler_gyro",
+    "geometric_jacking": true,
+    "rolling_pitch_moment": true,
+    "damper_delay_s": 0.002,
+    "damper_sample_dt": 0.001,
+    "vertical_model": "mf62",
+    "tire_restart": "zero",
+    "roll_geometry_balance": true,
+    "spatial_wheel_velocity": true,
+    "compliance_body_frame": true,
+    "steering_axis_camber": true,
+    "heading_frame_translation": true,
+    "source_drive_model": true,
+    "full_wheel_orientation": false,
+    "coupled_sprung_reference": true,
+    "tire_deformation_states": true,
+    "tire_longitudinal_deformation": false
+  },
+  "runtime_defaults": {
+    "duration_s": 10,
+    "dt_s": 0.001,
+    "initial_vy_mps": 0.1,
+    "initial_body_r_radps": 0.35,
+    "trim_step_deg": 0.125
+  },
+  "source_files": [
+    {
+      "file": "hmc_vehicle_model.m",
+      "sha256": "89387dca559dbb92e685079deaaa8d35378f7891489b7016c981de71e5734ae9"
+    },
+    {
+      "file": "hmc_tire_force.m",
+      "sha256": "4b632091fe7f4b9b475ad88cb28bfeaef5a35ae05e067200f62b9b3b8f8c7b13"
+    },
+    {
+      "file": "hmc_options.m",
+      "sha256": "576eba24f0488539a0459a917625bfe1b356cbfce42fec9a13ccfdfddc34c285"
+    },
+    {
+      "file": "hmc_import_local_data.m",
+      "sha256": "e494fa2faa12c0cc4d888bdb76f119e8808ed872cee30be7214a23d5b9ee0ce2"
+    }
+  ],
+  "single_m_sha256": "d493d7e4e145dbdb77a47e1ea17b20d8fa5573e7606c284803984f824ad02e14",
+  "local_function_count": 59,
+  "raw_model_inputs_embedded": false,
+  "source_functions_bundled_without_formula_rewrites": true,
+  "full_10s_mcode_integration_executed_here": false
+}

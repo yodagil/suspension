@@ -1,0 +1,61 @@
+{
+  "case50": {
+    "speed_kmh": 50.0,
+    "rhs_scaled_error": 6.918521951404479e-15,
+    "hybrid_5ms_scaled_error": 1.3877787807814457e-17,
+    "full_10s_dt_refine_scaled_error": 3.9581238746063894e-07,
+    "roll_dt_refine_max_deg": 3.7074636339573e-08,
+    "pitch_dt_refine_max_deg": 4.7443933904061994e-09,
+    "trim_residual": 1.3785328431332066e-13,
+    "root_found": 1,
+    "native_mcode_implemented": 1,
+    "trim_usable": 1
+  },
+  "case70": {
+    "speed_kmh": 70.0,
+    "rhs_scaled_error": 7.976470977306312e-15,
+    "hybrid_5ms_scaled_error": 2.7755575615628914e-17,
+    "full_10s_dt_refine_scaled_error": 1.0751624458666442e-07,
+    "roll_dt_refine_max_deg": 4.200587391585667e-08,
+    "pitch_dt_refine_max_deg": 3.6340783364264854e-09,
+    "trim_residual": 3.9340627763997723e-08,
+    "root_found": 1,
+    "native_mcode_implemented": 1,
+    "trim_usable": 1
+  },
+  "case90": {
+    "speed_kmh": 90.0,
+    "rhs_scaled_error": 5.1334906325976705e-15,
+    "hybrid_5ms_scaled_error": 1.734723475976807e-17,
+    "full_10s_dt_refine_scaled_error": 7.406831494565151e-08,
+    "roll_dt_refine_max_deg": 5.0782783923892034e-08,
+    "pitch_dt_refine_max_deg": 3.781776951807345e-09,
+    "trim_residual": 8.041441584943705e-13,
+    "root_found": 1,
+    "native_mcode_implemented": 1,
+    "trim_usable": 1
+  },
+  "all_passed": 1,
+  "scope": "Numerical implementation and time-step convergence for the selected source-based candidate at 50/70/90 km/h. CarSim response fidelity is evaluated separately; no proof of full stability-region or 210-condition equivalence.",
+  "execution_runtime": "GNU Octave 9.4 for M-code reference and C++17 native engine",
+  "matlab_full_10s_executed": 0,
+  "result_selection": "mass_lateral",
+  "model_revision": "HMC_TRANSIENT_RESPONSE_V3",
+  "tests_per_condition": {
+    "independent_mcode_native_rhs_states": 16,
+    "independent_mcode_rk4_duration_s": 0.005,
+    "independent_mcode_rk4_initial_states": 2,
+    "native_trajectory_duration_s": 10.0,
+    "native_dt_s": [
+      0.001,
+      0.0005
+    ]
+  },
+  "source_code_sha256": {
+    "hmc_vehicle_model.m": "89387dca559dbb92e685079deaaa8d35378f7891489b7016c981de71e5734ae9",
+    "hmc_tire_force.m": "4b632091fe7f4b9b475ad88cb28bfeaef5a35ae05e067200f62b9b3b8f8c7b13",
+    "hmc_native.m": "1987c7e0ff47882353ab8bb783381d3cb2f3bf0b3449d28caeef90ca3d259a17",
+    "native/hmc_native.cpp": "503f3917dddac697d65e2830dbf842696a0c60cb2560454458d69d843eb57824"
+  },
+  "full_10s_execution": "C++ native; M-code RHS and 5ms sampled-delay RK4 reference executed under GNU Octave 9.4. A full 10s MATLAB run was not executed."
+}
